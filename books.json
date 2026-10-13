@@ -1,0 +1,160 @@
+{
+  "grade": 9,
+  "subjects": [
+    {
+      "slug": "algebra",
+      "subject": "Алгебра",
+      "title": "Алгебра 9 клас (О. С. Істер)",
+      "group": "Математика",
+      "color": "#4338ca",
+      "pages": 275,
+      "page_offset": 2,
+      "source": "Algebra_9_klas_Ister_2026.pdf"
+    },
+    {
+      "slug": "geometria",
+      "subject": "Геометрія",
+      "title": "Геометрія 9 клас (О. С. Істер)",
+      "group": "Математика",
+      "color": "#7c3aed",
+      "pages": 275,
+      "page_offset": 2,
+      "source": "Geometriya_9_klas_Ister_2026.pdf"
+    },
+    {
+      "slug": "ukr-mova",
+      "subject": "Українська мова",
+      "title": "Українська мова 9 клас (О. В. Заболотний, В. В. Заболотний)",
+      "group": "Мови й література",
+      "color": "#2f6db3",
+      "pages": 277,
+      "page_offset": 2
+    },
+    {
+      "slug": "ukr-lit",
+      "subject": "Українська література",
+      "title": "Українська література 9 клас (О. В. Заболотний, В. В. Заболотний)",
+      "group": "Мови й література",
+      "color": "#c2410c",
+      "pages": 275,
+      "page_offset": 2
+    },
+    {
+      "slug": "zar-lit",
+      "subject": "Зарубіжна література",
+      "title": "Зарубіжна література 9 клас (О. М. Ніколенко)",
+      "group": "Мови й література",
+      "color": "#9d3b6e",
+      "pages": 311,
+      "page_offset": 2
+    },
+    {
+      "slug": "english",
+      "subject": "Англійська мова",
+      "title": "Англійська мова 9 клас (H. Q. Mitchell)",
+      "group": "Мови й література",
+      "color": "#0f766e",
+      "pages": 180,
+      "page_offset": 2
+    },
+    {
+      "slug": "fizyka",
+      "subject": "Фізика",
+      "title": "Фізика 9 клас (Бар'яхтар, за ред. С. О. Довгого)",
+      "group": "Природничі науки",
+      "color": "#1b4f8a",
+      "pages": 294,
+      "page_offset": 2
+    },
+    {
+      "slug": "khimiia",
+      "subject": "Хімія",
+      "title": "Хімія 9 клас (П. П. Попель, Л. С. Крикля)",
+      "group": "Природничі науки",
+      "color": "#0e7490",
+      "pages": 314,
+      "page_offset": 2
+    },
+    {
+      "slug": "biolohiia",
+      "subject": "Біологія",
+      "title": "Біологія 9 клас (В. І. Соболь)",
+      "group": "Природничі науки",
+      "color": "#3f7d20",
+      "pages": 282,
+      "page_offset": 2
+    },
+    {
+      "slug": "heohrafiia",
+      "subject": "Географія",
+      "title": "Географія 9 клас (Т. Г. Гільберг)",
+      "group": "Природничі науки",
+      "color": "#a16207",
+      "pages": 287,
+      "page_offset": 2
+    },
+    {
+      "slug": "istoriia-ukr",
+      "subject": "Історія України",
+      "title": "Історія України 9 клас (О. І. Пометун)",
+      "group": "Суспільство",
+      "color": "#b45309",
+      "pages": 271,
+      "page_offset": 2
+    },
+    {
+      "slug": "vsesvitnia",
+      "subject": "Всесвітня історія",
+      "title": "Всесвітня історія 9 клас (І. Я. Щупак)",
+      "group": "Суспільство",
+      "color": "#78350f",
+      "pages": 207,
+      "page_offset": 2
+    },
+    {
+      "slug": "pravoznavstvo",
+      "subject": "Основи правознавства",
+      "title": "Основи правознавства 9 клас (Васильків, ТзОВ «Астон»)",
+      "group": "Суспільство",
+      "color": "#9a3412",
+      "pages": 181,
+      "page_offset": 2
+    },
+    {
+      "slug": "informatyka",
+      "subject": "Інформатика",
+      "title": "Інформатика 9 клас (О. В. Коршунова)",
+      "group": "Технології",
+      "color": "#155e75",
+      "pages": 243,
+      "page_offset": 2
+    },
+    {
+      "slug": "tekhnolohii",
+      "subject": "Технології",
+      "title": "Технології / Трудове навчання 9 клас",
+      "group": "Технології",
+      "color": "#525252",
+      "pages": 0,
+      "note": "готується"
+    },
+    {
+      "slug": "mystetstvo",
+      "subject": "Мистецтво",
+      "title": "Мистецтво 9 клас",
+      "group": "Мистецтво й здоров'я",
+      "color": "#be185d",
+      "pages": 0,
+      "note": "готується"
+    },
+    {
+      "slug": "zdorovia",
+      "subject": "Основи здоров'я",
+      "title": "Основи здоров'я / Безпека та добробут 9 клас",
+      "group": "Мистецтво й здоров'я",
+      "color": "#15803d",
+      "pages": 0,
+      "note": "готується"
+    }
+  ]
+}
