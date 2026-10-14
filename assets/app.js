@@ -273,10 +273,30 @@
 
       html += renderTaskCard(cur);
     } else {
+      const hasCoverage = state.hdz?.coverage_note;
+      const hasBookNote = state.hdz?.note;
+      const noHdzAtAll = !state.hdz || !state.hdz.total_tasks;
+      let emptyTitle = 'Теоретичний блок';
+      let msg = '';
+      if (hasBookNote) {
+        emptyTitle = 'Розв\'язник відсутній';
+        msg = esc(hasBookNote);
+      } else if (hasCoverage) {
+        msg = `На сторінці ${lb || n} окремих завдань немає. ${esc(hasCoverage)}`;
+      } else if (noHdzAtAll) {
+        emptyTitle = 'Розв\'язник відсутній';
+        msg = `Для цього підручника розв'язник наразі відсутній у відкритому доступі. Ліворуч подано оригінальний текст підручника.`;
+      } else {
+        msg = `На сторінці ${lb || n} окремих номерів завдань не виявлено. Розділ призначено для читання матеріалу ліворуч.`;
+      }
       html += `<div class="hdz-empty">
-        <div class="hdz-empty-title">Теоретичний блок</div>
-        <p>На сторінці ${lb || n} окремих номерів завдань не виявлено. Розділ призначено для читання матеріалу ліворуч.</p>
+        <div class="hdz-empty-title">${emptyTitle}</div>
+        <p>${msg}</p>
       </div>`;
+    }
+
+    if (state.hdz?.coverage_note && tasks.length > 0) {
+      html += `<div class="hdz-coverage-info">${esc(state.hdz.coverage_note)}</div>`;
     }
 
     // Блок швидкого пошуку будь-якого номера в підручнику

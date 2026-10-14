@@ -5,573 +5,1574 @@
   "https://vshkole.com/9-klass/reshebniki/himiya/pp-popel",
   "https://4book.org/gdz-reshebniki-ukraina/9-klas/gdz-himiya-9-klas-popel-nush-2026"
  ],
+ "coverage_note": "Офіційно опубліковано укладачами ГДЗ наразі лише § 1 – § 10 (завдання 1–109). Наступні розділи готуються укладачами.",
  "total_tasks": 109,
  "pages": {
-  "17": [
+  "10": [
    {
     "task": "1",
+    "raw_task": "1",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-1-rnd797.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 1"
+    "title": "§ 1. Завдання 1 (у збірнику № 1)"
    },
    {
     "task": "2",
+    "raw_task": "2",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-2-rnd8038.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 2"
+    "title": "§ 1. Завдання 2 (у збірнику № 2)"
    },
    {
     "task": "3",
+    "raw_task": "3",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-3-rnd2459.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 3"
+    "title": "§ 1. Завдання 3 (у збірнику № 3)"
    },
    {
     "task": "4",
+    "raw_task": "4",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-4-rnd3917.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 4"
+    "title": "§ 1. Завдання 4 (у збірнику № 4)"
    },
    {
     "task": "5",
+    "raw_task": "5",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-5-rnd4221.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 5"
+    "title": "§ 1. Завдання 5 (у збірнику № 5)"
    },
    {
     "task": "6",
+    "raw_task": "6",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-6.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 6"
+    "title": "§ 1. Завдання 6 (у збірнику № 6)"
    },
    {
     "task": "7",
+    "raw_task": "7",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-7.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 7"
+    "title": "§ 1. Завдання 7 (у збірнику № 7)"
    },
    {
     "task": "8",
+    "raw_task": "8",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-8.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 8"
+    "title": "§ 1. Завдання 8 (у збірнику № 8)"
    },
    {
     "task": "9",
+    "raw_task": "9",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-9.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 9"
+    "title": "§ 1. Завдання 9 (у збірнику № 9)"
    },
    {
     "task": "10",
+    "raw_task": "10",
+    "para_task": "10",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-10.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 10"
+    "title": "§ 1. Завдання 10 (у збірнику № 10)"
    },
    {
     "task": "11",
+    "raw_task": "11",
+    "para_task": "11",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-11.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 11"
+    "title": "§ 1. Завдання 11 (у збірнику № 11)"
    },
    {
     "task": "12",
+    "raw_task": "12",
+    "para_task": "12",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-12.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 12"
+    "title": "§ 1. Завдання 12 (у збірнику № 12)"
    },
    {
     "task": "13",
+    "raw_task": "13",
+    "para_task": "13",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-13.jpg",
-    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 13"
+    "title": "§ 1. Завдання 13 (у збірнику № 13)"
    }
   ],
-  "24": [
+  "11": [
    {
-    "task": "14",
+    "task": "1",
+    "raw_task": "1",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-1-rnd797.jpg",
+    "title": "§ 1. Завдання 1 (у збірнику № 1)"
+   },
+   {
+    "task": "2",
+    "raw_task": "2",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-2-rnd8038.jpg",
+    "title": "§ 1. Завдання 2 (у збірнику № 2)"
+   },
+   {
+    "task": "3",
+    "raw_task": "3",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-3-rnd2459.jpg",
+    "title": "§ 1. Завдання 3 (у збірнику № 3)"
+   },
+   {
+    "task": "4",
+    "raw_task": "4",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-4-rnd3917.jpg",
+    "title": "§ 1. Завдання 4 (у збірнику № 4)"
+   },
+   {
+    "task": "5",
+    "raw_task": "5",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-5-rnd4221.jpg",
+    "title": "§ 1. Завдання 5 (у збірнику № 5)"
+   },
+   {
+    "task": "6",
+    "raw_task": "6",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-6.jpg",
+    "title": "§ 1. Завдання 6 (у збірнику № 6)"
+   },
+   {
+    "task": "7",
+    "raw_task": "7",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-7.jpg",
+    "title": "§ 1. Завдання 7 (у збірнику № 7)"
+   },
+   {
+    "task": "8",
+    "raw_task": "8",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-8.jpg",
+    "title": "§ 1. Завдання 8 (у збірнику № 8)"
+   },
+   {
+    "task": "9",
+    "raw_task": "9",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-9.jpg",
+    "title": "§ 1. Завдання 9 (у збірнику № 9)"
+   },
+   {
+    "task": "10",
+    "raw_task": "10",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-10.jpg",
+    "title": "§ 1. Завдання 10 (у збірнику № 10)"
+   },
+   {
+    "task": "11",
+    "raw_task": "11",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-11.jpg",
+    "title": "§ 1. Завдання 11 (у збірнику № 11)"
+   },
+   {
+    "task": "12",
+    "raw_task": "12",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-12.jpg",
+    "title": "§ 1. Завдання 12 (у збірнику № 12)"
+   },
+   {
+    "task": "13",
+    "raw_task": "13",
+    "para_task": "13",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-13.jpg",
+    "title": "§ 1. Завдання 13 (у збірнику № 13)"
+   }
+  ],
+  "15": [
+   {
+    "task": "1 (#14)",
+    "raw_task": "14",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-14.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 14"
+    "title": "§ 2. Завдання 1 (у збірнику № 14)"
    },
    {
-    "task": "15",
+    "task": "2 (#15)",
+    "raw_task": "15",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-15.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 15"
+    "title": "§ 2. Завдання 2 (у збірнику № 15)"
    },
    {
-    "task": "16",
+    "task": "3 (#16)",
+    "raw_task": "16",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-16.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 16"
+    "title": "§ 2. Завдання 3 (у збірнику № 16)"
    },
    {
-    "task": "17",
+    "task": "4 (#17)",
+    "raw_task": "17",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-17.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 17"
+    "title": "§ 2. Завдання 4 (у збірнику № 17)"
    },
    {
-    "task": "18",
+    "task": "5 (#18)",
+    "raw_task": "18",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-18.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 18"
+    "title": "§ 2. Завдання 5 (у збірнику № 18)"
    },
    {
-    "task": "19",
+    "task": "6 (#19)",
+    "raw_task": "19",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-19.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 19"
+    "title": "§ 2. Завдання 6 (у збірнику № 19)"
    },
    {
-    "task": "20",
+    "task": "7 (#20)",
+    "raw_task": "20",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-20.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 20"
+    "title": "§ 2. Завдання 7 (у збірнику № 20)"
    },
    {
-    "task": "21",
+    "task": "8 (#21)",
+    "raw_task": "21",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-21.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 21"
+    "title": "§ 2. Завдання 8 (у збірнику № 21)"
    },
    {
-    "task": "22",
+    "task": "9 (#22)",
+    "raw_task": "22",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-22.jpg",
-    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 22"
+    "title": "§ 2. Завдання 9 (у збірнику № 22)"
    }
   ],
-  "30": [
+  "16": [
    {
-    "task": "23",
+    "task": "1 (#14)",
+    "raw_task": "14",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-14.jpg",
+    "title": "§ 2. Завдання 1 (у збірнику № 14)"
+   },
+   {
+    "task": "2 (#15)",
+    "raw_task": "15",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-15.jpg",
+    "title": "§ 2. Завдання 2 (у збірнику № 15)"
+   },
+   {
+    "task": "3 (#16)",
+    "raw_task": "16",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-16.jpg",
+    "title": "§ 2. Завдання 3 (у збірнику № 16)"
+   },
+   {
+    "task": "4 (#17)",
+    "raw_task": "17",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-17.jpg",
+    "title": "§ 2. Завдання 4 (у збірнику № 17)"
+   },
+   {
+    "task": "5 (#18)",
+    "raw_task": "18",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-18.jpg",
+    "title": "§ 2. Завдання 5 (у збірнику № 18)"
+   },
+   {
+    "task": "6 (#19)",
+    "raw_task": "19",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-19.jpg",
+    "title": "§ 2. Завдання 6 (у збірнику № 19)"
+   },
+   {
+    "task": "7 (#20)",
+    "raw_task": "20",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-20.jpg",
+    "title": "§ 2. Завдання 7 (у збірнику № 20)"
+   },
+   {
+    "task": "8 (#21)",
+    "raw_task": "21",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-21.jpg",
+    "title": "§ 2. Завдання 8 (у збірнику № 21)"
+   },
+   {
+    "task": "9 (#22)",
+    "raw_task": "22",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-22.jpg",
+    "title": "§ 2. Завдання 9 (у збірнику № 22)"
+   }
+  ],
+  "19": [
+   {
+    "task": "1 (#23)",
+    "raw_task": "23",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-23.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 23"
+    "title": "§ 3. Завдання 1 (у збірнику № 23)"
    },
    {
-    "task": "24",
+    "task": "2 (#24)",
+    "raw_task": "24",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-24.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 24"
+    "title": "§ 3. Завдання 2 (у збірнику № 24)"
    },
    {
-    "task": "25",
+    "task": "3 (#25)",
+    "raw_task": "25",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-25.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 25"
+    "title": "§ 3. Завдання 3 (у збірнику № 25)"
    },
    {
-    "task": "26",
+    "task": "4 (#26)",
+    "raw_task": "26",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-26.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 26"
+    "title": "§ 3. Завдання 4 (у збірнику № 26)"
    },
    {
-    "task": "27",
+    "task": "5 (#27)",
+    "raw_task": "27",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-27.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 27"
+    "title": "§ 3. Завдання 5 (у збірнику № 27)"
    },
    {
-    "task": "28",
+    "task": "6 (#28)",
+    "raw_task": "28",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-28.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 28"
+    "title": "§ 3. Завдання 6 (у збірнику № 28)"
    },
    {
-    "task": "29",
+    "task": "7 (#29)",
+    "raw_task": "29",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-29.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 29"
+    "title": "§ 3. Завдання 7 (у збірнику № 29)"
    },
    {
-    "task": "30",
+    "task": "8 (#30)",
+    "raw_task": "30",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-30.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 30"
+    "title": "§ 3. Завдання 8 (у збірнику № 30)"
    },
    {
-    "task": "31",
+    "task": "9 (#31)",
+    "raw_task": "31",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-31.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 31"
+    "title": "§ 3. Завдання 9 (у збірнику № 31)"
    },
    {
-    "task": "32",
+    "task": "10 (#32)",
+    "raw_task": "32",
+    "para_task": "10",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-32.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 32"
+    "title": "§ 3. Завдання 10 (у збірнику № 32)"
    },
    {
-    "task": "33",
+    "task": "11 (#33)",
+    "raw_task": "33",
+    "para_task": "11",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-33.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 33"
+    "title": "§ 3. Завдання 11 (у збірнику № 33)"
    },
    {
-    "task": "34",
+    "task": "12 (#34)",
+    "raw_task": "34",
+    "para_task": "12",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-34.jpg",
-    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 34"
+    "title": "§ 3. Завдання 12 (у збірнику № 34)"
    }
   ],
-  "38": [
+  "20": [
    {
-    "task": "35",
+    "task": "1 (#23)",
+    "raw_task": "23",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-23.jpg",
+    "title": "§ 3. Завдання 1 (у збірнику № 23)"
+   },
+   {
+    "task": "2 (#24)",
+    "raw_task": "24",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-24.jpg",
+    "title": "§ 3. Завдання 2 (у збірнику № 24)"
+   },
+   {
+    "task": "3 (#25)",
+    "raw_task": "25",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-25.jpg",
+    "title": "§ 3. Завдання 3 (у збірнику № 25)"
+   },
+   {
+    "task": "4 (#26)",
+    "raw_task": "26",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-26.jpg",
+    "title": "§ 3. Завдання 4 (у збірнику № 26)"
+   },
+   {
+    "task": "5 (#27)",
+    "raw_task": "27",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-27.jpg",
+    "title": "§ 3. Завдання 5 (у збірнику № 27)"
+   },
+   {
+    "task": "6 (#28)",
+    "raw_task": "28",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-28.jpg",
+    "title": "§ 3. Завдання 6 (у збірнику № 28)"
+   },
+   {
+    "task": "7 (#29)",
+    "raw_task": "29",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-29.jpg",
+    "title": "§ 3. Завдання 7 (у збірнику № 29)"
+   },
+   {
+    "task": "8 (#30)",
+    "raw_task": "30",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-30.jpg",
+    "title": "§ 3. Завдання 8 (у збірнику № 30)"
+   },
+   {
+    "task": "9 (#31)",
+    "raw_task": "31",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-31.jpg",
+    "title": "§ 3. Завдання 9 (у збірнику № 31)"
+   },
+   {
+    "task": "10 (#32)",
+    "raw_task": "32",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-32.jpg",
+    "title": "§ 3. Завдання 10 (у збірнику № 32)"
+   },
+   {
+    "task": "11 (#33)",
+    "raw_task": "33",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-33.jpg",
+    "title": "§ 3. Завдання 11 (у збірнику № 33)"
+   },
+   {
+    "task": "12 (#34)",
+    "raw_task": "34",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-34.jpg",
+    "title": "§ 3. Завдання 12 (у збірнику № 34)"
+   }
+  ],
+  "27": [
+   {
+    "task": "1 (#35)",
+    "raw_task": "35",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-35.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 35"
+    "title": "§ 4. Завдання 1 (у збірнику № 35)"
    },
    {
-    "task": "36",
+    "task": "2 (#36)",
+    "raw_task": "36",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-36.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 36"
+    "title": "§ 4. Завдання 2 (у збірнику № 36)"
    },
    {
-    "task": "37",
+    "task": "3 (#37)",
+    "raw_task": "37",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-37.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 37"
+    "title": "§ 4. Завдання 3 (у збірнику № 37)"
    },
    {
-    "task": "38",
+    "task": "4 (#38)",
+    "raw_task": "38",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-38.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 38"
+    "title": "§ 4. Завдання 4 (у збірнику № 38)"
    },
    {
-    "task": "39",
+    "task": "5 (#39)",
+    "raw_task": "39",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-39.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 39"
+    "title": "§ 4. Завдання 5 (у збірнику № 39)"
    },
    {
-    "task": "40",
+    "task": "6 (#40)",
+    "raw_task": "40",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-40.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 40"
+    "title": "§ 4. Завдання 6 (у збірнику № 40)"
    },
    {
-    "task": "41",
+    "task": "7 (#41)",
+    "raw_task": "41",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-41.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 41"
+    "title": "§ 4. Завдання 7 (у збірнику № 41)"
    },
    {
-    "task": "42",
+    "task": "8 (#42)",
+    "raw_task": "42",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-42.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 42"
+    "title": "§ 4. Завдання 8 (у збірнику № 42)"
    },
    {
-    "task": "43",
+    "task": "9 (#43)",
+    "raw_task": "43",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-43.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 43"
+    "title": "§ 4. Завдання 9 (у збірнику № 43)"
    },
    {
-    "task": "44",
+    "task": "10 (#44)",
+    "raw_task": "44",
+    "para_task": "10",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-44.jpg",
-    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 44"
+    "title": "§ 4. Завдання 10 (у збірнику № 44)"
+   }
+  ],
+  "28": [
+   {
+    "task": "1 (#35)",
+    "raw_task": "35",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-35.jpg",
+    "title": "§ 4. Завдання 1 (у збірнику № 35)"
+   },
+   {
+    "task": "2 (#36)",
+    "raw_task": "36",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-36.jpg",
+    "title": "§ 4. Завдання 2 (у збірнику № 36)"
+   },
+   {
+    "task": "3 (#37)",
+    "raw_task": "37",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-37.jpg",
+    "title": "§ 4. Завдання 3 (у збірнику № 37)"
+   },
+   {
+    "task": "4 (#38)",
+    "raw_task": "38",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-38.jpg",
+    "title": "§ 4. Завдання 4 (у збірнику № 38)"
+   },
+   {
+    "task": "5 (#39)",
+    "raw_task": "39",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-39.jpg",
+    "title": "§ 4. Завдання 5 (у збірнику № 39)"
+   },
+   {
+    "task": "6 (#40)",
+    "raw_task": "40",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-40.jpg",
+    "title": "§ 4. Завдання 6 (у збірнику № 40)"
+   },
+   {
+    "task": "7 (#41)",
+    "raw_task": "41",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-41.jpg",
+    "title": "§ 4. Завдання 7 (у збірнику № 41)"
+   },
+   {
+    "task": "8 (#42)",
+    "raw_task": "42",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-42.jpg",
+    "title": "§ 4. Завдання 8 (у збірнику № 42)"
+   },
+   {
+    "task": "9 (#43)",
+    "raw_task": "43",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-43.jpg",
+    "title": "§ 4. Завдання 9 (у збірнику № 43)"
+   },
+   {
+    "task": "10 (#44)",
+    "raw_task": "44",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-44.jpg",
+    "title": "§ 4. Завдання 10 (у збірнику № 44)"
+   }
+  ],
+  "34": [
+   {
+    "task": "1 (#45)",
+    "raw_task": "45",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-45.jpg",
+    "title": "§ 5. Завдання 1 (у збірнику № 45)"
+   },
+   {
+    "task": "2 (#46)",
+    "raw_task": "46",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-46.jpg",
+    "title": "§ 5. Завдання 2 (у збірнику № 46)"
+   },
+   {
+    "task": "3 (#47)",
+    "raw_task": "47",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-47.jpg",
+    "title": "§ 5. Завдання 3 (у збірнику № 47)"
+   },
+   {
+    "task": "4 (#48)",
+    "raw_task": "48",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-48.jpg",
+    "title": "§ 5. Завдання 4 (у збірнику № 48)"
+   },
+   {
+    "task": "5 (#49)",
+    "raw_task": "49",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-49.jpg",
+    "title": "§ 5. Завдання 5 (у збірнику № 49)"
+   },
+   {
+    "task": "6 (#50)",
+    "raw_task": "50",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-50.jpg",
+    "title": "§ 5. Завдання 6 (у збірнику № 50)"
+   },
+   {
+    "task": "7 (#51)",
+    "raw_task": "51",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-51.jpg",
+    "title": "§ 5. Завдання 7 (у збірнику № 51)"
+   },
+   {
+    "task": "8 (#52)",
+    "raw_task": "52",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-52.jpg",
+    "title": "§ 5. Завдання 8 (у збірнику № 52)"
+   },
+   {
+    "task": "9 (#53)",
+    "raw_task": "53",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-53.jpg",
+    "title": "§ 5. Завдання 9 (у збірнику № 53)"
+   },
+   {
+    "task": "10 (#54)",
+    "raw_task": "54",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-54.jpg",
+    "title": "§ 5. Завдання 10 (у збірнику № 54)"
+   },
+   {
+    "task": "11 (#55)",
+    "raw_task": "55",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-55.jpg",
+    "title": "§ 5. Завдання 11 (у збірнику № 55)"
+   },
+   {
+    "task": "12 (#56)",
+    "raw_task": "56",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-56.jpg",
+    "title": "§ 5. Завдання 12 (у збірнику № 56)"
+   },
+   {
+    "task": "13 (#57)",
+    "raw_task": "57",
+    "para_task": "13",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-57.jpg",
+    "title": "§ 5. Завдання 13 (у збірнику № 57)"
+   }
+  ],
+  "35": [
+   {
+    "task": "1 (#45)",
+    "raw_task": "45",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-45.jpg",
+    "title": "§ 5. Завдання 1 (у збірнику № 45)"
+   },
+   {
+    "task": "2 (#46)",
+    "raw_task": "46",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-46.jpg",
+    "title": "§ 5. Завдання 2 (у збірнику № 46)"
+   },
+   {
+    "task": "3 (#47)",
+    "raw_task": "47",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-47.jpg",
+    "title": "§ 5. Завдання 3 (у збірнику № 47)"
+   },
+   {
+    "task": "4 (#48)",
+    "raw_task": "48",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-48.jpg",
+    "title": "§ 5. Завдання 4 (у збірнику № 48)"
+   },
+   {
+    "task": "5 (#49)",
+    "raw_task": "49",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-49.jpg",
+    "title": "§ 5. Завдання 5 (у збірнику № 49)"
+   },
+   {
+    "task": "6 (#50)",
+    "raw_task": "50",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-50.jpg",
+    "title": "§ 5. Завдання 6 (у збірнику № 50)"
+   },
+   {
+    "task": "7 (#51)",
+    "raw_task": "51",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-51.jpg",
+    "title": "§ 5. Завдання 7 (у збірнику № 51)"
+   },
+   {
+    "task": "8 (#52)",
+    "raw_task": "52",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-52.jpg",
+    "title": "§ 5. Завдання 8 (у збірнику № 52)"
+   },
+   {
+    "task": "9 (#53)",
+    "raw_task": "53",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-53.jpg",
+    "title": "§ 5. Завдання 9 (у збірнику № 53)"
+   },
+   {
+    "task": "10 (#54)",
+    "raw_task": "54",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-54.jpg",
+    "title": "§ 5. Завдання 10 (у збірнику № 54)"
+   },
+   {
+    "task": "11 (#55)",
+    "raw_task": "55",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-55.jpg",
+    "title": "§ 5. Завдання 11 (у збірнику № 55)"
+   },
+   {
+    "task": "12 (#56)",
+    "raw_task": "56",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-56.jpg",
+    "title": "§ 5. Завдання 12 (у збірнику № 56)"
+   },
+   {
+    "task": "13 (#57)",
+    "raw_task": "57",
+    "para_task": "13",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-57.jpg",
+    "title": "§ 5. Завдання 13 (у збірнику № 57)"
+   }
+  ],
+  "39": [
+   {
+    "task": "1 (#58)",
+    "raw_task": "58",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-58.jpg",
+    "title": "§ 6. Завдання 1 (у збірнику № 58)"
+   },
+   {
+    "task": "2 (#59)",
+    "raw_task": "59",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-59.jpg",
+    "title": "§ 6. Завдання 2 (у збірнику № 59)"
+   },
+   {
+    "task": "3 (#60)",
+    "raw_task": "60",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-60.jpg",
+    "title": "§ 6. Завдання 3 (у збірнику № 60)"
+   },
+   {
+    "task": "4 (#61)",
+    "raw_task": "61",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-61.jpg",
+    "title": "§ 6. Завдання 4 (у збірнику № 61)"
+   },
+   {
+    "task": "5 (#62)",
+    "raw_task": "62",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-62.jpg",
+    "title": "§ 6. Завдання 5 (у збірнику № 62)"
+   },
+   {
+    "task": "6 (#63)",
+    "raw_task": "63",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-63.jpg",
+    "title": "§ 6. Завдання 6 (у збірнику № 63)"
+   },
+   {
+    "task": "7 (#64)",
+    "raw_task": "64",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-64.jpg",
+    "title": "§ 6. Завдання 7 (у збірнику № 64)"
+   },
+   {
+    "task": "8 (#65)",
+    "raw_task": "65",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-65.jpg",
+    "title": "§ 6. Завдання 8 (у збірнику № 65)"
+   },
+   {
+    "task": "9 (#66)",
+    "raw_task": "66",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-66.jpg",
+    "title": "§ 6. Завдання 9 (у збірнику № 66)"
+   },
+   {
+    "task": "10 (#67)",
+    "raw_task": "67",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-67.jpg",
+    "title": "§ 6. Завдання 10 (у збірнику № 67)"
+   }
+  ],
+  "40": [
+   {
+    "task": "1 (#58)",
+    "raw_task": "58",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-58.jpg",
+    "title": "§ 6. Завдання 1 (у збірнику № 58)"
+   },
+   {
+    "task": "2 (#59)",
+    "raw_task": "59",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-59.jpg",
+    "title": "§ 6. Завдання 2 (у збірнику № 59)"
+   },
+   {
+    "task": "3 (#60)",
+    "raw_task": "60",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-60.jpg",
+    "title": "§ 6. Завдання 3 (у збірнику № 60)"
+   },
+   {
+    "task": "4 (#61)",
+    "raw_task": "61",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-61.jpg",
+    "title": "§ 6. Завдання 4 (у збірнику № 61)"
+   },
+   {
+    "task": "5 (#62)",
+    "raw_task": "62",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-62.jpg",
+    "title": "§ 6. Завдання 5 (у збірнику № 62)"
+   },
+   {
+    "task": "6 (#63)",
+    "raw_task": "63",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-63.jpg",
+    "title": "§ 6. Завдання 6 (у збірнику № 63)"
+   },
+   {
+    "task": "7 (#64)",
+    "raw_task": "64",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-64.jpg",
+    "title": "§ 6. Завдання 7 (у збірнику № 64)"
+   },
+   {
+    "task": "8 (#65)",
+    "raw_task": "65",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-65.jpg",
+    "title": "§ 6. Завдання 8 (у збірнику № 65)"
+   },
+   {
+    "task": "9 (#66)",
+    "raw_task": "66",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-66.jpg",
+    "title": "§ 6. Завдання 9 (у збірнику № 66)"
+   },
+   {
+    "task": "10 (#67)",
+    "raw_task": "67",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-67.jpg",
+    "title": "§ 6. Завдання 10 (у збірнику № 67)"
    }
   ],
   "44": [
    {
-    "task": "45",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-45.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 45"
+    "task": "1 (#68)",
+    "raw_task": "68",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-68.jpg",
+    "title": "§ 7. Завдання 1 (у збірнику № 68)"
    },
    {
-    "task": "46",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-46.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 46"
+    "task": "2 (#69)",
+    "raw_task": "69",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-69.jpg",
+    "title": "§ 7. Завдання 2 (у збірнику № 69)"
    },
    {
-    "task": "47",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-47.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 47"
+    "task": "3 (#70)",
+    "raw_task": "70",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-70.jpg",
+    "title": "§ 7. Завдання 3 (у збірнику № 70)"
    },
    {
-    "task": "48",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-48.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 48"
+    "task": "4 (#71)",
+    "raw_task": "71",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-71.jpg",
+    "title": "§ 7. Завдання 4 (у збірнику № 71)"
    },
    {
-    "task": "49",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-49.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 49"
+    "task": "5 (#72)",
+    "raw_task": "72",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-72.jpg",
+    "title": "§ 7. Завдання 5 (у збірнику № 72)"
    },
    {
-    "task": "50",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-50.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 50"
+    "task": "6 (#73)",
+    "raw_task": "73",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-73.jpg",
+    "title": "§ 7. Завдання 6 (у збірнику № 73)"
    },
    {
-    "task": "51",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-51.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 51"
+    "task": "7 (#74)",
+    "raw_task": "74",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-74.jpg",
+    "title": "§ 7. Завдання 7 (у збірнику № 74)"
    },
    {
-    "task": "52",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-52.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 52"
+    "task": "8 (#75)",
+    "raw_task": "75",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-75.jpg",
+    "title": "§ 7. Завдання 8 (у збірнику № 75)"
    },
    {
-    "task": "53",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-53.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 53"
+    "task": "9 (#76)",
+    "raw_task": "76",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-76.jpg",
+    "title": "§ 7. Завдання 9 (у збірнику № 76)"
    },
    {
-    "task": "54",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-54.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 54"
+    "task": "10 (#77)",
+    "raw_task": "77",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-77.jpg",
+    "title": "§ 7. Завдання 10 (у збірнику № 77)"
    },
    {
-    "task": "55",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-55.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 55"
+    "task": "11 (#78)",
+    "raw_task": "78",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-78.jpg",
+    "title": "§ 7. Завдання 11 (у збірнику № 78)"
+   }
+  ],
+  "45": [
+   {
+    "task": "1 (#68)",
+    "raw_task": "68",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-68.jpg",
+    "title": "§ 7. Завдання 1 (у збірнику № 68)"
    },
    {
-    "task": "56",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-56.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 56"
+    "task": "2 (#69)",
+    "raw_task": "69",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-69.jpg",
+    "title": "§ 7. Завдання 2 (у збірнику № 69)"
    },
    {
-    "task": "57",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-57.jpg",
-    "title": "§ 5. Луги. Основи № 45 – 57, завдання 57"
+    "task": "3 (#70)",
+    "raw_task": "70",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-70.jpg",
+    "title": "§ 7. Завдання 3 (у збірнику № 70)"
+   },
+   {
+    "task": "4 (#71)",
+    "raw_task": "71",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-71.jpg",
+    "title": "§ 7. Завдання 4 (у збірнику № 71)"
+   },
+   {
+    "task": "5 (#72)",
+    "raw_task": "72",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-72.jpg",
+    "title": "§ 7. Завдання 5 (у збірнику № 72)"
+   },
+   {
+    "task": "6 (#73)",
+    "raw_task": "73",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-73.jpg",
+    "title": "§ 7. Завдання 6 (у збірнику № 73)"
+   },
+   {
+    "task": "7 (#74)",
+    "raw_task": "74",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-74.jpg",
+    "title": "§ 7. Завдання 7 (у збірнику № 74)"
+   },
+   {
+    "task": "8 (#75)",
+    "raw_task": "75",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-75.jpg",
+    "title": "§ 7. Завдання 8 (у збірнику № 75)"
+   },
+   {
+    "task": "9 (#76)",
+    "raw_task": "76",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-76.jpg",
+    "title": "§ 7. Завдання 9 (у збірнику № 76)"
+   },
+   {
+    "task": "10 (#77)",
+    "raw_task": "77",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-77.jpg",
+    "title": "§ 7. Завдання 10 (у збірнику № 77)"
+   },
+   {
+    "task": "11 (#78)",
+    "raw_task": "78",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-78.jpg",
+    "title": "§ 7. Завдання 11 (у збірнику № 78)"
    }
   ],
   "50": [
    {
-    "task": "58",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-58.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 58"
+    "task": "1 (#79)",
+    "raw_task": "79",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-79.jpg",
+    "title": "§ 8. Завдання 1 (у збірнику № 79)"
    },
    {
-    "task": "59",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-59.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 59"
+    "task": "2 (#80)",
+    "raw_task": "80",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-80.jpg",
+    "title": "§ 8. Завдання 2 (у збірнику № 80)"
    },
    {
-    "task": "60",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-60.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 60"
+    "task": "3 (#81)",
+    "raw_task": "81",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-81.jpg",
+    "title": "§ 8. Завдання 3 (у збірнику № 81)"
    },
    {
-    "task": "61",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-61.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 61"
+    "task": "4 (#82)",
+    "raw_task": "82",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-82.jpg",
+    "title": "§ 8. Завдання 4 (у збірнику № 82)"
    },
    {
-    "task": "62",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-62.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 62"
+    "task": "5 (#83)",
+    "raw_task": "83",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-83.jpg",
+    "title": "§ 8. Завдання 5 (у збірнику № 83)"
    },
    {
-    "task": "63",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-63.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 63"
+    "task": "6 (#84)",
+    "raw_task": "84",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-84.jpg",
+    "title": "§ 8. Завдання 6 (у збірнику № 84)"
    },
    {
-    "task": "64",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-64.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 64"
+    "task": "7 (#85)",
+    "raw_task": "85",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-85.jpg",
+    "title": "§ 8. Завдання 7 (у збірнику № 85)"
    },
    {
-    "task": "65",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-65.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 65"
+    "task": "8 (#86)",
+    "raw_task": "86",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-86.jpg",
+    "title": "§ 8. Завдання 8 (у збірнику № 86)"
    },
    {
-    "task": "66",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-66.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 66"
+    "task": "9 (#87)",
+    "raw_task": "87",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-87.jpg",
+    "title": "§ 8. Завдання 9 (у збірнику № 87)"
    },
    {
-    "task": "67",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-67.jpg",
-    "title": "§ 6. Кислоти № 58 – 67, завдання 67"
+    "task": "10 (#88)",
+    "raw_task": "88",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-88.jpg",
+    "title": "§ 8. Завдання 10 (у збірнику № 88)"
+   },
+   {
+    "task": "11 (#89)",
+    "raw_task": "89",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-89.jpg",
+    "title": "§ 8. Завдання 11 (у збірнику № 89)"
+   },
+   {
+    "task": "12 (#90)",
+    "raw_task": "90",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-90.jpg",
+    "title": "§ 8. Завдання 12 (у збірнику № 90)"
+   }
+  ],
+  "51": [
+   {
+    "task": "1 (#79)",
+    "raw_task": "79",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-79.jpg",
+    "title": "§ 8. Завдання 1 (у збірнику № 79)"
+   },
+   {
+    "task": "2 (#80)",
+    "raw_task": "80",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-80.jpg",
+    "title": "§ 8. Завдання 2 (у збірнику № 80)"
+   },
+   {
+    "task": "3 (#81)",
+    "raw_task": "81",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-81.jpg",
+    "title": "§ 8. Завдання 3 (у збірнику № 81)"
+   },
+   {
+    "task": "4 (#82)",
+    "raw_task": "82",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-82.jpg",
+    "title": "§ 8. Завдання 4 (у збірнику № 82)"
+   },
+   {
+    "task": "5 (#83)",
+    "raw_task": "83",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-83.jpg",
+    "title": "§ 8. Завдання 5 (у збірнику № 83)"
+   },
+   {
+    "task": "6 (#84)",
+    "raw_task": "84",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-84.jpg",
+    "title": "§ 8. Завдання 6 (у збірнику № 84)"
+   },
+   {
+    "task": "7 (#85)",
+    "raw_task": "85",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-85.jpg",
+    "title": "§ 8. Завдання 7 (у збірнику № 85)"
+   },
+   {
+    "task": "8 (#86)",
+    "raw_task": "86",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-86.jpg",
+    "title": "§ 8. Завдання 8 (у збірнику № 86)"
+   },
+   {
+    "task": "9 (#87)",
+    "raw_task": "87",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-87.jpg",
+    "title": "§ 8. Завдання 9 (у збірнику № 87)"
+   },
+   {
+    "task": "10 (#88)",
+    "raw_task": "88",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-88.jpg",
+    "title": "§ 8. Завдання 10 (у збірнику № 88)"
+   },
+   {
+    "task": "11 (#89)",
+    "raw_task": "89",
+    "para_task": "11",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-89.jpg",
+    "title": "§ 8. Завдання 11 (у збірнику № 89)"
+   },
+   {
+    "task": "12 (#90)",
+    "raw_task": "90",
+    "para_task": "12",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-90.jpg",
+    "title": "§ 8. Завдання 12 (у збірнику № 90)"
+   }
+  ],
+  "55": [
+   {
+    "task": "1 (#91)",
+    "raw_task": "91",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-91.jpg",
+    "title": "§ 9. Завдання 1 (у збірнику № 91)"
+   },
+   {
+    "task": "2 (#92)",
+    "raw_task": "92",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-92.jpg",
+    "title": "§ 9. Завдання 2 (у збірнику № 92)"
+   },
+   {
+    "task": "3 (#93)",
+    "raw_task": "93",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-93.jpg",
+    "title": "§ 9. Завдання 3 (у збірнику № 93)"
+   },
+   {
+    "task": "4 (#94)",
+    "raw_task": "94",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-94.jpg",
+    "title": "§ 9. Завдання 4 (у збірнику № 94)"
+   },
+   {
+    "task": "5 (#95)",
+    "raw_task": "95",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-95.jpg",
+    "title": "§ 9. Завдання 5 (у збірнику № 95)"
+   },
+   {
+    "task": "6 (#96)",
+    "raw_task": "96",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-96.jpg",
+    "title": "§ 9. Завдання 6 (у збірнику № 96)"
+   },
+   {
+    "task": "7 (#97)",
+    "raw_task": "97",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-97.jpg",
+    "title": "§ 9. Завдання 7 (у збірнику № 97)"
+   },
+   {
+    "task": "8 (#98)",
+    "raw_task": "98",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-98.jpg",
+    "title": "§ 9. Завдання 8 (у збірнику № 98)"
+   },
+   {
+    "task": "9 (#99)",
+    "raw_task": "99",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-99.jpg",
+    "title": "§ 9. Завдання 9 (у збірнику № 99)"
    }
   ],
   "56": [
    {
-    "task": "68",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-68.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 68"
-   },
-   {
-    "task": "69",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-69.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 69"
-   },
-   {
-    "task": "70",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-70.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 70"
-   },
-   {
-    "task": "71",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-71.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 71"
-   },
-   {
-    "task": "72",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-72.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 72"
-   },
-   {
-    "task": "73",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-73.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 73"
-   },
-   {
-    "task": "74",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-74.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 74"
-   },
-   {
-    "task": "75",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-75.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 75"
-   },
-   {
-    "task": "76",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-76.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 76"
-   },
-   {
-    "task": "77",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-77.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 77"
-   },
-   {
-    "task": "78",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-78.jpg",
-    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 78"
-   }
-  ],
-  "62": [
-   {
-    "task": "79",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-79.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 79"
-   },
-   {
-    "task": "80",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-80.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 80"
-   },
-   {
-    "task": "81",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-81.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 81"
-   },
-   {
-    "task": "82",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-82.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 82"
-   },
-   {
-    "task": "83",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-83.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 83"
-   },
-   {
-    "task": "84",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-84.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 84"
-   },
-   {
-    "task": "85",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-85.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 85"
-   },
-   {
-    "task": "86",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-86.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 86"
-   },
-   {
-    "task": "87",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-87.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 87"
-   },
-   {
-    "task": "88",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-88.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 88"
-   },
-   {
-    "task": "89",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-89.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 89"
-   },
-   {
-    "task": "90",
-    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-90.jpg",
-    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 90"
-   }
-  ],
-  "67": [
-   {
-    "task": "91",
+    "task": "1 (#91)",
+    "raw_task": "91",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-91.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 91"
+    "title": "§ 9. Завдання 1 (у збірнику № 91)"
    },
    {
-    "task": "92",
+    "task": "2 (#92)",
+    "raw_task": "92",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-92.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 92"
+    "title": "§ 9. Завдання 2 (у збірнику № 92)"
    },
    {
-    "task": "93",
+    "task": "3 (#93)",
+    "raw_task": "93",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-93.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 93"
+    "title": "§ 9. Завдання 3 (у збірнику № 93)"
    },
    {
-    "task": "94",
+    "task": "4 (#94)",
+    "raw_task": "94",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-94.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 94"
+    "title": "§ 9. Завдання 4 (у збірнику № 94)"
    },
    {
-    "task": "95",
+    "task": "5 (#95)",
+    "raw_task": "95",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-95.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 95"
+    "title": "§ 9. Завдання 5 (у збірнику № 95)"
    },
    {
-    "task": "96",
+    "task": "6 (#96)",
+    "raw_task": "96",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-96.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 96"
+    "title": "§ 9. Завдання 6 (у збірнику № 96)"
    },
    {
-    "task": "97",
+    "task": "7 (#97)",
+    "raw_task": "97",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-97.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 97"
+    "title": "§ 9. Завдання 7 (у збірнику № 97)"
    },
    {
-    "task": "98",
+    "task": "8 (#98)",
+    "raw_task": "98",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-98.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 98"
+    "title": "§ 9. Завдання 8 (у збірнику № 98)"
    },
    {
-    "task": "99",
+    "task": "9 (#99)",
+    "raw_task": "99",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-99.jpg",
-    "title": "§ 9. Водневий показник № 91 – 99, завдання 99"
+    "title": "§ 9. Завдання 9 (у збірнику № 99)"
    }
   ],
-  "73": [
+  "60": [
    {
-    "task": "100",
+    "task": "1 (#100)",
+    "raw_task": "100",
+    "para_task": "1",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-100.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 100"
+    "title": "§ 10. Завдання 1 (у збірнику № 100)"
    },
    {
-    "task": "101",
+    "task": "2 (#101)",
+    "raw_task": "101",
+    "para_task": "2",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-101.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 101"
+    "title": "§ 10. Завдання 2 (у збірнику № 101)"
    },
    {
-    "task": "102",
+    "task": "3 (#102)",
+    "raw_task": "102",
+    "para_task": "3",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-102.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 102"
+    "title": "§ 10. Завдання 3 (у збірнику № 102)"
    },
    {
-    "task": "103",
+    "task": "4 (#103)",
+    "raw_task": "103",
+    "para_task": "4",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-103.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 103"
+    "title": "§ 10. Завдання 4 (у збірнику № 103)"
    },
    {
-    "task": "104",
+    "task": "5 (#104)",
+    "raw_task": "104",
+    "para_task": "5",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-104.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 104"
+    "title": "§ 10. Завдання 5 (у збірнику № 104)"
    },
    {
-    "task": "105",
+    "task": "6 (#105)",
+    "raw_task": "105",
+    "para_task": "6",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-105.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 105"
+    "title": "§ 10. Завдання 6 (у збірнику № 105)"
    },
    {
-    "task": "106",
+    "task": "7 (#106)",
+    "raw_task": "106",
+    "para_task": "7",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-106.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 106"
+    "title": "§ 10. Завдання 7 (у збірнику № 106)"
    },
    {
-    "task": "107",
+    "task": "8 (#107)",
+    "raw_task": "107",
+    "para_task": "8",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-107.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 107"
+    "title": "§ 10. Завдання 8 (у збірнику № 107)"
    },
    {
-    "task": "108",
+    "task": "9 (#108)",
+    "raw_task": "108",
+    "para_task": "9",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-108.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 108"
+    "title": "§ 10. Завдання 9 (у збірнику № 108)"
    },
    {
-    "task": "109",
+    "task": "10 (#109)",
+    "raw_task": "109",
+    "para_task": "10",
     "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-109.jpg",
-    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 109"
+    "title": "§ 10. Завдання 10 (у збірнику № 109)"
+   }
+  ],
+  "61": [
+   {
+    "task": "1 (#100)",
+    "raw_task": "100",
+    "para_task": "1",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-100.jpg",
+    "title": "§ 10. Завдання 1 (у збірнику № 100)"
+   },
+   {
+    "task": "2 (#101)",
+    "raw_task": "101",
+    "para_task": "2",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-101.jpg",
+    "title": "§ 10. Завдання 2 (у збірнику № 101)"
+   },
+   {
+    "task": "3 (#102)",
+    "raw_task": "102",
+    "para_task": "3",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-102.jpg",
+    "title": "§ 10. Завдання 3 (у збірнику № 102)"
+   },
+   {
+    "task": "4 (#103)",
+    "raw_task": "103",
+    "para_task": "4",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-103.jpg",
+    "title": "§ 10. Завдання 4 (у збірнику № 103)"
+   },
+   {
+    "task": "5 (#104)",
+    "raw_task": "104",
+    "para_task": "5",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-104.jpg",
+    "title": "§ 10. Завдання 5 (у збірнику № 104)"
+   },
+   {
+    "task": "6 (#105)",
+    "raw_task": "105",
+    "para_task": "6",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-105.jpg",
+    "title": "§ 10. Завдання 6 (у збірнику № 105)"
+   },
+   {
+    "task": "7 (#106)",
+    "raw_task": "106",
+    "para_task": "7",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-106.jpg",
+    "title": "§ 10. Завдання 7 (у збірнику № 106)"
+   },
+   {
+    "task": "8 (#107)",
+    "raw_task": "107",
+    "para_task": "8",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-107.jpg",
+    "title": "§ 10. Завдання 8 (у збірнику № 107)"
+   },
+   {
+    "task": "9 (#108)",
+    "raw_task": "108",
+    "para_task": "9",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-108.jpg",
+    "title": "§ 10. Завдання 9 (у збірнику № 108)"
+   },
+   {
+    "task": "10 (#109)",
+    "raw_task": "109",
+    "para_task": "10",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-109.jpg",
+    "title": "§ 10. Завдання 10 (у збірнику № 109)"
    }
   ]
- },
- "note": "У мережі опубліковано розв'язки до § 1–10 (№ 1–109). Параграфи § 11–54 очікують випуску укладачів."
+ }
 }

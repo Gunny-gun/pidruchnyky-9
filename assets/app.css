@@ -210,6 +210,13 @@ button, input { font: inherit; color: inherit; }
 .hdz-empty-title { font: 800 13px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--n); margin-bottom: 6px; }
 .hdz-empty p { margin: 0; font-size: 13px; line-height: 1.5; color: var(--ink-soft); }
 
+.hdz-coverage-info {
+  background: color-mix(in srgb, var(--n) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--n) 30%, transparent);
+  border-radius: 8px; padding: 10px 12px; margin-bottom: 16px;
+  font: 500 12px/1.45 var(--f-sans); color: var(--ink);
+}
+
 /* Швидкий пошук */
 .hdz-search-box {
   background: rgb(0 0 0 / .35); border: 1px solid var(--desk-edge); border-radius: 12px;
