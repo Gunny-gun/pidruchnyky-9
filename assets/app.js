@@ -12,7 +12,8 @@
   };
 
   const getJSON = async url => {
-    if (!cache.has(url)) cache.set(url, fetch(url).then(r => { if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }));
+    const freshUrl = url.includes('?') ? url : `${url}?v=${Date.now()}`;
+    if (!cache.has(url)) cache.set(url, fetch(freshUrl, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }));
     try { return await cache.get(url); } catch (e) { cache.delete(url); throw e; }
   };
 
