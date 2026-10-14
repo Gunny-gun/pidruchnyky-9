@@ -28,7 +28,7 @@
       "group": "Мови й література",
       "color": "#2f6db3",
       "pages": 277,
-      "page_offset": 2
+      "page_offset": 3
     },
     {
       "slug": "ukr-lit",
@@ -73,7 +73,7 @@
       "group": "Природничі науки",
       "color": "#0e7490",
       "pages": 314,
-      "page_offset": 2
+      "page_offset": 0
     },
     {
       "slug": "biolohiia",

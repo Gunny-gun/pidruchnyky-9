@@ -1,2362 +1,577 @@
 {
  "slug": "khimiia",
+ "author": "П. П. Попель, Л. С. Крикля (НУШ 2026)",
  "source_urls": [
-  "https://shkola.in.ua/2196-hdz-khimiia-9-klas-hryhorovych.html"
+  "https://vshkole.com/9-klass/reshebniki/himiya/pp-popel",
+  "https://4book.org/gdz-reshebniki-ukraina/9-klas/gdz-himiya-9-klas-popel-nush-2026"
  ],
- "total_tasks": 435,
+ "total_tasks": 109,
  "pages": {
-  "0": [
-   {
-    "task": "HDZ-Khimiia-9-klas-Hryhorovych-2026",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/HDZ-Khimiia-9-klas-Hryhorovych-2026.jpg",
-    "title": "HDZ-Khimiia-9-klas-Hryhorovych-2026"
-   },
-   {
-    "task": "148",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-148-2.webp",
-    "title": "№148 (2)"
-   }
-  ],
-  "13": [
+  "17": [
    {
     "task": "1",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-1.webp",
-    "title": "№1"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-1-rnd797.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 1"
    },
    {
     "task": "2",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-2.webp",
-    "title": "№2"
-   }
-  ],
-  "14": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-2-rnd8038.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 2"
+   },
    {
     "task": "3",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-3.webp",
-    "title": "№3"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-3-rnd2459.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 3"
    },
    {
     "task": "4",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-4.webp",
-    "title": "№4"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-4-rnd3917.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 4"
    },
    {
     "task": "5",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-5.webp",
-    "title": "№5"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-5-rnd4221.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 5"
    },
    {
     "task": "6",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-6.webp",
-    "title": "№6"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-6.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 6"
    },
    {
     "task": "7",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-7.webp",
-    "title": "№7"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-7.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 7"
    },
    {
     "task": "8",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-8.webp",
-    "title": "№8"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-8.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 8"
    },
    {
     "task": "9",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-9.webp",
-    "title": "№9"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-9.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 9"
    },
    {
     "task": "10",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-10.webp",
-    "title": "№10"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-10.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 10"
    },
    {
     "task": "11",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-11.webp",
-    "title": "№11"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-11.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 11"
    },
    {
     "task": "12",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-12.webp",
-    "title": "№12"
-   }
-  ],
-  "15": [
-   {
-    "task": "ст.15",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd1-15.webp",
-    "title": "ст.15"
-   }
-  ],
-  "20": [
-   {
-    "task": "13",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-13.webp",
-    "title": "№13"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-12.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 12"
    },
    {
+    "task": "13",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-1-atomi-molekuli-joni-13.jpg",
+    "title": "§ 1. Атоми. Молекули. Йони № 1 – 13, завдання 13"
+   }
+  ],
+  "24": [
+   {
     "task": "14",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-14.webp",
-    "title": "№14"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-14.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 14"
    },
    {
     "task": "15",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-15.webp",
-    "title": "№15"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-15.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 15"
    },
    {
     "task": "16",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-16.webp",
-    "title": "№16"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-16.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 16"
    },
    {
     "task": "17",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-17.webp",
-    "title": "№17"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-17.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 17"
    },
    {
     "task": "18",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-18.webp",
-    "title": "№18"
-   }
-  ],
-  "22": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-18.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 18"
+   },
    {
     "task": "19",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-19.webp",
-    "title": "№19"
-   }
-  ],
-  "27": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-19.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 19"
+   },
    {
     "task": "20",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-20.webp",
-    "title": "№20"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-20.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 20"
    },
    {
     "task": "21",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-21.webp",
-    "title": "№21"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-21.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 21"
    },
    {
     "task": "22",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-22.webp",
-    "title": "№22"
-   }
-  ],
-  "28": [
-   {
-    "task": "23",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-23.webp",
-    "title": "№23"
-   },
-   {
-    "task": "24",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-24.webp",
-    "title": "№24"
-   },
-   {
-    "task": "25",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-25.webp",
-    "title": "№25"
-   },
-   {
-    "task": "26",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-26.webp",
-    "title": "№26"
-   },
-   {
-    "task": "27",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-27.webp",
-    "title": "№27"
-   }
-  ],
-  "29": [
-   {
-    "task": "ст.29",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd2-29.webp",
-    "title": "ст.29"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-2-osnovni-zakoni-himiyi-himichni-reaktsiyi-22.jpg",
+    "title": "§ 2. Основні закони хімії. Хімічні реакції № 14 – 22, завдання 22"
    }
   ],
   "30": [
    {
-    "task": "ст.30",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd2-30.webp",
-    "title": "ст.30"
+    "task": "23",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-23.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 23"
+   },
+   {
+    "task": "24",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-24.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 24"
+   },
+   {
+    "task": "25",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-25.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 25"
+   },
+   {
+    "task": "26",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-26.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 26"
+   },
+   {
+    "task": "27",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-27.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 27"
+   },
+   {
+    "task": "28",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-28.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 28"
+   },
+   {
+    "task": "29",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-29.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 29"
+   },
+   {
+    "task": "30",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-30.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 30"
+   },
+   {
+    "task": "31",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-31.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 31"
+   },
+   {
+    "task": "32",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-32.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 32"
+   },
+   {
+    "task": "33",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-33.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 33"
+   },
+   {
+    "task": "34",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--startuyemo-scho-vi-znayete-z-himiyi-3-kilkisni-rozrahunki-v-himiyi-34.jpg",
+    "title": "§ 3. Кількісні розрахунки в хімії № 23 – 34, завдання 34"
    }
   ],
   "38": [
    {
-    "task": "28",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-28.webp",
-    "title": "№28"
-   },
-   {
-    "task": "29",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-29.webp",
-    "title": "№29"
-   },
-   {
-    "task": "30",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-30.webp",
-    "title": "№30"
-   },
-   {
-    "task": "31",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-31.webp",
-    "title": "№31"
-   },
-   {
-    "task": "32",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-32.webp",
-    "title": "№32"
-   },
-   {
-    "task": "33",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-33.webp",
-    "title": "№33"
-   },
-   {
-    "task": "34",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-34.webp",
-    "title": "№34"
-   },
-   {
     "task": "35",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-35.webp",
-    "title": "№35"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-35.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 35"
    },
    {
     "task": "36",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-36.webp",
-    "title": "№36"
-   }
-  ],
-  "39": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-36.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 36"
+   },
    {
     "task": "37",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-37.webp",
-    "title": "№37"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-37.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 37"
    },
    {
     "task": "38",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-38.webp",
-    "title": "№38"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-38.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 38"
    },
    {
     "task": "39",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-39.webp",
-    "title": "№39"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-39.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 39"
    },
    {
     "task": "40",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-40.webp",
-    "title": "№40"
-   }
-  ],
-  "46": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-40.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 40"
+   },
    {
     "task": "41",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-41.webp",
-    "title": "№41"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-41.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 41"
    },
    {
     "task": "42",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-42.webp",
-    "title": "№42"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-42.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 42"
    },
    {
     "task": "43",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-43.webp",
-    "title": "№43"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-43.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 43"
    },
    {
     "task": "44",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-44.webp",
-    "title": "№44"
-   },
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-4-kisli-ta-luzhni-rozchini-44.jpg",
+    "title": "§ 4. Кислі та лужні розчини № 35 – 44, завдання 44"
+   }
+  ],
+  "44": [
    {
     "task": "45",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-45.webp",
-    "title": "№45"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-45.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 45"
    },
    {
     "task": "46",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-46.webp",
-    "title": "№46"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-46.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 46"
    },
    {
     "task": "47",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-47.webp",
-    "title": "№47"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-47.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 47"
    },
    {
     "task": "48",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-48.webp",
-    "title": "№48"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-48.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 48"
    },
    {
     "task": "49",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-49.webp",
-    "title": "№49"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-49.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 49"
    },
    {
     "task": "50",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-50.webp",
-    "title": "№50"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-50.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 50"
    },
    {
     "task": "51",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-51.webp",
-    "title": "№51"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-51.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 51"
    },
    {
     "task": "52",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-52.webp",
-    "title": "№52"
-   }
-  ],
-  "47": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-52.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 52"
+   },
    {
     "task": "53",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-53.webp",
-    "title": "№53"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-53.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 53"
    },
    {
     "task": "54",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-54.webp",
-    "title": "№54"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-54.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 54"
    },
    {
     "task": "55",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-55.webp",
-    "title": "№55"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-55.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 55"
    },
    {
     "task": "56",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-56.webp",
-    "title": "№56"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-56.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 56"
    },
    {
     "task": "57",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-57.webp",
-    "title": "№57"
-   },
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-5-lugi-osnovi-57.jpg",
+    "title": "§ 5. Луги. Основи № 45 – 57, завдання 57"
+   }
+  ],
+  "50": [
    {
     "task": "58",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-58.webp",
-    "title": "№58"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-58.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 58"
    },
    {
     "task": "59",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-59.webp",
-    "title": "№59"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-59.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 59"
    },
    {
     "task": "60",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-60.webp",
-    "title": "№60"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-60.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 60"
    },
    {
     "task": "61",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-61.webp",
-    "title": "№61"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-61.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 61"
    },
    {
     "task": "62",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-62.webp",
-    "title": "№62"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-62.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 62"
    },
    {
     "task": "63",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-63.webp",
-    "title": "№63"
-   }
-  ],
-  "48": [
-   {
-    "task": "ст.48",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd3-48.webp",
-    "title": "ст.48"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-63.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 63"
    },
    {
-    "task": "ст.48",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd4-48.webp",
-    "title": "ст.48"
-   }
-  ],
-  "51": [
-   {
     "task": "64",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-64.webp",
-    "title": "№64"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-64.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 64"
    },
    {
     "task": "65",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-65.webp",
-    "title": "№65"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-65.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 65"
    },
    {
     "task": "66",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-66.webp",
-    "title": "№66"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-66.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 66"
    },
    {
     "task": "67",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-67.webp",
-    "title": "№67"
-   },
-   {
-    "task": "68",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-68.webp",
-    "title": "№68"
-   },
-   {
-    "task": "69",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-69.webp",
-    "title": "№69"
-   },
-   {
-    "task": "70",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-70.webp",
-    "title": "№70"
-   }
-  ],
-  "52": [
-   {
-    "task": "71",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-71.webp",
-    "title": "№71"
-   },
-   {
-    "task": "72",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-72.webp",
-    "title": "№72"
-   },
-   {
-    "task": "73",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-73.webp",
-    "title": "№73"
-   },
-   {
-    "task": "74",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-74.webp",
-    "title": "№74"
-   }
-  ],
-  "54": [
-   {
-    "task": "ст.54",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd5-54.webp",
-    "title": "ст.54"
-   }
-  ],
-  "55": [
-   {
-    "task": "ст.55",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd6-55.webp",
-    "title": "ст.55"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-6-kisloti-67.jpg",
+    "title": "§ 6. Кислоти № 58 – 67, завдання 67"
    }
   ],
   "56": [
    {
-    "task": "ст.56",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd6-56.webp",
-    "title": "ст.56"
+    "task": "68",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-68.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 68"
    },
    {
-    "task": "ст.56",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd6-56-2.webp",
-    "title": "ст.56"
-   }
-  ],
-  "60": [
+    "task": "69",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-69.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 69"
+   },
+   {
+    "task": "70",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-70.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 70"
+   },
+   {
+    "task": "71",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-71.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 71"
+   },
+   {
+    "task": "72",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-72.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 72"
+   },
+   {
+    "task": "73",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-73.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 73"
+   },
+   {
+    "task": "74",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-74.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 74"
+   },
    {
     "task": "75",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-75.webp",
-    "title": "№75"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-75.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 75"
    },
    {
     "task": "76",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-76.webp",
-    "title": "№76"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-76.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 76"
    },
    {
     "task": "77",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-77.webp",
-    "title": "№77"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-77.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 77"
    },
    {
     "task": "78",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-78.webp",
-    "title": "№78"
-   },
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-7-oderzhannya-kislot-kislotni-opadi-78.jpg",
+    "title": "§ 7. Одержання кислот. Кислотні опади № 68 – 78, завдання 78"
+   }
+  ],
+  "62": [
    {
     "task": "79",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-79.webp",
-    "title": "№79"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-79.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 79"
    },
    {
     "task": "80",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-80.webp",
-    "title": "№80"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-80.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 80"
    },
    {
     "task": "81",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-81.webp",
-    "title": "№81"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-81.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 81"
    },
    {
     "task": "82",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-82.webp",
-    "title": "№82"
-   }
-  ],
-  "65": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-82.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 82"
+   },
    {
     "task": "83",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-83.webp",
-    "title": "№83"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-83.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 83"
    },
    {
     "task": "84",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-84.webp",
-    "title": "№84"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-84.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 84"
    },
    {
     "task": "85",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-85.webp",
-    "title": "№85"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-85.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 85"
    },
    {
     "task": "86",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-86.webp",
-    "title": "№86"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-86.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 86"
    },
    {
     "task": "87",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-87.webp",
-    "title": "№87"
-   }
-  ],
-  "66": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-87.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 87"
+   },
    {
     "task": "88",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-88.webp",
-    "title": "№88"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-88.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 88"
    },
    {
     "task": "89",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-89.webp",
-    "title": "№89"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-89.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 89"
    },
    {
     "task": "90",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-90.webp",
-    "title": "№90"
-   },
-   {
-    "task": "91",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-91.webp",
-    "title": "№91"
-   },
-   {
-    "task": "92",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-92.webp",
-    "title": "№92"
-   },
-   {
-    "task": "93",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-93.webp",
-    "title": "№93"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-8-joni-u-vodnih-rozchinah-kislot-90.jpg",
+    "title": "§ 8. Йони у водних розчинах кислот № 79 – 90, завдання 90"
    }
   ],
   "67": [
    {
-    "task": "ст.67",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd7-67.webp",
-    "title": "ст.67"
-   }
-  ],
-  "69": [
+    "task": "91",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-91.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 91"
+   },
    {
-    "task": "ст.69",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd8-69.webp",
-    "title": "ст.69"
-   }
-  ],
-  "70": [
+    "task": "92",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-92.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 92"
+   },
    {
-    "task": "ст.70",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd8-70.webp",
-    "title": "ст.70"
-   }
-  ],
-  "76": [
+    "task": "93",
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-93.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 93"
+   },
    {
     "task": "94",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-94.webp",
-    "title": "№94"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-94.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 94"
    },
    {
     "task": "95",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-95.webp",
-    "title": "№95"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-95.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 95"
    },
    {
     "task": "96",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-96.webp",
-    "title": "№96"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-96.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 96"
    },
    {
     "task": "97",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-97.webp",
-    "title": "№97"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-97.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 97"
    },
    {
     "task": "98",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-98.webp",
-    "title": "№98"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-98.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 98"
    },
    {
     "task": "99",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-99.webp",
-    "title": "№99"
-   },
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-9-vodnevij-pokaznik-99.jpg",
+    "title": "§ 9. Водневий показник № 91 – 99, завдання 99"
+   }
+  ],
+  "73": [
    {
     "task": "100",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-100.webp",
-    "title": "№100"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-100.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 100"
    },
    {
     "task": "101",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-101.webp",
-    "title": "№101"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-101.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 101"
    },
    {
     "task": "102",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-102.webp",
-    "title": "№102"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-102.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 102"
    },
    {
     "task": "103",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-103.webp",
-    "title": "№103"
-   }
-  ],
-  "82": [
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-103.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 103"
+   },
    {
     "task": "104",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-104.webp",
-    "title": "№104"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-104.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 104"
    },
    {
     "task": "105",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-105.webp",
-    "title": "№105"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-105.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 105"
    },
    {
     "task": "106",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-106.webp",
-    "title": "№106"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-106.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 106"
    },
    {
     "task": "107",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-107.webp",
-    "title": "№107"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-107.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 107"
    },
    {
     "task": "108",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-108.webp",
-    "title": "№108"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-108.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 108"
    },
    {
     "task": "109",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-109.webp",
-    "title": "№109"
-   },
-   {
-    "task": "110",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-110.webp",
-    "title": "№110"
-   },
-   {
-    "task": "111",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-111.webp",
-    "title": "№111"
-   },
-   {
-    "task": "112",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-112.webp",
-    "title": "№112"
-   }
-  ],
-  "83": [
-   {
-    "task": "113",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-113.webp",
-    "title": "№113"
-   },
-   {
-    "task": "114",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-114.webp",
-    "title": "№114"
-   },
-   {
-    "task": "115",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-115.webp",
-    "title": "№115"
-   },
-   {
-    "task": "116",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-116.webp",
-    "title": "№116"
-   },
-   {
-    "task": "117",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-117.webp",
-    "title": "№117"
-   },
-   {
-    "task": "118",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-118.webp",
-    "title": "№118"
-   },
-   {
-    "task": "119",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-119.webp",
-    "title": "№119"
-   },
-   {
-    "task": "120",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-120.webp",
-    "title": "№120"
-   }
-  ],
-  "88": [
-   {
-    "task": "121",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-121.webp",
-    "title": "№121"
-   },
-   {
-    "task": "122",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-122.webp",
-    "title": "№122"
-   },
-   {
-    "task": "123",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-123.webp",
-    "title": "№123"
-   },
-   {
-    "task": "124",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-124.webp",
-    "title": "№124"
-   },
-   {
-    "task": "125",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-125.webp",
-    "title": "№125"
-   },
-   {
-    "task": "126",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-126.webp",
-    "title": "№126"
-   },
-   {
-    "task": "127",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-127.webp",
-    "title": "№127"
-   },
-   {
-    "task": "128",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-128.webp",
-    "title": "№128"
-   },
-   {
-    "task": "129",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-129.webp",
-    "title": "№129"
-   },
-   {
-    "task": "130",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-130.webp",
-    "title": "№130"
-   }
-  ],
-  "95": [
-   {
-    "task": "131",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-131.webp",
-    "title": "№131"
-   },
-   {
-    "task": "132",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-132.webp",
-    "title": "№132"
-   },
-   {
-    "task": "133",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-133.webp",
-    "title": "№133"
-   },
-   {
-    "task": "134",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-134.webp",
-    "title": "№134"
-   },
-   {
-    "task": "135",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-135.webp",
-    "title": "№135"
-   },
-   {
-    "task": "136",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-136.webp",
-    "title": "№136"
-   },
-   {
-    "task": "137",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-137.webp",
-    "title": "№137"
-   },
-   {
-    "task": "138",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-138.webp",
-    "title": "№138"
-   },
-   {
-    "task": "139",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-139.webp",
-    "title": "№139"
-   }
-  ],
-  "96": [
-   {
-    "task": "140",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-140.webp",
-    "title": "№140"
-   },
-   {
-    "task": "141",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-141.webp",
-    "title": "№141"
-   },
-   {
-    "task": "142",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-142.webp",
-    "title": "№142"
-   },
-   {
-    "task": "143",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-143.webp",
-    "title": "№143"
-   },
-   {
-    "task": "144",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-144.webp",
-    "title": "№144"
-   },
-   {
-    "task": "145",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-145.webp",
-    "title": "№145"
-   },
-   {
-    "task": "146",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-146.webp",
-    "title": "№146"
-   }
-  ],
-  "98": [
-   {
-    "task": "ст.98",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd9-98.webp",
-    "title": "ст.98"
-   }
-  ],
-  "99": [
-   {
-    "task": "ст.99",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd9-99.webp",
-    "title": "ст.99"
-   }
-  ],
-  "107": [
-   {
-    "task": "147",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-147.webp",
-    "title": "№147"
-   },
-   {
-    "task": "148",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-148.webp",
-    "title": "№148"
-   },
-   {
-    "task": "149",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-149.webp",
-    "title": "№149"
-   },
-   {
-    "task": "150",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-150.webp",
-    "title": "№150"
-   },
-   {
-    "task": "151",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-151.webp",
-    "title": "№151"
-   },
-   {
-    "task": "152",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-152.webp",
-    "title": "№152"
-   },
-   {
-    "task": "153",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-153.webp",
-    "title": "№153"
-   }
-  ],
-  "108": [
-   {
-    "task": "154",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-154.webp",
-    "title": "№154"
-   },
-   {
-    "task": "155",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-155.webp",
-    "title": "№155"
-   },
-   {
-    "task": "156",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-156.webp",
-    "title": "№156"
-   },
-   {
-    "task": "157",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-157.webp",
-    "title": "№157"
-   }
-  ],
-  "109": [
-   {
-    "task": "158",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-158.webp",
-    "title": "№158"
-   }
-  ],
-  "113": [
-   {
-    "task": "159",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-159.webp",
-    "title": "№159"
-   },
-   {
-    "task": "160",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-160.webp",
-    "title": "№160"
-   },
-   {
-    "task": "161",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-161.webp",
-    "title": "№161"
-   },
-   {
-    "task": "162",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-162.webp",
-    "title": "№162"
-   },
-   {
-    "task": "163",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-163.webp",
-    "title": "№163"
-   },
-   {
-    "task": "164",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-164.webp",
-    "title": "№164"
-   },
-   {
-    "task": "165",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-165.webp",
-    "title": "№165"
-   },
-   {
-    "task": "166",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-166.webp",
-    "title": "№166"
-   },
-   {
-    "task": "167",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-167.webp",
-    "title": "№167"
-   },
-   {
-    "task": "168",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-168.webp",
-    "title": "№168"
-   }
-  ],
-  "114": [
-   {
-    "task": "169",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-169.webp",
-    "title": "№169"
-   },
-   {
-    "task": "170",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-170.webp",
-    "title": "№170"
-   }
-  ],
-  "115": [
-   {
-    "task": "ст.115",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd10-115.webp",
-    "title": "ст.115"
-   },
-   {
-    "task": "ст.115",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd10-115-2.webp",
-    "title": "ст.115"
-   }
-  ],
-  "121": [
-   {
-    "task": "171",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-171.webp",
-    "title": "№171"
-   },
-   {
-    "task": "172",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-172.webp",
-    "title": "№172"
-   },
-   {
-    "task": "173",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-173.webp",
-    "title": "№173"
-   },
-   {
-    "task": "174",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-174.webp",
-    "title": "№174"
-   },
-   {
-    "task": "175",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-175.webp",
-    "title": "№175"
-   },
-   {
-    "task": "176",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-176.webp",
-    "title": "№176"
-   },
-   {
-    "task": "177",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-177.webp",
-    "title": "№177"
-   }
-  ],
-  "122": [
-   {
-    "task": "178",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-178.webp",
-    "title": "№178"
-   },
-   {
-    "task": "179",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-179.webp",
-    "title": "№179"
-   }
-  ],
-  "127": [
-   {
-    "task": "180",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-180.webp",
-    "title": "№180"
-   },
-   {
-    "task": "181",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-181.webp",
-    "title": "№181"
-   },
-   {
-    "task": "182",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-182.webp",
-    "title": "№182"
-   }
-  ],
-  "128": [
-   {
-    "task": "183",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-183.webp",
-    "title": "№183"
-   },
-   {
-    "task": "184",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-184.webp",
-    "title": "№184"
-   },
-   {
-    "task": "185",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-185.webp",
-    "title": "№185"
-   },
-   {
-    "task": "186",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-186.webp",
-    "title": "№186"
-   },
-   {
-    "task": "187",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-187.webp",
-    "title": "№187"
-   },
-   {
-    "task": "188",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-188.webp",
-    "title": "№188"
-   }
-  ],
-  "139": [
-   {
-    "task": "189",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-189.webp",
-    "title": "№189"
-   },
-   {
-    "task": "190",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-190.webp",
-    "title": "№190"
-   },
-   {
-    "task": "191",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-191.webp",
-    "title": "№191"
-   },
-   {
-    "task": "192",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-192.webp",
-    "title": "№192"
-   },
-   {
-    "task": "193",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-193.webp",
-    "title": "№193"
-   },
-   {
-    "task": "194",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-194.webp",
-    "title": "№194"
-   },
-   {
-    "task": "195",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-195.webp",
-    "title": "№195"
-   },
-   {
-    "task": "196",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-196.webp",
-    "title": "№196"
-   },
-   {
-    "task": "197",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-197.webp",
-    "title": "№197"
-   },
-   {
-    "task": "198",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-198.webp",
-    "title": "№198"
-   },
-   {
-    "task": "199",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-199.webp",
-    "title": "№199"
-   }
-  ],
-  "140": [
-   {
-    "task": "200",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-200.webp",
-    "title": "№200"
-   },
-   {
-    "task": "201",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-201.webp",
-    "title": "№201"
-   },
-   {
-    "task": "202",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-202.webp",
-    "title": "№202"
-   },
-   {
-    "task": "203",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-203.webp",
-    "title": "№203"
-   },
-   {
-    "task": "204",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-204.webp",
-    "title": "№204"
-   },
-   {
-    "task": "205",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-205.webp",
-    "title": "№205"
-   },
-   {
-    "task": "206",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-206.webp",
-    "title": "№206"
-   },
-   {
-    "task": "207",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-207.webp",
-    "title": "№207"
-   },
-   {
-    "task": "208",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-208.webp",
-    "title": "№208"
-   },
-   {
-    "task": "209",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-209.webp",
-    "title": "№209"
-   }
-  ],
-  "147": [
-   {
-    "task": "210",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-210.webp",
-    "title": "№210"
-   },
-   {
-    "task": "211",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-211.webp",
-    "title": "№211"
-   }
-  ],
-  "148": [
-   {
-    "task": "212",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-212.webp",
-    "title": "№212"
-   },
-   {
-    "task": "213",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-213.webp",
-    "title": "№213"
-   },
-   {
-    "task": "214",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-214.webp",
-    "title": "№214"
-   },
-   {
-    "task": "215",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-215.webp",
-    "title": "№215"
-   },
-   {
-    "task": "216",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-216.webp",
-    "title": "№216"
-   },
-   {
-    "task": "217",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-217.webp",
-    "title": "№217"
-   },
-   {
-    "task": "218",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-218.webp",
-    "title": "№218"
-   },
-   {
-    "task": "219",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-219.webp",
-    "title": "№219"
-   },
-   {
-    "task": "220",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-220.webp",
-    "title": "№220"
-   },
-   {
-    "task": "221",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-221.webp",
-    "title": "№221"
-   },
-   {
-    "task": "222",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-222.webp",
-    "title": "№222"
-   }
-  ],
-  "154": [
-   {
-    "task": "223",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-223.webp",
-    "title": "№223"
-   },
-   {
-    "task": "224",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-224.webp",
-    "title": "№224"
-   },
-   {
-    "task": "225",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-225.webp",
-    "title": "№225"
-   },
-   {
-    "task": "226",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-226.webp",
-    "title": "№226"
-   },
-   {
-    "task": "227",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-227.webp",
-    "title": "№227"
-   },
-   {
-    "task": "228",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-228.webp",
-    "title": "№228"
-   }
-  ],
-  "155": [
-   {
-    "task": "229",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-229.webp",
-    "title": "№229"
-   }
-  ],
-  "156": [
-   {
-    "task": "230",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-230.webp",
-    "title": "№230"
-   },
-   {
-    "task": "231",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-231.webp",
-    "title": "№231"
-   },
-   {
-    "task": "232",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-232.webp",
-    "title": "№232"
-   },
-   {
-    "task": "233",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-233.webp",
-    "title": "№233"
-   },
-   {
-    "task": "234",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-234.webp",
-    "title": "№234"
-   },
-   {
-    "task": "235",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-235.webp",
-    "title": "№235"
-   },
-   {
-    "task": "236",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-236.webp",
-    "title": "№236"
-   }
-  ],
-  "163": [
-   {
-    "task": "237",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-237.webp",
-    "title": "№237"
-   }
-  ],
-  "164": [
-   {
-    "task": "238",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-238.webp",
-    "title": "№238"
-   },
-   {
-    "task": "239",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-239.webp",
-    "title": "№239"
-   },
-   {
-    "task": "240",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-240.webp",
-    "title": "№240"
-   },
-   {
-    "task": "241",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-241.webp",
-    "title": "№241"
-   },
-   {
-    "task": "242",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-242.webp",
-    "title": "№242"
-   },
-   {
-    "task": "243",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-243.webp",
-    "title": "№243"
-   },
-   {
-    "task": "244",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-244.webp",
-    "title": "№244"
-   },
-   {
-    "task": "245",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-245.webp",
-    "title": "№245"
-   },
-   {
-    "task": "246",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-246.webp",
-    "title": "№246"
-   },
-   {
-    "task": "247",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-247.webp",
-    "title": "№247"
-   }
-  ],
-  "165": [
-   {
-    "task": "248",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-248.webp",
-    "title": "№248"
-   }
-  ],
-  "170": [
-   {
-    "task": "249",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-249.webp",
-    "title": "№249"
-   },
-   {
-    "task": "250",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-250.webp",
-    "title": "№250"
-   }
-  ],
-  "171": [
-   {
-    "task": "251",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-251.webp",
-    "title": "№251"
-   },
-   {
-    "task": "252",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-252.webp",
-    "title": "№252"
-   },
-   {
-    "task": "253",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-253.webp",
-    "title": "№253"
-   },
-   {
-    "task": "254",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-254.webp",
-    "title": "№254"
-   },
-   {
-    "task": "255",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-255.webp",
-    "title": "№255"
-   },
-   {
-    "task": "256",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-256.webp",
-    "title": "№256"
-   },
-   {
-    "task": "257",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-257.webp",
-    "title": "№257"
-   },
-   {
-    "task": "258",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-258.webp",
-    "title": "№258"
-   },
-   {
-    "task": "259",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-259.webp",
-    "title": "№259"
-   },
-   {
-    "task": "260",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-260.webp",
-    "title": "№260"
-   },
-   {
-    "task": "261",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-261.webp",
-    "title": "№261"
-   }
-  ],
-  "175": [
-   {
-    "task": "262",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-262.webp",
-    "title": "№262"
-   }
-  ],
-  "176": [
-   {
-    "task": "263",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-263.webp",
-    "title": "№263"
-   },
-   {
-    "task": "264",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-264.webp",
-    "title": "№264"
-   },
-   {
-    "task": "265",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-265.webp",
-    "title": "№265"
-   },
-   {
-    "task": "266",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-266.webp",
-    "title": "№266"
-   }
-  ],
-  "177": [
-   {
-    "task": "267",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-267.webp",
-    "title": "№267"
-   },
-   {
-    "task": "268",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-268.webp",
-    "title": "№268"
-   },
-   {
-    "task": "269",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-269.webp",
-    "title": "№269"
-   }
-  ],
-  "182": [
-   {
-    "task": "270",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-270.webp",
-    "title": "№270"
-   },
-   {
-    "task": "271",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-271.webp",
-    "title": "№271"
-   },
-   {
-    "task": "272",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-272.webp",
-    "title": "№272"
-   },
-   {
-    "task": "273",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-273.webp",
-    "title": "№273"
-   },
-   {
-    "task": "274",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-274.webp",
-    "title": "№274"
-   },
-   {
-    "task": "275",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-275.webp",
-    "title": "№275"
-   },
-   {
-    "task": "276",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-276.webp",
-    "title": "№276"
-   },
-   {
-    "task": "277",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-277.webp",
-    "title": "№277"
-   }
-  ],
-  "183": [
-   {
-    "task": "278",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-278.webp",
-    "title": "№278"
-   },
-   {
-    "task": "279",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-279.webp",
-    "title": "№279"
-   },
-   {
-    "task": "280",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-280.webp",
-    "title": "№280"
-   },
-   {
-    "task": "281",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-281.webp",
-    "title": "№281"
-   },
-   {
-    "task": "282",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-282.webp",
-    "title": "№282"
-   },
-   {
-    "task": "283",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-283.webp",
-    "title": "№283"
-   }
-  ],
-  "188": [
-   {
-    "task": "284",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-284.webp",
-    "title": "№284"
-   },
-   {
-    "task": "285",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-285.webp",
-    "title": "№285"
-   },
-   {
-    "task": "286",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-286.webp",
-    "title": "№286"
-   },
-   {
-    "task": "287",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-287.webp",
-    "title": "№287"
-   },
-   {
-    "task": "288",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-288.webp",
-    "title": "№288"
-   },
-   {
-    "task": "289",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-289.webp",
-    "title": "№289"
-   },
-   {
-    "task": "290",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-290.webp",
-    "title": "№290"
-   }
-  ],
-  "189": [
-   {
-    "task": "291",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-291.webp",
-    "title": "№291"
-   }
-  ],
-  "190": [
-   {
-    "task": "292",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-292.webp",
-    "title": "№292"
-   },
-   {
-    "task": "293",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-293.webp",
-    "title": "№293"
-   },
-   {
-    "task": "294",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-294.webp",
-    "title": "№294"
-   },
-   {
-    "task": "295",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-295.webp",
-    "title": "№295"
-   },
-   {
-    "task": "296",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-296.webp",
-    "title": "№296"
-   },
-   {
-    "task": "297",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-297.webp",
-    "title": "№297"
-   },
-   {
-    "task": "298",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-298.webp",
-    "title": "№298"
-   },
-   {
-    "task": "299",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-299.webp",
-    "title": "№299"
-   },
-   {
-    "task": "300",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-300.webp",
-    "title": "№300"
-   }
-  ],
-  "191": [
-   {
-    "task": "ст.191",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd11-191.webp",
-    "title": "ст.191"
-   },
-   {
-    "task": "ст.191",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd11-191-2.webp",
-    "title": "ст.191"
-   }
-  ],
-  "197": [
-   {
-    "task": "301",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-301.webp",
-    "title": "№301"
-   },
-   {
-    "task": "302",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-302.webp",
-    "title": "№302"
-   },
-   {
-    "task": "303",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-303.webp",
-    "title": "№303"
-   },
-   {
-    "task": "304",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-304.webp",
-    "title": "№304"
-   }
-  ],
-  "198": [
-   {
-    "task": "305",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-305.webp",
-    "title": "№305"
-   },
-   {
-    "task": "306",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-306.webp",
-    "title": "№306"
-   },
-   {
-    "task": "307",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-307.webp",
-    "title": "№307"
-   },
-   {
-    "task": "308",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-308.webp",
-    "title": "№308"
-   },
-   {
-    "task": "309",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-309.webp",
-    "title": "№309"
-   },
-   {
-    "task": "310",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-310.webp",
-    "title": "№310"
-   },
-   {
-    "task": "311",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-311.webp",
-    "title": "№311"
-   },
-   {
-    "task": "312",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-312.webp",
-    "title": "№312"
-   }
-  ],
-  "205": [
-   {
-    "task": "313",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-313.webp",
-    "title": "№313"
-   },
-   {
-    "task": "314",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-314.webp",
-    "title": "№314"
-   },
-   {
-    "task": "315",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-315.webp",
-    "title": "№315"
-   },
-   {
-    "task": "316",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-316.webp",
-    "title": "№316"
-   },
-   {
-    "task": "317",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-317.webp",
-    "title": "№317"
-   },
-   {
-    "task": "318",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-318.webp",
-    "title": "№318"
-   },
-   {
-    "task": "319",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-319.webp",
-    "title": "№319"
-   }
-  ],
-  "206": [
-   {
-    "task": "320",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-320.webp",
-    "title": "№320"
-   },
-   {
-    "task": "321",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-321.webp",
-    "title": "№321"
-   },
-   {
-    "task": "322",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-322.webp",
-    "title": "№322"
-   },
-   {
-    "task": "323",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-323.webp",
-    "title": "№323"
-   },
-   {
-    "task": "324",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-324.webp",
-    "title": "№324"
-   },
-   {
-    "task": "325",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-325.webp",
-    "title": "№325"
-   },
-   {
-    "task": "326",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-326.webp",
-    "title": "№326"
-   },
-   {
-    "task": "327",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-327.webp",
-    "title": "№327"
-   }
-  ],
-  "215": [
-   {
-    "task": "328",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-328.webp",
-    "title": "№328"
-   },
-   {
-    "task": "329",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-329.webp",
-    "title": "№329"
-   },
-   {
-    "task": "330",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-330.webp",
-    "title": "№330"
-   },
-   {
-    "task": "331",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-331.webp",
-    "title": "№331"
-   },
-   {
-    "task": "332",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-332.webp",
-    "title": "№332"
-   },
-   {
-    "task": "333",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-333.webp",
-    "title": "№333"
-   },
-   {
-    "task": "334",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-334.webp",
-    "title": "№334"
-   },
-   {
-    "task": "335",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-335.webp",
-    "title": "№335"
-   }
-  ],
-  "216": [
-   {
-    "task": "ст.216",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd12-216.webp",
-    "title": "ст.216"
-   }
-  ],
-  "221": [
-   {
-    "task": "336",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-336.webp",
-    "title": "№336"
-   },
-   {
-    "task": "337",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-337.webp",
-    "title": "№337"
-   },
-   {
-    "task": "338",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-338.webp",
-    "title": "№338"
-   }
-  ],
-  "222": [
-   {
-    "task": "339",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-339.webp",
-    "title": "№339"
-   },
-   {
-    "task": "340",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-340.webp",
-    "title": "№340"
-   },
-   {
-    "task": "341",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-341.webp",
-    "title": "№341"
-   },
-   {
-    "task": "342",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-342.webp",
-    "title": "№342"
-   },
-   {
-    "task": "343",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-343.webp",
-    "title": "№343"
-   },
-   {
-    "task": "344",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-344.webp",
-    "title": "№344"
-   },
-   {
-    "task": "345",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-345.webp",
-    "title": "№345"
-   },
-   {
-    "task": "346",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-346.webp",
-    "title": "№346"
-   }
-  ],
-  "223": [
-   {
-    "task": "ст.223",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd13-223.webp",
-    "title": "ст.223"
-   }
-  ],
-  "229": [
-   {
-    "task": "347",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-347.webp",
-    "title": "№347"
-   }
-  ],
-  "230": [
-   {
-    "task": "348",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-348.webp",
-    "title": "№348"
-   },
-   {
-    "task": "349",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-349.webp",
-    "title": "№349"
-   },
-   {
-    "task": "350",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-350.webp",
-    "title": "№350"
-   },
-   {
-    "task": "351",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-351.webp",
-    "title": "№351"
-   },
-   {
-    "task": "352",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-352.webp",
-    "title": "№352"
-   },
-   {
-    "task": "353",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-353.webp",
-    "title": "№353"
-   },
-   {
-    "task": "354",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-354.webp",
-    "title": "№354"
-   }
-  ],
-  "231": [
-   {
-    "task": "355",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-355.webp",
-    "title": "№355"
-   },
-   {
-    "task": "356",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-356.webp",
-    "title": "№356"
-   },
-   {
-    "task": "357",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-357.webp",
-    "title": "№357"
-   },
-   {
-    "task": "358",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-358.webp",
-    "title": "№358"
-   },
-   {
-    "task": "359",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-359.webp",
-    "title": "№359"
-   }
-  ],
-  "239": [
-   {
-    "task": "360",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-360.webp",
-    "title": "№360"
-   },
-   {
-    "task": "361",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-361.webp",
-    "title": "№361"
-   },
-   {
-    "task": "362",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-362.webp",
-    "title": "№362"
-   },
-   {
-    "task": "363",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-363.webp",
-    "title": "№363"
-   },
-   {
-    "task": "364",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-364.webp",
-    "title": "№364"
-   },
-   {
-    "task": "365",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-365.webp",
-    "title": "№365"
-   },
-   {
-    "task": "366",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-366.webp",
-    "title": "№366"
-   }
-  ],
-  "240": [
-   {
-    "task": "367",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-367.webp",
-    "title": "№367"
-   },
-   {
-    "task": "368",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-368.webp",
-    "title": "№368"
-   },
-   {
-    "task": "369",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-369.webp",
-    "title": "№369"
-   },
-   {
-    "task": "370",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-370.webp",
-    "title": "№370"
-   },
-   {
-    "task": "371",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-371.webp",
-    "title": "№371"
-   },
-   {
-    "task": "372",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-372.webp",
-    "title": "№372"
-   },
-   {
-    "task": "373",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-373.webp",
-    "title": "№373"
-   },
-   {
-    "task": "374",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-374.webp",
-    "title": "№374"
-   },
-   {
-    "task": "375",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-375.webp",
-    "title": "№375"
-   },
-   {
-    "task": "376",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-376.webp",
-    "title": "№376"
-   },
-   {
-    "task": "377",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-377.webp",
-    "title": "№377"
-   }
-  ],
-  "245": [
-   {
-    "task": "378",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-378.webp",
-    "title": "№378"
-   },
-   {
-    "task": "379",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-379.webp",
-    "title": "№379"
-   },
-   {
-    "task": "380",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-380.webp",
-    "title": "№380"
-   },
-   {
-    "task": "381",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-381.webp",
-    "title": "№381"
-   },
-   {
-    "task": "382",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-382.webp",
-    "title": "№382"
-   },
-   {
-    "task": "383",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-383.webp",
-    "title": "№383"
-   },
-   {
-    "task": "384",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-384.webp",
-    "title": "№384"
-   },
-   {
-    "task": "385",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-385.webp",
-    "title": "№385"
-   }
-  ],
-  "248": [
-   {
-    "task": "386",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-386.webp",
-    "title": "№386"
-   }
-  ],
-  "249": [
-   {
-    "task": "387",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-387.webp",
-    "title": "№387"
-   },
-   {
-    "task": "388",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-388.webp",
-    "title": "№388"
-   },
-   {
-    "task": "389",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-389.webp",
-    "title": "№389"
-   },
-   {
-    "task": "390",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-390.webp",
-    "title": "№390"
-   },
-   {
-    "task": "391",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-391.webp",
-    "title": "№391"
-   }
-  ],
-  "250": [
-   {
-    "task": "ст.250",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-nd14-250.webp",
-    "title": "ст.250"
-   }
-  ],
-  "256": [
-   {
-    "task": "392",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-392.webp",
-    "title": "№392"
-   },
-   {
-    "task": "393",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-393.webp",
-    "title": "№393"
-   },
-   {
-    "task": "394",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-394.webp",
-    "title": "№394"
-   },
-   {
-    "task": "395",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-395.webp",
-    "title": "№395"
-   }
-  ],
-  "263": [
-   {
-    "task": "396",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-396.webp",
-    "title": "№396"
-   }
-  ],
-  "264": [
-   {
-    "task": "397",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-397.webp",
-    "title": "№397"
-   }
-  ],
-  "265": [
-   {
-    "task": "398",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-398.webp",
-    "title": "№398"
-   },
-   {
-    "task": "399",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-399.webp",
-    "title": "№399"
-   },
-   {
-    "task": "400",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-400.webp",
-    "title": "№400"
-   },
-   {
-    "task": "401",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-401.webp",
-    "title": "№401"
-   },
-   {
-    "task": "402",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-402.webp",
-    "title": "№402"
-   },
-   {
-    "task": "403",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-403.webp",
-    "title": "№403"
-   },
-   {
-    "task": "404",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-404.webp",
-    "title": "№404"
-   }
-  ],
-  "269": [
-   {
-    "task": "405",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-405.webp",
-    "title": "№405"
-   },
-   {
-    "task": "406",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-406.webp",
-    "title": "№406"
-   },
-   {
-    "task": "407",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-407.webp",
-    "title": "№407"
-   },
-   {
-    "task": "408",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-408.webp",
-    "title": "№408"
-   },
-   {
-    "task": "409",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-409.webp",
-    "title": "№409"
-   },
-   {
-    "task": "410",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-410.webp",
-    "title": "№410"
-   },
-   {
-    "task": "411",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-411.webp",
-    "title": "№411"
-   }
-  ],
-  "270": [
-   {
-    "task": "412",
-    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Khimiia/h-9-kh-hr/h-9-kh-hr-z-412.webp",
-    "title": "№412"
+    "img": "https://vshkole.com/web/images/uploads/answerbookcontents/9-himiya-pp-popel--rozdil-1-doslidzhuyemo-osnovi-kisloti-amfoterni-gidroksidi-oksidi-soli-10-reaktsiyi-osnov-z-kislotami-109.jpg",
+    "title": "§ 10. Реакції основ з кислотами № 100 – 109, завдання 109"
    }
   ]
- }
+ },
+ "note": "У мережі опубліковано розв'язки до § 1–10 (№ 1–109). Параграфи § 11–54 очікують випуску укладачів."
 }
