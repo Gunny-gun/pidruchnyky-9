@@ -1,7 +1,101 @@
 {
- "slug": "istoriia-ukr",
- "author": "О. І. Пометун, Н. М. Гупан, О. В. Дудар, П. В. Мороз (НУШ 2026)",
- "note": "Офіційний розв'язник для підручника Пометун НУШ 2026 наразі не опубліковано укладачами ГДЗ у відкритому доступі.",
- "total_tasks": 0,
- "pages": {}
+  "slug": "istoriia-ukr",
+  "source_urls": [
+    "https://shkola.in.ua/3559-hdz-istoriia-ukrainy-9-klas-pometun.html"
+  ],
+  "total_tasks": 15,
+  "pages": {
+    "0": [
+      {
+        "task": "HDZ-Istoria-Ukrajiny-9-klas-Pometun-2026",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/HDZ-Istoria-Ukrajiny-9-klas-Pometun-2026.jpg",
+        "title": "ГДЗ Історія України 9 клас Пометун 2026"
+      }
+    ],
+    "4": [
+      {
+        "task": "Обгов. № 1 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-4-obhovorit-u-klasi-zavdannia-1.webp",
+        "title": "Сторінка 4, обговоріть у класі, завдання 1"
+      },
+      {
+        "task": "Обгов. № 2 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-4-obhovorit-u-klasi-zavdannia-2.webp",
+        "title": "Сторінка 4, обговоріть у класі, завдання 2"
+      },
+      {
+        "task": "Обгов. № 3 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-4-obhovorit-u-klasi-zavdannia-3.webp",
+        "title": "Сторінка 4, обговоріть у класі, завдання 3"
+      },
+      {
+        "task": "Обгов. № 4 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-4-obhovorit-u-klasi-zavdannia-4.webp",
+        "title": "Сторінка 4, обговоріть у класі, завдання 4"
+      }
+    ],
+    "5": [
+      {
+        "task": "Поміркуйте § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-5-pomirkuite.webp",
+        "title": "Сторінка 5, поміркуйте"
+      }
+    ],
+    "6": [
+      {
+        "task": "Обговоріть § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-6-obhovorit-u-klasi.webp",
+        "title": "Сторінка 6, обговоріть у класі"
+      },
+      {
+        "task": "Поміркуйте § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-6-pomirkuite.webp",
+        "title": "Сторінка 6, поміркуйте"
+      }
+    ],
+    "7": [
+      {
+        "task": "Дослідіть § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-7-doslidit.webp",
+        "title": "Сторінка 7, дослідіть"
+      }
+    ],
+    "8": [
+      {
+        "task": "№ 1 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-1.webp",
+        "title": "Сторінка 8, завдання 1"
+      },
+      {
+        "task": "№ 2 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-2.webp",
+        "title": "Сторінка 8, завдання 2"
+      },
+      {
+        "task": "№ 3 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-3.webp",
+        "title": "Сторінка 8, завдання 3"
+      },
+      {
+        "task": "№ 4 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-4.webp",
+        "title": "Сторінка 8, завдання 4"
+      },
+      {
+        "task": "№ 5 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-5.webp",
+        "title": "Сторінка 8, завдання 5"
+      },
+      {
+        "task": "№ 6 § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-zavdannia-6.webp",
+        "title": "Сторінка 8, завдання 6"
+      },
+      {
+        "task": "А ще ти можеш § 1",
+        "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Istorija-Ukrajiny/h-9-iu-po/h-9-iu-po-storinka-8-a-shche-ty-mozhesh.webp",
+        "title": "Сторінка 8, а ще ти можеш"
+      }
+    ]
+  }
 }
