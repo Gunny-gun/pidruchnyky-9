@@ -46,7 +46,7 @@
       "group": "Мови й література",
       "color": "#9d3b6e",
       "pages": 311,
-      "page_offset": 2
+      "page_offset": 0
     },
     {
       "slug": "english",
@@ -64,7 +64,7 @@
       "group": "Природничі науки",
       "color": "#1b4f8a",
       "pages": 294,
-      "page_offset": 2
+      "page_offset": 3
     },
     {
       "slug": "khimiia",
@@ -82,7 +82,7 @@
       "group": "Природничі науки",
       "color": "#3f7d20",
       "pages": 282,
-      "page_offset": 2
+      "page_offset": 1
     },
     {
       "slug": "heohrafiia",
@@ -91,7 +91,7 @@
       "group": "Природничі науки",
       "color": "#a16207",
       "pages": 287,
-      "page_offset": 2
+      "page_offset": 0
     },
     {
       "slug": "istoriia-ukr",
@@ -100,7 +100,7 @@
       "group": "Суспільство",
       "color": "#b45309",
       "pages": 271,
-      "page_offset": 2
+      "page_offset": 0
     },
     {
       "slug": "vsesvitnia",
@@ -109,7 +109,7 @@
       "group": "Суспільство",
       "color": "#78350f",
       "pages": 207,
-      "page_offset": 2
+      "page_offset": 0
     },
     {
       "slug": "pravoznavstvo",
@@ -118,7 +118,7 @@
       "group": "Суспільство",
       "color": "#9a3412",
       "pages": 181,
-      "page_offset": 2
+      "page_offset": 1
     },
     {
       "slug": "informatyka",
