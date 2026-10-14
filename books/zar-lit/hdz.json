@@ -1,0 +1,2319 @@
+{
+ "slug": "zar-lit",
+ "source_urls": [
+  "https://shkola.in.ua/3388-hdz-zarubizhna-literatura-9-klas-nikolenko.html"
+ ],
+ "total_tasks": 416,
+ "pages": {
+  "0": [
+   {
+    "task": "HDZ-Zarubizhna-literatura-9-klas-Nikolenko-2026",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/HDZ-Zarubizhna-literatura-9-klas-Nikolenko-2026.jpg",
+    "title": "HDZ-Zarubizhna-literatura-9-klas-Nikolenko-2026"
+   }
+  ],
+  "7": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-7-zavdannia-1.webp",
+    "title": "Сторінка 7, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-7-zavdannia-2.webp",
+    "title": "Сторінка 7, завдання 2"
+   }
+  ],
+  "9": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-1.webp",
+    "title": "Сторінка 9, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-2.webp",
+    "title": "Сторінка 9, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-3.webp",
+    "title": "Сторінка 9, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-4.webp",
+    "title": "Сторінка 9, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-5.webp",
+    "title": "Сторінка 9, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-9-zavdannia-6.webp",
+    "title": "Сторінка 9, завдання 6"
+   }
+  ],
+  "10": [
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-10-zavdannia-7.webp",
+    "title": "Сторінка 10, завдання 7"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-10-zavdannia-1.webp",
+    "title": "Сторінка 10, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-10-zavdannia-2.webp",
+    "title": "Сторінка 10, завдання 2"
+   }
+  ],
+  "12": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-12-zavdannia-1.webp",
+    "title": "Сторінка 12, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-12-zavdannia-2.webp",
+    "title": "Сторінка 12, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-12-zavdannia-3.webp",
+    "title": "Сторінка 12, завдання 3"
+   }
+  ],
+  "13": [
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-4.webp",
+    "title": "Сторінка 13, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-5.webp",
+    "title": "Сторінка 13, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-6.webp",
+    "title": "Сторінка 13, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-7.webp",
+    "title": "Сторінка 13, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-8.webp",
+    "title": "Сторінка 13, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-13-zavdannia-9.webp",
+    "title": "Сторінка 13, завдання 9"
+   }
+  ],
+  "14": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-14-zavdannia-1.webp",
+    "title": "Сторінка 14, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-14-zavdannia-2.webp",
+    "title": "Сторінка 14, завдання 2"
+   }
+  ],
+  "23": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-1.webp",
+    "title": "Сторінка 23, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-2.webp",
+    "title": "Сторінка 23, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-3.webp",
+    "title": "Сторінка 23, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-4.webp",
+    "title": "Сторінка 23, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-5.webp",
+    "title": "Сторінка 23, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-6.webp",
+    "title": "Сторінка 23, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-7.webp",
+    "title": "Сторінка 23, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-23-zavdannia-8.webp",
+    "title": "Сторінка 23, завдання 8"
+   }
+  ],
+  "24": [
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-9.webp",
+    "title": "Сторінка 24, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-10.webp",
+    "title": "Сторінка 24, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-11.webp",
+    "title": "Сторінка 24, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-12.webp",
+    "title": "Сторінка 24, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-13.webp",
+    "title": "Сторінка 24, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-14.webp",
+    "title": "Сторінка 24, завдання 14"
+   },
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-24-zavdannia-15.webp",
+    "title": "Сторінка 24, завдання 15"
+   }
+  ],
+  "25": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-25-zavdannia-1.webp",
+    "title": "Сторінка 25, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-25-zavdannia-2.webp",
+    "title": "Сторінка 25, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-25-zavdannia-3.webp",
+    "title": "Сторінка 25, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-25-zavdannia-4.webp",
+    "title": "Сторінка 25, завдання 4"
+   }
+  ],
+  "27": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-27-zavdannia-1.webp",
+    "title": "Сторінка 27, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-27-zavdannia-2.webp",
+    "title": "Сторінка 27, завдання 2"
+   }
+  ],
+  "29": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-1.webp",
+    "title": "Сторінка 29, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-2.webp",
+    "title": "Сторінка 29, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-3.webp",
+    "title": "Сторінка 29, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-4.webp",
+    "title": "Сторінка 29, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-5.webp",
+    "title": "Сторінка 29, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-6.webp",
+    "title": "Сторінка 29, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-7.webp",
+    "title": "Сторінка 29, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-8.webp",
+    "title": "Сторінка 29, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-9.webp",
+    "title": "Сторінка 29, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-29-zavdannia-10.webp",
+    "title": "Сторінка 29, завдання 10"
+   }
+  ],
+  "30": [
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-30-zavdannia-11.webp",
+    "title": "Сторінка 30, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-30-zavdannia-12.webp",
+    "title": "Сторінка 30, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-30-zavdannia-13.webp",
+    "title": "Сторінка 30, завдання 13"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-30-zavdannia-1.webp",
+    "title": "Сторінка 30, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-30-zavdannia-2.webp",
+    "title": "Сторінка 30, завдання 2"
+   }
+  ],
+  "33": [
+   {
+    "task": "Сторінка 33",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-33.webp",
+    "title": "Сторінка 33"
+   }
+  ],
+  "34": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-1.webp",
+    "title": "Сторінка 34, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-2.webp",
+    "title": "Сторінка 34, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-3.webp",
+    "title": "Сторінка 34, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-4.webp",
+    "title": "Сторінка 34, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-5.webp",
+    "title": "Сторінка 34, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-6.webp",
+    "title": "Сторінка 34, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-7.webp",
+    "title": "Сторінка 34, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-8.webp",
+    "title": "Сторінка 34, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-9.webp",
+    "title": "Сторінка 34, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-10.webp",
+    "title": "Сторінка 34, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-34-zavdannia-11.webp",
+    "title": "Сторінка 34, завдання 11"
+   }
+  ],
+  "35": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-35-zavdannia-1.webp",
+    "title": "Сторінка 35, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-35-zavdannia-2.webp",
+    "title": "Сторінка 35, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-35-zavdannia-3.webp",
+    "title": "Сторінка 35, завдання 3"
+   }
+  ],
+  "42": [
+   {
+    "task": "Сторінка 42",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-42.webp",
+    "title": "Сторінка 42"
+   }
+  ],
+  "45": [
+   {
+    "task": "Сторінка 45",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-45.webp",
+    "title": "Сторінка 45"
+   }
+  ],
+  "48": [
+   {
+    "task": "Сторінка 48",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-48.webp",
+    "title": "Сторінка 48"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-48-zavdannia-1.webp",
+    "title": "Сторінка 48, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-48-zavdannia-2.webp",
+    "title": "Сторінка 48, завдання 2"
+   }
+  ],
+  "50": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-50-zavdannia-1.webp",
+    "title": "Сторінка 50, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-50-zavdannia-2.webp",
+    "title": "Сторінка 50, завдання 2"
+   }
+  ],
+  "53": [
+   {
+    "task": "Сторінка 53",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-53.webp",
+    "title": "Сторінка 53"
+   }
+  ],
+  "54": [
+   {
+    "task": "Сторінка 54",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-54.webp",
+    "title": "Сторінка 54"
+   }
+  ],
+  "58": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-1.webp",
+    "title": "Сторінка 58, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-2.webp",
+    "title": "Сторінка 58, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-3.webp",
+    "title": "Сторінка 58, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-4.webp",
+    "title": "Сторінка 58, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-5.webp",
+    "title": "Сторінка 58, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-6.webp",
+    "title": "Сторінка 58, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-7.webp",
+    "title": "Сторінка 58, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-58-zavdannia-8.webp",
+    "title": "Сторінка 58, завдання 8"
+   }
+  ],
+  "59": [
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-9.webp",
+    "title": "Сторінка 59, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-10.webp",
+    "title": "Сторінка 59, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-11.webp",
+    "title": "Сторінка 59, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-12.webp",
+    "title": "Сторінка 59, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-13.webp",
+    "title": "Сторінка 59, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-14.webp",
+    "title": "Сторінка 59, завдання 14"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-1.webp",
+    "title": "Сторінка 59, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-59-zavdannia-2.webp",
+    "title": "Сторінка 59, завдання 2"
+   }
+  ],
+  "62": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-62-zavdannia-1.webp",
+    "title": "Сторінка 62, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-62-zavdannia-2.webp",
+    "title": "Сторінка 62, завдання 2"
+   }
+  ],
+  "64": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-64-zavdannia-1.webp",
+    "title": "Сторінка 64, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-64-zavdannia-2.webp",
+    "title": "Сторінка 64, завдання 2"
+   }
+  ],
+  "67": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-67-zavdannia-1.webp",
+    "title": "Сторінка 67, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-67-zavdannia-2.webp",
+    "title": "Сторінка 67, завдання 2"
+   }
+  ],
+  "68": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-68-zavdannia-1.webp",
+    "title": "Сторінка 68, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-68-zavdannia-2.webp",
+    "title": "Сторінка 68, завдання 2"
+   }
+  ],
+  "71": [
+   {
+    "task": "1 рубрики «Розвиваємо емоційний інтелект»",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-emotsiinyi-intelekt-zavdannia-1.webp",
+    "title": "Сторінка 71, емоційний інтелект, завдання 1"
+   },
+   {
+    "task": "2 рубрики «Розвиваємо емоційний інтелект»",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-emotsiinyi-intelekt-zavdannia-2.webp",
+    "title": "Сторінка 71, емоційний інтелект, завдання 2"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-zavdannia-1.webp",
+    "title": "Сторінка 71, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-zavdannia-2.webp",
+    "title": "Сторінка 71, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-zavdannia-3.webp",
+    "title": "Сторінка 71, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-71-zavdannia-4.webp",
+    "title": "Сторінка 71, завдання 4"
+   }
+  ],
+  "72": [
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-5.webp",
+    "title": "Сторінка 72, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-6.webp",
+    "title": "Сторінка 72, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-7.webp",
+    "title": "Сторінка 72, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-8.webp",
+    "title": "Сторінка 72, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-9.webp",
+    "title": "Сторінка 72, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-10.webp",
+    "title": "Сторінка 72, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-11.webp",
+    "title": "Сторінка 72, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-12.webp",
+    "title": "Сторінка 72, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-72-zavdannia-13.webp",
+    "title": "Сторінка 72, завдання 13"
+   }
+  ],
+  "73": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-73-zavdannia-1.webp",
+    "title": "Сторінка 73, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-73-zavdannia-2.webp",
+    "title": "Сторінка 73, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-73-zavdannia-3.webp",
+    "title": "Сторінка 73, завдання 3"
+   }
+  ],
+  "80": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-1.webp",
+    "title": "Сторінка 80, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-2.webp",
+    "title": "Сторінка 80, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-3.webp",
+    "title": "Сторінка 80, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-4.webp",
+    "title": "Сторінка 80, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-5.webp",
+    "title": "Сторінка 80, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-6.webp",
+    "title": "Сторінка 80, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-7.webp",
+    "title": "Сторінка 80, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-8.webp",
+    "title": "Сторінка 80, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-80-zavdannia-9.webp",
+    "title": "Сторінка 80, завдання 9"
+   }
+  ],
+  "81": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-81-zavdannia-1.webp",
+    "title": "Сторінка 81, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-81-zavdannia-2.webp",
+    "title": "Сторінка 81, завдання 2"
+   }
+  ],
+  "87": [
+   {
+    "task": "Сторінка 87",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-87.webp",
+    "title": "Сторінка 87"
+   }
+  ],
+  "88": [
+   {
+    "task": "Сторінка 88",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-88.webp",
+    "title": "Сторінка 88"
+   }
+  ],
+  "89": [
+   {
+    "task": "Сторінка 89",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-89.webp",
+    "title": "Сторінка 89"
+   }
+  ],
+  "90": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-90-zavdannia-1.webp",
+    "title": "Сторінка 90, завдання 1"
+   }
+  ],
+  "91": [
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-2.webp",
+    "title": "Сторінка 91, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-3.webp",
+    "title": "Сторінка 91, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-4.webp",
+    "title": "Сторінка 91, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-5.webp",
+    "title": "Сторінка 91, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-6.webp",
+    "title": "Сторінка 91, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-7.webp",
+    "title": "Сторінка 91, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-8.webp",
+    "title": "Сторінка 91, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-9.webp",
+    "title": "Сторінка 91, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-10.webp",
+    "title": "Сторінка 91, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-11.webp",
+    "title": "Сторінка 91, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-12.webp",
+    "title": "Сторінка 91, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-13.webp",
+    "title": "Сторінка 91, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-14.webp",
+    "title": "Сторінка 91, завдання 14"
+   },
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-15.webp",
+    "title": "Сторінка 91, завдання 15"
+   },
+   {
+    "task": "16",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-16.webp",
+    "title": "Сторінка 91, завдання 16"
+   },
+   {
+    "task": "17",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-91-zavdannia-17.webp",
+    "title": "Сторінка 91, завдання 17"
+   }
+  ],
+  "92": [
+   {
+    "task": "Сторінка 92",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-92.webp",
+    "title": "Сторінка 92"
+   }
+  ],
+  "98": [
+   {
+    "task": "Сторінка 98",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-98.webp",
+    "title": "Сторінка 98"
+   }
+  ],
+  "99": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-1.webp",
+    "title": "Сторінка 99, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-2.webp",
+    "title": "Сторінка 99, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-3.webp",
+    "title": "Сторінка 99, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-4.webp",
+    "title": "Сторінка 99, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-5.webp",
+    "title": "Сторінка 99, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-6.webp",
+    "title": "Сторінка 99, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-7.webp",
+    "title": "Сторінка 99, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-8.webp",
+    "title": "Сторінка 99, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-9.webp",
+    "title": "Сторінка 99, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-99-zavdannia-10.webp",
+    "title": "Сторінка 99, завдання 10"
+   }
+  ],
+  "100": [
+   {
+    "task": "Сторінка 100",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-100.webp",
+    "title": "Сторінка 100"
+   }
+  ],
+  "101": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-1.webp",
+    "title": "Сторінка 101, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-2.webp",
+    "title": "Сторінка 101, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-3.webp",
+    "title": "Сторінка 101, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-4.webp",
+    "title": "Сторінка 101, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-5.webp",
+    "title": "Сторінка 101, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-6.webp",
+    "title": "Сторінка 101, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-7.webp",
+    "title": "Сторінка 101, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-101-zavdannia-8.webp",
+    "title": "Сторінка 101, завдання 8"
+   }
+  ],
+  "104": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-104-zavdannia-1.webp",
+    "title": "Сторінка 104, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-104-zavdannia-2.webp",
+    "title": "Сторінка 104, завдання 2"
+   }
+  ],
+  "106": [
+   {
+    "task": "Сторінка 106",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-106.webp",
+    "title": "Сторінка 106"
+   }
+  ],
+  "107": [
+   {
+    "task": "Сторінка 107",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-107.webp",
+    "title": "Сторінка 107"
+   }
+  ],
+  "109": [
+   {
+    "task": "Сторінка 109",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-109.webp",
+    "title": "Сторінка 109"
+   }
+  ],
+  "111": [
+   {
+    "task": "Сторінка 111",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-111.webp",
+    "title": "Сторінка 111"
+   }
+  ],
+  "112": [
+   {
+    "task": "Сторінка 112",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-112.webp",
+    "title": "Сторінка 112"
+   }
+  ],
+  "113": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-1.webp",
+    "title": "Сторінка 113, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-2.webp",
+    "title": "Сторінка 113, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-3.webp",
+    "title": "Сторінка 113, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-4.webp",
+    "title": "Сторінка 113, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-5.webp",
+    "title": "Сторінка 113, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-113-zavdannia-6.webp",
+    "title": "Сторінка 113, завдання 6"
+   }
+  ],
+  "114": [
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-114-zavdannia-7.webp",
+    "title": "Сторінка 114, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-114-zavdannia-8.webp",
+    "title": "Сторінка 114, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-114-zavdannia-9.webp",
+    "title": "Сторінка 114, завдання 9"
+   },
+   {
+    "task": "Сторінка 114",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-114.webp",
+    "title": "Сторінка 114"
+   }
+  ],
+  "123": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-123-zavdannia-1.webp",
+    "title": "Сторінка 123, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-123-zavdannia-2.webp",
+    "title": "Сторінка 123, завдання 2"
+   }
+  ],
+  "126": [
+   {
+    "task": "Сторінка 126",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-126.webp",
+    "title": "Сторінка 126"
+   }
+  ],
+  "128": [
+   {
+    "task": "Сторінка 128",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-128.webp",
+    "title": "Сторінка 128"
+   }
+  ],
+  "129": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-129-zavdannia-1.webp",
+    "title": "Сторінка 129, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-129-zavdannia-2.webp",
+    "title": "Сторінка 129, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-129-zavdannia-3.webp",
+    "title": "Сторінка 129, завдання 3"
+   }
+  ],
+  "133": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-133-zavdannia-1.webp",
+    "title": "Сторінка 133, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-133-zavdannia-2.webp",
+    "title": "Сторінка 133, завдання 2"
+   },
+   {
+    "task": "Сторінка 133",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-133.webp",
+    "title": "Сторінка 133"
+   }
+  ],
+  "134": [
+   {
+    "task": "Сторінка 134",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-134.webp",
+    "title": "Сторінка 134"
+   }
+  ],
+  "137": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-1.webp",
+    "title": "Сторінка 137, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-2.webp",
+    "title": "Сторінка 137, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-3.webp",
+    "title": "Сторінка 137, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-4.webp",
+    "title": "Сторінка 137, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-5.webp",
+    "title": "Сторінка 137, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-6.webp",
+    "title": "Сторінка 137, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-7.webp",
+    "title": "Сторінка 137, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-8.webp",
+    "title": "Сторінка 137, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-9.webp",
+    "title": "Сторінка 137, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-10.webp",
+    "title": "Сторінка 137, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-11.webp",
+    "title": "Сторінка 137, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-12.webp",
+    "title": "Сторінка 137, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-137-zavdannia-13.webp",
+    "title": "Сторінка 137, завдання 13"
+   }
+  ],
+  "138": [
+   {
+    "task": "Сторінка 138",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-138.webp",
+    "title": "Сторінка 138"
+   }
+  ],
+  "145": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-145-zavdannia-1.webp",
+    "title": "Сторінка 145, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-145-zavdannia-2.webp",
+    "title": "Сторінка 145, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-145-zavdannia-3.webp",
+    "title": "Сторінка 145, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-145-zavdannia-4.webp",
+    "title": "Сторінка 145, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-145-zavdannia-5.webp",
+    "title": "Сторінка 145, завдання 5"
+   }
+  ],
+  "146": [
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-6.webp",
+    "title": "Сторінка 146, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-7.webp",
+    "title": "Сторінка 146, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-8.webp",
+    "title": "Сторінка 146, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-9.webp",
+    "title": "Сторінка 146, завдання 9"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-1.webp",
+    "title": "Сторінка 146, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-2.webp",
+    "title": "Сторінка 146, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-146-zavdannia-3.webp",
+    "title": "Сторінка 146, завдання 3"
+   }
+  ],
+  "158": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-158-zavdannia-1.webp",
+    "title": "Сторінка 158, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-158-zavdannia-2.webp",
+    "title": "Сторінка 158, завдання 2"
+   }
+  ],
+  "159": [
+   {
+    "task": "Сторінка 159",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-159.webp",
+    "title": "Сторінка 159"
+   }
+  ],
+  "163": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163-zavdannia-1.webp",
+    "title": "Сторінка 163, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163-zavdannia-2.webp",
+    "title": "Сторінка 163, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163-zavdannia-3.webp",
+    "title": "Сторінка 163, завдання 3"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163-zavdannia-1-2.webp",
+    "title": "Сторінка 163, завдання 1 (2)"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163-zavdannia-2-2.webp",
+    "title": "Сторінка 163, завдання 2 (2)"
+   },
+   {
+    "task": "Сторінка 163",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-163.webp",
+    "title": "Сторінка 163"
+   }
+  ],
+  "165": [
+   {
+    "task": "Сторінка 165",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-165.webp",
+    "title": "Сторінка 165"
+   }
+  ],
+  "173": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-1.webp",
+    "title": "Сторінка 173, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-2.webp",
+    "title": "Сторінка 173, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-3.webp",
+    "title": "Сторінка 173, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-4.webp",
+    "title": "Сторінка 173, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-5.webp",
+    "title": "Сторінка 173, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-173-zavdannia-6.webp",
+    "title": "Сторінка 173, завдання 6"
+   }
+  ],
+  "174": [
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-7.webp",
+    "title": "Сторінка 174, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-8.webp",
+    "title": "Сторінка 174, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-9.webp",
+    "title": "Сторінка 174, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-10.webp",
+    "title": "Сторінка 174, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-11.webp",
+    "title": "Сторінка 174, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-12.webp",
+    "title": "Сторінка 174, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-13.webp",
+    "title": "Сторінка 174, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-14.webp",
+    "title": "Сторінка 174, завдання 14"
+   },
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-15.webp",
+    "title": "Сторінка 174, завдання 15"
+   },
+   {
+    "task": "16",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-16.webp",
+    "title": "Сторінка 174, завдання 16"
+   },
+   {
+    "task": "17",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-174-zavdannia-17.webp",
+    "title": "Сторінка 174, завдання 17"
+   }
+  ],
+  "175": [
+   {
+    "task": "Сторінка 175",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-175.webp",
+    "title": "Сторінка 175"
+   }
+  ],
+  "179": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-179-zavdannia-1.webp",
+    "title": "Сторінка 179, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-179-zavdannia-2.webp",
+    "title": "Сторінка 179, завдання 2"
+   }
+  ],
+  "180": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-180-zavdannia-1.webp",
+    "title": "Сторінка 180, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-180-zavdannia-2.webp",
+    "title": "Сторінка 180, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-180-zavdannia-3.webp",
+    "title": "Сторінка 180, завдання 3"
+   }
+  ],
+  "184": [
+   {
+    "task": "Сторінка 184",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-184.webp",
+    "title": "Сторінка 184"
+   }
+  ],
+  "187": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-187-zavdannia-1.webp",
+    "title": "Сторінка 187, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-187-zavdannia-2.webp",
+    "title": "Сторінка 187, завдання 2"
+   },
+   {
+    "task": "Сторінка 187",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-187.webp",
+    "title": "Сторінка 187"
+   }
+  ],
+  "189": [
+   {
+    "task": "Сторінка 189",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-189.webp",
+    "title": "Сторінка 189"
+   }
+  ],
+  "193": [
+   {
+    "task": "Сторінка 193, запитання 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-193-zapytannia-1.webp",
+    "title": "Сторінка 193, запитання 1"
+   },
+   {
+    "task": "Сторінка 193, запитання 2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-193-zapytannia-2.webp",
+    "title": "Сторінка 193, запитання 2"
+   }
+  ],
+  "196": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-1.webp",
+    "title": "Сторінка 196, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-2.webp",
+    "title": "Сторінка 196, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-3.webp",
+    "title": "Сторінка 196, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-4.webp",
+    "title": "Сторінка 196, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-5.webp",
+    "title": "Сторінка 196, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-6.webp",
+    "title": "Сторінка 196, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-7.webp",
+    "title": "Сторінка 196, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-196-zavdannia-8.webp",
+    "title": "Сторінка 196, завдання 8"
+   }
+  ],
+  "197": [
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-197-zavdannia-9.webp",
+    "title": "Сторінка 197, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-197-zavdannia-10.webp",
+    "title": "Сторінка 197, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-197-zavdannia-11.webp",
+    "title": "Сторінка 197, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-197-zavdannia-12.webp",
+    "title": "Сторінка 197, завдання 12"
+   },
+   {
+    "task": "Сторінка 197",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-197.webp",
+    "title": "Сторінка 197"
+   }
+  ],
+  "202": [
+   {
+    "task": "Сторінка 202",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-202.webp",
+    "title": "Сторінка 202"
+   }
+  ],
+  "206": [
+   {
+    "task": "Сторінка 206",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-206.webp",
+    "title": "Сторінка 206"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-206-zavdannia-1.webp",
+    "title": "Сторінка 206, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-206-zavdannia-2.webp",
+    "title": "Сторінка 206, завдання 2"
+   }
+  ],
+  "208": [
+   {
+    "task": "Сторінка 208",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-208.webp",
+    "title": "Сторінка 208"
+   }
+  ],
+  "210": [
+   {
+    "task": "Сторінка 210",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-210.webp",
+    "title": "Сторінка 210"
+   }
+  ],
+  "214": [
+   {
+    "task": "Сторінка 214",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-214.webp",
+    "title": "Сторінка 214"
+   }
+  ],
+  "217": [
+   {
+    "task": "Сторінка 217",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-217.webp",
+    "title": "Сторінка 217"
+   }
+  ],
+  "220": [
+   {
+    "task": "Сторінка 220",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-220.webp",
+    "title": "Сторінка 220"
+   }
+  ],
+  "222": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-222-zavdannia-1.webp",
+    "title": "Сторінка 222, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-222-zavdannia-2.webp",
+    "title": "Сторінка 222, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-222-zavdannia-3.webp",
+    "title": "Сторінка 222, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-222-zavdannia-4.webp",
+    "title": "Сторінка 222, завдання 4"
+   }
+  ],
+  "223": [
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-5.webp",
+    "title": "Сторінка 223, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-6.webp",
+    "title": "Сторінка 223, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-7.webp",
+    "title": "Сторінка 223, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-8.webp",
+    "title": "Сторінка 223, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-9.webp",
+    "title": "Сторінка 223, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-10.webp",
+    "title": "Сторінка 223, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-223-zavdannia-11.webp",
+    "title": "Сторінка 223, завдання 11"
+   }
+  ],
+  "224": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-224-zavdannia-1.webp",
+    "title": "Сторінка 224, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-224-zavdannia-2.webp",
+    "title": "Сторінка 224, завдання 2"
+   }
+  ],
+  "228": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-1.webp",
+    "title": "Сторінка 228, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-2.webp",
+    "title": "Сторінка 228, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-3.webp",
+    "title": "Сторінка 228, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-4.webp",
+    "title": "Сторінка 228, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-5.webp",
+    "title": "Сторінка 228, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-6.webp",
+    "title": "Сторінка 228, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-7.webp",
+    "title": "Сторінка 228, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-228-zavdannia-8.webp",
+    "title": "Сторінка 228, завдання 8"
+   }
+  ],
+  "229": [
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-229-zavdannia-9.webp",
+    "title": "Сторінка 229, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-229-zavdannia-10.webp",
+    "title": "Сторінка 229, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-229-zavdannia-11.webp",
+    "title": "Сторінка 229, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-229-zavdannia-12.webp",
+    "title": "Сторінка 229, завдання 12"
+   },
+   {
+    "task": "Сторінка 229",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-229.webp",
+    "title": "Сторінка 229"
+   }
+  ],
+  "237": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-237-zavdannia-1.webp",
+    "title": "Сторінка 237, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-237-zavdannia-2.webp",
+    "title": "Сторінка 237, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-237-zavdannia-3.webp",
+    "title": "Сторінка 237, завдання 3"
+   },
+   {
+    "task": "Сторінка 237",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-237.webp",
+    "title": "Сторінка 237"
+   }
+  ],
+  "242": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-242-zavdannia-1.webp",
+    "title": "Сторінка 242, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-242-zavdannia-2.webp",
+    "title": "Сторінка 242, завдання 2"
+   }
+  ],
+  "246": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-246-zavdannia-1.webp",
+    "title": "Сторінка 246, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-246-zavdannia-2.webp",
+    "title": "Сторінка 246, завдання 2"
+   }
+  ],
+  "249": [
+   {
+    "task": "Сторінка 249",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-249.webp",
+    "title": "Сторінка 249"
+   }
+  ],
+  "251": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-251-zavdannia-1.webp",
+    "title": "Сторінка 251, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-251-zavdannia-2.webp",
+    "title": "Сторінка 251, завдання 2"
+   }
+  ],
+  "255": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-255-zavdannia-1.webp",
+    "title": "Сторінка 255, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-255-zavdannia-2.webp",
+    "title": "Сторінка 255, завдання 2"
+   }
+  ],
+  "257": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-257-zavdannia-1.webp",
+    "title": "Сторінка 257, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-257-zavdannia-2.webp",
+    "title": "Сторінка 257, завдання 2"
+   },
+   {
+    "task": "Сторінка 257",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-257.webp",
+    "title": "Сторінка 257"
+   }
+  ],
+  "258": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-258-zavdannia-1.webp",
+    "title": "Сторінка 258, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-258-zavdannia-2.webp",
+    "title": "Сторінка 258, завдання 2"
+   }
+  ],
+  "260": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-260-zavdannia-1.webp",
+    "title": "Сторінка 260, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-260-zavdannia-2.webp",
+    "title": "Сторінка 260, завдання 2"
+   }
+  ],
+  "261": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-261-zavdannia-1.webp",
+    "title": "Сторінка 261, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-261-zavdannia-2.webp",
+    "title": "Сторінка 261, завдання 2"
+   }
+  ],
+  "262": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-1.webp",
+    "title": "Сторінка 262, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-2.webp",
+    "title": "Сторінка 262, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-3.webp",
+    "title": "Сторінка 262, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-4.webp",
+    "title": "Сторінка 262, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-5.webp",
+    "title": "Сторінка 262, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-6.webp",
+    "title": "Сторінка 262, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-7.webp",
+    "title": "Сторінка 262, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-8.webp",
+    "title": "Сторінка 262, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-9.webp",
+    "title": "Сторінка 262, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-10.webp",
+    "title": "Сторінка 262, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-11.webp",
+    "title": "Сторінка 262, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-12.webp",
+    "title": "Сторінка 262, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-13.webp",
+    "title": "Сторінка 262, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-14.webp",
+    "title": "Сторінка 262, завдання 14"
+   },
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-262-zavdannia-15.webp",
+    "title": "Сторінка 262, завдання 15"
+   }
+  ],
+  "263": [
+   {
+    "task": "16",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-263-zavdannia-16.webp",
+    "title": "Сторінка 263, завдання 16"
+   },
+   {
+    "task": "17",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-263-zavdannia-17.webp",
+    "title": "Сторінка 263, завдання 17"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-263-zavdannia-1.webp",
+    "title": "Сторінка 263, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-263-zavdannia-2.webp",
+    "title": "Сторінка 263, завдання 2"
+   }
+  ],
+  "269": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-269-zavdannia-1.webp",
+    "title": "Сторінка 269, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-269-zavdannia-2.webp",
+    "title": "Сторінка 269, завдання 2"
+   }
+  ],
+  "274": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-274-zavdannia-1.webp",
+    "title": "Сторінка 274, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-274-zavdannia-2.webp",
+    "title": "Сторінка 274, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-274-zavdannia-3.webp",
+    "title": "Сторінка 274, завдання 3"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-274-zavdannia-1-2.webp",
+    "title": "Сторінка 274, завдання 1 (2)"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-274-zavdannia-2-2.webp",
+    "title": "Сторінка 274, завдання 2 (2)"
+   }
+  ],
+  "276": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-276-zavdannia-1.webp",
+    "title": "Сторінка 276, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-276-zavdannia-2.webp",
+    "title": "Сторінка 276, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-276-zavdannia-3.webp",
+    "title": "Сторінка 276, завдання 3"
+   }
+  ],
+  "280": [
+   {
+    "task": "Сторінка 280, запитання 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-280-zapytannia-1.webp",
+    "title": "Сторінка 280, запитання 1"
+   },
+   {
+    "task": "Сторінка 280, запитання 2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-280-zapytannia-2.webp",
+    "title": "Сторінка 280, запитання 2"
+   }
+  ],
+  "283": [
+   {
+    "task": "Сторінка 283",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-283.webp",
+    "title": "Сторінка 283"
+   }
+  ],
+  "284": [
+   {
+    "task": "Сторінка 284",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-284.webp",
+    "title": "Сторінка 284"
+   }
+  ],
+  "288": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-288-zavdannia-1.webp",
+    "title": "Сторінка 288, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-288-zavdannia-2.webp",
+    "title": "Сторінка 288, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-288-zavdannia-3.webp",
+    "title": "Сторінка 288, завдання 3"
+   }
+  ],
+  "289": [
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-4.webp",
+    "title": "Сторінка 289, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-5.webp",
+    "title": "Сторінка 289, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-6.webp",
+    "title": "Сторінка 289, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-7.webp",
+    "title": "Сторінка 289, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-8.webp",
+    "title": "Сторінка 289, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-9.webp",
+    "title": "Сторінка 289, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-10.webp",
+    "title": "Сторінка 289, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-11.webp",
+    "title": "Сторінка 289, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-12.webp",
+    "title": "Сторінка 289, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-13.webp",
+    "title": "Сторінка 289, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-14.webp",
+    "title": "Сторінка 289, завдання 14"
+   },
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-15.webp",
+    "title": "Сторінка 289, завдання 15"
+   },
+   {
+    "task": "16",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-289-zavdannia-16.webp",
+    "title": "Сторінка 289, завдання 16"
+   }
+  ],
+  "290": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-290-zavdannia-1.webp",
+    "title": "Сторінка 290, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-290-zavdannia-2.webp",
+    "title": "Сторінка 290, завдання 2"
+   }
+  ],
+  "296": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-296-zavdannia-1.webp",
+    "title": "Сторінка 296, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-296-zavdannia-2.webp",
+    "title": "Сторінка 296, завдання 2"
+   }
+  ],
+  "300": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-300-zavdannia-1.webp",
+    "title": "Сторінка 300, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-300-zavdannia-2.webp",
+    "title": "Сторінка 300, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-300-zavdannia-3.webp",
+    "title": "Сторінка 300, завдання 3"
+   }
+  ],
+  "303": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-303-zavdannia-1.webp",
+    "title": "Сторінка 303, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-303-zavdannia-2.webp",
+    "title": "Сторінка 303, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-303-zavdannia-3.webp",
+    "title": "Сторінка 303, завдання 3"
+   }
+  ],
+  "306": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-306-zavdannia-1.webp",
+    "title": "Сторінка 306, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-306-zavdannia-2.webp",
+    "title": "Сторінка 306, завдання 2"
+   }
+  ],
+  "308": [
+   {
+    "task": "Сторінка 308",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-308.webp",
+    "title": "Сторінка 308"
+   }
+  ],
+  "309": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-1.webp",
+    "title": "Сторінка 309, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-2.webp",
+    "title": "Сторінка 309, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-3.webp",
+    "title": "Сторінка 309, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-4.webp",
+    "title": "Сторінка 309, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-5.webp",
+    "title": "Сторінка 309, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-6.webp",
+    "title": "Сторінка 309, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-7.webp",
+    "title": "Сторінка 309, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-8.webp",
+    "title": "Сторінка 309, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-9.webp",
+    "title": "Сторінка 309, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-10.webp",
+    "title": "Сторінка 309, завдання 10"
+   },
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-11.webp",
+    "title": "Сторінка 309, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-12.webp",
+    "title": "Сторінка 309, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Zarubizhna-literatura/h-9-zl-ni/h-9-zl-ni-storinka-309-zavdannia-13.webp",
+    "title": "Сторінка 309, завдання 13"
+   }
+  ]
+ }
+}

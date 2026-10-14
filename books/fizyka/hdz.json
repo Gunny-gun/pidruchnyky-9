@@ -1,0 +1,547 @@
+{
+ "slug": "fizyka",
+ "source_urls": [
+  "https://shkola.in.ua/2195-hdz-fizyka-9-klas-bar-iakhtar.html"
+ ],
+ "total_tasks": 98,
+ "pages": {
+  "0": [
+   {
+    "task": "HDZ-Fizyka-9-klas-Bariakhtar-2026",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/HDZ-Fizyka-9-klas-Bariakhtar-2026.jpg",
+    "title": "HDZ-Fizyka-9-klas-Bariakhtar-2026"
+   }
+  ],
+  "6": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-1.webp",
+    "title": "Фізична база, завдання 1"
+   }
+  ],
+  "7": [
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-2.webp",
+    "title": "Фізична база, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-3.webp",
+    "title": "Фізична база, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-4.webp",
+    "title": "Фізична база, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-5.webp",
+    "title": "Фізична база, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-6.webp",
+    "title": "Фізична база, завдання 6"
+   }
+  ],
+  "8": [
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-7.webp",
+    "title": "Фізична база, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-8.webp",
+    "title": "Фізична база, завдання 8"
+   },
+   {
+    "task": "9",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-9.webp",
+    "title": "Фізична база, завдання 9"
+   },
+   {
+    "task": "10",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-10.webp",
+    "title": "Фізична база, завдання 10"
+   }
+  ],
+  "9": [
+   {
+    "task": "11",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-11.webp",
+    "title": "Фізична база, завдання 11"
+   },
+   {
+    "task": "12",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-12.webp",
+    "title": "Фізична база, завдання 12"
+   },
+   {
+    "task": "13",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-13.webp",
+    "title": "Фізична база, завдання 13"
+   },
+   {
+    "task": "14",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-14.webp",
+    "title": "Фізична база, завдання 14"
+   }
+  ],
+  "10": [
+   {
+    "task": "15",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-15.webp",
+    "title": "Фізична база, завдання 15"
+   },
+   {
+    "task": "16",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-16.webp",
+    "title": "Фізична база, завдання 16"
+   },
+   {
+    "task": "17",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-17.webp",
+    "title": "Фізична база, завдання 17"
+   },
+   {
+    "task": "18",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-18.webp",
+    "title": "Фізична база, завдання 18"
+   }
+  ],
+  "11": [
+   {
+    "task": "19",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-19.webp",
+    "title": "Фізична база, завдання 19"
+   },
+   {
+    "task": "20",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-20.webp",
+    "title": "Фізична база, завдання 20"
+   },
+   {
+    "task": "21",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-21.webp",
+    "title": "Фізична база, завдання 21"
+   },
+   {
+    "task": "22",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-fb-22.webp",
+    "title": "Фізична база, завдання 22"
+   }
+  ],
+  "17": [
+   {
+    "task": "§ 1. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-1.webp",
+    "title": "§ 1. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-1.webp",
+    "title": "Вправа № 1, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-2.webp",
+    "title": "Вправа № 1, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-3.webp",
+    "title": "Вправа № 1, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-4.webp",
+    "title": "Вправа № 1, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-5.webp",
+    "title": "Вправа № 1, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-6.webp",
+    "title": "Вправа № 1, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-7.webp",
+    "title": "Вправа № 1, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr1-8.webp",
+    "title": "Вправа № 1, завдання 8"
+   }
+  ],
+  "18": [
+   {
+    "task": "TOP SKILLS: робота з інформацією (§ 1)",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-top-18.webp",
+    "title": "TOP SKILLS: робота з інформацією (§ 1)"
+   }
+  ],
+  "19": [
+   {
+    "task": "Лабораторна робота № 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-lr-1.webp",
+    "title": "Лабораторна робота № 1"
+   }
+  ],
+  "25": [
+   {
+    "task": "§ 2. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-2.webp",
+    "title": "§ 2. Контрольні запитання"
+   }
+  ],
+  "26": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-1.webp",
+    "title": "Вправа № 2, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-2.webp",
+    "title": "Вправа № 2, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-3.webp",
+    "title": "Вправа № 2, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-4.webp",
+    "title": "Вправа № 2, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-5.webp",
+    "title": "Вправа № 2, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-6.webp",
+    "title": "Вправа № 2, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-7.webp",
+    "title": "Вправа № 2, завдання 7"
+   },
+   {
+    "task": "8",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr2-8.webp",
+    "title": "Вправа № 2, завдання 8"
+   }
+  ],
+  "31": [
+   {
+    "task": "§ 3. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-3.webp",
+    "title": "§ 3. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-1.webp",
+    "title": "Вправа № 3, завдання 1"
+   }
+  ],
+  "32": [
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-2.webp",
+    "title": "Вправа № 3, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-3.webp",
+    "title": "Вправа № 3, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-4.webp",
+    "title": "Вправа № 3, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-5.webp",
+    "title": "Вправа № 3, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-6.webp",
+    "title": "Вправа № 3, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr3-7.webp",
+    "title": "Вправа № 3, завдання 7"
+   }
+  ],
+  "33": [
+   {
+    "task": "Лабораторна робота № 2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-lr-2.webp",
+    "title": "Лабораторна робота № 2"
+   }
+  ],
+  "39": [
+   {
+    "task": "§ 4. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-4.webp",
+    "title": "§ 4. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-1.webp",
+    "title": "Вправа № 4, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-2.webp",
+    "title": "Вправа № 4, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-3.webp",
+    "title": "Вправа № 4, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-4.webp",
+    "title": "Вправа № 4, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-5.webp",
+    "title": "Вправа № 4, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr4-6.webp",
+    "title": "Вправа № 4, завдання 6"
+   }
+  ],
+  "45": [
+   {
+    "task": "§ 5. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-5.webp",
+    "title": "§ 5. Контрольні запитання"
+   }
+  ],
+  "46": [
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-1.webp",
+    "title": "Вправа № 5, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-2.webp",
+    "title": "Вправа № 5, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-3.webp",
+    "title": "Вправа № 5, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-4.webp",
+    "title": "Вправа № 5, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-5.webp",
+    "title": "Вправа № 5, завдання 5"
+   },
+   {
+    "task": "6",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-6.webp",
+    "title": "Вправа № 5, завдання 6"
+   },
+   {
+    "task": "7",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr5-7.webp",
+    "title": "Вправа № 5, завдання 7"
+   }
+  ],
+  "50": [
+   {
+    "task": "§ 6. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-6.webp",
+    "title": "§ 6. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr6-1.webp",
+    "title": "Вправа № 6, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr6-2.webp",
+    "title": "Вправа № 6, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr6-3.webp",
+    "title": "Вправа № 6, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr6-4.webp",
+    "title": "Вправа № 6, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr6-5.webp",
+    "title": "Вправа № 6, завдання 5"
+   }
+  ],
+  "55": [
+   {
+    "task": "§ 7. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-7.webp",
+    "title": "§ 7. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr7-1.webp",
+    "title": "Вправа № 7, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr7-2.webp",
+    "title": "Вправа № 7, завдання 2"
+   },
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr7-3.webp",
+    "title": "Вправа № 7, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr7-4.webp",
+    "title": "Вправа № 7, завдання 4"
+   }
+  ],
+  "61": [
+   {
+    "task": "§ 8. Контрольні запитання",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-kz-8.webp",
+    "title": "§ 8. Контрольні запитання"
+   },
+   {
+    "task": "1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr8-1.webp",
+    "title": "Вправа № 8, завдання 1"
+   },
+   {
+    "task": "2",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr8-2.webp",
+    "title": "Вправа № 8, завдання 2"
+   }
+  ],
+  "62": [
+   {
+    "task": "3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr8-3.webp",
+    "title": "Вправа № 8, завдання 3"
+   },
+   {
+    "task": "4",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr8-4.webp",
+    "title": "Вправа № 8, завдання 4"
+   },
+   {
+    "task": "5",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-vpr8-5.webp",
+    "title": "Вправа № 8, завдання 5"
+   },
+   {
+    "task": "Лабораторна робота № 3",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-lr-3.webp",
+    "title": "Лабораторна робота № 3"
+   }
+  ],
+  "66": [
+   {
+    "task": "1 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-1.webp",
+    "title": "Самооцінювання до розділу 1, завдання 1"
+   },
+   {
+    "task": "2 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-2.webp",
+    "title": "Самооцінювання до розділу 1, завдання 2"
+   },
+   {
+    "task": "3 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-3.webp",
+    "title": "Самооцінювання до розділу 1, завдання 3"
+   },
+   {
+    "task": "4 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-4.webp",
+    "title": "Самооцінювання до розділу 1, завдання 4"
+   },
+   {
+    "task": "5 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-5.webp",
+    "title": "Самооцінювання до розділу 1, завдання 5"
+   }
+  ],
+  "67": [
+   {
+    "task": "6 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-6.webp",
+    "title": "Самооцінювання до розділу 1, завдання 6"
+   },
+   {
+    "task": "7 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-7.webp",
+    "title": "Самооцінювання до розділу 1, завдання 7"
+   },
+   {
+    "task": "8 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-8.webp",
+    "title": "Самооцінювання до розділу 1, завдання 8"
+   },
+   {
+    "task": "9 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-9.webp",
+    "title": "Самооцінювання до розділу 1, завдання 9"
+   },
+   {
+    "task": "10 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-10.webp",
+    "title": "Самооцінювання до розділу 1, завдання 10"
+   },
+   {
+    "task": "11 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-11.webp",
+    "title": "Самооцінювання до розділу 1, завдання 11"
+   },
+   {
+    "task": "12 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-12.webp",
+    "title": "Самооцінювання до розділу 1, завдання 12"
+   },
+   {
+    "task": "13 для самооцінювання до розділу 1",
+    "img": "https://shkola.in.ua/images/pictures/HDZ/9-klas/Fizyka/h-9-fi-ba/h-9-fi-ba-sam1-13.webp",
+    "title": "Самооцінювання до розділу 1, завдання 13"
+   }
+  ]
+ }
+}

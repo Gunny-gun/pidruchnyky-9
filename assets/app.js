@@ -1,25 +1,24 @@
-/* Читалка підручників: вибір предмета → сторінка зліва, тези справа.
-   Адреса: #<slug>.<сторінка> (лише літери/цифри/крапка/дефіс — так працює на GitHub Pages і будь-якому хостингу). */
+/* Читалка підручників 9 класу з інтегрованими розв'язками (ГДЗ) */
 (() => {
   'use strict';
   const app = document.getElementById('app');
-  const KIND = { cover: 'Обкладинка', toc: 'Зміст', text: 'Тема', exercises: 'Завдання', image: 'Ілюстрація', empty: 'Порожня сторінка', intro: 'Вступ', answers: 'Відповіді', index: 'Покажчик' };
-  const state = { books: null, book: null, theses: {}, texts: null, page: 1, busy: false };
+  const state = { books: null, book: null, hdz: null, page: 1, activeTask: 0, busy: false };
   const cache = new Map();
-  // масштаб шрифту конспекту: кроки A−/A+, 1 = як у макеті
-  const FS = [0.85, 1, 1.15, 1.3, 1.5, 1.75];
 
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const store = {
     get(k) { try { return JSON.parse(localStorage.getItem('p9:' + k)); } catch { return null; } },
     set(k, v) { try { localStorage.setItem('p9:' + k, JSON.stringify(v)); } catch { /* приватний режим */ } },
   };
+
   const getJSON = async url => {
     if (!cache.has(url)) cache.set(url, fetch(url).then(r => { if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }));
     try { return await cache.get(url); } catch (e) { cache.delete(url); throw e; }
   };
+
   const pageUrl = (slug, n) => `books/${slug}/pages/${String(n).padStart(4, '0')}.webp`;
   const ready = b => (b.pages || 0) > 0;
+
   // Номер, НАДРУКОВАНИЙ у книжці (page_offset/page_scale); адреса й файли — за номером PDF.
   const label = (b, i) => {
     if (b.page_offset == null) return String(i);
@@ -39,7 +38,7 @@
     if (location.hash !== h) history.replaceState(null, '', h === '#' ? location.pathname + location.search : h);
   }
 
-  /* ---------- Вибір предмета: «Дія» × кіберпанк ---------- */
+  /* Вибір предмета */
   const NEON = { 
     'Математика': '#ff2bd6', 
     'Мови й література': '#00f0ff', 
@@ -48,12 +47,12 @@
     'Технології': '#ff8a3d', 
     "Мистецтво й здоров'я": '#b77dff' 
   };
-  const ICON = {
-    algebra: '➗', geometria: '📐',
-    'ukr-mova': '✍️', 'ukr-lit': '📖', 'zar-lit': '🌍', english: '💬',
-    fizyka: '⚡', khimiia: '🧪', biolohiia: '🧬', heohrafiia: '🗺️',
-    'istoriia-ukr': '🏰', vsesvitnia: '🏛️', pravoznavstvo: '⚖️',
-    informatyka: '💻', tekhnolohii: '🛠️', mystetstvo: '🎨', zdorovia: '🍎',
+  const CODE = {
+    algebra: 'АЛГ', geometria: 'ГЕО',
+    'ukr-mova': 'УКР', 'ukr-lit': 'ЛІТ', 'zar-lit': 'ЗАР', english: 'ENG',
+    fizyka: 'ФІЗ', khimiia: 'ХІМ', biolohiia: 'БІО', heohrafiia: 'ГЕОГ',
+    'istoriia-ukr': 'ІСТ', vsesvitnia: 'ВСЕС', pravoznavstvo: 'ПРАВ',
+    informatyka: 'ІНФ', tekhnolohii: 'ТЕХ', mystetstvo: 'МИСТ', zdorovia: 'БЕЗП',
   };
   const ACC = {
     algebra: 'алгебру', geometria: 'геометрію',
@@ -77,15 +76,15 @@
     const rb = all.find(b => b.slug === store.get('recent') && ready(b));
     const rp = rb && Math.min(store.get('last:' + rb.slug) || 1, rb.pages);
     const hello = rb
-      ? `<div><div class="cy-sys">// система готова · ${nReady} підручників · ${num(nPages)} сторінок</div>
-          <h2>Привіт! Продовжимо <span>${esc(ACC[rb.slug] || rb.subject)}</span>?<i class="cy-cur" aria-hidden="true"></i></h2>
-          <p>${label(rb, rp) ? `Закладка на сторінці ${label(rb, rp)} з ${lastLabel(rb)}.` : 'Закладка на початку книжки.'} Тези вже чекають поруч.</p>
+      ? `<div><div class="cy-sys">// система готова · ${nReady} підручників · ${num(nPages)} сторінок · база розв'язків</div>
+          <h2>Продовжити вивчення: <span>${esc(ACC[rb.slug] || rb.subject)}</span><i class="cy-cur" aria-hidden="true"></i></h2>
+          <p>${label(rb, rp) ? `Закладка на сторінці ${label(rb, rp)} з ${lastLabel(rb)}.` : 'Закладка на початку книги.'} Розв'язки синхронізовано з номерами.</p>
           <div class="cy-bar" role="progressbar" aria-label="Прочитано" aria-valuemin="0" aria-valuemax="${rb.pages}" aria-valuenow="${rp}"><i style="width:${Math.round(rp / rb.pages * 100)}%"></i></div></div>
-        <button class="cy-go" data-slug="${esc(rb.slug)}">Продовжити →</button>`
+        <button class="cy-go" data-slug="${esc(rb.slug)}">Відкрити підручник →</button>`
       : `<div><div class="cy-sys">// система готова · ${nReady} з ${all.length} підручників · ${num(nPages)} сторінок</div>
-          <h2>Привіт! Обери <span>предмет</span><i class="cy-cur" aria-hidden="true"></i></h2>
-          <p>Ліворуч сторінка підручника, праворуч короткі тези саме цієї сторінки.</p></div>
-        <button class="cy-go" id="to-list">До предметів ↓</button>`;
+          <h2>Оберіть <span>предмет</span><i class="cy-cur" aria-hidden="true"></i></h2>
+          <p>Ліворуч — автентична сторінка підручника, праворуч — розв'язки (ГДЗ) до номерів поточної сторінки.</p></div>
+        <button class="cy-go" id="to-list">До списку книг ↓</button>`;
     app.innerHTML = `
       <main class="cy">
         <div class="cy-sky" aria-hidden="true"></div><div class="cy-floor" aria-hidden="true"></div>
@@ -99,10 +98,10 @@
                 ${list.map(b => {
                   const last = store.get('last:' + b.slug);
                   const meta = ready(b)
-                    ? `<span>${b.pages} с. · тези</span>${b.demo ? '<span class="demo">демо</span>' : ''}${last > 1 && label(b, last) ? `<span class="res">▶ с. ${label(b, last)}</span>` : ''}`
+                    ? `<span>${b.pages} с. · розв'язки</span>${last > 1 && label(b, last) ? `<span class="res">▶ с. ${label(b, last)}</span>` : ''}`
                     : `<span>${esc(b.note || 'готується')}</span>`;
                   return `<button class="cy-card" data-slug="${esc(b.slug)}" ${ready(b) ? '' : 'disabled'}>
-                      <span class="cy-ico" aria-hidden="true">${ICON[b.slug] || '📘'}</span>
+                      <span class="cy-ico" aria-hidden="true">${CODE[b.slug] || 'КН'}</span>
                       <span><b>${esc(b.subject)}</b><span class="cy-meta">${meta}</span></span>
                       <span class="cy-arr" aria-hidden="true">→</span>
                     </button>`;
@@ -114,13 +113,18 @@
     document.getElementById('to-list')?.addEventListener('click', () => document.getElementById('list')?.scrollIntoView({ behavior: 'smooth' }));
   }
 
-  /* ---------- Читалка ---------- */
+  /* Читалка */
   async function openBook(slug, page) {
     const b = state.books.subjects.find(x => x.slug === slug);
     if (!b || !ready(b)) { go(); renderHome(); return; }
-    state.book = b; state.texts = null;
+    state.book = b;
     state.page = Math.min(Math.max(page || store.get('last:' + slug) || 1, 1), b.pages);
-    try { state.theses = (await getJSON(`books/${slug}/theses.json`)).pages || {}; } catch { state.theses = {}; }
+    state.activeTask = 0;
+    try {
+      state.hdz = await getJSON(`books/${slug}/hdz.json`);
+    } catch {
+      state.hdz = null;
+    }
     renderReader();
   }
 
@@ -145,10 +149,10 @@
             <div class="sheet" id="sheet"><img id="img" alt=""></div>
             <button class="hit l" id="hitl" aria-label="Попередня сторінка"></button>
             <button class="hit r" id="hitr" aria-label="Наступна сторінка"></button>
-            <div class="stage-tools"><button id="zoom">Збільшити</button></div>
+            <div class="stage-tools"><button id="zoom">Збільшити сторінку</button></div>
           </section>
-          <aside class="notebook" id="notes" aria-label="Конспект сторінки">
-            <button class="nb-toggle" id="nbtoggle" aria-controls="nbbody"><i aria-hidden="true">‹</i><span>Конспект</span></button>
+          <aside class="notebook" id="notes" aria-label="Розв'язки та відповіді">
+            <button class="nb-toggle" id="nbtoggle" aria-controls="nbbody"><i aria-hidden="true">‹</i><span>Розв'язки</span></button>
             <div id="nbbody" aria-live="polite"></div>
           </aside>
         </div>
@@ -159,18 +163,13 @@
     $('next').onclick = $('hitr').onclick = () => turn(1);
     $('pnum').onchange = e => { const x = parseInt(e.target.value, 10); show(Number.isFinite(x) ? fromLabel(b, x) : state.page, 0); };
     $('nbtoggle').onclick = () => { store.set('nbClosed', !store.get('nbClosed')); applyNotebook(); };
-    $('notes').addEventListener('click', e => {
-      const btn = e.target.closest('[data-fs]');
-      if (!btn) return;
-      const i = Math.min(Math.max(fsIndex() + +btn.dataset.fs, 0), FS.length - 1);
-      store.set('nbFont', FS[i]);
-      applyNotebook();
-    });
     applyNotebook();
+
     $('zoom').onclick = () => {
       const z = $('stage').classList.toggle('zoom');
-      $('zoom').textContent = z ? 'Вмістити' : 'Збільшити';
+      $('zoom').textContent = z ? 'Вмістити' : 'Збільшити сторінку';
     };
+
     let x0 = null, y0 = null;
     $('stage').addEventListener('touchstart', e => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
     $('stage').addEventListener('touchend', e => {
@@ -179,27 +178,22 @@
       if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) turn(dx < 0 ? 1 : -1);
       x0 = null;
     }, { passive: true });
+
     show(state.page, 0);
   }
 
   function turn(d) { show(state.page + d, d); }
 
-  function fsIndex() { const i = FS.indexOf(store.get('nbFont')); return i < 0 ? FS.indexOf(1) : i; }
-
   function applyNotebook() {
     const el = document.getElementById('notes');
     if (!el) return;
-    const closed = !!store.get('nbClosed'), i = fsIndex();
+    const closed = !!store.get('nbClosed');
     el.closest('.split').classList.toggle('nb-closed', closed);
     el.classList.toggle('closed', closed);
-    el.style.setProperty('--nb-fs', FS[i]);
     const t = document.getElementById('nbtoggle');
     t.setAttribute('aria-expanded', String(!closed));
-    t.title = closed ? 'Показати конспект' : 'Сховати конспект';
+    t.title = closed ? 'Показати розв\'язки' : 'Сховати розв\'язки';
     t.setAttribute('aria-label', t.title);
-    el.querySelectorAll('[data-fs]').forEach(b => { b.disabled = +b.dataset.fs < 0 ? i === 0 : i === FS.length - 1; });
-    const pct = el.querySelector('.nb-font');
-    if (pct) pct.title = `Шрифт конспекту: ${Math.round(FS[i] * 100)}%`;
   }
 
   function show(n, dir) {
@@ -217,6 +211,7 @@
       flip.addEventListener('animationend', () => flip.remove());
     }
     state.page = n;
+    state.activeTask = 0;
     img.src = pageUrl(b.slug, n);
     const lb = label(b, n);
     img.alt = `${b.subject}, сторінка ${lb || n}`;
@@ -228,38 +223,159 @@
     store.set('last:' + b.slug, n);
     store.set('recent', b.slug);
     go(b.slug, n);
-    renderNotes();
+    renderSolutions();
     for (const k of [n + 1, n + 2, n - 1]) if (k >= 1 && k <= b.pages) new Image().src = pageUrl(b.slug, k);
   }
 
-  function renderNotes() {
-    const el = document.getElementById('nbbody');
-    const n = state.page, t = state.theses[String(n)], lb = label(state.book, n);
-    let html = `<div class="nb-page${lb.includes('–') ? ' wide' : ''}" aria-label="Сторінка ${lb || n}">${lb || '·'}</div>`;
-    const font = `<span class="nb-font" role="group" aria-label="Розмір шрифту конспекту">
-        <button data-fs="-1" aria-label="Зменшити шрифт конспекту">A−</button><button data-fs="1" aria-label="Збільшити шрифт конспекту">A+</button></span>`;
-    if (!t) {
-      html += `<div class="nb-head">${font}</div>`;
-      html += `<div class="empty"><b>Тез ще немає</b><span>Для сторінки ${lb || n} конспект ще не згенеровано. Сторінку можна читати зліва.</span></div>`;
-    } else {
-      html += `<div class="nb-head"><span class="nb-kind">${esc(KIND[t.kind] || 'Сторінка')}</span>${font}</div>`;
-      if (t.title) html += `<h2>${esc(t.title)}</h2>`;
-      if (t.points?.length) html += `<ul class="points">${t.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>`;
-      if (t.formulas?.length) html += `<h3>Формули</h3>${t.formulas.map(f => `<div class="formula">${esc(f)}</div>`).join(' ')}`;
-      if (t.terms?.length) html += `<h3>Запам'ятай</h3><dl class="terms">${t.terms.map(x => `<div><dt>${esc(x.term)}</dt><dd>${esc(x.def)}</dd></div>`).join('')}</dl>`;
-      if (t.example) html += `<h3>Приклад</h3><p class="example">${esc(t.example)}</p>`;
+  function getPageTasks(b, pageNum) {
+    if (!state.hdz || !state.hdz.pages) return [];
+    const lb = label(b, pageNum);
+    // Шукаємо за надрукованим номером сторінки (lb), або номером PDF
+    const candidates = [String(lb), String(pageNum)];
+    if (lb && lb.includes('–')) {
+      lb.split('–').forEach(p => candidates.push(p.trim()));
     }
-    html += `<details class="raw" id="raw"><summary>Текст сторінки</summary><pre id="rawtext">…</pre></details>`;
+    for (const k of candidates) {
+      if (state.hdz.pages[k] && state.hdz.pages[k].length > 0) {
+        return state.hdz.pages[k];
+      }
+    }
+    return [];
+  }
+
+  function renderSolutions(overrideTask) {
+    const el = document.getElementById('nbbody');
+    if (!el) return;
+    const b = state.book, n = state.page, lb = label(b, n);
+    const tasks = getPageTasks(b, n);
+
+    let html = `<div class="hdz-head">
+      <span class="hdz-tag">Розв'язки ГДЗ</span>
+      <span class="hdz-page-badge">Стор. ${lb || n}</span>
+    </div>`;
+
+    if (overrideTask) {
+      // Показуємо результат прямого пошуку
+      html += `<div class="hdz-search-current">
+        <button id="hdz-back-page" class="hdz-back-btn">← Повернутися до сторінки ${lb || n}</button>
+      </div>`;
+      html += renderTaskCard(overrideTask);
+    } else if (tasks.length > 0) {
+      const activeIdx = Math.min(state.activeTask || 0, tasks.length - 1);
+      const cur = tasks[activeIdx];
+
+      html += `<div class="hdz-pills-wrap">
+        <span class="hdz-pills-label">Завдання на с. ${lb || n} (${tasks.length}):</span>
+        <div class="hdz-pills">
+          ${tasks.map((t, i) => `<button class="hdz-pill ${i === activeIdx ? 'active' : ''}" data-idx="${i}">№ ${esc(t.task)}</button>`).join('')}
+        </div>
+      </div>`;
+
+      html += renderTaskCard(cur);
+    } else {
+      html += `<div class="hdz-empty">
+        <div class="hdz-empty-title">Теоретичний блок</div>
+        <p>На сторінці ${lb || n} окремих номерів завдань не виявлено. Розділ призначено для читання матеріалу ліворуч.</p>
+      </div>`;
+    }
+
+    // Блок швидкого пошуку будь-якого номера в підручнику
+    html += `<div class="hdz-search-box">
+      <label for="hdz-find">Швидкий пошук номера в підручнику:</label>
+      <div class="hdz-search-row">
+        <input id="hdz-find" type="text" placeholder="напр. 1.23, 14, повт. 5...">
+        <button id="hdz-find-btn">Знайти</button>
+      </div>
+      <div id="hdz-search-res" class="hdz-search-res"></div>
+    </div>`;
+
+    if (state.hdz?.source_urls?.length) {
+      html += `<a href="${esc(state.hdz.source_urls[0])}" target="_blank" rel="noopener" class="hdz-src-link">
+        Повний розділ на shkola.in.ua →
+      </a>`;
+    }
+
     el.innerHTML = html;
     document.getElementById('notes').scrollTop = 0;
-    applyNotebook();
-    document.getElementById('raw').addEventListener('toggle', async e => {
-      if (!e.target.open) return;
-      try {
-        state.texts ??= await getJSON(`books/${state.book.slug}/text.json`);
-        document.getElementById('rawtext').textContent = state.texts[String(state.page)] || '(на сторінці немає текстового шару — скан або малюнок)';
-      } catch { document.getElementById('rawtext').textContent = 'Не вдалося завантажити текст сторінки.'; }
+
+    // Обробка кліків по пігулках завдань
+    el.querySelectorAll('.hdz-pill').forEach(btn => {
+      btn.onclick = () => {
+        state.activeTask = parseInt(btn.dataset.idx, 10);
+        renderSolutions();
+      };
     });
+
+    // Збільшення розв'язку
+    const zoomBtn = document.getElementById('hdz-zoom-btn');
+    if (zoomBtn) {
+      zoomBtn.onclick = () => {
+        const box = document.getElementById('hdz-img-box');
+        const isZ = box.classList.toggle('zoomed');
+        zoomBtn.textContent = isZ ? 'Зменшити' : 'Збільшити';
+      };
+    }
+
+    // Повернення до завдань сторінки
+    const backBtn = document.getElementById('hdz-back-page');
+    if (backBtn) {
+      backBtn.onclick = () => renderSolutions();
+    }
+
+    // Пошук номерів
+    const findBtn = document.getElementById('hdz-find-btn');
+    const findInput = document.getElementById('hdz-find');
+    const findRes = document.getElementById('hdz-search-res');
+
+    const doSearch = () => {
+      const q = (findInput.value || '').trim().toLowerCase();
+      if (!q || !state.hdz || !state.hdz.pages) return;
+      const found = [];
+      for (const [p, list] of Object.entries(state.hdz.pages)) {
+        for (const it of list) {
+          if (it.task.toLowerCase().includes(q) || (it.title && it.title.toLowerCase().includes(q))) {
+            found.push({ ...it, page: p });
+            if (found.length >= 8) break;
+          }
+        }
+        if (found.length >= 8) break;
+      }
+      if (found.length === 0) {
+        findRes.innerHTML = `<span class="hdz-no-res">Номер "${esc(q)}" не знайдено.</span>`;
+      } else {
+        findRes.innerHTML = found.map(f => `
+          <button class="hdz-res-item" data-img="${esc(f.img)}" data-task="${esc(f.task)}" data-page="${esc(f.page)}">
+            <b>№ ${esc(f.task)}</b> <span>${f.page !== '0' ? `(с. ${f.page})` : ''}</span>
+          </button>
+        `).join('');
+        findRes.querySelectorAll('.hdz-res-item').forEach(bItem => {
+          bItem.onclick = () => {
+            renderSolutions({
+              task: bItem.dataset.task,
+              img: bItem.dataset.img,
+              title: `Завдання ${bItem.dataset.task} (с. ${bItem.dataset.page})`
+            });
+          };
+        });
+      }
+    };
+
+    if (findBtn && findInput) {
+      findBtn.onclick = doSearch;
+      findInput.onkeydown = e => { if (e.key === 'Enter') doSearch(); };
+    }
+  }
+
+  function renderTaskCard(t) {
+    return `<div class="hdz-card">
+      <div class="hdz-card-head">
+        <b>Завдання ${esc(t.task)}</b>
+        <button class="hdz-zoom-btn" id="hdz-zoom-btn">Збільшити</button>
+      </div>
+      <div class="hdz-img-box" id="hdz-img-box">
+        <img src="${esc(t.img)}" alt="${esc(t.title || t.task)}" class="hdz-img" id="hdz-img" loading="lazy">
+      </div>
+    </div>`;
   }
 
   document.addEventListener('keydown', e => {
