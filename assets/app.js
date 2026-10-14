@@ -268,7 +268,11 @@
       html += `<div class="hdz-pills-wrap">
         <span class="hdz-pills-label">Завдання на с. ${lb || n} (${tasks.length}):</span>
         <div class="hdz-pills">
-          ${tasks.map((t, i) => `<button class="hdz-pill ${i === activeIdx ? 'active' : ''}" data-idx="${i}">№ ${esc(t.task)}</button>`).join('')}
+          ${tasks.map((t, i) => {
+            const raw = (t.task || '').trim();
+            const lbl = (/^[0-9]+(\.[0-9]+)?$/.test(raw)) ? ('№ ' + raw) : raw;
+            return `<button class="hdz-pill ${i === activeIdx ? 'active' : ''}" data-idx="${i}">${esc(lbl)}</button>`;
+          }).join('')}
         </div>
       </div>`;
 
@@ -390,7 +394,7 @@
   function renderTaskCard(t) {
     return `<div class="hdz-card">
       <div class="hdz-card-head">
-        <b>Завдання ${esc(t.task)}</b>
+        <b>${(t.task || '').startsWith('Завдання') || (t.task || '').startsWith('§') ? esc(t.task) : (/^[0-9]+(\.[0-9]+)?$/.test((t.task || '').trim()) ? 'Завдання № ' + esc(t.task) : esc(t.task))}</b>
         <button class="hdz-zoom-btn" id="hdz-zoom-btn">Збільшити</button>
       </div>
       <div class="hdz-img-box" id="hdz-img-box">
