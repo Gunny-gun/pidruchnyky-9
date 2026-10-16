@@ -130,7 +130,7 @@
   }
 
 
-  /* ---------- Інтерактивний робочий зошит (Huion Canvas) ---------- */
+  /* ---------- Інтерактивний робочий зошит (Huion Canvas — Silky Smooth) ---------- */
   const canvasBook = {
     canvas: null,
     ctx: null,
@@ -139,11 +139,15 @@
     dpr: 1,
     activeTool: 'pen', // 'pen', 'eraser', 'marker'
     activeColor: '#eaf6ff',
-    activeSize: 4,
+    activeSize: 3.5,
     isDrawing: false,
+    activePointerId: null,
+    pointerType: null,
     lastX: 0,
     lastY: 0,
     lastMid: null,
+    smoothedPressure: null,
+    currentLineWidth: 3.5,
     undoStack: [],
     redoStack: [],
     saveTimer: null,
@@ -155,7 +159,7 @@
       this.viewport = document.getElementById('c-viewport');
       this.wrap = document.getElementById('c-sheet-wrap');
       if (!this.canvas) return;
-      this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
+      this.ctx = this.canvas.getContext('2d', { willReadFrequently: true, alpha: true });
       this.dpr = Math.max(window.devicePixelRatio || 1, 1);
 
       this.setupDimensions();
@@ -185,9 +189,11 @@
       this.canvas.style.width = w + 'px';
       this.canvas.style.height = h + 'px';
 
+      this.ctx.setTransform(1, 0, 0, 1, 0, 0);
       this.ctx.scale(this.dpr, this.dpr);
       this.ctx.lineCap = 'round';
       this.ctx.lineJoin = 'round';
+      this.ctx.imageSmoothingEnabled = true;
 
       if (tempImg) {
         this.ctx.drawImage(tempImg, 0, 0, tempImg.width / this.dpr, tempImg.height / this.dpr);
@@ -199,7 +205,6 @@
     },
 
     bindToolbar() {
-      // Інструменти
       const setTool = tool => {
         this.activeTool = tool;
         document.querySelectorAll('.c-tool-btn').forEach(btn => {
@@ -228,7 +233,7 @@
       // Розміри
       document.querySelectorAll('.c-size-btn').forEach(btn => {
         btn.onclick = () => {
-          this.activeSize = parseInt(btn.dataset.size, 10) || 4;
+          this.activeSize = parseFloat(btn.dataset.size) || 3.5;
           document.querySelectorAll('.c-size-btn').forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
         };
@@ -294,22 +299,46 @@
       this.scheduleSave();
     },
 
+    getPos(e) {
+      const rect = this.canvas.getBoundingClientRect();
+      const cssW = this.canvas.width / this.dpr;
+      const cssH = this.canvas.height / this.dpr;
+      const scaleX = rect.width > 0 ? (cssW / rect.width) : 1;
+      const scaleY = rect.height > 0 ? (cssH / rect.height) : 1;
+      return {
+        x: (e.clientX - rect.left) * scaleX,
+        y: (e.clientY - rect.top) * scaleY,
+        pressure: (typeof e.pressure === 'number' && e.pressure > 0) ? e.pressure : 0.5,
+        pointerType: e.pointerType || 'pen'
+      };
+    },
+
+    computeWidth(pressure, pointerType) {
+      if (this.activeTool === 'eraser') return 28;
+      if (this.activeTool === 'marker') return this.activeSize * 4.5;
+      if (pointerType === 'pen') {
+        const p = Math.max(0.08, Math.min(pressure, 1.0));
+        this.smoothedPressure = this.smoothedPressure === null
+          ? p
+          : (this.smoothedPressure * 0.65 + p * 0.35);
+        return Math.max(this.activeSize * (0.35 + 1.25 * this.smoothedPressure), 1.2);
+      }
+      return this.activeSize;
+    },
+
     bindPointer() {
       if (!this.canvas) return;
-
-      const getPos = e => {
-        const rect = this.canvas.getBoundingClientRect();
-        return {
-          x: e.clientX - rect.left,
-          y: e.clientY - rect.top,
-        };
-      };
 
       this.canvas.addEventListener('contextmenu', e => e.preventDefault());
 
       this.canvas.addEventListener('pointerdown', e => {
         if (e.target !== this.canvas) return;
+        // Відкидаємо випадковий дотик долоні при письмі пером
+        if (this.isDrawing && this.pointerType === 'pen' && e.pointerType !== 'pen') return;
+
         this.canvas.setPointerCapture(e.pointerId);
+        this.activePointerId = e.pointerId;
+        this.pointerType = e.pointerType;
 
         // Права кнопка миші або бічна кнопка пера Huion вмикає ластик
         if (e.button === 2 || e.buttons === 2) {
@@ -319,29 +348,59 @@
 
         this.pushUndo();
         this.isDrawing = true;
-        const pos = getPos(e);
-        this.lastX = pos.x;
-        this.lastY = pos.y;
-        this.lastMid = { x: pos.x, y: pos.y };
+        const pt = this.getPos(e);
+        this.smoothedPressure = pt.pressure;
+        this.currentLineWidth = this.computeWidth(pt.pressure, pt.pointerType);
 
-        this.drawStroke(e, pos.x, pos.y, pos.x, pos.y);
+        this.lastX = pt.x;
+        this.lastY = pt.y;
+        this.lastMid = { x: pt.x, y: pt.y };
+
+        // Початкова точка / крапка (для крапок над і, ком, десяткових знаків)
+        const ctx = this.ctx;
+        ctx.save();
+        this.applyToolStyle(ctx, this.currentLineWidth);
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, this.currentLineWidth / 2, 0, Math.PI * 2);
+        ctx.fillStyle = ctx.strokeStyle;
+        ctx.fill();
+        ctx.restore();
       });
 
       this.canvas.addEventListener('pointermove', e => {
-        if (!this.isDrawing) return;
-        const pos = getPos(e);
-        const mid = { x: (this.lastX + pos.x) / 2, y: (this.lastY + pos.y) / 2 };
+        if (!this.isDrawing || e.pointerId !== this.activePointerId) return;
 
-        this.drawSmoothSegment(e, this.lastMid, this.lastX, this.lastY, mid);
+        // Використовуємо getCoalescedEvents для максимальної частоти оновлення планшета Huion (200+ Hz)
+        const events = (typeof e.getCoalescedEvents === 'function') ? e.getCoalescedEvents() : [e];
+        for (let i = 0; i < events.length; i++) {
+          const ev = events[i];
+          const pt = this.getPos(ev);
+          const mid = { x: (this.lastX + pt.x) / 2, y: (this.lastY + pt.y) / 2 };
 
-        this.lastX = pos.x;
-        this.lastY = pos.y;
-        this.lastMid = mid;
+          const targetW = this.computeWidth(pt.pressure, pt.pointerType);
+          // Плавний перехід товщини лінії
+          this.currentLineWidth = this.currentLineWidth * 0.7 + targetW * 0.3;
+
+          const ctx = this.ctx;
+          ctx.save();
+          this.applyToolStyle(ctx, this.currentLineWidth);
+          ctx.beginPath();
+          ctx.moveTo(this.lastMid.x, this.lastMid.y);
+          ctx.quadraticCurveTo(this.lastX, this.lastY, mid.x, mid.y);
+          ctx.stroke();
+          ctx.restore();
+
+          this.lastX = pt.x;
+          this.lastY = pt.y;
+          this.lastMid = mid;
+        }
       });
 
       const onPointerEnd = e => {
-        if (!this.isDrawing) return;
+        if (!this.isDrawing || (this.activePointerId !== null && e.pointerId !== this.activePointerId)) return;
         this.isDrawing = false;
+        this.activePointerId = null;
+        this.smoothedPressure = null;
         try { this.canvas.releasePointerCapture(e.pointerId); } catch {}
 
         if (this.prevToolBeforeRight) {
@@ -356,52 +415,26 @@
       this.canvas.addEventListener('pointercancel', onPointerEnd);
     },
 
-    drawStroke(e, x1, y1, x2, y2) {
-      const ctx = this.ctx;
-      ctx.save();
-      this.applyToolStyle(ctx, e);
-
-      ctx.beginPath();
-      ctx.moveTo(x1, y1);
-      ctx.lineTo(x2, y2);
-      ctx.stroke();
-      ctx.restore();
-    },
-
-    drawSmoothSegment(e, startMid, ctrlX, ctrlY, endMid) {
-      const ctx = this.ctx;
-      ctx.save();
-      this.applyToolStyle(ctx, e);
-
-      ctx.beginPath();
-      ctx.moveTo(startMid.x, startMid.y);
-      ctx.quadraticCurveTo(ctrlX, ctrlY, endMid.x, endMid.y);
-      ctx.stroke();
-      ctx.restore();
-    },
-
-    applyToolStyle(ctx, e) {
+    applyToolStyle(ctx, width) {
       if (this.activeTool === 'eraser') {
         ctx.globalCompositeOperation = 'destination-out';
-        ctx.lineWidth = 32;
+        ctx.lineWidth = width || 28;
         ctx.strokeStyle = 'rgba(0,0,0,1)';
       } else if (this.activeTool === 'marker') {
         ctx.globalCompositeOperation = 'source-over';
         ctx.strokeStyle = this.activeColor;
         ctx.globalAlpha = 0.35;
-        ctx.lineWidth = this.activeSize * 4.5;
+        ctx.lineWidth = width || (this.activeSize * 4.5);
         ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
       } else {
-        // Ручка (B) з підтримкою тиску пера Huion
+        // Ручка (B)
         ctx.globalCompositeOperation = 'source-over';
         ctx.strokeStyle = this.activeColor;
         ctx.globalAlpha = 1.0;
-        let w = this.activeSize;
-        if (e.pointerType === 'pen' && e.pressure > 0) {
-          w = this.activeSize * (0.35 + 1.25 * e.pressure);
-        }
-        ctx.lineWidth = Math.max(w, 1.2);
+        ctx.lineWidth = width || this.activeSize;
         ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
       }
     },
 
@@ -537,18 +570,14 @@
           <section class="canvas-panel" id="canvas-panel" aria-label="Робочий зошит для письма">
             <header class="canvas-bar">
               <div class="canvas-tools-group">
-                <span class="canvas-tag">Зошит</span>
-                <button class="c-tool-btn active" id="c-tool-pen" data-tool="pen" title="Ручка (B або P)">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
-                  <span>Ручка <kbd>B</kbd></span>
+                <button class="c-tool-btn active" id="c-tool-pen" data-tool="pen" title="Ручка (гаряча клавіша B або P)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
                 </button>
-                <button class="c-tool-btn" id="c-tool-eraser" data-tool="eraser" title="Ластик (E або права кнопка пера)">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 20H7L2 15c-1-1-1-2.5 0-3.5L12 2l10 10-5 5"></path></svg>
-                  <span>Ластик <kbd>E</kbd></span>
+                <button class="c-tool-btn" id="c-tool-eraser" data-tool="eraser" title="Ластик (гаряча клавіша E або бокова кнопка пера)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20H7L2 15c-1-1-1-2.5 0-3.5L12 2l10 10-5 5"></path><path d="M18 12l-8-8"></path></svg>
                 </button>
-                <button class="c-tool-btn" id="c-tool-marker" data-tool="marker" title="Маркер (V)">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 3l5 5L8 21H3v-5L16 3z"></path></svg>
-                  <span>Маркер <kbd>V</kbd></span>
+                <button class="c-tool-btn" id="c-tool-marker" data-tool="marker" title="Маркер (гаряча клавіша V)">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3l5 5L8 21H3v-5L16 3z"></path><path d="M14 5l5 5"></path></svg>
                 </button>
               </div>
               <div class="canvas-colors" id="c-colors" role="radiogroup" aria-label="Палітра кольорів">
@@ -558,16 +587,24 @@
                 <button class="c-color-btn" data-color="#ff2bd6" style="--c:#ff2bd6" title="Маджента"></button>
                 <button class="c-color-btn" data-color="#ffe14d" style="--c:#ffe14d" title="Жовтий"></button>
               </div>
-              <div class="canvas-sizes" id="c-sizes" role="group" aria-label="Товщина">
-                <button class="c-size-btn" data-size="2" title="Тонка (2px)">•</button>
-                <button class="c-size-btn active" data-size="4" title="Звичайна (4px)">●</button>
-                <button class="c-size-btn" data-size="8" title="Товста (8px)">⬤</button>
+              <div class="canvas-sizes" id="c-sizes" role="group" aria-label="Товщина лінії">
+                <button class="c-size-btn" data-size="2" title="Тонка лінія">•</button>
+                <button class="c-size-btn active" data-size="3.5" title="Звичайна лінія">●</button>
+                <button class="c-size-btn" data-size="7" title="Товста лінія">⬤</button>
               </div>
               <div class="canvas-actions">
-                <button class="c-act-btn" id="c-undo" title="Скасувати (Ctrl+Z)" aria-label="Скасувати">↶</button>
-                <button class="c-act-btn" id="c-redo" title="Повернути (Ctrl+Y)" aria-label="Повернути">↷</button>
-                <button class="c-act-btn c-act-clear" id="c-clear" title="Очистити зошит">Очистити</button>
-                <button class="c-act-btn c-act-save" id="c-download" title="Завантажити малюнок у PNG">PNG</button>
+                <button class="c-act-btn" id="c-undo" title="Скасувати (Ctrl+Z)" aria-label="Скасувати">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v6h6"></path><path d="M3 13a9 9 0 0 1 15-4.5L21 11"></path></svg>
+                </button>
+                <button class="c-act-btn" id="c-redo" title="Повернути (Ctrl+Y)" aria-label="Повернути">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 7v6h-6"></path><path d="M21 13a9 9 0 0 0-15-4.5L3 11"></path></svg>
+                </button>
+                <button class="c-act-btn c-act-clear" id="c-clear" title="Очистити зошит" aria-label="Очистити">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </button>
+                <button class="c-act-btn c-act-save" id="c-download" title="Завантажити малюнок у PNG" aria-label="Завантажити">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </button>
               </div>
             </header>
             <div class="canvas-viewport" id="c-viewport">
