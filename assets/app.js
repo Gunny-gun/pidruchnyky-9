@@ -538,6 +538,12 @@
   };
 
 
+  const AI_PROMPT_TEXT = `Це мій навчальний екран: ліворуч підручник, праворуч ГДЗ, а посередині мій зошит, де я пишу від руки. Користуйся всіма цими матеріалами.
+
+Коли я надсилаю «+» — читай мої рукописні записи в зошиті посередині, перевіряй і відповідай.
+
+Будь моїм дружнім напарником. Пояснюй наочно, живою людською мовою: давай рівно по одній дії за раз і веди мене підказками.`;
+
   function renderReader() {
     const b = state.book;
     document.title = `${b.subject} · 9 клас`;
@@ -559,6 +565,11 @@
             </button>
           </div>
           <button class="split-toggle-btn" id="split-50-btn" title="Режим 50 / 50: порівну підручник і розв'язки">50 / 50</button>
+          <button class="ai-partner-btn" id="ai-partner-btn" title="Виклик напарника Gemini (Alt + G)">
+            <svg class="ai-spark" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z"></path></svg>
+            <span>Напарник</span>
+            <kbd class="ai-kbd">Alt+G</kbd>
+          </button>
           <nav class="pager" aria-label="Сторінки">
             <button id="prev" aria-label="Попередня сторінка">‹</button>
             <input id="pnum" type="text" inputmode="numeric" aria-label="Номер сторінки, як надруковано в підручнику">
@@ -624,6 +635,29 @@
             <div id="nbbody" aria-live="polite"></div>
           </aside>
         </div>
+        <div class="ai-modal" id="ai-modal" hidden aria-hidden="true">
+          <div class="ai-modal-backdrop" id="ai-modal-backdrop"></div>
+          <div class="ai-modal-card" role="dialog" aria-modal="true" aria-labelledby="ai-modal-title">
+            <div class="ai-modal-head">
+              <div class="ai-modal-title" id="ai-modal-title">
+                <span class="ai-modal-dot"></span>
+                <b>AI-Напарник Gemini</b>
+                <kbd class="ai-modal-kbd">Alt + G</kbd>
+              </div>
+              <button class="ai-modal-close" id="ai-modal-close" title="Закрити (Esc)" aria-label="Закрити">✕</button>
+            </div>
+            <p class="ai-modal-hint">Скопіюй цей промпт у бічну панель Gemini (Ctrl+V) і надсилай <code>+</code> щоразу, коли робиш новий запис у зошиті:</p>
+            <div class="ai-modal-body">
+              <textarea id="ai-prompt-text" class="ai-prompt-text" readonly spellcheck="false"></textarea>
+            </div>
+            <div class="ai-modal-foot">
+              <button class="ai-copy-btn" id="ai-copy-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span id="ai-copy-label">Скопіювати промпт</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>`;
     const $ = id => document.getElementById(id);
     $('back').onclick = () => { go(); renderHome(); };
@@ -632,6 +666,56 @@
     $('pnum').onchange = e => { const x = parseInt(e.target.value, 10); show(Number.isFinite(x) ? fromLabel(b, x) : state.page, 0); };
     $('nbtoggle').onclick = () => { store.set('nbClosed', !store.get('nbClosed')); applyNotebook(); };
     applyNotebook();
+
+    // Модальне вікно промпта для Gemini (Alt+G)
+    const aiModal = $('ai-modal');
+    const aiPromptTa = $('ai-prompt-text');
+    if (aiPromptTa) aiPromptTa.value = AI_PROMPT_TEXT;
+
+    const copyAiPrompt = async () => {
+      try {
+        await navigator.clipboard.writeText(AI_PROMPT_TEXT);
+      } catch {
+        if (aiPromptTa) {
+          aiPromptTa.select();
+          document.execCommand('copy');
+        }
+      }
+      const label = $('ai-copy-label');
+      const btn = $('ai-copy-btn');
+      if (label && btn) {
+        label.textContent = '✓ Скопійовано!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          label.textContent = 'Скопіювати промпт';
+          btn.classList.remove('copied');
+        }, 1800);
+      }
+    };
+
+    const openAiModal = (autoCopy = false) => {
+      if (!aiModal) return;
+      aiModal.removeAttribute('hidden');
+      aiModal.setAttribute('aria-hidden', 'false');
+      if (autoCopy) copyAiPrompt();
+      setTimeout(() => {
+        if (aiPromptTa) {
+          aiPromptTa.focus();
+          aiPromptTa.select();
+        }
+      }, 50);
+    };
+
+    const closeAiModal = () => {
+      if (!aiModal || aiModal.hasAttribute('hidden')) return;
+      aiModal.setAttribute('hidden', '');
+      aiModal.setAttribute('aria-hidden', 'true');
+    };
+
+    if ($('ai-partner-btn')) $('ai-partner-btn').onclick = () => openAiModal(true);
+    if ($('ai-modal-close')) $('ai-modal-close').onclick = closeAiModal;
+    if ($('ai-modal-backdrop')) $('ai-modal-backdrop').onclick = closeAiModal;
+    if ($('ai-copy-btn')) $('ai-copy-btn').onclick = () => copyAiPrompt();
 
     const applySplit50 = () => {
       const is50 = !!store.get('split50');
@@ -959,6 +1043,27 @@
   }
 
   document.addEventListener('keydown', e => {
+    // Гаряча клавіша виклику напарника Gemini: Alt + G (незалежно від мовної розкладки)
+    if (e.altKey && (e.code === 'KeyG' || e.key.toLowerCase() === 'g' || e.key.toLowerCase() === 'п')) {
+      e.preventDefault();
+      const modal = document.getElementById('ai-modal');
+      if (modal) {
+        if (modal.hasAttribute('hidden')) {
+          document.getElementById('ai-partner-btn')?.click();
+        } else {
+          document.getElementById('ai-modal-close')?.click();
+        }
+      }
+      return;
+    }
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('ai-modal');
+      if (modal && !modal.hasAttribute('hidden')) {
+        document.getElementById('ai-modal-close')?.click();
+        e.preventDefault();
+        return;
+      }
+    }
     if (!state.book || !document.getElementById('img') || e.target.closest('input, textarea')) return;
     if (e.key === 'ArrowRight' || e.key === 'PageDown') { turn(1); e.preventDefault(); }
     else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { turn(-1); e.preventDefault(); }

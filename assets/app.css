@@ -649,3 +649,205 @@ button, input { font: inherit; color: inherit; }
   .canvas-sheet-wrap { min-height: 1800px; }
   .paint-canvas { height: 1800px; }
 }
+
+/* ---------- Кнопка та модальне вікно AI-напарника Gemini (Alt+G) ---------- */
+.ai-partner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: color-mix(in srgb, var(--n) 12%, #080c18);
+  border: 1px solid color-mix(in srgb, var(--n) 50%, transparent);
+  color: #fff;
+  border-radius: 9px;
+  padding: 6px 11px;
+  cursor: pointer;
+  font: 700 12px/1 var(--f-mono);
+  letter-spacing: .03em;
+  white-space: nowrap;
+  box-shadow: 0 0 14px color-mix(in srgb, var(--n) 20%, transparent);
+  transition: all .18s ease;
+}
+.ai-partner-btn:hover {
+  border-color: var(--n);
+  color: #fff;
+  background: color-mix(in srgb, var(--n) 22%, #080c18);
+  box-shadow: 0 0 20px color-mix(in srgb, var(--n) 45%, transparent);
+  transform: translateY(-1px);
+}
+.ai-partner-btn .ai-spark {
+  color: var(--n);
+  flex-shrink: 0;
+  animation: aiPulse 2.4s ease-in-out infinite;
+}
+@keyframes aiPulse {
+  0%, 100% { filter: drop-shadow(0 0 2px var(--n)); opacity: 1; transform: scale(1); }
+  50% { filter: drop-shadow(0 0 6px var(--n)); opacity: .8; transform: scale(1.12); }
+}
+.ai-kbd {
+  display: inline-block;
+  padding: 2px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  background: rgb(0 0 0 / .65);
+  color: var(--n);
+  border: 1px solid color-mix(in srgb, var(--n) 35%, transparent);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Модальне вікно промпта */
+.ai-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483600;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+.ai-modal[hidden] {
+  display: none !important;
+}
+.ai-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgb(3 6 15 / .78);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.ai-modal-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 520px;
+  background: #090d1a;
+  border: 1px solid color-mix(in srgb, var(--n) 55%, transparent);
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 24px 70px rgb(0 0 0 / .85), 0 0 35px color-mix(in srgb, var(--n) 25%, transparent);
+  animation: aiModalIn .2s cubic-bezier(.16, 1, .3, 1);
+}
+@keyframes aiModalIn {
+  from { opacity: 0; transform: scale(.95) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.ai-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--desk-edge);
+}
+.ai-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font: 800 15px/1.2 var(--f-display);
+  color: #fff;
+  letter-spacing: .02em;
+}
+.ai-modal-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--n);
+  box-shadow: 0 0 10px var(--n);
+  flex-shrink: 0;
+}
+.ai-modal-kbd {
+  background: rgb(0 0 0 / .65);
+  border: 1px solid color-mix(in srgb, var(--n) 35%, transparent);
+  padding: 2px 6px;
+  border-radius: 5px;
+  font: 700 11px/1 var(--f-mono);
+  color: var(--n);
+}
+.ai-modal-close {
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 6px;
+  transition: all .15s ease;
+}
+.ai-modal-close:hover {
+  color: #fff;
+  background: var(--chip);
+}
+.ai-modal-hint {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.ai-modal-hint code {
+  background: color-mix(in srgb, var(--n) 16%, transparent);
+  color: var(--n);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font: 700 12px/1 var(--f-mono);
+  border: 1px solid color-mix(in srgb, var(--n) 35%, transparent);
+}
+.ai-modal-body {
+  margin-bottom: 16px;
+}
+.ai-prompt-text {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 125px;
+  background: #050711;
+  border: 1px solid color-mix(in srgb, var(--n) 35%, transparent);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: 500 13px/1.55 var(--f-mono);
+  color: #eaf6ff;
+  resize: vertical;
+  outline: none;
+  user-select: all;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.ai-prompt-text:focus {
+  border-color: var(--n);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--n) 35%, transparent);
+}
+.ai-modal-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.ai-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--n);
+  color: #050711;
+  font: 800 13px/1 var(--f-mono);
+  padding: 10px 18px;
+  border-radius: 9px;
+  border: 0;
+  cursor: pointer;
+  transition: all .15s ease;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--n) 50%, transparent);
+}
+.ai-copy-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+  box-shadow: 0 0 24px color-mix(in srgb, var(--n) 70%, transparent);
+}
+.ai-copy-btn.copied {
+  background: #10b981;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(16, 185, 129, .7);
+}
+.ai-copy-btn svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .ai-partner-btn span { display: none; }
+  .ai-partner-btn { padding: 6px 8px; }
+}
