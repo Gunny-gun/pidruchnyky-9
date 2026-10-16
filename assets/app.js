@@ -299,15 +299,15 @@
       this.scheduleSave();
     },
 
-    getPos(e) {
-      const rect = this.canvas.getBoundingClientRect();
+    getPos(e, rect) {
+      const r = rect || (this.cachedRect || this.canvas.getBoundingClientRect());
       const cssW = this.canvas.width / this.dpr;
       const cssH = this.canvas.height / this.dpr;
-      const scaleX = rect.width > 0 ? (cssW / rect.width) : 1;
-      const scaleY = rect.height > 0 ? (cssH / rect.height) : 1;
+      const scaleX = r.width > 0 ? (cssW / r.width) : 1;
+      const scaleY = r.height > 0 ? (cssH / r.height) : 1;
       return {
-        x: (e.clientX - rect.left) * scaleX,
-        y: (e.clientY - rect.top) * scaleY,
+        x: (e.clientX - r.left) * scaleX,
+        y: (e.clientY - r.top) * scaleY,
         pressure: (typeof e.pressure === 'number' && e.pressure > 0) ? e.pressure : 0.5,
         pointerType: e.pointerType || 'pen'
       };
@@ -348,7 +348,10 @@
 
         this.pushUndo();
         this.isDrawing = true;
-        const pt = this.getPos(e);
+        window._isDrawingOnCanvas = true;
+        const rect = this.canvas.getBoundingClientRect();
+        this.cachedRect = rect;
+        const pt = this.getPos(e, rect);
         this.smoothedPressure = pt.pressure;
         this.currentLineWidth = this.computeWidth(pt.pressure, pt.pointerType);
 
@@ -370,11 +373,14 @@
       this.canvas.addEventListener('pointermove', e => {
         if (!this.isDrawing || e.pointerId !== this.activePointerId) return;
 
+        const rect = this.cachedRect || this.canvas.getBoundingClientRect();
+        this.cachedRect = rect;
+
         // Використовуємо getCoalescedEvents для максимальної частоти оновлення планшета Huion (200+ Hz)
         const events = (typeof e.getCoalescedEvents === 'function') ? e.getCoalescedEvents() : [e];
         for (let i = 0; i < events.length; i++) {
           const ev = events[i];
-          const pt = this.getPos(ev);
+          const pt = this.getPos(ev, rect);
           const mid = { x: (this.lastX + pt.x) / 2, y: (this.lastY + pt.y) / 2 };
 
           const targetW = this.computeWidth(pt.pressure, pt.pointerType);
@@ -399,8 +405,10 @@
       const onPointerEnd = e => {
         if (!this.isDrawing || (this.activePointerId !== null && e.pointerId !== this.activePointerId)) return;
         this.isDrawing = false;
+        window._isDrawingOnCanvas = false;
         this.activePointerId = null;
         this.smoothedPressure = null;
+        this.cachedRect = null;
         try { this.canvas.releasePointerCapture(e.pointerId); } catch {}
 
         if (this.prevToolBeforeRight) {
@@ -1095,6 +1103,7 @@
   const g = cv.getContext('2d');
   const pts = [];
   let x = 0, y = 0, on = false, hot = false, native = false, still = 0, raf = 0;
+  let lastPenTime = 0;
 
   const fit = () => {
     const r = devicePixelRatio || 1, w = Math.round(innerWidth * r), h = Math.round(innerHeight * r);
@@ -1105,7 +1114,8 @@
 
   function frame() {
     raf = 0;
-    const max = reduce.matches ? 1 : 28;
+    // Під час малювання на канвасі зменшуємо шлейф до 3 точок для максимальної швидкодії, інакше 28
+    const max = window._isDrawingOnCanvas ? 3 : (reduce.matches ? 1 : 28);
     g.clearRect(0, 0, innerWidth, innerHeight);
     if (!on || native) { pts.length = 0; return; }
     pts.push({ x, y });
@@ -1114,17 +1124,43 @@
     for (let i = 1; i < pts.length; i++) {
       const k = i / pts.length;
       g.strokeStyle = `rgba(${Math.round(255 * (1 - k))}, ${Math.round(43 + 197 * k)}, ${Math.round(214 + 41 * k)}, ${k})`;
-      g.lineWidth = 1 + 5 * k; g.shadowBlur = 12 * k; g.shadowColor = g.strokeStyle;
+      g.lineWidth = 1 + 5 * k; g.shadowBlur = (window._isDrawingOnCanvas ? 4 : 12) * k; g.shadowColor = g.strokeStyle;
       g.beginPath(); g.moveTo(pts[i - 1].x, pts[i - 1].y); g.lineTo(pts[i].x, pts[i].y); g.stroke();
     }
-    g.shadowBlur = 14; g.shadowColor = '#00f0ff'; g.fillStyle = hot ? '#ff2bd6' : '#eaffff';
+    g.shadowBlur = window._isDrawingOnCanvas ? 6 : 14; g.shadowColor = '#00f0ff'; g.fillStyle = hot ? '#ff2bd6' : '#eaffff';
     g.beginPath(); g.arc(x, y, hot ? 5 : 3.5, 0, Math.PI * 2); g.fill();
     if (still++ < max + 2) wake();
   }
 
   fit();
   addEventListener('resize', fit);
+
+  // Фіксуємо події пера з capture, щоб захистити координати від хибного перескакування на статичну мишу
+  addEventListener('pointerdown', e => {
+    if (e.pointerType === 'pen') {
+      lastPenTime = performance.now();
+    }
+  }, { capture: true, passive: true });
+
   addEventListener('pointermove', e => {
+    const now = performance.now();
+    const isPen = e.pointerType === 'pen';
+
+    if (isPen) {
+      lastPenTime = now;
+    } else if (e.pointerType === 'mouse') {
+      // Якщо щойно (протягом 1.2 с) працювало перо:
+      // ігноруємо події миші, якщо вона не рухається реально (відкидаємо фантомні події ОС Windows до точки стояння миші)
+      if (now - lastPenTime < 1200) {
+        if ((e.movementX === 0 && e.movementY === 0) || window._isDrawingOnCanvas) {
+          return;
+        }
+        if (Math.abs(e.movementX || 0) < 2 && Math.abs(e.movementY || 0) < 2) {
+          return;
+        }
+      }
+    }
+
     x = e.clientX; y = e.clientY; on = true; still = 0;
     const t = e.target instanceof Element ? e.target : null;
     native = !!t?.closest(NATIVE); hot = !native && !!t?.closest(HOT);
