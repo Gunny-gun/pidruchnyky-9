@@ -138,6 +138,7 @@
         <header class="bar">
           <button class="back" id="back" title="До списку предметів">← Предмети</button>
           <div class="title"><span class="dot"></span><b>${esc(b.title || b.subject)}</b></div>
+          <button class="split-toggle-btn" id="split-50-btn" title="Режим 50 / 50: порівну підручник і розв'язки">50 / 50</button>
           <nav class="pager" aria-label="Сторінки">
             <button id="prev" aria-label="Попередня сторінка">‹</button>
             <input id="pnum" type="text" inputmode="numeric" aria-label="Номер сторінки, як надруковано в підручнику">
@@ -165,6 +166,25 @@
     $('pnum').onchange = e => { const x = parseInt(e.target.value, 10); show(Number.isFinite(x) ? fromLabel(b, x) : state.page, 0); };
     $('nbtoggle').onclick = () => { store.set('nbClosed', !store.get('nbClosed')); applyNotebook(); };
     applyNotebook();
+
+    const applySplit50 = () => {
+      const is50 = !!store.get('split50');
+      const splitEl = document.querySelector('.split');
+      const btn50 = document.getElementById('split-50-btn');
+      if (splitEl) splitEl.classList.toggle('split-50', is50);
+      if (btn50) {
+        btn50.classList.toggle('active', is50);
+        btn50.title = is50 ? 'Повернути стандартний вигляд' : 'Режим 50 / 50: порівну підручник і розв\'язки';
+      }
+    };
+    const btn50 = $('split-50-btn');
+    if (btn50) {
+      btn50.onclick = () => {
+        store.set('split50', !store.get('split50'));
+        applySplit50();
+      };
+    }
+    applySplit50();
 
     $('zoom').onclick = () => {
       const z = $('stage').classList.toggle('zoom');
@@ -331,13 +351,54 @@
       };
     });
 
-    // Збільшення розв'язку
+    // Збільшення розв'язку в оригінальному розмірі (100%) та перетягування мишкою
     const zoomBtn = document.getElementById('hdz-zoom-btn');
-    if (zoomBtn) {
-      zoomBtn.onclick = () => {
-        const box = document.getElementById('hdz-img-box');
-        const isZ = box.classList.toggle('zoomed');
-        zoomBtn.textContent = isZ ? 'Зменшити' : 'Збільшити';
+    const box = document.getElementById('hdz-img-box');
+    const hdzImg = document.getElementById('hdz-img');
+
+    const toggleZoom = () => {
+      if (!box) return;
+      const isZ = box.classList.toggle('zoomed');
+      if (zoomBtn) {
+        zoomBtn.textContent = isZ ? 'Вписати' : 'Збільшити';
+        zoomBtn.title = isZ ? 'Вписати зображення в картку' : 'Показати в оригінальному розмірі (100%)';
+      }
+      if (hdzImg) {
+        hdzImg.title = isZ ? 'Клікніть, щоб вписати' : 'Клікніть для оригінального розміру (100%)';
+      }
+    };
+
+    if (zoomBtn) zoomBtn.onclick = toggleZoom;
+
+    if (box && hdzImg) {
+      let isDown = false, startX, startY, sLeft, sTop, moved = false;
+      box.addEventListener('mousedown', e => {
+        if (!box.classList.contains('zoomed')) return;
+        isDown = true;
+        moved = false;
+        box.classList.add('panning');
+        startX = e.pageX - box.offsetLeft;
+        startY = e.pageY - box.offsetTop;
+        sLeft = box.scrollLeft;
+        sTop = box.scrollTop;
+      });
+      window.addEventListener('mouseup', () => {
+        if (isDown) {
+          isDown = false;
+          box.classList.remove('panning');
+        }
+      });
+      box.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        const x = e.pageX - box.offsetLeft;
+        const y = e.pageY - box.offsetTop;
+        if (Math.abs(x - startX) > 4 || Math.abs(y - startY) > 4) moved = true;
+        box.scrollLeft = sLeft - (x - startX);
+        box.scrollTop = sTop - (y - startY);
+      });
+      hdzImg.onclick = () => {
+        if (moved) return;
+        toggleZoom();
       };
     }
 
@@ -395,10 +456,10 @@
     return `<div class="hdz-card">
       <div class="hdz-card-head">
         <b>${(t.task || '').startsWith('Завдання') || (t.task || '').startsWith('§') ? esc(t.task) : (/^[0-9]+(\.[0-9]+)?$/.test((t.task || '').trim()) ? 'Завдання № ' + esc(t.task) : esc(t.task))}</b>
-        <button class="hdz-zoom-btn" id="hdz-zoom-btn">Збільшити</button>
+        <button class="hdz-zoom-btn" id="hdz-zoom-btn" title="Оригінальний розмір (100%)">Збільшити</button>
       </div>
       <div class="hdz-img-box" id="hdz-img-box">
-        <img src="${esc(t.img)}" alt="${esc(t.title || t.task)}" class="hdz-img" id="hdz-img" loading="lazy">
+        <img src="${esc(t.img)}" alt="${esc(t.title || t.task)}" class="hdz-img" id="hdz-img" title="Клікніть для оригінального розміру (100%)" loading="lazy">
       </div>
     </div>`;
   }
