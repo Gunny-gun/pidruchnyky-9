@@ -129,6 +129,376 @@
     renderReader();
   }
 
+
+  /* ---------- Інтерактивний робочий зошит (Huion Canvas) ---------- */
+  const canvasBook = {
+    canvas: null,
+    ctx: null,
+    viewport: null,
+    wrap: null,
+    dpr: 1,
+    activeTool: 'pen', // 'pen', 'eraser', 'marker'
+    activeColor: '#eaf6ff',
+    activeSize: 4,
+    isDrawing: false,
+    lastX: 0,
+    lastY: 0,
+    lastMid: null,
+    undoStack: [],
+    redoStack: [],
+    saveTimer: null,
+    prevToolBeforeRight: null,
+
+    init(panelEl) {
+      if (!panelEl) return;
+      this.canvas = document.getElementById('c-canvas');
+      this.viewport = document.getElementById('c-viewport');
+      this.wrap = document.getElementById('c-sheet-wrap');
+      if (!this.canvas) return;
+      this.ctx = this.canvas.getContext('2d', { willReadFrequently: true });
+      this.dpr = Math.max(window.devicePixelRatio || 1, 1);
+
+      this.setupDimensions();
+      this.bindToolbar();
+      this.bindPointer();
+      this.bindShortcuts();
+      this.loadPage(state.book?.slug, state.page);
+    },
+
+    setupDimensions() {
+      if (!this.canvas || !this.wrap) return;
+      const rect = this.wrap.getBoundingClientRect();
+      const w = Math.max(Math.round(rect.width), 700);
+      const h = 2600;
+
+      // Збереження існуючого зображення при зміні розміру
+      let tempImg = null;
+      if (this.canvas.width > 0 && this.canvas.height > 0) {
+        tempImg = document.createElement('canvas');
+        tempImg.width = this.canvas.width;
+        tempImg.height = this.canvas.height;
+        tempImg.getContext('2d').drawImage(this.canvas, 0, 0);
+      }
+
+      this.canvas.width = Math.round(w * this.dpr);
+      this.canvas.height = Math.round(h * this.dpr);
+      this.canvas.style.width = w + 'px';
+      this.canvas.style.height = h + 'px';
+
+      this.ctx.scale(this.dpr, this.dpr);
+      this.ctx.lineCap = 'round';
+      this.ctx.lineJoin = 'round';
+
+      if (tempImg) {
+        this.ctx.drawImage(tempImg, 0, 0, tempImg.width / this.dpr, tempImg.height / this.dpr);
+      }
+    },
+
+    resize() {
+      this.setupDimensions();
+    },
+
+    bindToolbar() {
+      // Інструменти
+      const setTool = tool => {
+        this.activeTool = tool;
+        document.querySelectorAll('.c-tool-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.dataset.tool === tool);
+        });
+        if (this.canvas) {
+          this.canvas.classList.toggle('tool-eraser', tool === 'eraser');
+        }
+      };
+      this.setTool = setTool;
+
+      document.getElementById('c-tool-pen')?.addEventListener('click', () => setTool('pen'));
+      document.getElementById('c-tool-eraser')?.addEventListener('click', () => setTool('eraser'));
+      document.getElementById('c-tool-marker')?.addEventListener('click', () => setTool('marker'));
+
+      // Кольори
+      document.querySelectorAll('.c-color-btn').forEach(btn => {
+        btn.onclick = () => {
+          this.activeColor = btn.dataset.color;
+          document.querySelectorAll('.c-color-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          if (this.activeTool === 'eraser') setTool('pen');
+        };
+      });
+
+      // Розміри
+      document.querySelectorAll('.c-size-btn').forEach(btn => {
+        btn.onclick = () => {
+          this.activeSize = parseInt(btn.dataset.size, 10) || 4;
+          document.querySelectorAll('.c-size-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        };
+      });
+
+      // Дії
+      document.getElementById('c-undo')?.addEventListener('click', () => this.undo());
+      document.getElementById('c-redo')?.addEventListener('click', () => this.redo());
+      document.getElementById('c-clear')?.addEventListener('click', () => this.clear());
+      document.getElementById('c-download')?.addEventListener('click', () => this.downloadPNG());
+    },
+
+    pushUndo() {
+      if (!this.canvas) return;
+      if (this.undoStack.length >= 30) this.undoStack.shift();
+      this.undoStack.push(this.canvas.toDataURL());
+      this.redoStack = [];
+      this.updateUndoButtons();
+    },
+
+    updateUndoButtons() {
+      const u = document.getElementById('c-undo');
+      const r = document.getElementById('c-redo');
+      if (u) u.disabled = this.undoStack.length === 0;
+      if (r) r.disabled = this.redoStack.length === 0;
+    },
+
+    undo() {
+      if (this.undoStack.length === 0 || !this.canvas) return;
+      this.redoStack.push(this.canvas.toDataURL());
+      const prev = this.undoStack.pop();
+      this.renderDataURL(prev);
+      this.updateUndoButtons();
+      this.scheduleSave();
+    },
+
+    redo() {
+      if (this.redoStack.length === 0 || !this.canvas) return;
+      this.undoStack.push(this.canvas.toDataURL());
+      const next = this.redoStack.pop();
+      this.renderDataURL(next);
+      this.updateUndoButtons();
+      this.scheduleSave();
+    },
+
+    renderDataURL(dataUrl) {
+      if (!dataUrl) {
+        this.ctx.clearRect(0, 0, this.canvas.width / this.dpr, this.canvas.height / this.dpr);
+        return;
+      }
+      const img = new Image();
+      img.onload = () => {
+        this.ctx.clearRect(0, 0, this.canvas.width / this.dpr, this.canvas.height / this.dpr);
+        this.ctx.drawImage(img, 0, 0, this.canvas.width / this.dpr, this.canvas.height / this.dpr);
+      };
+      img.src = dataUrl;
+    },
+
+    clear() {
+      if (!this.canvas) return;
+      this.pushUndo();
+      this.ctx.clearRect(0, 0, this.canvas.width / this.dpr, this.canvas.height / this.dpr);
+      this.scheduleSave();
+    },
+
+    bindPointer() {
+      if (!this.canvas) return;
+
+      const getPos = e => {
+        const rect = this.canvas.getBoundingClientRect();
+        return {
+          x: e.clientX - rect.left,
+          y: e.clientY - rect.top,
+        };
+      };
+
+      this.canvas.addEventListener('contextmenu', e => e.preventDefault());
+
+      this.canvas.addEventListener('pointerdown', e => {
+        if (e.target !== this.canvas) return;
+        this.canvas.setPointerCapture(e.pointerId);
+
+        // Права кнопка миші або бічна кнопка пера Huion вмикає ластик
+        if (e.button === 2 || e.buttons === 2) {
+          this.prevToolBeforeRight = this.activeTool;
+          this.activeTool = 'eraser';
+        }
+
+        this.pushUndo();
+        this.isDrawing = true;
+        const pos = getPos(e);
+        this.lastX = pos.x;
+        this.lastY = pos.y;
+        this.lastMid = { x: pos.x, y: pos.y };
+
+        this.drawStroke(e, pos.x, pos.y, pos.x, pos.y);
+      });
+
+      this.canvas.addEventListener('pointermove', e => {
+        if (!this.isDrawing) return;
+        const pos = getPos(e);
+        const mid = { x: (this.lastX + pos.x) / 2, y: (this.lastY + pos.y) / 2 };
+
+        this.drawSmoothSegment(e, this.lastMid, this.lastX, this.lastY, mid);
+
+        this.lastX = pos.x;
+        this.lastY = pos.y;
+        this.lastMid = mid;
+      });
+
+      const onPointerEnd = e => {
+        if (!this.isDrawing) return;
+        this.isDrawing = false;
+        try { this.canvas.releasePointerCapture(e.pointerId); } catch {}
+
+        if (this.prevToolBeforeRight) {
+          this.setTool(this.prevToolBeforeRight);
+          this.prevToolBeforeRight = null;
+        }
+
+        this.scheduleSave();
+      };
+
+      this.canvas.addEventListener('pointerup', onPointerEnd);
+      this.canvas.addEventListener('pointercancel', onPointerEnd);
+    },
+
+    drawStroke(e, x1, y1, x2, y2) {
+      const ctx = this.ctx;
+      ctx.save();
+      this.applyToolStyle(ctx, e);
+
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.restore();
+    },
+
+    drawSmoothSegment(e, startMid, ctrlX, ctrlY, endMid) {
+      const ctx = this.ctx;
+      ctx.save();
+      this.applyToolStyle(ctx, e);
+
+      ctx.beginPath();
+      ctx.moveTo(startMid.x, startMid.y);
+      ctx.quadraticCurveTo(ctrlX, ctrlY, endMid.x, endMid.y);
+      ctx.stroke();
+      ctx.restore();
+    },
+
+    applyToolStyle(ctx, e) {
+      if (this.activeTool === 'eraser') {
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.lineWidth = 32;
+        ctx.strokeStyle = 'rgba(0,0,0,1)';
+      } else if (this.activeTool === 'marker') {
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.strokeStyle = this.activeColor;
+        ctx.globalAlpha = 0.35;
+        ctx.lineWidth = this.activeSize * 4.5;
+        ctx.lineCap = 'round';
+      } else {
+        // Ручка (B) з підтримкою тиску пера Huion
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.strokeStyle = this.activeColor;
+        ctx.globalAlpha = 1.0;
+        let w = this.activeSize;
+        if (e.pointerType === 'pen' && e.pressure > 0) {
+          w = this.activeSize * (0.35 + 1.25 * e.pressure);
+        }
+        ctx.lineWidth = Math.max(w, 1.2);
+        ctx.lineCap = 'round';
+      }
+    },
+
+    bindShortcuts() {
+      window.addEventListener('keydown', e => {
+        if (e.target.closest('input, textarea, [contenteditable="true"]')) return;
+        // Ctrl+Z / Ctrl+Y незалежно від мовної розкладки клавіатури
+        if ((e.ctrlKey || e.metaKey) && e.code === 'KeyZ') {
+          if (e.shiftKey) this.redo(); else this.undo();
+          e.preventDefault();
+        } else if ((e.ctrlKey || e.metaKey) && e.code === 'KeyY') {
+          this.redo();
+          e.preventDefault();
+        } else if (e.code === 'KeyB' || e.code === 'KeyP') {
+          this.setTool('pen');
+        } else if (e.code === 'KeyE') {
+          this.setTool('eraser');
+        } else if (e.code === 'KeyV') {
+          this.setTool('marker');
+        }
+      });
+    },
+
+    scheduleSave() {
+      clearTimeout(this.saveTimer);
+      this.saveTimer = setTimeout(() => this.saveCurrentPage(), 400);
+    },
+
+    saveCurrentPage() {
+      if (!this.canvas || !state.book) return;
+      const key = `p9:draw:${state.book.slug}:${state.page}`;
+      try {
+        const data = this.canvas.toDataURL('image/webp', 0.88);
+        store.set(key, data);
+      } catch (err) {
+        /* сховище переповнене */
+      }
+    },
+
+    loadPage(slug, page) {
+      if (!this.canvas || !slug || !page) return;
+      const key = `p9:draw:${slug}:${page}`;
+      const saved = store.get(key);
+      this.undoStack = [];
+      this.redoStack = [];
+      this.updateUndoButtons();
+      this.renderDataURL(saved);
+    },
+
+    downloadPNG() {
+      if (!this.canvas || !state.book) return;
+      const b = state.book, p = state.page, lb = label(b, p);
+      const w = this.canvas.width;
+      const h = this.canvas.height;
+      const out = document.createElement('canvas');
+      out.width = w;
+      out.height = h;
+      const g = out.getContext('2d');
+
+      // 1. Темний зошитовий фон
+      g.fillStyle = '#0c101d';
+      g.fillRect(0, 0, w, h);
+
+      // 2. Клітинка 24px (5мм)
+      const step = 24 * this.dpr;
+      g.strokeStyle = 'rgba(0, 240, 255, 0.07)';
+      g.lineWidth = 1;
+      for (let x = 0; x < w; x += step) {
+        g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke();
+      }
+      for (let y = 0; y < h; y += step) {
+        g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke();
+      }
+
+      // 3. Поля — маджента
+      const marginX = 48 * this.dpr;
+      g.strokeStyle = 'rgba(255, 43, 214, 0.35)';
+      g.lineWidth = 1.5 * this.dpr;
+      g.beginPath(); g.moveTo(marginX, 0); g.lineTo(marginX, h); g.stroke();
+
+      // 4. Шапка на аркуші
+      g.fillStyle = '#00f0ff';
+      g.font = `bold ${Math.round(13 * this.dpr)}px "JetBrains Mono", monospace`;
+      g.fillText(`МАТЕМАТИКА 9 КЛАС // ${b.title || b.subject} · Сторінка ${lb || p} · Зошит Мілани`, (marginX + 14 * this.dpr), 32 * this.dpr);
+
+      // 5. Рукописні записи
+      g.drawImage(this.canvas, 0, 0);
+
+      // Завантаження файлу
+      const a = document.createElement('a');
+      a.download = `zoshyt-${b.slug}-storinka-${lb || p}.png`;
+      a.href = out.toDataURL('image/png');
+      a.click();
+    }
+  };
+
+
   function renderReader() {
     const b = state.book;
     document.title = `${b.subject} · 9 клас`;
@@ -138,6 +508,17 @@
         <header class="bar">
           <button class="back" id="back" title="До списку предметів">← Предмети</button>
           <div class="title"><span class="dot"></span><b>${esc(b.title || b.subject)}</b></div>
+          <div class="view-modes" id="view-modes" role="group" aria-label="Режими перегляду розвороту">
+            <button class="mode-btn active" data-mode="book-canvas" title="Підручник зліва, зошит для письма пером справа">
+              <span>Книга + Зошит</span>
+            </button>
+            <button class="mode-btn" data-mode="book-gdz" title="Підручник зліва, розв'язки ГДЗ справа">
+              <span>Книга + ГДЗ</span>
+            </button>
+            <button class="mode-btn" data-mode="3col" title="3 колонки: підручник, зошит для письма і ГДЗ поруч">
+              <span>3 Колонки</span>
+            </button>
+          </div>
           <button class="split-toggle-btn" id="split-50-btn" title="Режим 50 / 50: порівну підручник і розв'язки">50 / 50</button>
           <nav class="pager" aria-label="Сторінки">
             <button id="prev" aria-label="Попередня сторінка">‹</button>
@@ -146,12 +527,54 @@
             <button id="next" aria-label="Наступна сторінка">›</button>
           </nav>
         </header>
-        <div class="split">
+        <div class="split mode-book-canvas">
           <section class="stage" id="stage" aria-label="Сторінка підручника">
             <div class="sheet" id="sheet"><img id="img" alt=""></div>
             <button class="hit l" id="hitl" aria-label="Попередня сторінка"></button>
             <button class="hit r" id="hitr" aria-label="Наступна сторінка"></button>
             <div class="stage-tools"><button id="zoom">Збільшити сторінку</button></div>
+          </section>
+          <section class="canvas-panel" id="canvas-panel" aria-label="Робочий зошит для письма">
+            <header class="canvas-bar">
+              <div class="canvas-tools-group">
+                <span class="canvas-tag">Зошит</span>
+                <button class="c-tool-btn active" id="c-tool-pen" data-tool="pen" title="Ручка (B або P)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path></svg>
+                  <span>Ручка <kbd>B</kbd></span>
+                </button>
+                <button class="c-tool-btn" id="c-tool-eraser" data-tool="eraser" title="Ластик (E або права кнопка пера)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 20H7L2 15c-1-1-1-2.5 0-3.5L12 2l10 10-5 5"></path></svg>
+                  <span>Ластик <kbd>E</kbd></span>
+                </button>
+                <button class="c-tool-btn" id="c-tool-marker" data-tool="marker" title="Маркер (V)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 3l5 5L8 21H3v-5L16 3z"></path></svg>
+                  <span>Маркер <kbd>V</kbd></span>
+                </button>
+              </div>
+              <div class="canvas-colors" id="c-colors" role="radiogroup" aria-label="Палітра кольорів">
+                <button class="c-color-btn active" data-color="#eaf6ff" style="--c:#eaf6ff" title="Білий"></button>
+                <button class="c-color-btn" data-color="#00f0ff" style="--c:#00f0ff" title="Неоновий циан"></button>
+                <button class="c-color-btn" data-color="#10b981" style="--c:#10b981" title="Смарагдовий"></button>
+                <button class="c-color-btn" data-color="#ff2bd6" style="--c:#ff2bd6" title="Маджента"></button>
+                <button class="c-color-btn" data-color="#ffe14d" style="--c:#ffe14d" title="Жовтий"></button>
+              </div>
+              <div class="canvas-sizes" id="c-sizes" role="group" aria-label="Товщина">
+                <button class="c-size-btn" data-size="2" title="Тонка (2px)">•</button>
+                <button class="c-size-btn active" data-size="4" title="Звичайна (4px)">●</button>
+                <button class="c-size-btn" data-size="8" title="Товста (8px)">⬤</button>
+              </div>
+              <div class="canvas-actions">
+                <button class="c-act-btn" id="c-undo" title="Скасувати (Ctrl+Z)" aria-label="Скасувати">↶</button>
+                <button class="c-act-btn" id="c-redo" title="Повернути (Ctrl+Y)" aria-label="Повернути">↷</button>
+                <button class="c-act-btn c-act-clear" id="c-clear" title="Очистити зошит">Очистити</button>
+                <button class="c-act-btn c-act-save" id="c-download" title="Завантажити малюнок у PNG">PNG</button>
+              </div>
+            </header>
+            <div class="canvas-viewport" id="c-viewport">
+              <div class="canvas-sheet-wrap" id="c-sheet-wrap">
+                <canvas id="c-canvas" class="paint-canvas"></canvas>
+              </div>
+            </div>
           </section>
           <aside class="notebook" id="notes" aria-label="Розв'язки та відповіді">
             <button class="nb-toggle" id="nbtoggle" aria-controls="nbbody"><i aria-hidden="true">‹</i><span>Розв'язки</span></button>
@@ -200,6 +623,32 @@
       x0 = null;
     }, { passive: true });
 
+
+    // Перемикач режимів розвороту
+    const applyViewMode = mode => {
+      const splitEl = document.querySelector('.split');
+      if (!splitEl) return;
+      splitEl.classList.remove('mode-book-canvas', 'mode-book-gdz', 'mode-3col');
+      splitEl.classList.add(`mode-${mode}`);
+      document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.mode === mode);
+      });
+      store.set('viewMode', mode);
+      if (mode !== 'book-gdz') {
+        setTimeout(() => canvasBook.resize(), 60);
+      }
+    };
+
+    const initialMode = store.get('viewMode') || 'book-canvas';
+    applyViewMode(initialMode);
+
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+      btn.onclick = () => applyViewMode(btn.dataset.mode);
+    });
+
+    // Ініціалізація робочого канвасу
+    canvasBook.init(document.getElementById('canvas-panel'));
+
     show(state.page, 0);
   }
 
@@ -218,6 +667,7 @@
   }
 
   function show(n, dir) {
+    if (canvasBook.saveCurrentPage) canvasBook.saveCurrentPage();
     const b = state.book;
     n = Math.min(Math.max(n, 1), b.pages);
     const img = document.getElementById('img');
@@ -245,6 +695,7 @@
     store.set('recent', b.slug);
     go(b.slug, n);
     renderSolutions();
+    if (canvasBook.loadPage) canvasBook.loadPage(b.slug, n);
     for (const k of [n + 1, n + 2, n - 1]) if (k >= 1 && k <= b.pages) new Image().src = pageUrl(b.slug, k);
   }
 
@@ -488,7 +939,7 @@
   if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const HOT = 'a, button, [role="button"], summary, label, .hit';
-  const NATIVE = 'input, textarea, select, [contenteditable="true"]';
+  const NATIVE = 'input, textarea, select, [contenteditable="true"], canvas, .paint-canvas, .canvas-viewport, .c-tool-btn, .c-color-btn, .c-size-btn, .c-act-btn';
   const cv = document.createElement('canvas');
   cv.className = 'neon-cursor'; cv.setAttribute('aria-hidden', 'true');
   document.body.append(cv);
