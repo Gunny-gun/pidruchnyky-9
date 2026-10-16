@@ -630,10 +630,10 @@ button, input { font: inherit; color: inherit; }
   cursor: crosshair;
 }
 
-/* Вимкнення неонового курсору над робочим полем для комфорту пера Huion */
+/* Неоновий шлейф і курсор вільно ширяють над усім зошитом */
 .has-neon-cursor .paint-canvas,
 .has-neon-cursor .canvas-viewport {
-  cursor: crosshair !important;
+  cursor: none;
 }
 
 @media (max-width: 1100px) {
