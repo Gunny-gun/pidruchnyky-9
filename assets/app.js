@@ -418,19 +418,25 @@
     applyToolStyle(ctx, width) {
       if (this.activeTool === 'eraser') {
         ctx.globalCompositeOperation = 'destination-out';
+        ctx.shadowBlur = 0;
+        ctx.shadowColor = 'transparent';
         ctx.lineWidth = width || 28;
         ctx.strokeStyle = 'rgba(0,0,0,1)';
       } else if (this.activeTool === 'marker') {
         ctx.globalCompositeOperation = 'source-over';
         ctx.strokeStyle = this.activeColor;
-        ctx.globalAlpha = 0.35;
+        ctx.shadowColor = this.activeColor;
+        ctx.shadowBlur = 8;
+        ctx.globalAlpha = 0.38;
         ctx.lineWidth = width || (this.activeSize * 4.5);
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
       } else {
-        // Ручка (B)
+        // Ручка (B) з неоновим світінням чорнила
         ctx.globalCompositeOperation = 'source-over';
         ctx.strokeStyle = this.activeColor;
+        ctx.shadowColor = (this.activeColor === '#eaf6ff') ? 'rgba(0, 240, 255, 0.65)' : this.activeColor;
+        ctx.shadowBlur = 4;
         ctx.globalAlpha = 1.0;
         ctx.lineWidth = width || this.activeSize;
         ctx.lineCap = 'round';
@@ -975,8 +981,8 @@
   'use strict';
   if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  const HOT = 'a, button, [role="button"], summary, label, .hit';
-  const NATIVE = 'input, textarea, select, [contenteditable="true"], canvas, .paint-canvas, .canvas-viewport, .c-tool-btn, .c-color-btn, .c-size-btn, .c-act-btn';
+  const HOT = 'a, button, [role="button"], summary, label, .hit, .c-tool-btn, .c-color-btn, .c-size-btn, .c-act-btn, .mode-btn';
+  const NATIVE = 'input, textarea, select, [contenteditable="true"]';
   const cv = document.createElement('canvas');
   cv.className = 'neon-cursor'; cv.setAttribute('aria-hidden', 'true');
   document.body.append(cv);
@@ -994,7 +1000,7 @@
 
   function frame() {
     raf = 0;
-    const max = reduce.matches ? 1 : 22;
+    const max = reduce.matches ? 1 : 28;
     g.clearRect(0, 0, innerWidth, innerHeight);
     if (!on || native) { pts.length = 0; return; }
     pts.push({ x, y });
@@ -1014,7 +1020,6 @@
   fit();
   addEventListener('resize', fit);
   addEventListener('pointermove', e => {
-    if (e.pointerType !== 'mouse') return;
     x = e.clientX; y = e.clientY; on = true; still = 0;
     const t = e.target instanceof Element ? e.target : null;
     native = !!t?.closest(NATIVE); hot = !native && !!t?.closest(HOT);
