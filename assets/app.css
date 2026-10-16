@@ -452,13 +452,14 @@ button, input { font: inherit; color: inherit; }
 .c-tool-btn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 11px;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
   border-radius: 8px;
   border: 1px solid var(--desk-edge);
   background: var(--chip);
   color: var(--ink-soft);
-  font: 700 12px/1 var(--f-mono);
   cursor: pointer;
   transition: all .15s ease;
 }
@@ -558,14 +559,13 @@ button, input { font: inherit; color: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  padding: 6px 10px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
   border-radius: 8px;
   border: 1px solid var(--desk-edge);
   background: var(--chip);
   color: var(--ink-soft);
-  font: 700 11px/1 var(--f-mono);
   cursor: pointer;
   transition: all .15s ease;
 }
