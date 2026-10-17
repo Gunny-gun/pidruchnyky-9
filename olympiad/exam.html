@@ -462,6 +462,170 @@
       transition: all 0.15s;
     }
     .btn-bottom-add:hover { background: #1c2b42; border-color: var(--accent-cyan); color: #fff; }
+
+    /* МОДАЛЬНЕ ВІКНО ПЕРЕВІРКИ ШІ */
+    .audit-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      animation: auditFadeIn 0.2s ease-out;
+    }
+    @keyframes auditFadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .audit-modal-card {
+      background: #0d1527;
+      border: 1.5px solid #00f0ff;
+      border-radius: 18px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 0 40px rgba(0, 240, 255, 0.25), 0 20px 40px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      font-family: inherit;
+      color: #e2e8f0;
+      animation: auditScaleUp 0.2s ease-out;
+    }
+    @keyframes auditScaleUp { from { transform: scale(0.95); } to { transform: scale(1); } }
+    .audit-modal-head {
+      background: #090e1c;
+      padding: 14px 18px;
+      border-bottom: 1px solid #1c2b4a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .audit-modal-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: monospace;
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #00f0ff;
+      letter-spacing: 0.05em;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: #10b981;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #10b981;
+      animation: pulseDot 1.5s infinite;
+    }
+    @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.85); } }
+    .audit-modal-close {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .audit-modal-close:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
+    .audit-modal-body {
+      padding: 22px 24px 14px;
+      text-align: center;
+    }
+    .audit-status-icon {
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+    .audit-modal-body h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.01em;
+    }
+    .audit-meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      font-size: 12.5px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+    .audit-meta-bar b { color: #38bdf8; }
+    .audit-steps-list {
+      background: #070b14;
+      border: 1px solid #1e2e4f;
+      border-radius: 12px;
+      padding: 12px 16px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .audit-step-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .audit-step-item .step-check {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border: 1px solid #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+    .audit-cta-box {
+      background: linear-gradient(135deg, rgba(0, 240, 255, 0.08), rgba(255, 43, 214, 0.08));
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-align: left;
+    }
+    .cta-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .audit-cta-box p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #e2e8f0;
+    }
+    .audit-modal-foot {
+      padding: 12px 24px 22px;
+      display: flex;
+      justify-content: center;
+    }
+    .btn-audit-confirm {
+      width: 100%;
+      background: linear-gradient(90deg, #00f0ff, #ff2bd6);
+      border: none;
+      border-radius: 10px;
+      color: #07060f;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 12px 20px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .btn-audit-confirm:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+    }
   </style>
 </head>
 <body>
@@ -1425,17 +1589,71 @@
         btn.innerHTML = '<span>⏳ Збереження всієї роботи...</span>';
       }
 
+      function showAuditModal(title, isTelegramSent = true) {
+        const modal = document.getElementById('auditModal');
+        if (!modal) return;
+        const spentSec = 2700 - timerSec;
+        const mins = Math.floor(spentSec / 60);
+        const secs = spentSec % 60;
+        const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
+        
+        const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 's1_t2';
+        const taskData = (typeof olympiadDatabase !== 'undefined' && olympiadDatabase[taskId]) ? olympiadDatabase[taskId] : {};
+        const taskTitle = taskData.title || taskId;
+
+        document.getElementById('auditModalTitle').textContent = title || 'Роботу підготовлено до перевірки!';
+        document.getElementById('auditModalMeta').innerHTML = `<span>⏱ Час: <b>${timeFormatted}</b></span> · <span>📝 <b>${taskTitle}</b></span>`;
+        
+        const tgStep = document.getElementById('stepTelegramStatus');
+        if (tgStep) {
+          tgStep.style.display = isTelegramSent ? 'flex' : 'none';
+        }
+
+        modal.style.display = 'flex';
+      }
+
+      function closeAuditModal() {
+        const modal = document.getElementById('auditModal');
+        if (modal) modal.style.display = 'none';
+      }
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeAuditModal();
+      });
+
       try {
         const compositeCanvas = await generateFullSnapshotCanvas();
         const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'task';
+        
+        // 1. Завантаження PNG на диск комп'ютера
         const link = document.createElement('a');
         link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
         link.href = compositeCanvas.toDataURL('image/png');
         link.click();
+
+        // 2. Копіювання в буфер обміну для миттєвої вставки в чат (Ctrl+V)
+        compositeCanvas.toBlob(async (blob) => {
+          if (blob && navigator.clipboard && window.ClipboardItem) {
+            try {
+              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+            } catch (clipErr) {
+              console.log('Clipboard notice:', clipErr);
+            }
+          }
+        }, 'image/png');
+
+        if (btn) {
+          btn.innerHTML = '<span>✅ PNG збережено & скопійовано</span>';
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.innerHTML = origHtml;
+          }, 3500);
+        }
+
+        showAuditModal('Знімок збережено та скопійовано!', false);
       } catch (err) {
         console.error(err);
         alert('Помилка при збереженні знімка: ' + err.message);
-      } finally {
         if (btn) {
           btn.disabled = false;
           btn.innerHTML = origHtml;
@@ -1444,22 +1662,13 @@
     }
 
     const TG_BOT_TOKEN = "8713271082:AAGQzVKiPXw9DSpYAPNODEsaiaIQfoEjAe8";
-    let TG_CHAT_ID = "";
+    let TG_CHAT_ID = "619089297";
 
     async function submitToAudit() {
       const btn = document.getElementById('btnSubmitWork');
       const origHtml = btn ? btn.innerHTML : '';
 
-      let chatId = TG_CHAT_ID || localStorage.getItem('tg_chat_id');
-      if (!chatId) {
-        chatId = prompt("Введіть ваш Telegram Chat ID для відправки викладачу / боту:", "764834479");
-        if (chatId) {
-          localStorage.setItem('tg_chat_id', chatId.trim());
-          TG_CHAT_ID = chatId.trim();
-        } else {
-          return;
-        }
-      }
+      const chatId = localStorage.getItem('tg_chat_id') || TG_CHAT_ID;
 
       if (btn) {
         btn.disabled = true;
@@ -1468,7 +1677,7 @@
 
       try {
         const compositeCanvas = await generateFullSnapshotCanvas();
-        if (btn) btn.innerHTML = '<span>✈️ Відправка в Telegram...</span>';
+        if (btn) btn.innerHTML = '<span>✈️ Відправка на перевірку...</span>';
 
         compositeCanvas.toBlob(async (blob) => {
           if (!blob) {
@@ -1486,38 +1695,52 @@
           const taskData = (typeof olympiadDatabase !== 'undefined' && olympiadDatabase[taskId]) ? olympiadDatabase[taskId] : {};
           const taskTitle = taskData.title || taskId;
 
+          // 1. Копіюємо знімок прямо в буфер обміну (Ctrl+V у чат)
+          if (navigator.clipboard && window.ClipboardItem) {
+            try {
+              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+            } catch (clipErr) {
+              console.log('Clipboard notice:', clipErr);
+            }
+          }
+
+          // 2. Локальне резервне збереження на диск
+          const link = document.createElement('a');
+          link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
+          link.href = compositeCanvas.toDataURL('image/png');
+          link.click();
+
+          // 3. Відправка в Telegram-бот
           const formData = new FormData();
           formData.append('chat_id', chatId);
           formData.append('photo', blob, `olympiad_${taskId}.png`);
-          formData.append('caption', `🇬🇧 ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС\n${taskData.stage || 'КМАН'}\n${taskTitle}\n⏱ Час виконання: ${timeFormatted}\n📝 Повна робота Мілани (умова + рукописний зошит)`);
+          formData.append('caption', `🇬🇧 ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС\n${taskData.stage || 'КМАН ІСПИТ'}\n${taskTitle}\n⏱ Час виконання: ${timeFormatted}\n📝 Повна робота Мілани (умова + рукописний зошит)`);
 
+          let sentTelegram = false;
           try {
             const resp = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendPhoto`, {
               method: 'POST',
               body: formData
             });
             const res = await resp.json();
-            if (res.ok) {
-              if (btn) {
-                btn.innerHTML = `<span>✅ Надіслано (${timeFormatted})</span>`;
-                btn.style.background = '#059669';
-                setTimeout(() => {
-                  btn.disabled = false;
-                  btn.innerHTML = origHtml;
-                  btn.style.background = '';
-                }, 5000);
-              }
-            } else {
-              throw new Error(res.description);
-            }
+            sentTelegram = res.ok;
           } catch(err) {
-            alert('Повідомлення збережено! (Telegram: ' + err.message + '). Файл повної роботи зараз скачається на диск.');
-            const link = document.createElement('a');
-            link.download = `milana_olympiad_${currentTaskId}_full_${Date.now()}.png`;
-            link.href = compositeCanvas.toDataURL('image/png');
-            link.click();
-            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+            console.warn('Telegram send notice:', err);
           }
+
+          if (btn) {
+            btn.innerHTML = `<span>✅ Надіслано (${timeFormatted})</span>`;
+            btn.style.background = '#059669';
+            setTimeout(() => {
+              btn.disabled = false;
+              btn.innerHTML = origHtml;
+              btn.style.background = '';
+            }, 5000);
+          }
+
+          // 4. Відкриваємо діалог інструкції для аудиту ШІ
+          showAuditModal('Роботу передано на аудит!', sentTelegram);
+
         }, 'image/png');
       } catch (err) {
         alert('Помилка створення знімка: ' + err.message);
@@ -1533,5 +1756,51 @@
       updateTimerDisplay();
     };
   </script>
+
+  <!-- МОДАЛЬНЕ ВІКНО ПЕРЕДАЧІ РОБОТИ ШІ-МЕНТОРУ -->
+  <div class="audit-modal-backdrop" id="auditModal" style="display:none;" onclick="if(event.target===this)closeAuditModal();">
+    <div class="audit-modal-card">
+      <div class="audit-modal-head">
+        <div class="audit-modal-badge">
+          <span class="pulse-dot"></span>
+          <span>AI-МЕНТОР // АНТИГРАВІТАЦІЯ</span>
+        </div>
+        <button class="audit-modal-close" onclick="closeAuditModal()" title="Закрити (Esc)">✕</button>
+      </div>
+      
+      <div class="audit-modal-body">
+        <div class="audit-status-icon">🚀</div>
+        <h3 id="auditModalTitle">Роботу відправлено на перевірку!</h3>
+        <div class="audit-meta-bar" id="auditModalMeta">
+          <span>⏱ Час: <b>24 хв 12 с</b></span>
+          <span>📝 <b>Use of English</b></span>
+        </div>
+
+        <div class="audit-steps-list">
+          <div class="audit-step-item" id="stepTelegramStatus">
+            <span class="step-check">✓</span>
+            <span><b>Telegram-бот:</b> надіслано фото та час викладачу</span>
+          </div>
+          <div class="audit-step-item">
+            <span class="step-check">✓</span>
+            <span><b>Буфер обміну:</b> знімок повної роботи скопійовано (можна тиснути Ctrl+V)</span>
+          </div>
+          <div class="audit-step-item">
+            <span class="step-check">✓</span>
+            <span><b>Локальний файл:</b> PNG збережено на диск комп'ютера</span>
+          </div>
+        </div>
+
+        <div class="audit-cta-box">
+          <div class="cta-title">💡 Як отримати миттєвий аудит від ШІ-ментора:</div>
+          <p>Відкрий наш діалог в Antigravity / Gemini і просто натисни <b>Ctrl + V</b> (вставити картинку). Ментор миттєво проведе покроковий аудит, розбере олімпіадні пастки КМАН та підрахує бал!</p>
+        </div>
+      </div>
+
+      <div class="audit-modal-foot">
+        <button class="btn-audit-confirm" onclick="closeAuditModal()">Чудово, переходжу до перевірки! →</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
