@@ -690,6 +690,92 @@
       cursor: pointer;
     }
     .btn-close-modal:hover { color: #fff; border-color: #38bdf8; }
+
+    /* ПАНЕЛЬ ФІЛЬТРІВ ТА ПЕРЕМИКАННЯ РЕЄСТРУ ВІДПОВІДЕЙ */
+    .answers-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #070b14;
+      border: 1px solid #1c2b44;
+      border-radius: 9px;
+      padding: 8px 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .answers-dropdown-select {
+      background: #111a29;
+      border: 1.5px solid #2d4263;
+      color: #f1f5f9;
+      font-family: inherit;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      outline: none;
+      flex: 1;
+      min-width: 250px;
+      transition: all 0.15s;
+    }
+    .answers-dropdown-select:hover, .answers-dropdown-select:focus {
+      border-color: #38bdf8;
+      background: #16253b;
+    }
+    .ans-filter-pills {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .ans-pill-btn {
+      background: #141f32;
+      border: 1px solid #24354f;
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 9px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .ans-pill-btn:hover {
+      border-color: #38bdf8;
+      color: #fff;
+    }
+    .ans-pill-btn.active {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+    .ans-section-divider {
+      background: #0f182a;
+      border: 1px solid #24354f;
+      border-left: 3px solid #38bdf8;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 18px 0 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ans-section-divider h4 {
+      margin: 0;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .ans-section-divider .section-badge {
+      font-size: 11px;
+      font-weight: 700;
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -737,8 +823,12 @@
         <span>Зберегти PNG</span>
       </button>
 
-      <button class="btn btn-emerald" id="btnCheckAnswers" onclick="openAnswersModal()" title="Перевірити відповіді з офіційними ключами прямо на сайті">
+      <button class="btn btn-emerald" id="btnCheckAnswers" onclick="openAnswersModal('current')" title="Перевірити відповіді поточного завдання">
         <span>Перевірити відповіді</span>
+      </button>
+
+      <button class="btn" id="btnAllAnswers" onclick="openAnswersModal('all')" title="Повний зведений реєстр відповідей усіх варіантів" style="background:#131e30; border:1px solid #2d4263; color:#38bdf8;">
+        <span>Всі відповіді</span>
       </button>
     </div>
   </header>
@@ -1884,41 +1974,99 @@
     }
 
     // --- ВІДКРИТТЯ ВІДПОВІДЕЙ ТА АУДИТУ НА САЙТІ ---
-    function openAnswersModal() {
+    function openAnswersModal(filterMode = 'current') {
       const modal = document.getElementById('auditModal');
       if (!modal) return;
+      modal.style.display = 'flex';
+      renderAnswersModal(filterMode);
+    }
+
+    function renderAnswersModal(filterValue) {
+      const select = document.getElementById('modalAnswersFilter');
+      if (select && filterValue) select.value = filterValue;
 
       const spentSec = 2700 - timerSec;
       const mins = Math.floor(spentSec / 60);
       const secs = spentSec % 60;
       const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
 
-      const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'v1_t1';
-      const ansData = variantsAnswersDatabase[taskId] || {
-        title: taskId,
-        source: "Офіційні матеріали",
-        scoreInfo: "",
-        items: []
-      };
-
-      document.getElementById('modalTaskTitle').textContent = ansData.title;
-      document.getElementById('modalTaskSource').textContent = ansData.source;
-      document.getElementById('modalTaskTime').textContent = timeFormatted;
-      document.getElementById('modalTaskScore').textContent = ansData.scoreInfo;
-
       const container = document.getElementById('answersListContainer');
-      container.innerHTML = ansData.items.map(item => {
-        const isSpecial = !item.num.match(/^\d+$/);
-        return `
-          <div class="ans-card ${isSpecial ? 'ans-special' : ''}">
-            <div class="ans-num">№ ${item.num}</div>
-            <div class="ans-key">${item.ans}</div>
-            <div class="ans-rule">${item.rule}</div>
-          </div>
-        `;
-      }).join('');
+      const taskHeader = document.getElementById('modalTaskHeader');
 
-      modal.style.display = 'flex';
+      document.querySelectorAll('.ans-pill-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === filterValue);
+      });
+
+      let taskKeys = [];
+      if (filterValue === 'current') {
+        const cur = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'v1_t1';
+        taskKeys = [cur];
+      } else if (filterValue === 'v1_all') {
+        taskKeys = ['v1_t1', 'v1_t2', 'v1_t3', 'v1_t4', 'v1_t5', 'v1_t6'];
+      } else if (filterValue === 'v2_all') {
+        taskKeys = ['v2_t1', 'v2_t2', 'v2_t3', 'v2_t4', 'v2_t5', 'v2_t6'];
+      } else if (filterValue === 'all') {
+        taskKeys = Object.keys(variantsAnswersDatabase);
+      } else if (variantsAnswersDatabase[filterValue]) {
+        taskKeys = [filterValue];
+      } else {
+        taskKeys = ['v1_t1'];
+      }
+
+      if (taskKeys.length === 1) {
+        const ansData = variantsAnswersDatabase[taskKeys[0]];
+        taskHeader.style.display = 'block';
+        document.getElementById('modalTaskTitle').textContent = ansData.title;
+        document.getElementById('modalTaskSource').textContent = ansData.source;
+        document.getElementById('modalTaskTime').textContent = timeFormatted;
+        document.getElementById('modalTaskScore').textContent = ansData.scoreInfo;
+
+        container.innerHTML = ansData.items.map(item => {
+          const isSpecial = !item.num.match(/^\d+$/);
+          return `
+            <div class="ans-card ${isSpecial ? 'ans-special' : ''}">
+              <div class="ans-num">№ ${item.num}</div>
+              <div class="ans-key">${item.ans}</div>
+              <div class="ans-rule">${item.rule}</div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        taskHeader.style.display = 'block';
+        const isFullAll = (filterValue === 'all');
+        const isV1 = (filterValue === 'v1_all');
+        const titleText = isFullAll 
+          ? 'Повний зведений реєстр відповідей (Варіанти 1 та 2 • 12 завдань)'
+          : (isV1 ? 'Варіант 1 — Повний реєстр відповідей (6 завдань • 76 балів)' : 'Варіант 2 — Повний реєстр відповідей (6 завдань • 76 балів)');
+        
+        document.getElementById('modalTaskTitle').textContent = titleText;
+        document.getElementById('modalTaskSource').textContent = 'Cambridge Assessment English • B2 First for Schools';
+        document.getElementById('modalTaskTime').textContent = timeFormatted;
+        document.getElementById('modalTaskScore').textContent = isFullAll ? 'Всього: 152 бали' : 'Всього за варіант: 76 балів';
+
+        let html = '';
+        taskKeys.forEach(tKey => {
+          const data = variantsAnswersDatabase[tKey];
+          if (!data) return;
+          html += `
+            <div class="ans-section-divider">
+              <h4>${data.title}</h4>
+              <span class="section-badge">${data.scoreInfo}</span>
+            </div>
+          `;
+          html += data.items.map(item => {
+            const isSpecial = !item.num.match(/^\d+$/);
+            return `
+              <div class="ans-card ${isSpecial ? 'ans-special' : ''}">
+                <div class="ans-num">№ ${item.num}</div>
+                <div class="ans-key">${item.ans}</div>
+                <div class="ans-rule">${item.rule}</div>
+              </div>
+            `;
+          }).join('');
+        });
+        container.innerHTML = html;
+      }
     }
 
     function closeAuditModal() {
@@ -1951,7 +2099,42 @@
       </div>
       
       <div class="audit-modal-body">
-        <div class="audit-task-header">
+        <!-- Панель вибору режиму відповідей (випадаючий список + швидкі фільтри) -->
+        <div class="answers-filter-bar">
+          <select id="modalAnswersFilter" class="answers-dropdown-select" onchange="renderAnswersModal(this.value)">
+            <optgroup label="Зведені реєстри (Усі завдання разом)">
+              <option value="current" selected>Поточне обране завдання</option>
+              <option value="v1_all">Варіант 1 — Повний реєстр (Усі 6 завдань разом • 76 балів)</option>
+              <option value="v2_all">Варіант 2 — Повний реєстр (Усі 6 завдань разом • 76 балів)</option>
+              <option value="all">Усі варіанти (Варіант 1 + Варіант 2 разом • 12 завдань)</option>
+            </optgroup>
+            <optgroup label="Окремі завдання Варіанта 1">
+              <option value="v1_t1">Вар #1 • Use of English: «Stretch like a cat» (1–8)</option>
+              <option value="v1_t2">Вар #1 • Use of English: «Music and the Brain» (9–16)</option>
+              <option value="v1_t3">Вар #1 • Use of English: «Living in the Country» (17–24)</option>
+              <option value="v1_t4">Вар #1 • Reading Part 6: «The Amur Leopard» (37–42)</option>
+              <option value="v1_t5">Вар #1 • WRITING TEST (Essay / Email / Review)</option>
+              <option value="v1_t6">Вар #1 • SPEAKING TEST (5 карток B2 First)</option>
+            </optgroup>
+            <optgroup label="Окремі завдання Варіанта 2">
+              <option value="v2_t1">Вар #2 • Use of English: «Living with Animals» (1–8)</option>
+              <option value="v2_t2">Вар #2 • Use of English: «History of Bicycles» (9–16)</option>
+              <option value="v2_t3">Вар #2 • Use of English: «Underwater Discovery» (17–24)</option>
+              <option value="v2_t4">Вар #2 • Reading Part 6: «Young Minds» (37–42)</option>
+              <option value="v2_t5">Вар #2 • WRITING TEST (150–180 слів)</option>
+              <option value="v2_t6">Вар #2 • SPEAKING TEST (Discussion Cards)</option>
+            </optgroup>
+          </select>
+
+          <div class="ans-filter-pills">
+            <button class="ans-pill-btn active" data-filter="current" onclick="renderAnswersModal('current')">Поточне</button>
+            <button class="ans-pill-btn" data-filter="v1_all" onclick="renderAnswersModal('v1_all')">Весь Варіант 1</button>
+            <button class="ans-pill-btn" data-filter="v2_all" onclick="renderAnswersModal('v2_all')">Весь Варіант 2</button>
+            <button class="ans-pill-btn" data-filter="all" onclick="renderAnswersModal('all')">Усі завдання разом</button>
+          </div>
+        </div>
+
+        <div class="audit-task-header" id="modalTaskHeader">
           <h3 id="modalTaskTitle">Use of English</h3>
           <div class="audit-meta-bar">
             <span>Джерело: <b id="modalTaskSource">Cambridge B2 First</b></span>
@@ -1960,7 +2143,7 @@
           </div>
         </div>
 
-        <!-- Контейнер для списку відповідей поточного завдання -->
+        <!-- Контейнер для списку відповідей (одне завдання або весь реєстр) -->
         <div class="answers-list-container" id="answersListContainer"></div>
 
         <!-- Блок взаємодії з ШІ-ментором без Telegram -->
