@@ -485,11 +485,11 @@
       background: rgba(56, 189, 248, 0.08);
     }
 
-    /* МОДАЛЬНЕ ВІКНО ПЕРЕВІРКИ ШІ */
+    /* МОДАЛЬНЕ ВІКНО ВІДПОВІДЕЙ ТА АУДИТУ НА САЙТІ */
     .audit-modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(3, 7, 18, 0.85);
+      background: rgba(3, 7, 18, 0.88);
       backdrop-filter: blur(10px);
       z-index: 9999;
       display: flex;
@@ -502,23 +502,27 @@
     .audit-modal-card {
       background: #0d1527;
       border: 1.5px solid #00f0ff;
-      border-radius: 18px;
-      max-width: 520px;
+      border-radius: 16px;
+      max-width: 780px;
       width: 100%;
-      box-shadow: 0 0 40px rgba(0, 240, 255, 0.25), 0 20px 40px rgba(0, 0, 0, 0.7);
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 40px rgba(0, 240, 255, 0.2), 0 20px 50px rgba(0, 0, 0, 0.8);
       overflow: hidden;
       font-family: inherit;
       color: #e2e8f0;
       animation: auditScaleUp 0.2s ease-out;
     }
-    @keyframes auditScaleUp { from { transform: scale(0.95); } to { transform: scale(1); } }
+    @keyframes auditScaleUp { from { transform: scale(0.97); } to { transform: scale(1); } }
     .audit-modal-head {
       background: #090e1c;
-      padding: 14px 18px;
-      border-bottom: 1px solid #1c2b4a;
+      padding: 14px 20px;
+      border-bottom: 1.5px solid #1c2b4a;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-shrink: 0;
     }
     .audit-modal-badge {
       display: flex;
@@ -529,6 +533,7 @@
       font-weight: 800;
       color: #00f0ff;
       letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
     .pulse-dot {
       width: 8px;
@@ -536,118 +541,155 @@
       background: #10b981;
       border-radius: 50%;
       box-shadow: 0 0 10px #10b981;
-      animation: pulseDot 1.5s infinite;
     }
-    @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.85); } }
     .audit-modal-close {
       background: none;
-      border: none;
+      border: 1px solid #24354f;
       color: #94a3b8;
-      font-size: 18px;
+      font-size: 16px;
+      font-weight: 700;
       cursor: pointer;
-      padding: 4px 8px;
+      padding: 3px 9px;
       border-radius: 6px;
+      transition: all 0.15s;
     }
-    .audit-modal-close:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
+    .audit-modal-close:hover { color: #fff; border-color: #38bdf8; background: rgba(56, 189, 248, 0.1); }
     .audit-modal-body {
-      padding: 22px 24px 14px;
-      text-align: center;
+      padding: 20px 24px;
+      overflow-y: auto;
+      flex: 1;
     }
-    .audit-status-icon {
-      font-size: 40px;
-      margin-bottom: 8px;
+    .audit-task-header {
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #192742;
     }
-    .audit-modal-body h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
+    .audit-task-header h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
       font-weight: 900;
       color: #fff;
-      letter-spacing: -0.01em;
     }
     .audit-meta-bar {
       display: flex;
-      justify-content: center;
       gap: 16px;
-      font-size: 12.5px;
+      font-size: 12px;
       color: #94a3b8;
-      margin-bottom: 16px;
+      flex-wrap: wrap;
     }
-    .audit-meta-bar b { color: #38bdf8; }
-    .audit-steps-list {
-      background: #070b14;
-      border: 1px solid #1e2e4f;
-      border-radius: 12px;
-      padding: 12px 16px;
-      text-align: left;
+    .audit-meta-bar span b { color: #38bdf8; }
+    .audit-meta-bar .badge-score {
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 800;
+    }
+
+    .answers-list-container {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
     }
-    .audit-step-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .ans-card {
+      background: #090e1a;
+      border: 1px solid #1c2b44;
+      border-radius: 9px;
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 80px 140px 1fr;
+      gap: 14px;
+      align-items: baseline;
       font-size: 13px;
-      color: #cbd5e1;
     }
-    .audit-step-item .step-check {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgba(16, 185, 129, 0.2);
-      color: #34d399;
-      border: 1px solid #10b981;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 11px;
-      flex-shrink: 0;
+    .ans-card.ans-special {
+      grid-template-columns: 110px 1fr;
     }
-    .audit-cta-box {
-      background: linear-gradient(135deg, rgba(0, 240, 255, 0.08), rgba(255, 43, 214, 0.08));
-      border: 1px solid rgba(0, 240, 255, 0.35);
-      border-radius: 12px;
-      padding: 14px 16px;
-      text-align: left;
-    }
-    .cta-title {
-      font-size: 12px;
+    .ans-num {
       font-weight: 800;
       color: #38bdf8;
+      font-family: monospace;
+    }
+    .ans-key {
+      font-weight: 800;
+      color: #34d399;
+      font-family: monospace;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      padding: 2px 8px;
+      border-radius: 5px;
+      text-align: center;
+      display: inline-block;
+    }
+    .ans-rule {
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .audit-mentor-notice {
+      background: #090e1a;
+      border: 1px solid rgba(0, 240, 255, 0.35);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 10px;
+    }
+    .mentor-notice-title {
+      font-size: 12px;
+      font-weight: 800;
+      color: #00f0ff;
       margin-bottom: 6px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-    .audit-cta-box p {
-      margin: 0;
-      font-size: 13px;
+    .audit-mentor-notice p {
+      margin: 0 0 10px;
+      font-size: 12.5px;
       line-height: 1.5;
-      color: #e2e8f0;
+      color: #94a3b8;
     }
-    .audit-modal-foot {
-      padding: 12px 24px 22px;
+    .mentor-notice-actions {
       display: flex;
-      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
     }
-    .btn-audit-confirm {
-      width: 100%;
-      background: linear-gradient(90deg, #00f0ff, #ff2bd6);
-      border: none;
-      border-radius: 10px;
-      color: #07060f;
+    .btn-copy-png-mentor {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
       font-weight: 800;
-      font-size: 14px;
-      padding: 12px 20px;
+      font-size: 12px;
+      padding: 6px 14px;
+      border-radius: 6px;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
-      transition: transform 0.15s, box-shadow 0.15s;
+      transition: all 0.15s;
     }
-    .btn-audit-confirm:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+    .btn-copy-png-mentor:hover {
+      background: #38bdf8;
+      color: #090e1a;
     }
+
+    .audit-modal-foot {
+      padding: 12px 20px;
+      border-top: 1px solid #1c2b4a;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      background: #090e1c;
+      flex-shrink: 0;
+    }
+    .btn-close-modal {
+      background: #162438;
+      border: 1px solid #24354f;
+      color: #cbd5e1;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 7px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn-close-modal:hover { color: #fff; border-color: #38bdf8; }
   </style>
 </head>
 <body>
@@ -661,7 +703,7 @@
 
       <div class="mode-select-wrapper">
         <select id="taskSelector" class="mode-dropdown-select" onchange="switchTask(this.value)">
-          <optgroup label="🌟 ВАРІАНТ #1 (CAMBRIDGE B2 FIRST • TEST 1 — ПОВНІ КЛЮЧІ)">
+          <optgroup label="ВАРІАНТ #1 (CAMBRIDGE B2 FIRST • TEST 1 — ОФІЦІЙНІ КЛЮЧІ)">
             <option value="v1_t1" selected>Вар #1 • Use of English: «Stretch like a cat» (Multiple Choice Cloze 1–8)</option>
             <option value="v1_t2">Вар #1 • Use of English: «Music and the Brain» (Open Cloze 9–16)</option>
             <option value="v1_t3">Вар #1 • Use of English: «Living in the Country» (Word Formation 17–24)</option>
@@ -669,7 +711,7 @@
             <option value="v1_t5">Вар #1 • WRITING TEST (150–180 слів: Essay / Email / Review)</option>
             <option value="v1_t6">Вар #1 • SPEAKING TEST (5 автентичних карток B2 First)</option>
           </optgroup>
-          <optgroup label="🌟 ВАРІАНТ #2 (CAMBRIDGE B2 FIRST • TEST 2 — ПОВНІ КЛЮЧІ)">
+          <optgroup label="ВАРІАНТ #2 (CAMBRIDGE B2 FIRST • TEST 2 — ОФІЦІЙНІ КЛЮЧІ)">
             <option value="v2_t1">Вар #2 • Use of English: Multiple Choice Cloze (1–8)</option>
             <option value="v2_t2">Вар #2 • Use of English: Open Cloze (9–16)</option>
             <option value="v2_t3">Вар #2 • Use of English: Word Formation (17–24)</option>
@@ -684,19 +726,19 @@
     <div class="header-actions">
       <!-- Таймер олімпійського спринту -->
       <div class="timer-widget">
-        <span style="font-size: 11px; color: #94a3b8;">⏱</span>
+        <span style="font-size: 11px; color: #94a3b8; font-weight:700;">Час:</span>
         <span class="timer-display" id="timerDisplay">45:00</span>
-        <button class="btn-timer" id="btnTimerToggle" onclick="toggleTimer()">▶</button>
+        <button class="btn-timer" id="btnTimerToggle" onclick="toggleTimer()">Старт</button>
         <button class="btn-timer" onclick="addTimer(300)">+5 хв</button>
         <button class="btn-timer" onclick="resetTimer()">Скинути</button>
       </div>
 
-      <button class="btn btn-primary" id="btnExportPng" onclick="exportFullPng()">
-        <span>📸 Зберегти PNG</span>
+      <button class="btn btn-primary" id="btnExportPng" onclick="exportFullPng()" title="Зберегти знімок на диск та скопіювати в буфер обміну">
+        <span>Зберегти PNG</span>
       </button>
 
-      <button class="btn btn-emerald" id="btnSubmitWork" onclick="submitToAudit()">
-        <span>✈️ Надіслати на повну перевірку</span>
+      <button class="btn btn-emerald" id="btnCheckAnswers" onclick="openAnswersModal()" title="Перевірити відповіді з офіційними ключами прямо на сайті">
+        <span>Перевірити відповіді</span>
       </button>
     </div>
   </header>
@@ -754,21 +796,21 @@
         <!-- Кнопка зуму з індикатором відсотка (Клік скидає на 100%) -->
         <div class="tool-group">
           <button class="btn-zoom-badge" id="btnZoomReset" title="Масштаб (Коліщатко або Ctrl+Пробіл). Клік — скинути 100%">
-            🔍 <span id="zoomBadge">100%</span>
+            Зум: <span id="zoomBadge">100%</span>
           </button>
         </div>
 
         <!-- КНОПКА ДОДАТИ ДОВЖИНУ У ТУЛБАРІ -->
         <div class="tool-group">
           <button class="btn-toolbar-add" id="btnAddLengthToolbar" title="Додати довжину аркуша вниз (+1000 px)">
-            ➕ +1000 px
+            +1000 px
           </button>
         </div>
 
         <div class="tool-group" style="border:none;">
           <button class="tool-btn" id="btnUndo" title="Скасувати (Ctrl+Z)">↶</button>
           <button class="tool-btn" id="btnRedo" title="Повернути (Ctrl+Y)">↷</button>
-          <button class="tool-btn" id="btnClearInk" title="Очистити полотно">🗑</button>
+          <button class="tool-btn" id="btnClearInk" title="Очистити полотно" style="font-size:11px; font-weight:700;">Очистити</button>
         </div>
       </div>
 
@@ -1107,7 +1149,7 @@
       if (timerInterval) {
         clearInterval(timerInterval);
         timerInterval = null;
-        btn.textContent = '▶';
+        btn.textContent = 'Старт';
       } else {
         timerInterval = setInterval(() => {
           if (timerSec > 0) {
@@ -1116,10 +1158,10 @@
           } else {
             clearInterval(timerInterval);
             timerInterval = null;
-            btn.textContent = '▶';
+            btn.textContent = 'Старт';
           }
         }, 1000);
-        btn.textContent = '⏸';
+        btn.textContent = 'Пауза';
       }
     }
     function addTimer(sec) { timerSec += sec; updateTimerDisplay(); }
@@ -1634,25 +1676,247 @@
       return compositeCanvas;
     }
 
-    function showAuditModal(title, isTelegramSent = true) {
+    // --- БАЗА ВЕРИФІКОВАНИХ ОФІЦІЙНИХ ВІДПОВІДЕЙ ДЛЯ ВСІХ ТРЕНУВАЛЬНИХ ВАРІАНТІВ ---
+    const variantsAnswersDatabase = {
+      v1_t1: {
+        title: "Варіант 1 • Part 1: «Stretch like a cat» (Multiple Choice Cloze)",
+        source: "Cambridge B2 First for Schools • Test 1",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "0", ans: "C (length)", rule: "Сталий вираз «for any length of time» (протягом будь-якого часу)." },
+          { num: "1", ans: "C (anywhere)", rule: "Фіксована ідіоматична структура: «not anywhere near as much» (зовсім не так багато). Заперечення don't вимагає anywhere." },
+          { num: "2", ans: "A (inactive)", rule: "Медично-фізіологічна колокація: під час сну м'язи нерухомі/неактивні («muscles are inactive»). Lazy чи stopped не вживаються щодо тканин." },
+          { num: "3", ans: "B (keeps)", rule: "Сталий вираз «keep somebody out of danger / out of inactivity» (утримувати поза бездіяльністю або небезпекою)." },
+          { num: "4", ans: "D (enables)", rule: "Конструкція «enables [object] to occur» (дозволяє / уможливлює здійснення). Дієслово let вимагає голий інфінітив, provides не сполучається з to." },
+          { num: "5", ans: "C (rises)", rule: "Неперехідне дієслово: кров'яний тиск піднімається сам («blood pressure rises»). Raise/lift є перехідними." },
+          { num: "6", ans: "A (supply)", rule: "Стала колокація: «supply [something] with oxygen» (забезпечувати киснем). Дієслова deliver/give вимагають to." },
+          { num: "7", ans: "D (aware)", rule: "Прийменникове керування: «aware of its surroundings» (усвідомлює навколишній простір). Alert вживається з to." },
+          { num: "8", ans: "B (action)", rule: "Класична англійська ідіома: «spring into action» (миттєво кинутися в дію, активізуватися)." }
+        ]
+      },
+      v1_t2: {
+        title: "Варіант 1 • Part 2: «Music and the Brain» (Open Cloze)",
+        source: "Cambridge B2 First for Schools • Test 1",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "9", ans: "on", rule: "Залежний прийменник від effect: «have an effect on our moods» (мати вплив на настрій)." },
+          { num: "10", ans: "it / this", rule: "Займенник-підмет для позначення явища: «how and why this/it happens»." },
+          { num: "11", ans: "as", rule: "Стала конструкція: «acts as a stimulus» (діє в якості стимулу)." },
+          { num: "12", ans: "how", rule: "Сполучне слово міри перед прикметником: «how difficult it can be» (наскільки важко)." },
+          { num: "13", ans: "is", rule: "Дієслово-зв'язка у псевдо-розщепленому реченні (pseudo-cleft): «What is clear is that...»." },
+          { num: "14", ans: "which / that", rule: "Відносний займенник для неістот: «A song which/that brings joy...»." },
+          { num: "15", ans: "a", rule: "Неозначений артикль: «a high level of coordination» (високий рівень координації)." },
+          { num: "16", ans: "so", rule: "Сполучник логічного наслідку: «movement, so it provides exceptional mental exercise»." }
+        ]
+      },
+      v1_t3: {
+        title: "Варіант 1 • Part 3: «Living in the Country» (Word Formation)",
+        source: "Cambridge B2 First for Schools • Test 1",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "17", ans: "entirely", rule: "Прислівник (ENTIRE -> ENTIRELY): «entirely peaceful» (цілком спокійний)." },
+          { num: "18", ans: "aside", rule: "Фразове сполучення з дієсловом (SIDE -> ASIDE): «put aside thoughts» (відкласти думки)." },
+          { num: "19", ans: "beneficial", rule: "Прикметник (BENEFIT -> BENEFICIAL): «beneficial to their health» (корисний для здоров'я)." },
+          { num: "20", ans: "providing / provided", rule: "Дієприслівник обставини (PROVIDE -> PROVIDING): «providing people with...»." },
+          { num: "21", ans: "lower", rule: "Дієслово після частки to (LOW -> LOWER): «to lower their stress levels» (знизити рівень стресу)." },
+          { num: "22", ans: "simply", rule: "Прислівник (SIMPLE -> SIMPLY): «is not simply an escape» (не просто втеча)." },
+          { num: "23", ans: "accompaniment", rule: "Іменник (ACCOMPANY -> ACCOMPANIMENT): «an absolute accompaniment to daily survival»." },
+          { num: "24", ans: "inconvenient", rule: "Прикметник із заперечним префіксом (CONVENIENT -> INCONVENIENT): «highly inconvenient»." }
+        ]
+      },
+      v1_t4: {
+        title: "Варіант 1 • Part 6: «The Amur Leopard» (Gapped Text)",
+        source: "Cambridge B2 First for Schools • Test 1",
+        scoreInfo: "Максимум: 12 балів (по 2 бали)",
+        items: [
+          { num: "37", ans: "C", rule: "«Alarmed by these catastrophic figures, conservation groups urged urgent intervention.» Підхоплює цифру 30 особин перед пропуском." },
+          { num: "38", ans: "G", rule: "«They are strategically attached to trees along ridgelines...» Пояснює розміщення згаданих перед пропуском фотопасток (camera traps)." },
+          { num: "39", ans: "A", rule: "«By comparing these spot patterns with a master database, scientists can identify who is who.» Розкриває тезу про унікальність плям." },
+          { num: "40", ans: "F", rule: "«These are not traps in a sense that they physically capture the animals...» Знімає подвійне значення слова traps." },
+          { num: "41", ans: "B", rule: "«Local communities have also started supporting the park through eco-tourism...» Логічне доповнення: окрім патрулів, місцеві жителі також (also) допомагають." },
+          { num: "42", ans: "D", rule: "«Without fresh blood from broader gene pools, isolated populations are vulnerable...» Розкриває небезпеку низької генетичної різноманітності." },
+          { num: "Дистрактор", ans: "E (зайве)", rule: "«Many tourists travel there hoping to spot a leopard in the trees...» — не має контекстного зв'язку." }
+        ]
+      },
+      v1_t5: {
+        title: "Варіант 1 • WRITING TEST (Essay / Email / Review)",
+        source: "Cambridge B2 Assessment Criteria (20 балів)",
+        scoreInfo: "Оцінювання: Content (5), Communicative Achievement (5), Organisation (5), Language (5)",
+        items: [
+          { num: "Обсяг", ans: "150–180 слів", rule: "Чіткі 4 абзаци: Вступ -> Перший аргумент -> Другий аргумент (контраст) -> Власний висновок." },
+          { num: "Конектори", ans: "B2 Linking Words", rule: "Furthermore, Consequently, In contrast, From my perspective, It is argued that..." },
+          { num: "Граматика", ans: "Рівень B2", rule: "Використання пасивного стану, умовних речень (2nd/3rd Conditional) та модальних дієслів." }
+        ]
+      },
+      v1_t6: {
+        title: "Варіант 1 • SPEAKING TEST (5 карток)",
+        source: "Cambridge B2 Speaking Criteria (20 балів)",
+        scoreInfo: "Оцінювання: Grammar & Vocabulary (5), Discourse Management (5), Pronunciation (5), Interactive Communication (5)",
+        items: [
+          { num: "Регламент", ans: "1 хв підготовка • 2 хв відповідь", rule: "Побудова тез без читання з аркуша. Відповідь на кожне підпитання картки." },
+          { num: "Фрази", ans: "Discourse Markers", rule: "«From my perspective...», «What strikes me most is...», «Taking everything into account...»." }
+        ]
+      },
+      v2_t1: {
+        title: "Варіант 2 • Part 1: «Living with Animals» (Multiple Choice Cloze)",
+        source: "Cambridge B2 First for Schools • Test 2",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "1", ans: "A (changed)", rule: "Колокація «has changed dramatically» (кардинально змінилися)." },
+          { num: "2", ans: "D (significantly)", rule: "Прислівник «significantly reduce stress» (істотно знизити)." },
+          { num: "3", ans: "C (consideration)", rule: "Колокація «requires careful consideration» (вимагає ретельного обдумування)." },
+          { num: "4", ans: "B (take)", rule: "Сталий вираз «take responsibility for» (взяти відповідальність за)." },
+          { num: "5", ans: "A (involved)", rule: "Дієприкметник «difficulties involved in their care» (труднощі, пов'язані з доглядом)." },
+          { num: "6", ans: "C (decision)", rule: "Стала колокація «make a decision» (прийняти рішення)." },
+          { num: "7", ans: "D (duration)", rule: "«for the duration of the pet's life» (протягом усього життя)." },
+          { num: "8", ans: "B (arise)", rule: "Неперехідне дієслово «when difficulties arise» (коли виникають труднощі)." }
+        ]
+      },
+      v2_t2: {
+        title: "Варіант 2 • Part 2: «The History of Bicycles» (Open Cloze)",
+        source: "Cambridge B2 First for Schools • Test 2",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "9", ans: "in", rule: "Просторовий прийменник «in Europe»." },
+          { num: "10", ans: "not", rule: "Часова ідіома «it was not until... that...» (лише наприкінці...)." },
+          { num: "11", ans: "is", rule: "Дієслово-зв'язка «What makes cycling remarkable is that...»." },
+          { num: "12", ans: "more", rule: "Вищий ступінь порівняння: «far more effectively than»." },
+          { num: "13", ans: "only", rule: "Обмежувальна частка «consuming only a fraction of the energy»." },
+          { num: "14", ans: "against / from", rule: "Захист від небезпеки: «protect riders from/against injury»." },
+          { num: "15", ans: "all", rule: "Ідіома «all over the world» (по всьому світу)." },
+          { num: "16", ans: "their", rule: "Присвійний займенник «leave their cars at home»." }
+        ]
+      },
+      v2_t3: {
+        title: "Варіант 2 • Part 3: «An Underwater Discovery» (Word Formation)",
+        source: "Cambridge B2 First for Schools • Test 2",
+        scoreInfo: "Максимум: 8 балів",
+        items: [
+          { num: "17", ans: "appearance", rule: "Іменник (APPEAR -> APPEARANCE): «the sudden appearance»." },
+          { num: "18", ans: "unexpectedly", rule: "Прислівник (EXPECTED -> UNEXPECTEDLY): «discovered unexpectedly»." },
+          { num: "19", ans: "principally", rule: "Прислівник (PRINCIPLE -> PRINCIPALLY): «was principally composed»." },
+          { num: "20", ans: "threatened", rule: "Пасивний стан (THREAT -> THREATENED): «had been threatened»." },
+          { num: "21", ans: "misunderstanding", rule: "Іменник (UNDERSTAND -> MISUNDERSTANDING): «due to a common misunderstanding»." },
+          { num: "22", ans: "buried", rule: "Дієприкметник стану (BURY -> BURIED): «remained safely buried»." },
+          { num: "23", ans: "weight", rule: "Іменник (WEIGH -> WEIGHT): «the heavy weight of the sediment»." },
+          { num: "24", ans: "exceptional", rule: "Прикметник (EXCEPTION -> EXCEPTIONAL): «these exceptional artifacts»." }
+        ]
+      },
+      v2_t4: {
+        title: "Варіант 2 • Part 6: «Young Minds Changing the World» (Gapped Text)",
+        source: "Cambridge B2 First for Schools • Test 2",
+        scoreInfo: "Максимум: 12 балів",
+        items: [
+          { num: "37", ans: "G", rule: "Ідея створення датчика виникла при спостереженні за пластиком на узбережжі." },
+          { num: "38", ans: "F", rule: "Традиційні фінансові установи відхиляли її заявки через неповноліття." },
+          { num: "39", ans: "A", rule: "Професори інституту були вражені її знаннями хімії та надали доступ до лабораторії." },
+          { num: "40", ans: "D", rule: "Сонячна автоматична система зрошення зрошує в найхолодніші ранкові години." },
+          { num: "41", ans: "B", rule: "Учням потрібен простір для власних експериментів і самостійного аналізу помилок." },
+          { num: "42", ans: "E", rule: "Молоде покоління бере ініціативу там, де старші зволікали." },
+          { num: "Дистрактор", ans: "C (зайве)", rule: "Не має контекстного зв'язку з текстом." }
+        ]
+      },
+      v2_t5: {
+        title: "Варіант 2 • WRITING TEST (150–180 слів)",
+        source: "Cambridge B2 First Criteria (20 балів)",
+        scoreInfo: "Критерії B2: Content, Communicative Achievement, Organisation, Language",
+        items: [
+          { num: "Вимоги", ans: "B2 Standard Essay", rule: "Академічна лексика, структуровані абзаци, переконлива аргументація." }
+        ]
+      },
+      v2_t6: {
+        title: "Варіант 2 • SPEAKING TEST (Discussion Cards)",
+        source: "Cambridge B2 First Speaking Criteria (20 балів)",
+        scoreInfo: "Критерії: Fluency, Vocabulary, Grammar, Pronunciation",
+        items: [
+          { num: "Вимоги", ans: "Аргументована усна відповідь", rule: "2 хвилини безперервної аргументованої відповіді з аналізом ситуації." }
+        ]
+      }
+    };
+
+    // --- ЕКСПОРТ ЗНІМКА (PNG) ---
+    async function exportFullPng() {
+      const btn = document.getElementById('btnExportPng');
+      const origHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>Генерація знімка...</span>';
+      }
+
+      try {
+        const compositeCanvas = await generateFullSnapshotCanvas();
+        const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'variant';
+        
+        // 1. Локальне збереження на диск
+        const link = document.createElement('a');
+        link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
+        link.href = compositeCanvas.toDataURL('image/png');
+        link.click();
+
+        // 2. Копіювання в буфер обміну (Ctrl+V)
+        compositeCanvas.toBlob(async (blob) => {
+          if (blob && navigator.clipboard && window.ClipboardItem) {
+            try {
+              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
+            } catch (clipErr) {
+              console.log('Clipboard notice:', clipErr);
+            }
+          }
+        }, 'image/png');
+
+        if (btn) {
+          btn.innerHTML = '<span>PNG збережено та скопійовано</span>';
+          btn.style.background = '#059669';
+          setTimeout(() => {
+            btn.disabled = false;
+            btn.innerHTML = origHtml;
+            btn.style.background = '';
+          }, 3500);
+        }
+      } catch (err) {
+        console.error(err);
+        alert('Помилка при створенні знімка: ' + err.message);
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = origHtml;
+        }
+      }
+    }
+
+    // --- ВІДКРИТТЯ ВІДПОВІДЕЙ ТА АУДИТУ НА САЙТІ ---
+    function openAnswersModal() {
       const modal = document.getElementById('auditModal');
       if (!modal) return;
+
       const spentSec = 2700 - timerSec;
       const mins = Math.floor(spentSec / 60);
       const secs = spentSec % 60;
       const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
-      
-      const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'v1_t1';
-      const taskData = (typeof variantsDatabase !== 'undefined' && variantsDatabase[taskId]) ? variantsDatabase[taskId] : {};
-      const taskTitle = taskData.title || taskId;
 
-      document.getElementById('auditModalTitle').textContent = title || 'Роботу підготовлено до перевірки!';
-      document.getElementById('auditModalMeta').innerHTML = `<span>⏱ Час: <b>${timeFormatted}</b></span> · <span>📝 <b>${taskTitle}</b></span>`;
-      
-      const tgStep = document.getElementById('stepTelegramStatus');
-      if (tgStep) {
-        tgStep.style.display = isTelegramSent ? 'flex' : 'none';
-      }
+      const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'v1_t1';
+      const ansData = variantsAnswersDatabase[taskId] || {
+        title: taskId,
+        source: "Офіційні матеріали",
+        scoreInfo: "",
+        items: []
+      };
+
+      document.getElementById('modalTaskTitle').textContent = ansData.title;
+      document.getElementById('modalTaskSource').textContent = ansData.source;
+      document.getElementById('modalTaskTime').textContent = timeFormatted;
+      document.getElementById('modalTaskScore').textContent = ansData.scoreInfo;
+
+      const container = document.getElementById('answersListContainer');
+      container.innerHTML = ansData.items.map(item => {
+        const isSpecial = !item.num.match(/^\d+$/);
+        return `
+          <div class="ans-card ${isSpecial ? 'ans-special' : ''}">
+            <div class="ans-num">№ ${item.num}</div>
+            <div class="ans-key">${item.ans}</div>
+            <div class="ans-rule">${item.rule}</div>
+          </div>
+        `;
+      }).join('');
 
       modal.style.display = 'flex';
     }
@@ -1666,141 +1930,6 @@
       if (e.key === 'Escape') closeAuditModal();
     });
 
-    async function exportFullPng() {
-      const btn = document.getElementById('btnExportPng');
-      const origHtml = btn ? btn.innerHTML : '';
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = '<span>⏳ Генерація знімка...</span>';
-      }
-
-      try {
-        const compositeCanvas = await generateFullSnapshotCanvas();
-        const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'variant';
-        
-        // 1. Завантаження PNG на диск комп'ютера
-        const link = document.createElement('a');
-        link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
-        link.href = compositeCanvas.toDataURL('image/png');
-        link.click();
-
-        // 2. Копіювання в буфер обміну для миттєвої вставки в чат (Ctrl+V)
-        compositeCanvas.toBlob(async (blob) => {
-          if (blob && navigator.clipboard && window.ClipboardItem) {
-            try {
-              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
-            } catch (clipErr) {
-              console.log('Clipboard notice:', clipErr);
-            }
-          }
-        }, 'image/png');
-
-        if (btn) {
-          btn.innerHTML = '<span>✅ PNG збережено & скопійовано</span>';
-          setTimeout(() => {
-            btn.disabled = false;
-            btn.innerHTML = origHtml;
-          }, 3500);
-        }
-
-        showAuditModal('Знімок збережено та скопійовано!', false);
-      } catch (err) {
-        console.error(err);
-        alert('Помилка при збереженні знімка: ' + err.message);
-        if (btn) {
-          btn.disabled = false;
-          btn.innerHTML = origHtml;
-        }
-      }
-    }
-
-    const TG_BOT_TOKEN = "8713271082:AAGQzVKiPXw9DSpYAPNODEsaiaIQfoEjAe8";
-    let TG_CHAT_ID = "619089297";
-
-    async function submitToAudit() {
-      const btn = document.getElementById('btnSubmitWork');
-      const origHtml = btn ? btn.innerHTML : '';
-
-      const chatId = localStorage.getItem('tg_chat_id') || TG_CHAT_ID;
-
-      if (btn) {
-        btn.disabled = true;
-        btn.innerHTML = '<span>⏳ Генерація повного знімка...</span>';
-      }
-
-      try {
-        const compositeCanvas = await generateFullSnapshotCanvas();
-        if (btn) btn.innerHTML = '<span>✈️ Відправка на перевірку...</span>';
-
-        compositeCanvas.toBlob(async (blob) => {
-          if (!blob) {
-            alert('Помилка створення файлу зображення.');
-            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
-            return;
-          }
-
-          const spentSec = 2700 - timerSec;
-          const mins = Math.floor(spentSec / 60);
-          const secs = spentSec % 60;
-          const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
-
-          const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'variant';
-          const taskData = (typeof variantsDatabase !== 'undefined' && variantsDatabase[taskId]) ? variantsDatabase[taskId] : {};
-          const taskTitle = taskData.title || taskId;
-
-          // 1. Копіюємо знімок прямо в буфер обміну (Ctrl+V у чат)
-          if (navigator.clipboard && window.ClipboardItem) {
-            try {
-              await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
-            } catch (clipErr) {
-              console.log('Clipboard notice:', clipErr);
-            }
-          }
-
-          // 2. Локальне резервне збереження на диск
-          const link = document.createElement('a');
-          link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
-          link.href = compositeCanvas.toDataURL('image/png');
-          link.click();
-
-          // 3. Відправка в Telegram-бот
-          const formData = new FormData();
-          formData.append('chat_id', chatId);
-          formData.append('photo', blob, `olympiad_${taskId}.png`);
-          formData.append('caption', `🇬🇧 ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС (ТРЕНУВАЛЬНИЙ ВАРІАНТ)\n${taskData.stage || 'ТРЕНУВАННЯ B2'}\n${taskTitle}\n⏱ Час виконання: ${timeFormatted}\n📝 Повна робота Мілани (умова + рукописний зошит)`);
-
-          let sentTelegram = false;
-          try {
-            const resp = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendPhoto`, {
-              method: 'POST',
-              body: formData
-            });
-            const res = await resp.json();
-            sentTelegram = res.ok;
-          } catch(err) {
-            console.warn('Telegram send notice:', err);
-          }
-
-          if (btn) {
-            btn.innerHTML = `<span>✅ Надіслано (${timeFormatted})</span>`;
-            btn.style.background = '#059669';
-            setTimeout(() => {
-              btn.disabled = false;
-              btn.innerHTML = origHtml;
-              btn.style.background = '';
-            }, 5000);
-          }
-
-          // 4. Відкриваємо діалог інструкції для аудиту ШІ
-          showAuditModal('Роботу передано на аудит!', sentTelegram);
-
-        }, 'image/png');
-      } catch (err) {
-        alert('Помилка створення знімка: ' + err.message);
-        if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
-      }
-    }
-
     // Завантаження при старті
     window.onload = () => {
       resizeCanvases();
@@ -1810,48 +1939,42 @@
     };
   </script>
 
-  <!-- МОДАЛЬНЕ ВІКНО ПЕРЕДАЧІ РОБОТИ ШІ-МЕНТОРУ -->
+  <!-- МОДАЛЬНЕ ВІКНО ПЕРЕВІРКИ ВІДПОВІДЕЙ НА САЙТІ -->
   <div class="audit-modal-backdrop" id="auditModal" style="display:none;" onclick="if(event.target===this)closeAuditModal();">
     <div class="audit-modal-card">
       <div class="audit-modal-head">
         <div class="audit-modal-badge">
           <span class="pulse-dot"></span>
-          <span>AI-МЕНТОР // АНТИГРАВІТАЦІЯ</span>
+          <span>ОФІЦІЙНІ ВІДПОВІДІ // АУДИТ НА САЙТІ</span>
         </div>
         <button class="audit-modal-close" onclick="closeAuditModal()" title="Закрити (Esc)">✕</button>
       </div>
       
       <div class="audit-modal-body">
-        <div class="audit-status-icon">🚀</div>
-        <h3 id="auditModalTitle">Роботу відправлено на перевірку!</h3>
-        <div class="audit-meta-bar" id="auditModalMeta">
-          <span>⏱ Час: <b>24 хв 12 с</b></span>
-          <span>📝 <b>Use of English</b></span>
-        </div>
-
-        <div class="audit-steps-list">
-          <div class="audit-step-item" id="stepTelegramStatus">
-            <span class="step-check">✓</span>
-            <span><b>Telegram-бот:</b> надіслано фото та час викладачу</span>
-          </div>
-          <div class="audit-step-item">
-            <span class="step-check">✓</span>
-            <span><b>Буфер обміну:</b> знімок повної роботи скопійовано (можна тиснути Ctrl+V)</span>
-          </div>
-          <div class="audit-step-item">
-            <span class="step-check">✓</span>
-            <span><b>Локальний файл:</b> PNG збережено на диск комп'ютера</span>
+        <div class="audit-task-header">
+          <h3 id="modalTaskTitle">Use of English</h3>
+          <div class="audit-meta-bar">
+            <span>Джерело: <b id="modalTaskSource">Cambridge B2 First</b></span>
+            <span>Час виконання: <b id="modalTaskTime">0 хв 0 с</b></span>
+            <span class="badge-score" id="modalTaskScore">Максимум: 8 балів</span>
           </div>
         </div>
 
-        <div class="audit-cta-box">
-          <div class="cta-title">💡 Як отримати миттєвий аудит від ШІ-ментора:</div>
-          <p>Відкрий наш діалог в Antigravity / Gemini і просто натисни <b>Ctrl + V</b> (вставити картинку). Ментор миттєво проведе покроковий аудит, розбере олімпіадні пастки КМАН та підрахує бал!</p>
+        <!-- Контейнер для списку відповідей поточного завдання -->
+        <div class="answers-list-container" id="answersListContainer"></div>
+
+        <!-- Блок взаємодії з ШІ-ментором без Telegram -->
+        <div class="audit-mentor-notice">
+          <div class="mentor-notice-title">Індивідуальна перевірка написаного тексту ШІ-ментором</div>
+          <p>Щоб отримати повний розбір рукописного зошита або оцінку творчої роботи, збережіть знімок та просто натисніть <b>Ctrl + V</b> у діалозі Ментора Antigravity.</p>
+          <div class="mentor-notice-actions">
+            <button class="btn-copy-png-mentor" onclick="exportFullPng()">Скопіювати повний знімок для Ментора</button>
+          </div>
         </div>
       </div>
 
       <div class="audit-modal-foot">
-        <button class="btn-audit-confirm" onclick="closeAuditModal()">Чудово, переходжу до перевірки! →</button>
+        <button class="btn-close-modal" onclick="closeAuditModal()">Закрити вікно перевірки</button>
       </div>
     </div>
   </div>
