@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АНГЛІЙСЬКА // 9 КЛАС — ТРЕНУВАЛЬНІ ОЛІМПІАДНІ ВАРІАНТИ</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap">
+  <!-- html2canvas для композитного знімка -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #070b12;
+      --panel-bg: #0e1624;
+      --card-bg: #141f32;
+      --card-border: #1e304b;
+      --card-hover: #1c2b44;
+      --accent-cyan: #38bdf8;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --accent-rose: #f43f5e;
+      --text-main: #cbd5e1;
+      --text-muted: #8b9bb4;
+      --notebook-bg: #090e17;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { scrollbar-width: thin; scrollbar-color: #334155 #090e1a; }
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #090e1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; border: 1px solid #334155; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
+    body {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ШАПКА */
+    header {
+      height: 52px;
+      background: #090e1a;
+      border-bottom: 1.5px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      flex-shrink: 0;
+      z-index: 50;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-title {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stage-badge {
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid var(--accent-purple);
+      color: #c084fc;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .mode-select-wrapper {
+      position: relative;
+    }
+
+    .mode-dropdown-select {
+      background: #111a2c;
+      color: #f1f5f9;
+      border: 1.5px solid #24354f;
+      border-radius: 7px;
+      padding: 5px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.2s;
+      max-width: 480px;
+    }
+    .mode-dropdown-select:hover, .mode-dropdown-select:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
+    }
+    .mode-dropdown-select optgroup {
+      background: #090e1a;
+      color: #38bdf8;
+      font-weight: 800;
+    }
+    .mode-dropdown-select option {
+      background: #141f32;
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 800;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      outline: none;
+    }
+    .btn-primary {
+      background: #0284c7;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+    }
+    .btn-primary:hover { background: #0369a1; transform: translateY(-1px); }
+
+    .btn-emerald {
+      background: #059669;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.4);
+    }
+    .btn-emerald:hover { background: #047857; transform: translateY(-1px); }
+
+    /* ТАЙМЕР */
+    .timer-widget {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #111a29;
+      border: 1px solid var(--card-border);
+      padding: 4px 10px;
+      border-radius: 7px;
+    }
+    .timer-display {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: 700;
+      color: #38bdf8;
+      min-width: 44px;
+    }
+    .btn-timer {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-timer:hover { color: #fff; border-color: #38bdf8; }
+
+    /* РОБОЧИЙ ПРОСТІР */
+    .workspace {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      height: calc(100vh - 52px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ЛІВА ПАНЕЛЬ: АВТЕНТИЧНИЙ ТЕСТ ОЛІМПІАДИ (БЕЗ ПІДКАЗОК) */
+    .panel-left-exam {
+      flex: 0 0 52%;
+      width: 52%;
+      min-width: 420px;
+      background: #080d1a;
+      overflow-y: auto;
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      user-select: text;
+    }
+
+    .exam-header-card {
+      background: linear-gradient(135deg, #0e172a 0%, #172038 100%);
+      border: 1.5px solid #a855f7;
+      border-radius: 10px;
+      padding: 12px 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+      flex-shrink: 0;
+    }
+
+    .exam-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .exam-source-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #c084fc;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .exam-task-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .exam-instruction {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      line-height: 1.45;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px 12px;
+      border-radius: 6px;
+      border-left: 3px solid #c084fc;
+    }
+
+    .exam-reading-box {
+      background: #0d1525;
+      border: 1px solid var(--card-border);
+      border-radius: 9px;
+      padding: 16px;
+      font-size: 14px;
+      line-height: 1.68;
+      color: #e2e8f0;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    }
+    .exam-reading-box h3 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .gap-marker {
+      background: #1e293b;
+      border: 1.5px solid #38bdf8;
+      color: #38bdf8;
+      font-weight: 900;
+      font-family: 'Fira Code', monospace;
+      padding: 1px 7px;
+      border-radius: 4px;
+      margin: 0 3px;
+      display: inline-block;
+    }
+
+    .exam-options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .question-card {
+      background: #0f172a;
+      border: 1.5px solid #1e293b;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .q-head {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 8px;
+    }
+    .q-variants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .q-opt {
+      background: #141f32;
+      border: 1px solid #24354f;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .q-opt b {
+      color: #38bdf8;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    /* СПЛІТТЕР */
+    .resizer {
+      width: 8px;
+      background: #090e18;
+      border-left: 1px solid #1a273b;
+      border-right: 1px solid #1a273b;
+      cursor: col-resize;
+      user-select: none;
+      flex-shrink: 0;
+      position: relative;
+      transition: background 0.15s;
+      z-index: 20;
+    }
+    .resizer:hover, .resizer.dragging {
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    }
+
+    /* ПРАВА ПАНЕЛЬ: ЧИСТИЙ ЗОШИТ ДЛЯ HUION (ПОВНИЙ ПАН & ЗУМ) */
+    .panel-right-canvas {
+      flex: 1 1 48%;
+      background: var(--notebook-bg);
+      overflow: hidden;
+      position: relative;
+      user-select: none;
+      touch-action: none;
+      cursor: crosshair;
+    }
+
+    /* ТУЛБАР КАНВАСУ */
+    .canvas-toolbar {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(14, 22, 36, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1.5px solid var(--card-border);
+      border-radius: 9px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 100;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      pointer-events: auto;
+    }
+
+    .tool-group {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border-right: 1px solid var(--card-border);
+      padding-right: 6px;
+    }
+
+    .tool-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: #141f32;
+      border: 1px solid #24354f;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tool-btn:hover { background: #1c2b44; color: #fff; }
+    .tool-btn.active {
+      background: #0284c7;
+      color: #fff;
+      border-color: #38bdf8;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+    }
+    .tool-btn.active-eraser {
+      background: #dc2626 !important;
+      color: #fff !important;
+      border-color: #f87171 !important;
+    }
+
+    .color-dot {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: transform 0.15s;
+    }
+    .color-dot.active { transform: scale(1.3); border-color: #fff; }
+
+    /* ЗУМ ТА ДОДАТИ ДОВЖИНУ */
+    .btn-zoom-badge {
+      background: #111a29;
+      border: 1px solid #24354f;
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-zoom-badge:hover { color: #38bdf8; border-color: #38bdf8; }
+
+    .btn-toolbar-add {
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid var(--accent-cyan);
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-toolbar-add:hover { background: #38bdf8; color: #090e17; }
+
+    /* ПРОСТІР ВІРТУАЛЬНОГО ПОЛОТНА (СВІТ) */
+    .viewport-world {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      will-change: transform;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: auto;
+    }
+
+    .notebook-sheet {
+      position: relative;
+      width: 820px;
+      min-height: 2600px;
+      background: #090e17;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    canvas#gridCanvas { position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1; }
+    canvas#inkCanvas { position: absolute; top:0; left:0; width:100%; height:100%; touch-action:none; cursor:crosshair; z-index:2; }
+
+    .btn-bottom-add {
+      margin: 20px 0 60px 0;
+      background: #111a29;
+      border: 1.5px dashed #24354f;
+      color: #94a3b8;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-bottom-add:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ВЕРХНЯ ПАНЕЛЬ КЕРУВАННЯ ТА ВИБОРУ ТРЕНУВАЛЬНИХ ВАРІАНТІВ -->
+  <header>
+    <div class="header-left">
+      <a href="../index.html" style="color:#38bdf8; text-decoration:none; display:inline-flex; align-items:center; gap:5px; font-weight:800; font-size:12px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:4px 9px; border-radius:6px; margin-right:6px; transition: all 0.2s;">← Підручники</a>
+      <span class="brand-title">АНГЛІЙСЬКА // 9 КЛАС</span>
+      <span class="stage-badge" id="currentStageBadge">ТРЕНУВАЛЬНИЙ ВАРІАНТ #1</span>
+
+      <div class="mode-select-wrapper">
+        <select id="taskSelector" class="mode-dropdown-select" onchange="switchTask(this.value)">
+          <optgroup label="🌟 ВАРІАНТ #1 (CAMBRIDGE B2 FIRST • TEST 1 — ПОВНІ КЛЮЧІ)">
+            <option value="v1_t1" selected>Вар #1 • Use of English: «Stretch like a cat» (Multiple Choice Cloze 1–8)</option>
+            <option value="v1_t2">Вар #1 • Use of English: «Music and the Brain» (Open Cloze 9–16)</option>
+            <option value="v1_t3">Вар #1 • Use of English: «Living in the Country» (Word Formation 17–24)</option>
+            <option value="v1_t4">Вар #1 • Reading Part 6: «The Amur Leopard» (Gapped Text A–G)</option>
+            <option value="v1_t5">Вар #1 • WRITING TEST (150–180 слів: Essay / Email / Review)</option>
+            <option value="v1_t6">Вар #1 • SPEAKING TEST (5 автентичних карток B2 First)</option>
+          </optgroup>
+          <optgroup label="🌟 ВАРІАНТ #2 (CAMBRIDGE B2 FIRST • TEST 2 — ПОВНІ КЛЮЧІ)">
+            <option value="v2_t1">Вар #2 • Use of English: Multiple Choice Cloze (1–8)</option>
+            <option value="v2_t2">Вар #2 • Use of English: Open Cloze (9–16)</option>
+            <option value="v2_t3">Вар #2 • Use of English: Word Formation (17–24)</option>
+            <option value="v2_t4">Вар #2 • Reading Part 6: Gapped Text (37–42)</option>
+            <option value="v2_t5">Вар #2 • WRITING TEST (150–180 слів)</option>
+            <option value="v2_t6">Вар #2 • SPEAKING TEST (Discussion Cards)</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- Таймер олімпійського спринту -->
+      <div class="timer-widget">
+        <span style="font-size: 11px; color: #94a3b8;">⏱</span>
+        <span class="timer-display" id="timerDisplay">45:00</span>
+        <button class="btn-timer" id="btnTimerToggle" onclick="toggleTimer()">▶</button>
+        <button class="btn-timer" onclick="addTimer(300)">+5 хв</button>
+        <button class="btn-timer" onclick="resetTimer()">Скинути</button>
+      </div>
+
+      <button class="btn btn-primary" id="btnExportPng" onclick="exportFullPng()">
+        <span>📸 Зберегти PNG</span>
+      </button>
+
+      <button class="btn btn-emerald" id="btnSubmitWork" onclick="submitToAudit()">
+        <span>✈️ Надіслати на повну перевірку</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- РОБОЧИЙ ПРОСТІР -->
+  <div class="workspace">
+
+    <!-- ЛІВА ПАНЕЛЬ: ЗАВДАННЯ (ПОВНІ АВТЕНТИЧНІ ТЕКСТИ БЕЗ ПІДКАЗОК) -->
+    <main class="panel-left-exam" id="panelExam">
+
+      <div class="exam-header-card">
+        <div class="exam-meta-line">
+          <span class="exam-source-tag" id="examMetaTag">ТРЕНУВАЛЬНИЙ ВАРІАНТ #1 • CAMBRIDGE B2 FIRST</span>
+          <span style="font-size:11px; color:#f59e0b; font-weight:800;">РЕЖИМ САМОСТІЙНОЇ РОБОТИ</span>
+        </div>
+        <div class="exam-task-title" id="examTaskTitle">Use of English: «Stretch like a cat»</div>
+        <div class="exam-instruction" id="examInstruction">
+          Read the text below and choose the correct word for each space. For each question (1–8), write your chosen answer on the lined sheet on the right.
+        </div>
+      </div>
+
+      <!-- Контейнер завдання (динамічно генерується за базою) -->
+      <div class="exam-content-container" id="examContent"></div>
+
+    </main>
+
+    <!-- РЕСАЙЗЕР РОЗПОДІЛУ ЕКРАНА -->
+    <div class="resizer" id="centerResizer"></div>
+
+    <!-- ПРАВА ПАНЕЛЬ: ЧИСТИЙ ЗОШИТ HUION ДЛЯ ПИСЬМА МІЛАНИ -->
+    <aside class="panel-right-canvas" id="panelCanvas">
+
+      <!-- Тулбар пера, кольорів, зуму та додавання довжини -->
+      <div class="canvas-toolbar">
+        <div class="tool-group">
+          <button class="tool-btn active" id="toolPen" title="Ручка (B)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+          </button>
+          <button class="tool-btn" id="toolEraser" title="Ластик (E)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
+          </button>
+          <button class="tool-btn" id="toolHighlighter" title="Маркер (V)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m14 2 8 8L10 22H2v-8L14 2z"/></svg>
+          </button>
+        </div>
+
+        <div class="tool-group">
+          <div class="color-dot active" data-color="#f8fafc" style="background:#f8fafc;" title="Білий"></div>
+          <div class="color-dot" data-color="#38bdf8" style="background:#38bdf8;" title="Блакитний"></div>
+          <div class="color-dot" data-color="#34d399" style="background:#34d399;" title="Зелений"></div>
+          <div class="color-dot" data-color="#f59e0b" style="background:#f59e0b;" title="Бурштиновий"></div>
+          <div class="color-dot" data-color="#f43f5e" style="background:#f43f5e;" title="Червоний"></div>
+        </div>
+
+        <!-- Кнопка зуму з індикатором відсотка (Клік скидає на 100%) -->
+        <div class="tool-group">
+          <button class="btn-zoom-badge" id="btnZoomReset" title="Масштаб (Коліщатко або Ctrl+Пробіл). Клік — скинути 100%">
+            🔍 <span id="zoomBadge">100%</span>
+          </button>
+        </div>
+
+        <!-- КНОПКА ДОДАТИ ДОВЖИНУ У ТУЛБАРІ -->
+        <div class="tool-group">
+          <button class="btn-toolbar-add" id="btnAddLengthToolbar" title="Додати довжину аркуша вниз (+1000 px)">
+            ➕ +1000 px
+          </button>
+        </div>
+
+        <div class="tool-group" style="border:none;">
+          <button class="tool-btn" id="btnUndo" title="Скасувати (Ctrl+Z)">↶</button>
+          <button class="tool-btn" id="btnRedo" title="Повернути (Ctrl+Y)">↷</button>
+          <button class="tool-btn" id="btnClearInk" title="Очистити полотно">🗑</button>
+        </div>
+      </div>
+
+      <!-- Світ віртуального полотна Huion (Pan & Zoom) -->
+      <div class="viewport-world" id="viewportWorld">
+        <div class="notebook-sheet" id="notebookSheet">
+          <canvas id="gridCanvas"></canvas>
+          <canvas id="inkCanvas"></canvas>
+        </div>
+
+        <button class="btn-bottom-add" id="btnAddLengthBottom">+ Додати довжину аркуша (+1000 px вниз)</button>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- БАЗА ВСІХ АВТЕНТИЧНИХ ТРЕНУВАЛЬНИХ ЗАВДАНЬ ТА ДВІЖОК -->
+  <script>
+    const variantsDatabase = {
+      // ==========================================
+      // ВАРІАНТ #1 (CAMBRIDGE B2 FIRST • TEST 1)
+      // ==========================================
+      v1_t1: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge Assessment • B2 First for Schools • Part 1 (Multiple-Choice Cloze)",
+        title: "Завдання #1. Use of English: «Stretch like a cat»",
+        instruction: "Read the text below and choose the correct word for each space. For each question (1–8), write your chosen letter A, B, C or D on the lined sheet on the right.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Stretch like a cat</h3>
+            <p>Watch a cat – domestic or wild – for any <span class="gap-marker">(0) length</span> of time, and you’ll notice how often it stretches. Watch humans for a similar amount of time and you’ll realise we don’t stretch <span class="gap-marker">(1) ......</span> near as much. Why do cats do it? First, they sleep a lot – often up to 16 hours a day. During sleep, their muscles are <span class="gap-marker">(2) ......</span> and their blood pressure drops.</p>
+            <p style="margin-top:10px;">Stretching <span class="gap-marker">(3) ......</span> both animals and humans out of inactivity. In cats, this <span class="gap-marker">(4) ......</span> a variety of beneficial physical functions to occur. Blood pressure <span class="gap-marker">(5) ......</span> again, and stretching helps to <span class="gap-marker">(6) ......</span> the brain and muscles with oxygen. It also increases the cat’s heart rate, so it is ready to move quickly. By the time it has finished stretching, the cat becomes more <span class="gap-marker">(7) ......</span> of its surroundings, and is ready to spring into <span class="gap-marker">(8) ......</span> at any moment.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">1.</div><div class="q-variants"><div class="q-opt"><b>A</b> nowhere</div><div class="q-opt"><b>B</b> wherever</div><div class="q-opt"><b>C</b> anywhere</div><div class="q-opt"><b>D</b> somewhere</div></div></div>
+            <div class="question-card"><div class="q-head">2.</div><div class="q-variants"><div class="q-opt"><b>A</b> inactive</div><div class="q-opt"><b>B</b> lazy</div><div class="q-opt"><b>C</b> unenergetic</div><div class="q-opt"><b>D</b> stopped</div></div></div>
+            <div class="question-card"><div class="q-head">3.</div><div class="q-variants"><div class="q-opt"><b>A</b> remains</div><div class="q-opt"><b>B</b> keeps</div><div class="q-opt"><b>C</b> stays</div><div class="q-opt"><b>D</b> maintains</div></div></div>
+            <div class="question-card"><div class="q-head">4.</div><div class="q-variants"><div class="q-opt"><b>A</b> entitles</div><div class="q-opt"><b>B</b> provides</div><div class="q-opt"><b>C</b> lets</div><div class="q-opt"><b>D</b> enables</div></div></div>
+            <div class="question-card"><div class="q-head">5.</div><div class="q-variants"><div class="q-opt"><b>A</b> adds</div><div class="q-opt"><b>B</b> gains</div><div class="q-opt"><b>C</b> rises</div><div class="q-opt"><b>D</b> lifts</div></div></div>
+            <div class="question-card"><div class="q-head">6.</div><div class="q-variants"><div class="q-opt"><b>A</b> supply</div><div class="q-opt"><b>B</b> offer</div><div class="q-opt"><b>C</b> give</div><div class="q-opt"><b>D</b> deliver</div></div></div>
+            <div class="question-card"><div class="q-head">7.</div><div class="q-variants"><div class="q-opt"><b>A</b> alive</div><div class="q-opt"><b>B</b> awake</div><div class="q-opt"><b>C</b> alert</div><div class="q-opt"><b>D</b> aware</div></div></div>
+            <div class="question-card"><div class="q-head">8.</div><div class="q-variants"><div class="q-opt"><b>A</b> response</div><div class="q-opt"><b>B</b> action</div><div class="q-opt"><b>C</b> operation</div><div class="q-opt"><b>D</b> activity</div></div></div>
+          </div>
+        `
+      },
+
+      v1_t2: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge Assessment • B2 First for Schools • Part 2 (Open Cloze)",
+        title: "Завдання #2. Use of English: «Music and the Brain»",
+        instruction: "Read the text below and think of the word which best fits each space. Use only one word in each space (9–16). Write your answers in CAPITAL letters on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Music and the Brain</h3>
+            <p>It is widely believed that listening to music has an effect <span class="gap-marker">(9) ......</span> our moods and cognitive performance. However, scientists are still debating how and why <span class="gap-marker">(10) ......</span> happens. Some researchers claim that background music acts <span class="gap-marker">(11) ......</span> a stimulus, helping the brain to focus, while others point out <span class="gap-marker">(12) ......</span> difficult it can be to concentrate when lyrics are present.</p>
+            <p style="margin-top:10px;">What is clear <span class="gap-marker">(13) ......</span> that the emotional response triggered by music depends on personal preferences. A song <span class="gap-marker">(14) ......</span> brings joy to one listener might irritate another. Playing an instrument also requires <span class="gap-marker">(15) ......</span> high level of coordination between hearing and movement, <span class="gap-marker">(16) ......</span> it provides exceptional mental exercise.</p>
+          </div>
+
+          <div style="margin-top:12px; font-size:13px; color:#cbd5e1; background:rgba(0,0,0,0.25); padding:10px 14px; border-radius:6px; border-left:3px solid #38bdf8;">
+            <b>Підказка щодо формату:</b> У кожному пропуску має бути строго <b>ОДНЕ</b> слово (прийменник, артикль, займенник чи службове дієслово). Запишіть номери 9–16 та слова у зошит.
+          </div>
+        `
+      },
+
+      v1_t3: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge Assessment • B2 First for Schools • Part 3 (Word Formation)",
+        title: "Завдання #3. Use of English: «Living in the Country»",
+        instruction: "Read the text below. Use the word given in capitals at the end of each line to form a word that fits in the space in the same line (17–24). Write your answers on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Living in the Country</h3>
+            <p>Many city dwellers dream of moving to the countryside, believing it will be <span class="gap-marker">(17) ...... [ENTIRE]</span> peaceful. They put <span class="gap-marker">(18) ...... [SIDE]</span> thoughts of traffic and noise, imagining a life that is deeply <span class="gap-marker">(19) ...... [BENEFIT]</span> to their health. Fresh air and open green spaces certainly help, <span class="gap-marker">(20) ...... [PROVIDE]</span> people with plenty of opportunities to exercise and <span class="gap-marker">(21) ...... [LOW]</span> their stress levels.</p>
+            <p style="margin-top:10px;">However, rural life is not <span class="gap-marker">(22) ...... [SIMPLE]</span> an escape from difficulties. Public transport is rare, so having a car is an absolute <span class="gap-marker">(23) ...... [ACCOMPANY]</span> to daily survival, and bad weather can make travel highly <span class="gap-marker">(24) ...... [CONVENIENT]</span>.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">17. ENTIRE &rarr;</div><div style="font-size:12px; color:#94a3b8;">Утворіть прислівник перед прикметником 'peaceful'</div></div>
+            <div class="question-card"><div class="q-head">18. SIDE &rarr;</div><div style="font-size:12px; color:#94a3b8;">Фразове сполучення з дієсловом 'put' (відкласти вбік)</div></div>
+            <div class="question-card"><div class="q-head">19. BENEFIT &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прикметник (корисний для здоров'я)</div></div>
+            <div class="question-card"><div class="q-head">20. PROVIDE &rarr;</div><div style="font-size:12px; color:#94a3b8;">Дієприслівникова форма обставини дії</div></div>
+            <div class="question-card"><div class="q-head">21. LOW &rarr;</div><div style="font-size:12px; color:#94a3b8;">Дієслово (знизити рівень стресу)</div></div>
+            <div class="question-card"><div class="q-head">22. SIMPLE &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прислівник (не просто втеча)</div></div>
+            <div class="question-card"><div class="q-head">23. ACCOMPANY &rarr;</div><div style="font-size:12px; color:#94a3b8;">Іменник (неодмінний супровід / атрибут)</div></div>
+            <div class="question-card"><div class="q-head">24. CONVENIENT &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прикметник із негативним префіксом (незручний)</div></div>
+          </div>
+        `
+      },
+
+      v1_t4: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge Assessment • B2 First for Schools • Part 6 (Gapped Text)",
+        title: "Завдання #4. Reading: «The Amur Leopard»",
+        instruction: "You are going to read an article about the Amur Leopard. Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap (37–42). There is one extra sentence which you do not need to use. Write your answers on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>The Amur Leopard</h3>
+            <p>The Amur leopard is one of the world's most endangered big cats. Native to the temperate forests of the Russian Far East and northeast China, these solitary animals are adapted to surviving in harsh, snowy winters with their thick, pale-cream coats covered in distinctive rosettes.</p>
+            <p style="margin-top:10px;">In the early 2000s, surveys estimated that only about 30 individuals remained in the wild, threatened by poaching, habitat loss, and forest fires. <span class="gap-marker">37 ____</span> In 2012, the Russian government established the Land of the Leopard National Park, protecting 60% of the remaining habitat.</p>
+            <p style="margin-top:10px;">To monitor the population, scientists rely heavily on camera traps positioned along popular wildlife trails. <span class="gap-marker">38 ____</span> Each leopard has a unique pattern of spots on its flanks, acting like a human fingerprint. <span class="gap-marker">39 ____</span> This allows researchers to distinguish between individual animals and accurately count adults and cubs over time.</p>
+            <p style="margin-top:10px;">The camera traps operate 24 hours a day in temperatures that often drop below minus 30 degrees Celsius. <span class="gap-marker">40 ____</span> When a leopard passes within range, an infrared sensor triggers a rapid burst of high-resolution photographs without making a sound or flashing bright lights.</p>
+            <p style="margin-top:10px;">Thanks to these strict conservation measures and anti-poaching patrols, the population has shown signs of recovery. <span class="gap-marker">41 ____</span> Recent data suggests the number of leopards has risen to over 120 individuals.</p>
+            <p style="margin-top:10px;">However, conservationists warn that their low genetic diversity remains a major concern. <span class="gap-marker">42 ____</span> Continued international cooperation between Russia and China will be essential to ensure these magnificent cats have a long-term future.</p>
+          </div>
+
+          <div style="font-size:13px; font-weight:800; color:#38bdf8; text-transform:uppercase; margin-top:8px;">
+            Sentences to insert (A–G):
+          </div>
+          <div class="exam-options-grid">
+            <div class="question-card"><b>A.</b> By comparing these spot patterns with a master database, scientists can identify who is who.</div>
+            <div class="question-card"><b>B.</b> Local communities have also started supporting the park through eco-tourism and educational initiatives.</div>
+            <div class="question-card"><b>C.</b> Alarmed by these catastrophic figures, conservation groups urged urgent intervention.</div>
+            <div class="question-card"><b>D.</b> Without fresh blood from broader gene pools, isolated populations are vulnerable to disease and reduced fertility.</div>
+            <div class="question-card"><b>E.</b> Many tourists travel there hoping to spot a leopard in the trees, though sightings are extremely rare. <i>(Distractor)</i></div>
+            <div class="question-card"><b>F.</b> These are not traps in a sense that they physically capture the animals, but they are triggered to start recording when one walks by.</div>
+            <div class="question-card"><b>G.</b> They are strategically attached to trees along ridgelines and river valleys where leopards are known to scent-mark.</div>
+          </div>
+        `
+      },
+
+      v1_t5: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge B2 First • Writing Paper (150–180 words)",
+        title: "Завдання #5. Writing Test (Есе / Email / Відгук)",
+        instruction: "Choose ONE of the writing tasks below. Write 150–180 words in an appropriate style on the right sheet. Support your points with reasons and examples.",
+        renderHtml: `
+          <div class="exam-options-grid" style="gap:14px;">
+            <div class="question-card">
+              <div class="q-head" style="color:#38bdf8;">Task 1 (Opinion Essay)</div>
+              <p style="font-size:13px; line-height:1.5;">Some schools believe that students should not be allowed to use mobile phones during breaks, while others think it should be permitted. Write an essay discussing both views and give your own opinion.</p>
+            </div>
+            <div class="question-card">
+              <div class="q-head" style="color:#38bdf8;">Task 2 (Informal Email)</div>
+              <p style="font-size:13px; line-height:1.5;">An English-speaking friend wants to know about a traditional celebration or festival in your country. Write an email describing what people do, what special food is prepared, and why you enjoy it.</p>
+            </div>
+            <div class="question-card">
+              <div class="q-head" style="color:#38bdf8;">Task 3 (Review)</div>
+              <p style="font-size:13px; line-height:1.5;">Write a review of a book, film or video game that has a really interesting plot. Describe the story briefly, explain why you liked it, and say whether you would recommend it to other teenagers.</p>
+            </div>
+          </div>
+        `
+      },
+
+      v1_t6: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #1",
+        meta: "Cambridge B2 First • Speaking Paper (Prompt Cards)",
+        title: "Завдання #6. Speaking Test (5 офіційних карток)",
+        instruction: "Choose one topic. Take 1 minute to outline your key points in the notebook, then present a 2-minute monologue answering all bullet points.",
+        renderHtml: `
+          <div class="exam-options-grid" style="gap:10px;">
+            <div class="question-card">
+              <b>Card 1: Social Media & Friendships</b>
+              <div style="font-size:12.5px; color:#94a3b8; margin-top:4px;">Do social networks help people make real friends? What are the risks of sharing personal details online? How do you balance screen time and real life?</div>
+            </div>
+            <div class="question-card">
+              <b>Card 2: Everyday Eco-Habits</b>
+              <div style="font-size:12.5px; color:#94a3b8; margin-top:4px;">What small habits can reduce plastic in daily life? Who is more responsible for the planet: individuals or big companies? What does your school do for ecology?</div>
+            </div>
+            <div class="question-card">
+              <b>Card 3: School Routine & Sleep</b>
+              <div style="font-size:12.5px; color:#94a3b8; margin-top:4px;">What time do you usually wake up on school days? Should school start later (e.g. 9:00 AM)? How does lack of sleep affect your mood and memory?</div>
+            </div>
+            <div class="question-card">
+              <b>Card 4: Books vs Cinema/Streaming</b>
+              <div style="font-size:12.5px; color:#94a3b8; margin-top:4px;">Do you prefer reading a book or watching its film adaptation? Why do people still visit physical libraries? What is the most inspiring book you've read?</div>
+            </div>
+            <div class="question-card">
+              <b>Card 5: Future Career & Goals</b>
+              <div style="font-size:12.5px; color:#94a3b8; margin-top:4px;">What skills will be most important in the future? Would you like to work remotely or in an office? What job would you choose if money didn't matter?</div>
+            </div>
+          </div>
+        `
+      },
+
+      // ==========================================
+      // ВАРІАНТ #2 (CAMBRIDGE B2 FIRST • TEST 2)
+      // ==========================================
+      v2_t1: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge Assessment • B2 First for Schools • Test 2 • Part 1 (Multiple-Choice Cloze)",
+        title: "Вар #2 • Завдання #1. Use of English: Multiple Choice Cloze",
+        instruction: "Read the text below and choose the correct word for each space (1–8). Write your answers A, B, C or D on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Living with Animals</h3>
+            <p>For thousands of years, humans have lived alongside animals, but our relationship with them has <span class="gap-marker">(1) ......</span> dramatically over the centuries. In ancient times, animals were primarily seen as a source of food and labour. Today, however, millions of households keep pets purely for companionship. Research suggests that spending time with a pet can <span class="gap-marker">(2) ......</span> reduce stress levels and encourage empathy.</p>
+            <p style="margin-top:10px;">Nevertheless, owning a pet is a serious commitment that requires careful <span class="gap-marker">(3) ......</span>. Owners must be prepared to <span class="gap-marker">(4) ......</span> responsibility for their pet's health, diet, and daily exercise. While dogs and cats remain the most popular choices, some people are drawn to more exotic creatures, unaware of the difficulties <span class="gap-marker">(5) ......</span> in their care. Experts advise that families should thoroughly research an animal's needs before making a final <span class="gap-marker">(6) ......</span>, ensuring they can provide a safe and loving home for the <span class="gap-marker">(7) ......</span> of the pet's life, rather than giving it up when difficulties <span class="gap-marker">(8) ......</span>.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">1.</div><div class="q-variants"><div class="q-opt"><b>A</b> changed</div><div class="q-opt"><b>B</b> adapted</div><div class="q-opt"><b>C</b> transformed</div><div class="q-opt"><b>D</b> moved</div></div></div>
+            <div class="question-card"><div class="q-head">2.</div><div class="q-variants"><div class="q-opt"><b>A</b> heavily</div><div class="q-opt"><b>B</b> largely</div><div class="q-opt"><b>C</b> deeply</div><div class="q-opt"><b>D</b> significantly</div></div></div>
+            <div class="question-card"><div class="q-head">3.</div><div class="q-variants"><div class="q-opt"><b>A</b> attention</div><div class="q-opt"><b>B</b> reflection</div><div class="q-opt"><b>C</b> consideration</div><div class="q-opt"><b>D</b> deliberation</div></div></div>
+            <div class="question-card"><div class="q-head">4.</div><div class="q-variants"><div class="q-opt"><b>A</b> hold</div><div class="q-opt"><b>B</b> take</div><div class="q-opt"><b>C</b> carry</div><div class="q-opt"><b>D</b> accept</div></div></div>
+            <div class="question-card"><div class="q-head">5.</div><div class="q-variants"><div class="q-opt"><b>A</b> involved</div><div class="q-opt"><b>B</b> connected</div><div class="q-opt"><b>C</b> included</div><div class="q-opt"><b>D</b> concerned</div></div></div>
+            <div class="question-card"><div class="q-head">6.</div><div class="q-variants"><div class="q-opt"><b>A</b> option</div><div class="q-opt"><b>B</b> judgement</div><div class="q-opt"><b>C</b> decision</div><div class="q-opt"><b>D</b> selection</div></div></div>
+            <div class="question-card"><div class="q-head">7.</div><div class="q-variants"><div class="q-opt"><b>A</b> length</div><div class="q-opt"><b>B</b> period</div><div class="q-opt"><b>C</b> time</div><div class="q-opt"><b>D</b> duration</div></div></div>
+            <div class="question-card"><div class="q-head">8.</div><div class="q-variants"><div class="q-opt"><b>A</b> appear</div><div class="q-opt"><b>B</b> arise</div><div class="q-opt"><b>C</b> happen</div><div class="q-opt"><b>D</b> occur</div></div></div>
+          </div>
+        `
+      },
+
+      v2_t2: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge Assessment • B2 First for Schools • Test 2 • Part 2 (Open Cloze)",
+        title: "Вар #2 • Завдання #2. Use of English: Open Cloze",
+        instruction: "Read the text below and think of the word which best fits each space. Use only one word in each space (9–16). Write your answers in CAPITAL letters on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>The History of Bicycles</h3>
+            <p>The bicycle is one of the most efficient forms of transport ever invented. It first appeared <span class="gap-marker">(9) ......</span> Europe in the early nineteenth century, although it was <span class="gap-marker">(10) ......</span> until the late 1880s that modern safety bicycles with pedals and chains became widespread.</p>
+            <p style="margin-top:10px;">What makes cycling so remarkable <span class="gap-marker">(11) ......</span> that it uses human muscle power far <span class="gap-marker">(12) ......</span> effectively than walking or running. A cyclist can travel three times faster while consuming <span class="gap-marker">(13) ......</span> a fraction of the energy. Helmets and reflectors protect riders <span class="gap-marker">(14) ......</span> injury and traffic accidents. Today, cities <span class="gap-marker">(15) ......</span> over the world are investing in dedicated cycle paths to encourage citizens to leave <span class="gap-marker">(16) ......</span> cars at home and enjoy cleaner air.</p>
+          </div>
+
+          <div style="margin-top:12px; font-size:13px; color:#cbd5e1; background:rgba(0,0,0,0.25); padding:10px 14px; border-radius:6px; border-left:3px solid #c084fc;">
+            <b>Підказка:</b> Одне граматичне слово для кожного пропуску 9–16 (прийменники, частки, займенники).
+          </div>
+        `
+      },
+
+      v2_t3: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge Assessment • B2 First for Schools • Test 2 • Part 3 (Word Formation)",
+        title: "Вар #2 • Завдання #3. Use of English: Word Formation",
+        instruction: "Read the text below. Use the word given in capitals at the end of each line to form a word that fits in the space in the same line (17–24).",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>An Underwater Discovery</h3>
+            <p>Marine archaeologists were astonished by the sudden <span class="gap-marker">(17) ...... [APPEAR]</span> of an ancient shipwreck off the coast of Greece. The wreck was discovered <span class="gap-marker">(18) ...... [EXPECTED]</span> by a team of local divers searching for sponge beds. It was <span class="gap-marker">(19) ...... [PRINCIPLE]</span> composed of Roman trading vessels carrying wine and olive oil.</p>
+            <p style="margin-top:10px;">For decades, the fragile site had been <span class="gap-marker">(20) ...... [THREAT]</span> by deep-sea fishing trawlers. Due to a common <span class="gap-marker">(21) ...... [UNDERSTAND]</span>, researchers initially assumed the cargo had been lost, but delicate jars remained safely <span class="gap-marker">(22) ...... [BURY]</span> under layers of sand. The heavy <span class="gap-marker">(23) ...... [WEIGH]</span> of the sediment had protected these <span class="gap-marker">(24) ...... [EXCEPTION]</span> artifacts from the destructive effects of saltwater.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">17. APPEAR &rarr;</div><div style="font-size:12px; color:#94a3b8;">Іменник (поява стародавнього корабля)</div></div>
+            <div class="question-card"><div class="q-head">18. EXPECTED &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прислівник з негативним префіксом (несподівано)</div></div>
+            <div class="question-card"><div class="q-head">19. PRINCIPLE &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прислівник (головним чином)</div></div>
+            <div class="question-card"><div class="q-head">20. THREAT &rarr;</div><div style="font-size:12px; color:#94a3b8;">Пасивне дієслово минулого часу (було під загрозою)</div></div>
+            <div class="question-card"><div class="q-head">21. UNDERSTAND &rarr;</div><div style="font-size:12px; color:#94a3b8;">Іменник з префіксом помилки (непорозуміння / хибна думка)</div></div>
+            <div class="question-card"><div class="q-head">22. BURY &rarr;</div><div style="font-size:12px; color:#94a3b8;">Пасивний дієприкметник (поховані під піском)</div></div>
+            <div class="question-card"><div class="q-head">23. WEIGH &rarr;</div><div style="font-size:12px; color:#94a3b8;">Іменник (вага відкладень)</div></div>
+            <div class="question-card"><div class="q-head">24. EXCEPTION &rarr;</div><div style="font-size:12px; color:#94a3b8;">Прикметник (виняткові артефакти)</div></div>
+          </div>
+        `
+      },
+
+      v2_t4: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge Assessment • B2 First for Schools • Test 2 • Part 6 (Gapped Text)",
+        title: "Вар #2 • Завдання #4. Reading: Gapped Text",
+        instruction: "Read the article about young innovators. Six sentences have been removed from the article. Choose from the sentences A–G the one which fits each gap (37–42). There is one extra sentence.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Young Minds Changing the World</h3>
+            <p>Across the globe, teenagers are turning classroom knowledge into powerful real-world solutions. From portable water filtration devices to AI apps identifying crop diseases, young people prove that age is no barrier to meaningful impact.</p>
+            <p style="margin-top:10px;">Sixteen-year-old Maya Patel from Bristol invented a low-cost sensor that detects microplastics in drinking water. <span class="gap-marker">37 ____</span> Initial tests in local rivers demonstrated an impressive 94% accuracy rate, catching the attention of environmental scientists nationwide.</p>
+            <p style="margin-top:10px;">Funding, however, was an early hurdle for Maya's project. <span class="gap-marker">38 ____</span> Instead of giving up, she launched a community crowdfunding campaign and reached out to university laboratories for mentorship.</p>
+            <p style="margin-top:10px;">Her persistence paid off when a renewable materials institute offered access to their advanced spectrometers. <span class="gap-marker">39 ____</span> With their guidance, Maya was able to miniaturise her prototype so that it could fit inside a standard household water pipe.</p>
+            <p style="margin-top:10px;">Similar success stories are unfolding in rural Kenya, where high-school student Samuel Kimani built a solar-powered irrigation system. <span class="gap-marker">40 ____</span> By using simple recycled components, Samuel kept production costs affordable for local farmers struggling with prolonged droughts.</p>
+            <p style="margin-top:10px;">Educators emphasize that encouraging curiosity and hands-on problem-solving in schools is vital. <span class="gap-marker">41 ____</span> Without supportive teachers who value experimentation, many promising ideas would never make it beyond the notebook page.</p>
+            <p style="margin-top:10px;">As these young innovators show, the challenges facing our planet require fresh perspectives and daring ambition. <span class="gap-marker">42 ____</span> Their accomplishments remind us all that determination and creativity can indeed transform our shared future.</p>
+          </div>
+
+          <div style="font-size:13px; font-weight:800; color:#c084fc; text-transform:uppercase; margin-top:8px;">
+            Sentences to insert (A–G):
+          </div>
+          <div class="exam-options-grid">
+            <div class="question-card"><b>A.</b> The professors were impressed by her solid grasp of chemistry and offered free workshop space.</div>
+            <div class="question-card"><b>B.</b> Students need space to test theories, make mistakes, and discover unexpected breakthroughs on their own.</div>
+            <div class="question-card"><b>C.</b> Many schools still focus almost entirely on traditional exam memorisation instead of practical skills. <i>(Distractor)</i></div>
+            <div class="question-card"><b>D.</b> It automatically pumps water from deep underground wells only during the coolest morning hours.</div>
+            <div class="question-card"><b>E.</b> The next generation is already stepping up to lead the way where previous generations hesitated.</div>
+            <div class="question-card"><b>F.</b> Traditional banks and grant programs routinely rejected her applications due to her youth.</div>
+            <div class="question-card"><b>G.</b> She conceived the concept after witnessing plastic debris accumulating along her favourite coastal walking path.</div>
+          </div>
+        `
+      },
+
+      v2_t5: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge B2 First • Writing Paper (150–180 words)",
+        title: "Вар #2 • Завдання #5. Writing Test",
+        instruction: "Choose ONE writing task. Write 150–180 words with clear paragraphs and rich B2 vocabulary.",
+        renderHtml: `
+          <div class="exam-options-grid" style="gap:14px;">
+            <div class="question-card">
+              <div class="q-head" style="color:#c084fc;">Task 1 (Essay)</div>
+              <p style="font-size:13px; line-height:1.5;">«Is participating in sports the best way for teenagers to stay healthy and make friends?» Discuss the benefits and potential drawbacks of competitive sports, and provide your reasoned conclusion.</p>
+            </div>
+            <div class="question-card">
+              <div class="q-head" style="color:#c084fc;">Task 2 (Formal Letter / Proposal)</div>
+              <p style="font-size:13px; line-height:1.5;">Write a proposal to your school headteacher suggesting the establishment of a School Eco-Club. Explain what activities the club would organise and how it would benefit the entire school community.</p>
+            </div>
+          </div>
+        `
+      },
+
+      v2_t6: {
+        stage: "ТРЕНУВАЛЬНИЙ ВАРІАНТ #2",
+        meta: "Cambridge B2 First • Speaking Paper",
+        title: "Вар #2 • Завдання #6. Speaking Test",
+        instruction: "Select one topic card. Outline 3 main arguments in the notebook, then present your answer.",
+        renderHtml: `
+          <div class="exam-options-grid" style="gap:10px;">
+            <div class="question-card"><b>Card 1: Artificial Intelligence in Education:</b> Can AI replace human teachers? How should homework be assessed in the age of ChatGPT?</div>
+            <div class="question-card"><b>Card 2: City Transport & Environment:</b> What is the ideal way to travel around a big city? Should private cars be banned from city centres?</div>
+            <div class="question-card"><b>Card 3: Music & Emotional Health:</b> How does music influence your mood? Have you ever played an instrument? What music helps you focus?</div>
+          </div>
+        `
+      }
+    };
+
+    // --- ПЕРЕМИКАННЯ ЗАВДАНЬ ---
+    let currentTaskId = 'v1_t1';
+    function switchTask(taskId) {
+      currentTaskId = taskId;
+      const data = variantsDatabase[taskId] || variantsDatabase['v1_t1'];
+      document.getElementById('currentStageBadge').textContent = data.stage;
+      document.getElementById('examMetaTag').textContent = data.meta;
+      document.getElementById('examTaskTitle').textContent = data.title;
+      document.getElementById('examInstruction').textContent = data.instruction;
+      document.getElementById('examContent').innerHTML = data.renderHtml;
+    }
+
+    // --- ТАЙМЕР ---
+    let timerSec = 2700; // 45:00
+    let timerInterval = null;
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSec / 60).toString().padStart(2, '0');
+      const s = (timerSec % 60).toString().padStart(2, '0');
+      document.getElementById('timerDisplay').textContent = `${m}:${s}`;
+    }
+    function toggleTimer() {
+      const btn = document.getElementById('btnTimerToggle');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        btn.textContent = '▶';
+      } else {
+        timerInterval = setInterval(() => {
+          if (timerSec > 0) {
+            timerSec--;
+            updateTimerDisplay();
+          } else {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            btn.textContent = '▶';
+          }
+        }, 1000);
+        btn.textContent = '⏸';
+      }
+    }
+    function addTimer(sec) { timerSec += sec; updateTimerDisplay(); }
+    function resetTimer() { timerSec = 2700; updateTimerDisplay(); }
+
+    // --- ВІРТУАЛЬНИЙ КАНВАС ДЛЯ HUION З ПОВНИМ PAN & ZOOM ЯК У KRITA ---
+    const panelCanvas = document.getElementById('panelCanvas');
+    const viewportWorld = document.getElementById('viewportWorld');
+    const sheet = document.getElementById('notebookSheet');
+    const gridCanvas = document.getElementById('gridCanvas');
+    const inkCanvas = document.getElementById('inkCanvas');
+    const gCtx = gridCanvas.getContext('2d');
+    const inkCtx = inkCanvas.getContext('2d');
+    const zoomBadge = document.getElementById('zoomBadge');
+
+    let sheetWidth = 820;
+    let sheetHeight = 2600;
+
+    let currentZoom = 1.0;
+    let panX = 40;
+    let panY = 50;
+
+    let isDrawing = false;
+    let isPanning = false;
+    let isZooming = false;
+    let isSpaceDown = false;
+    let isCtrlDown = false;
+
+    let panStartX = 0, panStartY = 0;
+    let panStartWorldX = 0, panStartWorldY = 0;
+    let zoomOriginX = 0, zoomOriginY = 0;
+    let zoomStartVal = 1.0;
+    let zoomPivotCanvasX = 0, zoomPivotCanvasY = 0;
+
+    let currentTool = 'pen';
+    let currentColor = '#f8fafc';
+    let baseLineWidth = 2.4;
+    let smoothedPressure = 0.5;
+    let strokePoints = [];
+    let lastMidPoint = null;
+
+    let undoStack = [];
+    let redoStack = [];
+
+    function applyTransform() {
+      viewportWorld.style.transform = `translate(${panX}px, ${panY}px) scale(${currentZoom})`;
+      zoomBadge.textContent = `${Math.round(currentZoom * 100)}%`;
+    }
+
+    function resetZoom() {
+      currentZoom = 1.0;
+      panX = 40;
+      panY = 50;
+      applyTransform();
+    }
+
+    function resizeCanvases() {
+      gridCanvas.width = sheetWidth;
+      gridCanvas.height = sheetHeight;
+      inkCanvas.width = sheetWidth;
+      inkCanvas.height = sheetHeight;
+      drawCollegeRuledGrid();
+    }
+
+    function drawCollegeRuledGrid() {
+      gCtx.clearRect(0, 0, sheetWidth, sheetHeight);
+
+      // Лінійка 30px (College Ruled)
+      gCtx.strokeStyle = 'rgba(56, 189, 248, 0.12)';
+      gCtx.lineWidth = 1;
+
+      const lineHeight = 30;
+      for (let y = 45; y < sheetHeight; y += lineHeight) {
+        gCtx.beginPath();
+        gCtx.moveTo(0, y);
+        gCtx.lineTo(sheetWidth, y);
+        gCtx.stroke();
+      }
+
+      // Червоне ліве поле (65px)
+      gCtx.strokeStyle = 'rgba(239, 68, 68, 0.25)';
+      gCtx.lineWidth = 1.5;
+      gCtx.beginPath();
+      gCtx.moveTo(65, 0);
+      gCtx.lineTo(65, sheetHeight);
+      gCtx.stroke();
+    }
+
+    function addCanvasHeight() {
+      const img = inkCtx.getImageData(0, 0, sheetWidth, sheetHeight);
+      sheetHeight += 1000;
+      sheet.style.minHeight = sheetHeight + 'px';
+      resizeCanvases();
+      inkCtx.putImageData(img, 0, 0);
+    }
+
+    document.getElementById('btnAddLengthToolbar').onclick = addCanvasHeight;
+    document.getElementById('btnAddLengthBottom').onclick = addCanvasHeight;
+
+    function getCanvasCoords(e) {
+      const rect = panelCanvas.getBoundingClientRect();
+      return {
+        x: (e.clientX - rect.left - panX) / currentZoom,
+        y: (e.clientY - rect.top - panY) / currentZoom
+      };
+    }
+
+    function saveHistory() {
+      redoStack.length = 0;
+      if (undoStack.length >= 35) undoStack.shift();
+      undoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+    }
+
+    function undo() {
+      if (undoStack.length > 0) {
+        redoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+        inkCtx.putImageData(undoStack.pop(), 0, 0);
+      }
+    }
+    function redo() {
+      if (redoStack.length > 0) {
+        undoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+        inkCtx.putImageData(redoStack.pop(), 0, 0);
+      }
+    }
+
+    // --- ОБРОБНИКИ ПОДІЙ PAN & ZOOM ТА ПИСЬМА ---
+    panelCanvas.addEventListener('pointerdown', (e) => {
+      if (e.target.closest('.canvas-toolbar') || e.target.closest('.btn-bottom-add')) return;
+
+      // Права кнопка миші на пері Huion перемикає ластик
+      if (e.button === 2) {
+        e.preventDefault();
+        setTool(currentTool === 'eraser' ? 'pen' : 'eraser');
+        return;
+      }
+
+      // 1. Zoom (Ctrl + Space + Drag)
+      if (isSpaceDown && (e.ctrlKey || isCtrlDown)) {
+        isZooming = true;
+        isDrawing = false;
+        zoomOriginX = e.clientX;
+        zoomOriginY = e.clientY;
+        zoomStartVal = currentZoom;
+        const rect = panelCanvas.getBoundingClientRect();
+        zoomPivotCanvasX = (zoomOriginX - rect.left - panX) / currentZoom;
+        zoomPivotCanvasY = (zoomOriginY - rect.top - panY) / currentZoom;
+        panelCanvas.setPointerCapture(e.pointerId);
+        return;
+      }
+
+      // 2. Pan (Пробіл або Середня кнопка миші)
+      if (isSpaceDown || e.button === 1) {
+        e.preventDefault();
+        isPanning = true;
+        isDrawing = false;
+        panStartX = e.clientX;
+        panStartY = e.clientY;
+        panStartWorldX = panX;
+        panStartWorldY = panY;
+        panelCanvas.setPointerCapture(e.pointerId);
+        return;
+      }
+
+      // 3. Письмо пером
+      if (e.target === inkCanvas || e.target === gridCanvas || e.target === sheet) {
+        if (e.buttons !== 1 && e.pointerType === 'mouse') return;
+
+        isDrawing = true;
+        saveHistory();
+
+        const coords = getCanvasCoords(e);
+        const p = (e.pressure && e.pressure > 0) ? e.pressure : 0.5;
+        smoothedPressure = p;
+        strokePoints = [{ x: coords.x, y: coords.y, pressure: p }];
+        lastMidPoint = { x: coords.x, y: coords.y };
+
+        inkCtx.save();
+        inkCtx.lineCap = 'round';
+        inkCtx.lineJoin = 'round';
+
+        if (currentTool === 'eraser') {
+          inkCtx.globalCompositeOperation = 'destination-out';
+          inkCtx.beginPath();
+          inkCtx.arc(coords.x, coords.y, 14, 0, Math.PI * 2);
+          inkCtx.fill();
+        } else if (currentTool === 'highlighter') {
+          inkCtx.globalCompositeOperation = 'source-over';
+          inkCtx.fillStyle = 'rgba(251, 191, 36, 0.35)';
+          inkCtx.fillRect(coords.x - 8, coords.y - 10, 16, 20);
+        } else {
+          inkCtx.globalCompositeOperation = 'source-over';
+          inkCtx.fillStyle = currentColor;
+          const w = Math.max(0.8, baseLineWidth * (0.4 + smoothedPressure * 0.9));
+          inkCtx.beginPath();
+          inkCtx.arc(coords.x, coords.y, w / 2, 0, Math.PI * 2);
+          inkCtx.fill();
+        }
+        inkCtx.restore();
+
+        panelCanvas.setPointerCapture(e.pointerId);
+      }
+    });
+
+    panelCanvas.addEventListener('pointermove', (e) => {
+      // 1. Драг-зум
+      if (isZooming) {
+        const delta = (zoomOriginY - e.clientY) + (e.clientX - zoomOriginX);
+        const factor = Math.pow(1.006, delta);
+        const newZoom = Math.min(3.0, Math.max(0.4, Math.round(zoomStartVal * factor * 100) / 100));
+
+        const rect = panelCanvas.getBoundingClientRect();
+        const pivotScreenX = zoomOriginX - rect.left;
+        const pivotScreenY = zoomOriginY - rect.top;
+
+        panX = Math.round(pivotScreenX - zoomPivotCanvasX * newZoom);
+        panY = Math.round(pivotScreenY - zoomPivotCanvasY * newZoom);
+        currentZoom = newZoom;
+        applyTransform();
+        return;
+      }
+
+      // 2. Панорамування (Pan)
+      if (isPanning) {
+        panX = panStartWorldX + (e.clientX - panStartX);
+        panY = panStartWorldY + (e.clientY - panStartY);
+        applyTransform();
+        return;
+      }
+
+      // 3. Малювання
+      if (!isDrawing) return;
+
+      const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+      for (const ev of events) {
+        const coords = getCanvasCoords(ev);
+        const rawP = (ev.pressure && ev.pressure > 0) ? ev.pressure : 0.5;
+        smoothedPressure = smoothedPressure * 0.65 + rawP * 0.35;
+        strokePoints.push({ x: coords.x, y: coords.y, pressure: smoothedPressure });
+        drawSmoothedSegment();
+      }
+    });
+
+    function drawSmoothedSegment() {
+      const len = strokePoints.length;
+      if (len < 2) return;
+      const p1 = strokePoints[len - 2];
+      const p2 = strokePoints[len - 1];
+      const mid = { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 };
+
+      inkCtx.save();
+      inkCtx.lineCap = 'round';
+      inkCtx.lineJoin = 'round';
+
+      if (currentTool === 'eraser') {
+        inkCtx.globalCompositeOperation = 'destination-out';
+        inkCtx.strokeStyle = 'rgba(0,0,0,1)';
+        inkCtx.lineWidth = 26;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.quadraticCurveTo(p1.x, p1.y, mid.x, mid.y);
+        inkCtx.stroke();
+      } else if (currentTool === 'highlighter') {
+        inkCtx.globalCompositeOperation = 'source-over';
+        inkCtx.strokeStyle = 'rgba(251, 191, 36, 0.35)';
+        inkCtx.lineWidth = 22;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.lineTo(mid.x, mid.y);
+        inkCtx.stroke();
+      } else {
+        inkCtx.globalCompositeOperation = 'source-over';
+        inkCtx.strokeStyle = currentColor;
+        const w = Math.max(0.8, baseLineWidth * (0.4 + p2.pressure * 0.9));
+        inkCtx.lineWidth = w;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.quadraticCurveTo(p1.x, p1.y, mid.x, mid.y);
+        inkCtx.stroke();
+      }
+
+      inkCtx.restore();
+      lastMidPoint = mid;
+    }
+
+    function stopDrawing(e) {
+      if (isZooming) {
+        isZooming = false;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+        return;
+      }
+      if (isPanning) {
+        isPanning = false;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+        return;
+      }
+      if (isDrawing) {
+        isDrawing = false;
+        strokePoints = [];
+        lastMidPoint = null;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+      }
+    }
+
+    panelCanvas.addEventListener('pointerup', stopDrawing);
+    panelCanvas.addEventListener('pointercancel', stopDrawing);
+    panelCanvas.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Коліщатко миші для панорамування або зуму
+    panelCanvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (e.ctrlKey) {
+        const rect = panelCanvas.getBoundingClientRect();
+        const cursorX = e.clientX - rect.left;
+        const cursorY = e.clientY - rect.top;
+        const canvasX = (cursorX - panX) / currentZoom;
+        const canvasY = (cursorY - panY) / currentZoom;
+
+        const zoomDelta = e.deltaY > 0 ? 0.9 : 1.1;
+        const newZoom = Math.min(3.0, Math.max(0.4, Math.round(currentZoom * zoomDelta * 100) / 100));
+
+        panX = Math.round(cursorX - canvasX * newZoom);
+        panY = Math.round(cursorY - canvasY * newZoom);
+        currentZoom = newZoom;
+        applyTransform();
+      } else {
+        panY -= e.deltaY;
+        panX -= e.deltaX;
+        applyTransform();
+      }
+    }, { passive: false });
+
+    // Інструменти
+    function setTool(t) {
+      currentTool = t;
+      document.getElementById('toolPen').classList.toggle('active', t === 'pen');
+      document.getElementById('toolEraser').classList.toggle('active-eraser', t === 'eraser');
+      document.getElementById('toolHighlighter').classList.toggle('active', t === 'highlighter');
+    }
+    document.getElementById('toolPen').onclick = () => setTool('pen');
+    document.getElementById('toolEraser').onclick = () => setTool('eraser');
+    document.getElementById('toolHighlighter').onclick = () => setTool('highlighter');
+
+    document.querySelectorAll('.color-dot').forEach(dot => {
+      dot.onclick = () => {
+        document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+        currentColor = dot.dataset.color;
+        setTool('pen');
+      };
+    });
+
+    document.getElementById('btnUndo').onclick = undo;
+    document.getElementById('btnRedo').onclick = redo;
+    document.getElementById('btnZoomReset').onclick = resetZoom;
+    document.getElementById('btnClearInk').onclick = () => {
+      if (confirm('Очистити аркуш для запису?')) {
+        saveHistory();
+        inkCtx.clearRect(0, 0, sheetWidth, sheetHeight);
+      }
+    };
+
+    // Гарячі клавіші (Space, Ctrl+Space, B, E, V, Ctrl+Z, Ctrl+Y)
+    window.addEventListener('keydown', (e) => {
+      isCtrlDown = e.ctrlKey || e.metaKey;
+
+      if (e.code === 'Space') {
+        e.preventDefault();
+        isSpaceDown = true;
+        panelCanvas.style.cursor = 'grab';
+        return;
+      }
+
+      if (e.code === 'KeyB') setTool('pen');
+      if (e.code === 'KeyE') setTool('eraser');
+      if (e.code === 'KeyV') setTool('highlighter');
+      if (isCtrlDown && e.code === 'KeyZ') { e.preventDefault(); undo(); }
+      if (isCtrlDown && e.code === 'KeyY') { e.preventDefault(); redo(); }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      isCtrlDown = e.ctrlKey || e.metaKey;
+      if (e.code === 'Space') {
+        isSpaceDown = false;
+        isPanning = false;
+        isZooming = false;
+        panelCanvas.style.cursor = 'crosshair';
+      }
+    });
+
+    // Ресайзер ширини колонок
+    const resizer = document.getElementById('centerResizer');
+    const leftPanel = document.getElementById('panelExam');
+    let isResizing = false;
+
+    resizer.addEventListener('mousedown', () => {
+      isResizing = true;
+      document.body.style.cursor = 'col-resize';
+      resizer.classList.add('dragging');
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!isResizing) return;
+      const w = (e.clientX / window.innerWidth) * 100;
+      if (w > 35 && w < 70) {
+        leftPanel.style.flex = `0 0 ${w}%`;
+        leftPanel.style.width = `${w}%`;
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      isResizing = false;
+      document.body.style.cursor = 'default';
+      resizer.classList.remove('dragging');
+    });
+
+    // --- ПОВНИЙ ЗНІМОК ВСІЄЇ РОБОТИ (УМОВА ЗАВДАННЯ + ВЕСЬ ЗОШИТ HUION БЕЗ ОБРІЗАНЬ) ---
+    function getLowestInkY() {
+      const w = inkCanvas.width;
+      const h = inkCanvas.height;
+      if (w === 0 || h === 0) return 0;
+      const imgData = inkCtx.getImageData(0, 0, w, h).data;
+      for (let y = h - 1; y >= 0; y -= 4) {
+        const rowStart = y * w * 4;
+        for (let x = 0; x < w; x += 8) {
+          if (imgData[rowStart + x * 4 + 3] > 20) {
+            return y + 10;
+          }
+        }
+      }
+      return 0;
+    }
+
+    async function generateFullSnapshotCanvas() {
+      const panel = document.getElementById('panelExam');
+      const origScrollTop = panel.scrollTop;
+      const origStyleHeight = panel.style.height;
+      const origStyleOverflow = panel.style.overflow;
+
+      const fullHeight = panel.scrollHeight;
+      panel.scrollTop = 0;
+      panel.style.height = fullHeight + 'px';
+      panel.style.overflow = 'visible';
+
+      const scale = 1.25;
+      let leftCanvas = null;
+      if (window.html2canvas) {
+        try {
+          leftCanvas = await window.html2canvas(panel, {
+            backgroundColor: '#080d1a',
+            scale: scale,
+            useCORS: true,
+            logging: false,
+            height: fullHeight,
+            windowHeight: fullHeight,
+            scrollY: 0
+          });
+        } catch (err) {
+          console.error("Помилка захоплення лівої панелі:", err);
+        }
+      }
+
+      // Відновлюємо вихідний стан лівої панелі
+      panel.style.height = origStyleHeight;
+      panel.style.overflow = origStyleOverflow;
+      panel.scrollTop = origScrollTop;
+
+      // 2. Висота полотна за останнім рядком написаного пером
+      const lowestLogicalY = getLowestInkY();
+      const leftLogicalH = leftCanvas ? Math.round(leftCanvas.height / scale) : 800;
+      const neededLogicalH = Math.max(lowestLogicalY > 0 ? lowestLogicalY + 120 : 800, leftLogicalH);
+      const cropLogicalH = Math.min(sheetHeight, Math.max(neededLogicalH, 700));
+
+      const rightScaledW = Math.round(sheetWidth * scale);
+      const rightScaledH = Math.round(cropLogicalH * scale);
+
+      if (!leftCanvas) {
+        const fallbackCanvas = document.createElement('canvas');
+        fallbackCanvas.width = rightScaledW;
+        fallbackCanvas.height = rightScaledH;
+        const fbCtx = fallbackCanvas.getContext('2d');
+        fbCtx.fillStyle = '#090e17';
+        fbCtx.fillRect(0, 0, rightScaledW, rightScaledH);
+        fbCtx.drawImage(gridCanvas, 0, 0, sheetWidth, cropLogicalH, 0, 0, rightScaledW, rightScaledH);
+        fbCtx.drawImage(inkCanvas, 0, 0, sheetWidth, cropLogicalH, 0, 0, rightScaledW, rightScaledH);
+        return fallbackCanvas;
+      }
+
+      // 3. Компоновка повного розвороту: ЛІВА ПАНЕЛЬ (ЗАВДАННЯ) + РОЗДІЛЮВАЧ + ПРАВА ПАНЕЛЬ (ЗОШИТ МІЛАНИ)
+      const dividerW = 8;
+      const totalW = leftCanvas.width + dividerW + rightScaledW;
+      const totalH = Math.max(leftCanvas.height, rightScaledH);
+
+      const compositeCanvas = document.createElement('canvas');
+      compositeCanvas.width = totalW;
+      compositeCanvas.height = totalH;
+      const compCtx = compositeCanvas.getContext('2d');
+
+      compCtx.fillStyle = '#070b12';
+      compCtx.fillRect(0, 0, totalW, totalH);
+
+      compCtx.drawImage(leftCanvas, 0, 0);
+
+      compCtx.fillStyle = '#1e304b';
+      compCtx.fillRect(leftCanvas.width, 0, dividerW, totalH);
+
+      const rightX = leftCanvas.width + dividerW;
+      compCtx.fillStyle = '#090e17';
+      compCtx.fillRect(rightX, 0, rightScaledW, totalH);
+
+      compCtx.drawImage(gridCanvas, 0, 0, sheetWidth, cropLogicalH, rightX, 0, rightScaledW, rightScaledH);
+      compCtx.drawImage(inkCanvas, 0, 0, sheetWidth, cropLogicalH, rightX, 0, rightScaledW, rightScaledH);
+
+      return compositeCanvas;
+    }
+
+    async function exportFullPng() {
+      const btn = document.getElementById('btnExportPng');
+      const origHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>⏳ Збереження всієї роботи...</span>';
+      }
+
+      try {
+        const compositeCanvas = await generateFullSnapshotCanvas();
+        const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'variant';
+        const link = document.createElement('a');
+        link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
+        link.href = compositeCanvas.toDataURL('image/png');
+        link.click();
+      } catch (err) {
+        console.error(err);
+        alert('Помилка при збереженні знімка: ' + err.message);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = origHtml;
+        }
+      }
+    }
+
+    const TG_BOT_TOKEN = "8713271082:AAGQzVKiPXw9DSpYAPNODEsaiaIQfoEjAe8";
+    let TG_CHAT_ID = "";
+
+    async function submitToAudit() {
+      const btn = document.getElementById('btnSubmitWork');
+      const origHtml = btn ? btn.innerHTML : '';
+
+      let chatId = TG_CHAT_ID || localStorage.getItem('tg_chat_id');
+      if (!chatId) {
+        chatId = prompt("Введіть ваш Telegram Chat ID для відправки викладачу / боту:", "764834479");
+        if (chatId) {
+          localStorage.setItem('tg_chat_id', chatId.trim());
+          TG_CHAT_ID = chatId.trim();
+        } else {
+          return;
+        }
+      }
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>⏳ Генерація повного знімка...</span>';
+      }
+
+      try {
+        const compositeCanvas = await generateFullSnapshotCanvas();
+        if (btn) btn.innerHTML = '<span>✈️ Відправка в Telegram...</span>';
+
+        compositeCanvas.toBlob(async (blob) => {
+          if (!blob) {
+            alert('Помилка створення файлу зображення.');
+            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+            return;
+          }
+
+          const spentSec = 2700 - timerSec;
+          const mins = Math.floor(spentSec / 60);
+          const secs = spentSec % 60;
+          const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
+
+          const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'variant';
+          const taskData = (typeof variantsDatabase !== 'undefined' && variantsDatabase[taskId]) ? variantsDatabase[taskId] : {};
+          const taskTitle = taskData.title || taskId;
+
+          const formData = new FormData();
+          formData.append('chat_id', chatId);
+          formData.append('photo', blob, `olympiad_${taskId}.png`);
+          formData.append('caption', `🇬🇧 ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС (ТРЕНУВАЛЬНИЙ ВАРІАНТ)\n${taskData.stage || 'ТРЕНУВАННЯ'}\n${taskTitle}\n⏱ Час виконання: ${timeFormatted}\n📝 Повна робота Мілани (умова + рукописний зошит)`);
+
+          try {
+            const resp = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendPhoto`, {
+              method: 'POST',
+              body: formData
+            });
+            const res = await resp.json();
+            if (res.ok) {
+              if (btn) {
+                btn.innerHTML = `<span>✅ Надіслано (${timeFormatted})</span>`;
+                btn.style.background = '#059669';
+                setTimeout(() => {
+                  btn.disabled = false;
+                  btn.innerHTML = origHtml;
+                  btn.style.background = '';
+                }, 5000);
+              }
+            } else {
+              throw new Error(res.description);
+            }
+          } catch(err) {
+            alert('Повідомлення збережено! (Telegram: ' + err.message + '). Файл повної роботи зараз скачається на диск.');
+            const link = document.createElement('a');
+            link.download = `milana_olympiad_${currentTaskId}_full_${Date.now()}.png`;
+            link.href = compositeCanvas.toDataURL('image/png');
+            link.click();
+            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+          }
+        }, 'image/png');
+      } catch (err) {
+        alert('Помилка створення знімка: ' + err.message);
+        if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+      }
+    }
+
+    // Завантаження при старті
+    window.onload = () => {
+      resizeCanvases();
+      applyTransform();
+      switchTask('v1_t1');
+      updateTimerDisplay();
+    };
+  </script>
+</body>
+</html>

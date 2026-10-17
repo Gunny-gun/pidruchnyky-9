@@ -86,12 +86,48 @@
           <h2>Оберіть <span>предмет</span><i class="cy-cur" aria-hidden="true"></i></h2>
           <p>Ліворуч — автентична сторінка підручника, праворуч — розв'язки (ГДЗ) до номерів поточної сторінки.</p></div>
         <button class="cy-go" id="to-list">До списку книг ↓</button>`;
+
+    const olympBanner = `
+      <section class="cy-olymp-banner" aria-label="Олімпіада з англійської мови">
+        <div class="cy-olymp-content">
+          <div class="cy-olymp-tag">
+            <span class="cy-olymp-pill">🏆 ВСЕУКРАЇНСЬКА ОЛІМПІАДА · 9 КЛАС</span>
+            <span class="cy-olymp-subtag">CAMBRIDGE B2 FIRST / КМАН</span>
+          </div>
+          <div class="cy-olymp-title-row">
+            <h2>Олімпіада з <span>англійської мови</span></h2>
+            <span class="cy-olymp-ver">Остання версія: Майстер-клас (І етап)</span>
+          </div>
+          <p class="cy-olymp-desc">
+            Повний інтерактивний розбір робіт Мілани, покроковий аудит когнітивних пасток, Scratch-Math моделі логіки рішень, тренувальні кембриджські варіанти та симулятор бойового туру.
+          </p>
+          <div class="cy-olymp-actions">
+            <a href="olympiad/masterclass.html" class="cy-btn-olymp-main" title="Відкрити найновішу версію олімпіади: майстер-клас та аудит">
+              <span>⚡ Відкрити розбір робіт (Майстер-клас) →</span>
+            </a>
+            <a href="olympiad/variants.html" class="cy-btn-olymp-sub" title="Тренувальні варіанти Cambridge B2 First">
+              <span>📝 Тренувальні варіанти</span>
+            </a>
+            <a href="olympiad/exam.html" class="cy-btn-olymp-sub" title="Бойовий екзаменаційний тур без підказок">
+              <span>⏱ Бойовий іспит КМАН</span>
+            </a>
+          </div>
+        </div>
+        <div class="cy-olymp-badge">
+          <div class="cy-olymp-score-val">78.3%</div>
+          <div class="cy-olymp-score-lbl">Mastery (47/60)</div>
+          <div class="cy-olymp-score-sub">І Етап · B2 Level</div>
+        </div>
+      </section>
+    `;
+
     app.innerHTML = `
       <main class="cy">
         <div class="cy-sky" aria-hidden="true"></div><div class="cy-floor" aria-hidden="true"></div>
         <div class="cy-wrap">
           <header class="cy-top"><h1>Підручники</h1><span class="cy-lv">${state.books.grade} клас</span><span class="cy-me" aria-hidden="true">${state.books.grade}</span></header>
           <section class="cy-hello">${hello}</section>
+          ${olympBanner}
           ${[...groups].map(([g, list], i) => `
             <section class="cy-group" style="--n:${NEON[g] || '#00f0ff'}" aria-label="${esc(g)}"${i ? '' : ' id="list"'}>
               <h3>${esc(g)}</h3>
@@ -99,7 +135,7 @@
                 ${list.map(b => {
                   const last = store.get('last:' + b.slug);
                   const meta = ready(b)
-                    ? `<span>${b.pages} с. · розв'язки</span>${last > 1 && label(b, last) ? `<span class="res">▶ с. ${label(b, last)}</span>` : ''}`
+                    ? `<span>${b.pages} с. · розв'язки</span>${b.slug === 'english' ? `<span class="olymp-tag">🏆 Олімпіада B2</span>` : ''}${last > 1 && label(b, last) ? `<span class="res">▶ с. ${label(b, last)}</span>` : ''}`
                     : `<span>${esc(b.note || 'готується')}</span>`;
                   return `<button class="cy-card" data-slug="${esc(b.slug)}" ${ready(b) ? '' : 'disabled'}>
                       <span class="cy-ico" aria-hidden="true">${CODE[b.slug] || 'КН'}</span>

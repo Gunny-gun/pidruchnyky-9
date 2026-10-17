@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АНГЛІЙСЬКА // 9 КЛАС — Олімпіада І Етап: Повний розбір робіт Мілани</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap">
+
+  <style>
+    :root {
+      --bg-dark: #070b12;
+      --panel-bg: #0e1624;
+      --card-bg: #141f32;
+      --card-border: #1e304b;
+      --accent-cyan: #38bdf8;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --accent-rose: #f43f5e;
+      --text-main: #cbd5e1;
+      --notebook-bg: #090e17;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* КАСТОМНИЙ СКРОЛБАР */
+    * { scrollbar-width: thin; scrollbar-color: #334155 #090e1a; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #090e1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 1. ВЕРХНЯ ШАПКА */
+    header {
+      height: 54px;
+      background: var(--panel-bg);
+      border-bottom: 1.5px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      flex-shrink: 0;
+      gap: 12px;
+      z-index: 50;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-title {
+      font-size: 13.5px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      color: #38bdf8;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .task-tabs-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #090e18;
+      padding: 3px 5px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 5px 11px;
+      border-radius: 6px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 11.5px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+
+    .tab-btn:hover {
+      color: #f1f5f9;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .tab-btn.active {
+      background: #0284c7;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.4);
+    }
+
+    .tab-badge {
+      font-size: 10px;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: 800;
+    }
+    .badge-top { background: rgba(16, 185, 129, 0.25); color: #34d399; }
+    .badge-good { background: rgba(56, 189, 248, 0.25); color: #38bdf8; }
+    .badge-warn { background: rgba(245, 158, 11, 0.25); color: #fbbf24; }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .total-score-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(56, 189, 248, 0.15));
+      border: 1.2px solid #10b981;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .pill-label { font-size: 11px; font-weight: 800; color: #cbd5e1; text-transform: uppercase; }
+    .pill-val { font-size: 14px; font-weight: 900; color: #34d399; font-family: monospace; }
+
+    /* 2. РОБОЧИЙ ПРОСТІР */
+    .workspace {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 54px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ЛІВА ПАНЕЛЬ: ТЕКСТ ТА СКРЕТЧ-РОЗБІР (55%) */
+    .panel-left-masterclass {
+      flex: 0 0 55%;
+      width: 55%;
+      background: #080d1a;
+      overflow-y: auto;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-right: 1.5px solid #1a273b;
+    }
+
+    /* БАНЕР ПОВАГИ ТА ПОХВАЛИ (OVERVIEW TAB) */
+    .praise-banner {
+      background: linear-gradient(135deg, #0e1e38 0%, #172b4d 50%, #0c2338 100%);
+      border: 1.5px solid #38bdf8;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    .praise-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .praise-title {
+      font-size: 16px;
+      font-weight: 900;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .praise-stars { font-size: 14px; color: #fbbf24; }
+    .praise-body {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #e2e8f0;
+    }
+    .highlight-stat {
+      color: #34d399;
+      font-weight: 800;
+      background: rgba(16, 185, 129, 0.15);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* КАРТКА ЗАВДАННЯ */
+    .master-task-card {
+      background: linear-gradient(135deg, #0e172a 0%, #172038 100%);
+      border: 1.5px solid #38bdf8;
+      border-radius: 8px;
+      padding: 10px 14px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+      flex-shrink: 0;
+    }
+    .task-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .task-tag-badge {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+    .task-heading {
+      font-size: 15.5px;
+      font-weight: 900;
+      color: #fff;
+    }
+    .task-instruction-text {
+      font-size: 11.5px;
+      color: #cbd5e1;
+      margin-top: 5px;
+      line-height: 1.4;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 6px 10px;
+      border-radius: 5px;
+      border-left: 3px solid #38bdf8;
+    }
+
+    /* ВИТЯЖНИЙ БЛОК: ТЕКСТ ЗАВДАННЯ */
+    .full-text-tray {
+      background: #0a1120;
+      border: 1.5px solid #2563eb;
+      border-radius: 7px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .tray-toggle-header {
+      background: #111e38;
+      padding: 6px 10px;
+      font-size: 11px;
+      font-weight: 800;
+      color: #60a5fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .tray-body-text {
+      padding: 10px 14px;
+      font-size: 11.5px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      max-height: 220px;
+      overflow-y: auto;
+    }
+    .tray-options-box {
+      background: #080e1b;
+      border-top: 1px solid #1e293b;
+      padding: 10px 14px;
+      font-size: 11px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+    .tray-opt-row {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .tray-opt-letter {
+      color: #38bdf8;
+      font-weight: 800;
+      min-width: 20px;
+    }
+    .gap-chip {
+      background: rgba(56, 189, 248, 0.2);
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .gap-chip.focus {
+      background: #fbbf24;
+      color: #000;
+      font-weight: 900;
+    }
+    .help-cta-card {
+      background: linear-gradient(135deg, rgba(2, 132, 199, 0.15), rgba(16, 185, 129, 0.12));
+      border: 1.2px solid #38bdf8;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .help-cta-icon { font-size: 20px; flex-shrink: 0; }
+    .help-cta-text { font-size: 11.5px; color: #f1f5f9; line-height: 1.45; }
+
+    /* ЗАГОЛОВОК 5-КОЛОНКОВОЇ СКРЕТЧ-ТАБЛИЦІ */
+    .master-table-header {
+      background: #10192a;
+      border: 1.2px solid #24354f;
+      border-radius: 7px;
+      display: grid;
+      grid-template-columns: 32px 1.15fr 1.25fr 1.25fr 1.35fr;
+      overflow: hidden;
+      flex-shrink: 0;
+      min-height: 32px;
+    }
+    .m-th-col {
+      padding: 6px 8px;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid #1e2e46;
+    }
+    .m-th-col:last-child { border-right: none; }
+    .m-th-num { justify-content: center; color: #38bdf8; background: #0c1422; }
+    .m-th-q { color: #f59e0b; }
+    .m-th-s { color: #38bdf8; }
+    .m-th-r { color: #a855f7; }
+    .m-th-n { color: #0284c7; background: #0c182c; }
+
+    /* КАРТКИ КРОКІВ РОЗБОРУ */
+    .steps-container {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .master-step-card {
+      background: #0f172a;
+      border: 1.2px solid #1e293b;
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: 32px 1.15fr 1.25fr 1.25fr 1.35fr;
+      overflow: visible;
+      position: relative;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .master-step-card:hover {
+      border-color: #38bdf8;
+    }
+    .master-step-card.trap {
+      border-color: #f43f5e;
+      background: #160d18;
+    }
+    .master-step-card.correct {
+      border-color: #059669;
+    }
+
+    .m-num {
+      background: #1e293b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 900;
+      color: #38bdf8;
+      border-right: 1px solid #334155;
+    }
+    .master-step-card.trap .m-num {
+      background: #450a14;
+      color: #fda4af;
+      border-right-color: #9f1239;
+    }
+    .master-step-card.correct .m-num {
+      background: #064e3b;
+      color: #6ee7b7;
+      border-right-color: #047857;
+    }
+
+    .m-col {
+      padding: 7px 9px;
+      border-right: 1px solid #1e293b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 11px;
+    }
+    .m-col:last-child { border-right: none; }
+
+    .q-text {
+      font-size: 11px;
+      font-weight: 800;
+      color: #fbbf24;
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+    .dialog-item {
+      font-size: 10px;
+      color: #cbd5e1;
+      line-height: 1.35;
+      padding-left: 5px;
+      border-left: 2px solid rgba(245, 158, 11, 0.4);
+      margin-top: 2px;
+    }
+
+    /* БЛОКИ СКРЕТЧ 3.0 */
+    .scratch-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      width: 100%;
+    }
+    .s-block {
+      border-radius: 5px;
+      padding: 4px 7px;
+      font-size: 10px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      line-height: 1.25;
+      border: 1px solid rgba(255,255,255,0.18);
+    }
+    .s-block.control { background: #d97706; }
+    .s-block.operator { background: #16a34a; }
+    .s-block.motion { background: #2563eb; }
+    .s-block.alert { background: #dc2626; border-color: #f87171; }
+    .s-math {
+      font-family: 'Fira Code', monospace;
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 1px 5px;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+
+    /* ПРАВИЛО / СТОП-ПАСТКА */
+    .rule-box {
+      background: rgba(168, 85, 247, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      border-radius: 5px;
+      padding: 5px 7px;
+      position: relative;
+    }
+    .master-step-card.trap .rule-box {
+      background: rgba(244, 63, 94, 0.12);
+      border-color: #f43f5e;
+    }
+    .rule-title {
+      font-size: 10.5px;
+      font-weight: 800;
+      color: #d8b4fe;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+    .master-step-card.trap .rule-title { color: #fda4af; }
+    .rule-desc {
+      font-size: 10px;
+      color: #e2e8f0;
+      line-height: 1.35;
+    }
+
+    /* КОЛОНКА 5: ЕТАЛОННИЙ ЗАПИС У ЗОШИТІ */
+    .m-notebook {
+      background: #0d1527;
+      background-image: repeating-linear-gradient(transparent, transparent 23px, rgba(56, 189, 248, 0.12) 24px);
+      line-height: 24px;
+      border-left: 2px solid #3b82f6;
+      padding: 5px 8px;
+    }
+    .master-step-card.trap .m-notebook {
+      background: #180d19;
+      background-image: repeating-linear-gradient(transparent, transparent 23px, rgba(244, 63, 94, 0.15) 24px);
+      border-left-color: #f43f5e;
+    }
+    .m-english-hand {
+      font-family: 'Caveat', cursive, sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #38bdf8;
+      line-height: 1.25;
+      letter-spacing: 0.3px;
+    }
+    .master-step-card.trap .m-english-hand { color: #fda4af; }
+    .m-hand-correct { color: #34d399; font-weight: 800; }
+    .m-hand-wrong { color: #f43f5e; text-decoration: line-through; margin-right: 4px; }
+    .m-note {
+      font-size: 11px;
+      font-weight: 800;
+      color: #94a3b8;
+      margin-top: 2px;
+      line-height: 1.25;
+    }
+
+    /* 3. ПРАВА ПАНЕЛЬ: АРКУШ ВІДПОВІДЕЙ МІЛАНИ (45%) */
+    .panel-right-canvas {
+      flex: 0 0 45%;
+      width: 45%;
+      background: var(--notebook-bg);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .notebook-sheet-area {
+      flex: 1;
+      height: 100%;
+      background: #090e17;
+      background-image: repeating-linear-gradient(transparent, transparent 29px, rgba(56, 189, 248, 0.12) 30px);
+      padding: 18px 22px 14px 22px;
+      overflow-y: auto;
+      position: relative;
+    }
+
+    .sheet-title {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.25);
+      padding-bottom: 4px;
+    }
+
+    .margin-stamp {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      border: 1.5px dashed #10b981;
+      background: rgba(16, 185, 129, 0.08);
+      border-radius: 8px;
+      padding: 6px 14px;
+      text-align: center;
+      z-index: 10;
+    }
+    .margin-stamp.warn {
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.08);
+    }
+    .margin-stamp.danger {
+      border-color: #f43f5e;
+      background: rgba(244, 63, 94, 0.08);
+    }
+    .stamp-title { font-size: 9.5px; font-weight: 800; color: #34d399; text-transform: uppercase; }
+    .margin-stamp.warn .stamp-title { color: #fbbf24; }
+    .margin-stamp.danger .stamp-title { color: #fda4af; }
+    .stamp-val { font-size: 22px; font-weight: 900; color: #34d399; font-family: monospace; }
+    .margin-stamp.warn .stamp-val { color: #fbbf24; }
+    .margin-stamp.danger .stamp-val { color: #fda4af; }
+
+    .hand-line {
+      font-family: 'Caveat', cursive, sans-serif;
+      font-size: 22px;
+      line-height: 30px;
+      color: #e2e8f0;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .hand-line .num {
+      color: #38bdf8;
+      font-weight: bold;
+      font-size: 21px;
+      min-width: 24px;
+    }
+    .hand-line .ans-box {
+      border: 1.5px solid #10b981;
+      background: rgba(16, 185, 129, 0.18);
+      color: #34d399;
+      padding: 0 7px;
+      border-radius: 4px;
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 25px;
+    }
+    .hand-line .ans-box.wrong {
+      border-color: #f43f5e;
+      background: rgba(244, 63, 94, 0.18);
+      color: #fda4af;
+    }
+    .hand-line .comment {
+      font-size: 15.5px;
+      color: #94a3b8;
+      font-style: italic;
+    }
+
+    /* РЕЖИМ СЕКЦІЙ */
+    .task-section-view {
+      display: none;
+    }
+    .task-section-view.active-view {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. ВЕРХНЯ ШАПКА ТА НАВІГАЦІЯ ПО ЗАВДАННЯХ
+       ========================================================================== -->
+  <header>
+    <div class="header-left">
+      <a href="../index.html" style="color:#38bdf8; text-decoration:none; display:inline-flex; align-items:center; gap:5px; font-weight:800; font-size:12px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:4px 9px; border-radius:6px; margin-right:6px; transition: all 0.2s;">← Підручники</a>
+      <span class="brand-title">АНГЛІЙСЬКА // 9 КЛАС • МАН</span>
+
+      <div class="task-tabs-nav">
+        <button class="tab-btn active" onclick="switchTask('overview', this)">
+          <span>🌟 Підсумок</span>
+        </button>
+        <button class="tab-btn" onclick="switchTask('task1', this)">
+          <span>#1 The Big Issue</span>
+          <span class="tab-badge badge-warn">3/5</span>
+        </button>
+        <button class="tab-btn" onclick="switchTask('task2', this)">
+          <span>#2 Шоколад</span>
+          <span class="tab-badge badge-top">10/11 🔥</span>
+        </button>
+        <button class="tab-btn" onclick="switchTask('task3', this)">
+          <span>#3 Influencers</span>
+          <span class="tab-badge badge-good">4/5</span>
+        </button>
+        <button class="tab-btn" onclick="switchTask('task4', this)">
+          <span>#4 Fairies</span>
+          <span class="tab-badge badge-warn">2/6 🔍</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <div class="total-score-pill">
+        <span class="pill-label">Загальний бал:</span>
+        <span class="pill-val">19 / 27 (70.4%)</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. РОБОЧИЙ ПРОСТІР (55% СКРЕТЧ-РОЗБІР / 45% ЗОШИТ МІЛАНИ)
+       ========================================================================== -->
+  <div class="workspace">
+
+    <!-- ЛІВА ЧАСТИНА -->
+    <div class="panel-left-masterclass">
+
+      <!-- ====================================================================
+           СЕКЦІЯ: OVERVIEW (ПІДСУМОК ТА ПОХВАЛА)
+           ==================================================================== -->
+      <div id="view-overview" class="task-section-view active-view">
+        
+        <div class="praise-banner">
+          <div class="praise-header">
+            <div class="praise-title">
+              <span>Мілано, це ДУЖЕ крутий результат для першого етапу!</span>
+            </div>
+            <div class="praise-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+          <div class="praise-body">
+            Ти набрала <span class="highlight-stat">19 з 27 балів (70.4%)</span> на реальних олімпіадних завданнях 9 класу високого рівня (B1/B1+).<br>
+            Це серйозна самостійна робота, де більшість тем розібрано просто блискуче:
+            <ul style="margin: 8px 0 8px 18px; line-height: 1.5;">
+              <li><strong>Завдання #2 (Use of English):</strong> <span class="highlight-stat">10 з 11 (91%)</span> — це абсолютний рівень майстра! Усі складні часові форми (Present Perfect Continuous), зв'язки з <em>which</em>, фразові дієслова — без жодної помилки.</li>
+              <li><strong>Завдання #3 (Reading):</strong> <span class="highlight-stat">4 з 5 (80%)</span> — прекрасне відчуття тексту. Єдина помилка була лише через олімпіадну підніжку зі словом <em>NOT</em>.</li>
+              <li><strong>Завдання #1 (Gapped Text):</strong> 3 з 5 — взяла найскладніші переходи! Лише на фініші поміняла 4 і 5 місцями.</li>
+            </ul>
+            Нижче кожен номер розібрано в нашому алгоритмічному Скретч-стилі: обери вкладку вгорі, щоб подивитися кожен крок з нуля!
+          </div>
+        </div>
+
+        <div class="master-task-card" style="border-color: #10b981;">
+          <div class="task-meta-row">
+            <span class="task-tag-badge" style="color: #34d399; border-color: #10b981;">Діагностика компетенцій</span>
+            <span style="font-size: 11px; color: #38bdf8; font-weight: 800;">4 тематичні блоки</span>
+          </div>
+          <div class="task-heading">Карта результатів за модулями</div>
+          
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border: 1px solid #1e293b;">
+              <div style="font-size: 11px; font-weight: 800; color: #38bdf8;">#1 The Big Issue (Matching)</div>
+              <div style="font-size: 13px; font-weight: 900; color: #fbbf24; margin-top: 2px;">3 / 5 (60%)</div>
+              <div style="font-size: 10px; color: #94a3b8;">Чудово зв'язала контексти, переплутано пари 4 ⇄ 5.</div>
+            </div>
+
+            <div style="background: rgba(16, 185, 129, 0.08); padding: 8px 10px; border-radius: 6px; border: 1px solid #10b981;">
+              <div style="font-size: 11px; font-weight: 800; color: #34d399;">#2 Шоколад (Use of English)</div>
+              <div style="font-size: 13px; font-weight: 900; color: #34d399; margin-top: 2px;">10 / 11 (91%) 🔥</div>
+              <div style="font-size: 10px; color: #94a3b8;">Топове володіння граматикою! Єдиний затик: Passive Voice.</div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 6px; border: 1px solid #1e293b;">
+              <div style="font-size: 11px; font-weight: 800; color: #38bdf8;">#3 Influencers (Comprehension)</div>
+              <div style="font-size: 13px; font-weight: 900; color: #38bdf8; margin-top: 2px;">4 / 5 (80%)</div>
+              <div style="font-size: 10px; color: #94a3b8;">Глибоке розуміння деталей. Підвела пастка із часткою NOT.</div>
+            </div>
+
+            <div style="background: rgba(244, 63, 94, 0.08); padding: 8px 10px; border-radius: 6px; border: 1px solid #f43f5e;">
+              <div style="font-size: 11px; font-weight: 800; color: #fda4af;">#4 The Legend of Fairies (References)</div>
+              <div style="font-size: 13px; font-weight: 900; color: #fda4af; margin-top: 2px;">2 / 6 (33%) 🔍</div>
+              <div style="font-size: 10px; color: #94a3b8;">Зона росту: відсилання займенників, еліпсис, пасивний стан.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="help-cta-card">
+          <div class="help-cta-icon">💬</div>
+          <div class="help-cta-text">
+            <strong>Мілано, якщо у тебе є будь-яке запитання чи сумнів щодо будь-якого завдання:</strong><br>
+            Обов'язково напиши мені! Я з величезною радістю все детально поясню, розкладу по поличках та допоможу розібрати будь-який нюанс!
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           СЕКЦІЯ: ЗАВДАННЯ #1 (THE BIG ISSUE)
+           ==================================================================== -->
+      <div id="view-task1" class="task-section-view">
+        <div class="master-task-card">
+          <div class="task-meta-row">
+            <span class="task-tag-badge">ОЛІМПІАДА 9 КЛАС • GAPPED TEXT</span>
+            <span style="font-size: 11px; color: #fbbf24; font-weight: 800;">Твій результат: 3 / 5</span>
+          </div>
+          <div class="task-heading">Завдання #1. From Rags to Riches («The Big Issue»)</div>
+          <div class="task-instruction-text">
+            <strong>Умова:</strong> Five sentences have been removed from the text. Put the correct sentence from A–F in each space (1–5). There is one extra sentence you do not need.
+          </div>
+
+          <div class="full-text-tray">
+            <div class="tray-toggle-header">
+              <span>📖 ОРИГІНАЛЬНИЙ ТЕКСТ СТАТТІ: «FROM RAGS TO RICHES»</span>
+              <span style="font-size: 9.5px; color: #38bdf8;">▲ ПОВНИЙ КОНТЕКСТ ДЛЯ ПЕРЕЧИТУВАННЯ</span>
+            </div>
+            <div class="tray-body-text">
+              <p style="margin-bottom: 8px;"><strong>From Rags to Riches</strong></p>
+              <p style="margin-bottom: 8px;">At the southern end of Waterloo Bridge in London, by the banks of the River Thames, stand the Royal National Theatre, the National Film Theatre and the Royal Festival Hall. <span class="gap-chip">1</span> They have become a mecca for the homeless. The place is littered with the cardboard boxes and old mattresses that they use as beds. It became so popular there in the 1980s that each person had their own, much-prized space that they would guard carefully. <span class="gap-chip">2</span> This was also the name of a theatre play directed by the now famous Oscar-winner (for American Beauty) Sam Mendes.</p>
+              <p style="margin-bottom: 8px;">The 1980s saw an enormous increase in people sleeping rough in Britain, as many unemployed came to cities in the south, especially London, where jobs were easier to find. <span class="gap-chip">3</span> They ended up with no work and nowhere to live.</p>
+              <p style="margin-bottom: 8px;">Today the housing charity Shelter estimates there are around 100,000 homeless people in London alone, who are either in temporary accommodation or simply living on the streets. These people often hang around railway stations and other public places asking for money. <span class="gap-chip">4</span> The British public are asked by their government not to give money to street beggars. <span class="gap-chip">5</span> Another way you can help is to buy a copy of The Big Issue weekly magazine. Run for the homeless, The Big Issue is a success on many levels. Its first issue was published in 1991, it won the Magazine of the Year award in 1993, and sells 270,000 copies weekly, which means a readership of over one million. The magazine is actually sold by the homeless themselves, which gives them a chance to earn money and retain a sense of dignity. Encouraged by its success in Britain, The Big Issue has become international, and now seventeen titles throughout Europe are being published.</p>
+            </div>
+            <div class="tray-options-box">
+              <div style="font-weight: 800; color: #fbbf24; margin-bottom: 6px; font-size: 11px;">ВИЛУЧЕНІ РЕЧЕННЯ (A–F):</div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">А:</span><span>But it’s virtually impossible to get a job in Britain without a permanent address, and it’s very difficult to get somewhere to live if you don’t have a job, so most of those people got trapped.</span></div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">Б:</span><span>People sympathetic to the homeless are being told to donate money to charities who specialise in caring for the poor or to offer beggars gifts of food or clothes instead of money.</span></div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">В:</span><span>It gave them a sense of security and became so permanent that the locals gave the area a nickname – Cardboard City.</span></div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">Г:</span><span>The Labour Party administration claims that many of these people are homeless by choice, and that there are many drug addicts among them.</span></div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">Ґ:</span><span>All profits are reinvested into the magazine or diverted to The Big Issue Foundation, a charity that runs many social support programmes for the homeless. <em>(Зайве речення)</em></span></div>
+              <div class="tray-opt-row"><span class="tray-opt-letter">Д:</span><span>In stark contrast to this centre of London’s cultural activity, are the subways close by, which offer some relief from the cold at night.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="master-table-header">
+          <div class="m-th-col m-th-num">№</div>
+          <div class="m-th-col m-th-q">❓ Контекст речення</div>
+          <div class="m-th-col m-th-s">🧩 Блоки Scratch</div>
+          <div class="m-th-col m-th-r">📐 Логічний закон</div>
+          <div class="m-th-col m-th-n">📝 Запис у зошиті</div>
+        </div>
+
+        <div class="steps-container">
+          <!-- 1 -->
+          <div class="master-step-card correct">
+            <div class="m-num">1</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">Пропуск 1: Контраст театрів і підземки</div>
+              <div class="dialog-item">Перед пропуском: Royal Theatre, Festival Hall.</div>
+              <div class="dialog-item">Після: <em>They have become a mecca for homeless</em>.</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block motion"><span>шукаємо: [ контраст театрів ]</span></div>
+                <div class="s-block control"><span>якщо [ subways close by ] то</span><span class="s-math">вибрати речення [ Д ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Контраст «In stark contrast»</span></div>
+                <div class="rule-desc">Театри — культура, підземні переходи поруч — притулок від холоду (Д).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand">1. <span class="m-hand-correct">D (Д)</span> ✅</div>
+              <div class="m-note">Точне попадання в тему!</div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="master-step-card correct">
+            <div class="m-num">2</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">Пропуск 2: Cardboard City</div>
+              <div class="dialog-item">Перед: guarded their much-prized space.</div>
+              <div class="dialog-item">Після: <em>This was also the name of a theatre play</em>.</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block motion"><span>після: [ This was the name of a play ]</span></div>
+                <div class="s-block operator"><span>отже: речення має давати назву!</span><span class="s-math">[ nickname – Cardboard City ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Зв'язок за назвою</span></div>
+                <div class="rule-desc">Назва місцевості «Cardboard City» стала назвою вистави Сема Мендеса (В).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand">2. <span class="m-hand-correct">B (В)</span> ✅</div>
+              <div class="m-note">Ідеальний логічний місток!</div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="master-step-card correct">
+            <div class="m-num">3</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">Пропуск 3: Замкнене коло пошуку роботи</div>
+              <div class="dialog-item">Перед: came to London where jobs were easier.</div>
+              <div class="dialog-item">Після: <em>They ended up with no work and nowhere to live</em>.</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block control"><span>якщо [ no address -> no job ] то</span><span class="s-math">речення [ А ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Причина й наслідок</span></div>
+                <div class="rule-desc">Неможливо знайти роботу без адреси, і житло — без роботи (А).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand">3. <span class="m-hand-correct">A (А)</span> ✅</div>
+              <div class="m-note">Блискуче відчуття логіки!</div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="master-step-card trap">
+            <div class="m-num">4</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">Пропуск 4: Позиція уряду щодо жебраків</div>
+              <div class="dialog-item">Перед: people hang around asking for money.</div>
+              <div class="dialog-item">Після: British public asked not to give money.</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>СТОП! ПЕРЕПЛУТАНО 4 і 5 МІСЦЯМИ</span></div>
+                <div class="s-block control"><span>якщо [ влада пояснює чому ] то</span><span class="s-math">вибрати [ Г (Labour Party) ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Аргумент влади</span></div>
+                <div class="rule-desc">Влада стверджує, що люди жебракують за власним вибором, тому просять не давати готівку (Г).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">Б</span> -> <span class="m-hand-correct">Г</span></div>
+              <div class="m-note">Ти поставила Б, але Б потрібне в №5!</div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="master-step-card trap">
+            <div class="m-num">5</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">Пропуск 5: Перший спосіб допомоги</div>
+              <div class="dialog-item">Перед: asked not to give money to beggars.</div>
+              <div class="dialog-item">Після: <em>Another way you can help is to buy magazine</em>.</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block operator"><span>ключове слово: [ ANOTHER WAY ]</span></div>
+                <div class="s-block control"><span>значить перед цим був: [ ПЕРШИЙ СПОСІБ ]</span><span class="s-math">donate to charities / food [ Б ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Лексичний маркер «Another way»</span></div>
+                <div class="rule-desc">Слово <em>Another way</em> (інший спосіб) вимагає, щоб перед ним уже назвали один спосіб допомоги: давати їжу чи переказувати фондам (Б).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">Г</span> -> <span class="m-hand-correct">Б</span></div>
+              <div class="m-note">Маркер «Another way» розкриває зв'язок!</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           СЕКЦІЯ: ЗАВДАННЯ #2 (ШОКОЛАД - 10/11)
+           ==================================================================== -->
+      <div id="view-task2" class="task-section-view">
+        <div class="master-task-card" style="border-color: #10b981;">
+          <div class="task-meta-row">
+            <span class="task-tag-badge" style="color: #34d399; border-color: #10b981;">ОЛІМПІАДА 9 КЛАС • USE OF ENGLISH</span>
+            <span style="font-size: 11px; color: #34d399; font-weight: 800;">Твій результат: 10 / 11 (91%) 🔥</span>
+          </div>
+          <div class="task-heading">Завдання #2. Use of English: «Food of the Gods»</div>
+          <div class="task-instruction-text">
+            <strong>Умова:</strong> Read the text and choose the correct word for each space (1–11). For each question, mark the correct letter A, B, C or D.
+          </div>
+
+          <div class="full-text-tray">
+            <div class="tray-toggle-header">
+              <span>📖 ОРИГІНАЛЬНИЙ ТЕКСТ СТАТТІ: «FOOD OF THE GODS»</span>
+              <span style="font-size: 9.5px; color: #38bdf8;">▲ ПОВНИЙ КОНТЕКСТ ДЛЯ ПЕРЕЧИТУВАННЯ</span>
+            </div>
+            <div class="tray-body-text">
+              <p style="margin-bottom: 8px;"><strong>Food of the Gods</strong></p>
+              <p style="margin-bottom: 8px;">People have <span class="gap-chip">1</span> drinking cocoa for more than 2000 years! The Mayan Indians in Mexico were the first to discover the value of this delicious bean. However, in 1528, a Spanish explorer <span class="gap-chip">2</span> chocolate from the Aztecs in America to Europe. At first it was drunk only <span class="gap-chip">3</span> the rich, but by the end of the seventeenth century, chocolate houses <span class="gap-chip">4</span> just as popular as coffee houses.</p>
+              <p style="margin-bottom: 8px;">It is hard to <span class="gap-chip">5</span> that chocolate as a food did not exist <span class="gap-chip">6</span> the nineteenth century. This is when confectioners discovered that cocoa mass, cocoa butter and sugar could be combined to make solid eating chocolate. <span class="gap-chip">7</span> its appearance, though, it has become the most popular food in the world! In <span class="gap-chip">8</span>, most people claim it is their favourite food.</p>
+              <p style="margin-bottom: 8px;">The word chocolate comes <span class="gap-chip">9</span> the Aztec word ‘xocolatl’, which means bitter water. It has many health benefits and many people say it <span class="gap-chip">10</span> them feel better when they eat it. This is not surprising, as chocolate contains a substance called tryptophan, <span class="gap-chip">11</span> helps your body create serotonin, a substance that makes you happy.</p>
+            </div>
+            <div class="tray-options-box">
+              <div style="font-weight: 800; color: #34d399; margin-bottom: 6px; font-size: 11px;">СПИСОК ВАРІАНТІВ (A, B, C, D):</div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 6px;">
+                <div class="tray-opt-row"><span class="tray-opt-letter">1:</span><span>A was &bull; B be &bull; C being &bull; <strong>D been</strong></span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">2:</span><span>A got &bull; <strong>B brought</strong> &bull; C took &bull; D went</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">3:</span><span><strong>A by</strong> &bull; B from &bull; C with &bull; D to</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">4:</span><span>A made &bull; B came &bull; C was &bull; <strong>D became</strong></span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">5:</span><span><strong>A believe</strong> &bull; B expect &bull; C think &bull; D guess</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">6:</span><span><strong>A until</strong> &bull; B from &bull; C since &bull; D by</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">7:</span><span>A Until &bull; <strong>B Since</strong> &bull; C By &bull; D From</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">8:</span><span>A opinion &bull; B real &bull; <strong>C fact</strong> &bull; D actually</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">9:</span><span>A by &bull; B to &bull; C of &bull; <strong>D from</strong></span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">10:</span><span>A does &bull; <strong>B makes</strong> &bull; C forces &bull; D lets</span></div>
+                <div class="tray-opt-row"><span class="tray-opt-letter">11:</span><span>A who &bull; B where &bull; <strong>C which</strong> &bull; D when</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="master-table-header">
+          <div class="m-th-col m-th-num">№</div>
+          <div class="m-th-col m-th-q">❓ Що бачимо?</div>
+          <div class="m-th-col m-th-s">🧩 Блоки Scratch</div>
+          <div class="m-th-col m-th-r">📐 Закон / Правило</div>
+          <div class="m-th-col m-th-n">📝 Запис у зошиті</div>
+        </div>
+
+        <div class="steps-container">
+          <!-- 1 -->
+          <div class="master-step-card correct">
+            <div class="m-num">1</div>
+            <div class="m-col m-col-q"><div class="q-text">have ... drinking (for 2000 yrs)</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block control"><span>Present Perfect Cont.</span><span class="s-math">have + been + V-ing</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Дія триває дотепер. Допоміжне <strong>been</strong> (D).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">1. <span class="m-hand-correct">D (been)</span> ✅</div></div>
+          </div>
+
+          <!-- 2 -->
+          <div class="master-step-card correct">
+            <div class="m-num">2</div>
+            <div class="m-col m-col-q"><div class="q-text">in 1528 explorer ... chocolate</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>Past Simple: bring -> brought</span><span class="s-math">варіант [ B ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Конкретний рік у минулому (1528) вимагає V2: <strong>brought</strong>.</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">2. <span class="m-hand-correct">B (brought)</span> ✅</div></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="master-step-card trap">
+            <div class="m-num">3</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">was drunk only ... the rich</div>
+              <div class="dialog-item">Пасивний стан! Хто дійова особа? Багатії!</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>СТОП-ПАСТКА! ДІЯЧ У ПАСИВІ</span></div>
+                <div class="s-block operator"><span>форма: [ V3 + BY + Agent ]</span><span class="s-math">заборонено: to, from, with</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Passive Voice: Прийменник BY</span></div>
+                <div class="rule-desc">Коли над предметом виконують дію, виконавець вводиться прийменником <strong>by</strong> (A). Не <em>to</em>!</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">D (to)</span> -> <span class="m-hand-correct">A (by)</span></div>
+              <div class="m-note">drunk BY the rich (ким?)</div>
+            </div>
+          </div>
+
+          <!-- 4-11 -->
+          <div class="master-step-card correct">
+            <div class="m-num">4</div>
+            <div class="m-col m-col-q"><div class="q-text">houses ... just as popular</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block control"><span>Past state: became popular</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Стали такими ж популярними (D).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">4. <span class="m-hand-correct">D (became)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">5</div>
+            <div class="m-col m-col-q"><div class="q-text">hard to ... that chocolate...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>Колокація: hard to believe</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Стійкий вираз: важко повірити (A).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">5. <span class="m-hand-correct">A (believe)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">6</div>
+            <div class="m-col m-col-q"><div class="q-text">did not exist ... the 19th c.</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block control"><span>Часова межа: not ... until</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Не існував аж до 19 століття (A).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">6. <span class="m-hand-correct">A (until)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">7</div>
+            <div class="m-col m-col-q"><div class="q-text">... its appearance, though...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>Точка відліку: Since appearance</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Від моменту своєї появи (B).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">7. <span class="m-hand-correct">B (Since)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">8</div>
+            <div class="m-col m-col-q"><div class="q-text">In ... , most people claim...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block operator"><span>Ввідна фраза: In fact</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Ідіома: In fact = насправді (C).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">8. <span class="m-hand-correct">C (fact)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">9</div>
+            <div class="m-col m-col-q"><div class="q-text">word comes ... the Aztec word</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>Походження: comes from</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">comes from = походить від (D).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">9. <span class="m-hand-correct">D (from)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">10</div>
+            <div class="m-col m-col-q"><div class="q-text">it ... them feel better</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block control"><span>Каузатив: make + person + bare verb</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">makes them feel (без частки to) (B).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">10. <span class="m-hand-correct">B (makes)</span> ✅</div></div>
+          </div>
+
+          <div class="master-step-card correct">
+            <div class="m-num">11</div>
+            <div class="m-col m-col-q"><div class="q-text">tryptophan, ... helps body</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block operator"><span>Кома + неістота -> тільки WHICH</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Non-defining relative clause: which (C).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">11. <span class="m-hand-correct">C (which)</span> ✅</div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           СЕКЦІЯ: ЗАВДАННЯ #3 (INFLUENCERS - 4/5)
+           ==================================================================== -->
+      <div id="view-task3" class="task-section-view">
+        <div class="master-task-card">
+          <div class="task-meta-row">
+            <span class="task-tag-badge">ОЛІМПІАДА 9 КЛАС • READING COMPREHENSION</span>
+            <span style="font-size: 11px; color: #38bdf8; font-weight: 800;">Твій результат: 4 / 5 (80%)</span>
+          </div>
+          <div class="task-heading">Завдання #3. Reading: «Social media influencers»</div>
+          <div class="task-instruction-text">
+            <strong>Умова:</strong> Read the article and choose the best answer (A, B, C or D).
+          </div>
+
+          <div class="full-text-tray">
+            <div class="tray-toggle-header">
+              <span>📖 ОРИГІНАЛЬНИЙ ТЕКСТ СТАТТІ: «SOCIAL MEDIA INFLUENCERS»</span>
+              <span style="font-size: 9.5px; color: #38bdf8;">▲ ПОВНИЙ КОНТЕКСТ ДЛЯ ПЕРЕЧИТУВАННЯ</span>
+            </div>
+            <div class="tray-body-text">
+              <p style="margin-bottom: 8px;"><strong>Social media influencers</strong></p>
+              <p style="margin-bottom: 8px;">It is estimated that about 40 per cent of the world’s population use social media, and many of these billions of social media users look up to influencers to help them decide what to buy and what trends to follow.</p>
+              <p style="margin-bottom: 8px;"><strong>So what is an influencer and how do we become one?</strong><br>
+              An influencer is a person who can influence the decisions of their followers because of their relationship with their audience and their knowledge and expertise in a particular area, e.g. fashion, travel or technology.</p>
+              <p style="margin-bottom: 8px;">Influencers often have a large following of people who pay close attention to their views. They have the power to persuade people to buy things, and influencers are now seen by many companies as a direct way to customers’ hearts. Brands are now asking powerful influencers to market their products. With some influencers charging up to $25,000 for one social media post, it is no surprise that more and more people are keen to become influencers too. If you are one of them, then here are five tips on how to do it.</p>
+              <p style="margin-bottom: 8px;"><strong>Choose your niche:</strong> What is the area that you know most about? What do you feel most excited talking about? Find the specific area that you’re most interested in and develop it.</p>
+              <p style="margin-bottom: 8px;"><strong>Choose your medium and write an interesting bio:</strong> Most influencers these days are bloggers and micro-bloggers. Decide which medium – such as your own online blog, Instagram or Snapchat – is the best way to connect with your followers and chat about your niche area. When you have done that, write an attention-grabbing bio that describes you and your speciality area in an interesting and unique way. Make sure that people who read your bio will want to follow you.</p>
+              <p style="margin-bottom: 8px;"><strong>Post regularly and consistently:</strong> Many influencers post daily on their social media accounts. The more you post, the more likely people will follow you. Also, ensure that your posts are consistent and possibly follow a theme.</p>
+              <p style="margin-bottom: 8px;"><strong>Tell an interesting story:</strong> Whether it is a photo or a comment that you are posting, use it to tell a story that will catch the attention of your followers and help them connect with you. Make sure people can easily find your content. Publicise your posts on a variety of social media, use hashtags and catchy titles and make sure that they can be easily found. There is no point writing the most exciting blogposts or posting the most attractive photographs if no one is going to see them.</p>
+              <p style="margin-bottom: 8px;">Most importantly, if you want to become a social media influencer, you need to have patience. Keep posting and your following will gradually increase. Good luck!</p>
+            </div>
+            <div class="tray-options-box">
+              <div style="font-weight: 800; color: #38bdf8; margin-bottom: 6px; font-size: 11px;">ЗАПИТАННЯ ТА ВАРІАНТИ ВІДПОВІДЕЙ:</div>
+              <div style="margin-bottom: 6px;"><strong>1. A social media influencer is NOT someone who …</strong><br>
+              A guides the decisions of their followers &bull; B is an expert in a particular area &bull; <strong style="color:#34d399;">C pays their followers to buy products</strong> &bull; D has many followers who pay attention to their opinions</div>
+              <div style="margin-bottom: 6px;"><strong>2. Companies want to use influencers to help …</strong><br>
+              <strong style="color:#34d399;">A sell their products to their followers</strong> &bull; B develop new products &bull; C write their blogposts &bull; D design their websites</div>
+              <div style="margin-bottom: 6px;"><strong>3. If you want to be an influencer, your bio on your social media account shouldn’t …</strong><br>
+              A say who you are &bull; B talk about your niche area &bull; C be interesting &bull; <strong style="color:#34d399;">D be the same as other people’s bios</strong></div>
+              <div style="margin-bottom: 6px;"><strong>4. You should make sure that you post …</strong><br>
+              A once a month &bull; B every day for the first month and then once a month &bull; <strong style="color:#34d399;">C about similar subjects</strong> &bull; D about all sorts of different things</div>
+              <div><strong>5. You can make sure that people find your post by …</strong><br>
+              A using hashtags &bull; B using funny or memorable titles &bull; C using different social media &bull; <strong style="color:#34d399;">D doing all of the above</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="master-table-header">
+          <div class="m-th-col m-th-num">№</div>
+          <div class="m-th-col m-th-q">❓ Запитання тесту</div>
+          <div class="m-th-col m-th-s">🧩 Блоки Scratch</div>
+          <div class="m-th-col m-th-r">📐 Чому саме так?</div>
+          <div class="m-th-col m-th-n">📝 Запис у зошиті</div>
+        </div>
+
+        <div class="steps-container">
+          <!-- 1 -->
+          <div class="master-step-card trap">
+            <div class="m-num">1</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">An influencer is NOT someone who...</div>
+              <div class="dialog-item">Зверни увагу на велике слово <strong>NOT</strong>!</div>
+              <div class="dialog-item">Що інфлюенсер ТОЧНО НЕ робить?</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>СТОП! ЗАПЕРЕЧЕННЯ [ NOT ]</span></div>
+                <div class="s-block control"><span>якщо [ інфлюенсер платить підписникам? ]</span><span class="s-math">НІ! Це маячня! -> [ C ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Пастка запитання з NOT</span></div>
+                <div class="rule-desc">Інфлюенсери спрямовують вибір (A), є експертами (B), мають аудиторію (D). Але вони <strong>не платять своїм підписникам</strong> за покупки (C)! Ти обрала A, бо прочитала без частки NOT.</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">A</span> -> <span class="m-hand-correct">C</span></div>
+              <div class="m-note">Підкреслюй слово NOT олівцем!</div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="master-step-card correct">
+            <div class="m-num">2</div>
+            <div class="m-col m-col-q"><div class="q-text">Companies use influencers to help...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>sell products to followers [ A ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Бренди прагнуть продавати товари підписникам (A).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">2. <span class="m-hand-correct">A</span> ✅</div></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="master-step-card correct">
+            <div class="m-num">3</div>
+            <div class="m-col m-col-q"><div class="q-text">Your bio shouldn't...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block control"><span>Має бути unique -> not the same as others [ D ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Біографія не має бути копією інших (D).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">3. <span class="m-hand-correct">D</span> ✅</div></div>
+          </div>
+
+          <!-- 4 -->
+          <div class="master-step-card correct">
+            <div class="m-num">4</div>
+            <div class="m-col m-col-q"><div class="q-text">You should post...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>consistent and follow a theme = about similar subjects [ C ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Публікувати на схожу тематику своєї ніші (C).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">4. <span class="m-hand-correct">C</span> ✅</div></div>
+          </div>
+
+          <!-- 5 -->
+          <div class="master-step-card correct">
+            <div class="m-num">5</div>
+            <div class="m-col m-col-q"><div class="q-text">Make sure people find your post by...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block operator"><span>хештеги + назви + соцмережі = ALL of the above [ D ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Використовувати всі названі інструменти (D).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">5. <span class="m-hand-correct">D</span> ✅</div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           СЕКЦІЯ: ЗАВДАННЯ #4 (FAIRIES - 2/6 - ЗОНА РОСТУ)
+           ==================================================================== -->
+      <div id="view-task4" class="task-section-view">
+        <div class="master-task-card" style="border-color: #f43f5e;">
+          <div class="task-meta-row">
+            <span class="task-tag-badge" style="color: #fda4af; border-color: #f43f5e;">ОЛІМПІАДА 9 КЛАС • REFERENCE WORDS</span>
+            <span style="font-size: 11px; color: #fda4af; font-weight: 800;">Твій результат: 2 / 6 (Розбір пасток)</span>
+          </div>
+          <div class="task-heading">Завдання #4. Reading: «The legend of fairies»</div>
+          <div class="task-instruction-text">
+            <strong>Умова:</strong> Determine what the underlined reference words refer to (1–6).
+          </div>
+
+          <div class="full-text-tray">
+            <div class="tray-toggle-header">
+              <span>📖 ОРИГІНАЛЬНИЙ ТЕКСТ СТАТТІ: «THE LEGEND OF FAIRIES»</span>
+              <span style="font-size: 9.5px; color: #38bdf8;">▲ ПОВНИЙ КОНТЕКСТ ДЛЯ ПЕРЕЧИТУВАННЯ</span>
+            </div>
+            <div class="tray-body-text">
+              <p style="margin-bottom: 8px;"><strong>The legend of fairies</strong></p>
+              <p style="margin-bottom: 8px;"><strong>[Paragraph 1]</strong> Fairies today are the stuff of children’s stories, little magical people with wings, often shining with light, typically pretty and female, like Tinkerbell in Peter Pan, <span class="gap-chip focus">they</span> usually use their magic to do small things and are mostly friendly to humans.</p>
+              <p style="margin-bottom: 8px;"><strong>[Paragraph 2]</strong> We owe many of our modern ideas about fairies to Shakespeare and stories from the 18th and 19th centuries. Although we can see the origins of fairies as far back as the Ancient Greeks, we can see similar creatures in many cultures. The earliest fairy-like creatures can be found in the Greek idea that trees and rivers had spirits called dryads and nymphs. Some people think <span class="gap-chip focus">these creatures</span> were originally the gods of earlier, pagan religions that worshipped nature. <span class="gap-chip focus">They</span> were replaced by the Greek and Roman gods, and then later by the Christian God, and became smaller, less powerful figures as they lost importance.</p>
+              <p style="margin-bottom: 8px;"><strong>[Paragraph 3]</strong> Another explanation suggests the origin of fairies is a memory of real people, not spirits. So, for example, when tribes with metal weapons invaded land where people only used stone weapons, some of the people escaped and hid in forests and caves. Further support for <span class="gap-chip focus">this idea</span> is that fairies were thought to be afraid of iron and could not touch it. Living outside of society, the hiding people probably stole food and attacked villages. <span class="gap-chip focus">This</span> might explain why fairies were often described as playing tricks on humans.</p>
+              <p style="margin-bottom: 8px;"><strong>[Paragraph 4]</strong> While most people no longer believe in fairies, only a hundred years ago some people were very willing to think they might exist. In 1917, 16 year old Elsie Wright took two photos of her cousin, nine year old Frances Griffiths, sitting with fairies. Arthur Conan Doyle, the writer of Sherlock Holmes, believed they were real. He published the original pictures, and three <span class="gap-chip focus">more</span> the girls took for him, in a magazine called The Strand, in 1920.</p>
+            </div>
+            <div class="tray-options-box">
+              <div style="font-weight: 800; color: #fda4af; margin-bottom: 6px; font-size: 11px;">ЗАПИТАННЯ ТА ВАРІАНТИ ВІДПОВІДЕЙ:</div>
+              <div style="margin-bottom: 5px;"><strong>1. In paragraph 1, the word «they» refers to …</strong><br>
+              <strong style="color:#34d399;">A fairies</strong> &bull; B children &bull; C stories</div>
+              <div style="margin-bottom: 5px;"><strong>2. In paragraph 2, the words «these creatures» refer to …</strong><br>
+              A trees and rivers &bull; <strong style="color:#34d399;">B the spirits of trees and rivers</strong> &bull; C the Ancient Greek people</div>
+              <div style="margin-bottom: 5px;"><strong>3. In paragraph 2, the word «They» refers to …</strong><br>
+              <strong style="color:#34d399;">A pagan gods</strong> &bull; B pagan religions &bull; C Greek and Roman gods</div>
+              <div style="margin-bottom: 5px;"><strong>4. In paragraph 3, the words «this idea» refer to …</strong><br>
+              <strong style="color:#34d399;">A the idea that fairies were based on people</strong> &bull; B the idea that fairies used metal weapons &bull; C the idea that fairies used stone tools</div>
+              <div style="margin-bottom: 5px;"><strong>5. In paragraph 3, the word «This» refers to …</strong><br>
+              A the fact that fairies were afraid of iron &bull; B stolen food &bull; <strong style="color:#34d399;">C the possibility that hiding people stole food and attacked villages</strong></div>
+              <div><strong>6. In paragraph 4, the word «more» refers to …</strong><br>
+              A the girls &bull; <strong style="color:#34d399;">B the photos</strong> &bull; C the fairies</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="master-table-header">
+          <div class="m-th-col m-th-num">№</div>
+          <div class="m-th-col m-th-q">❓ Займенник / Слово</div>
+          <div class="m-th-col m-th-s">🧩 Блоки Scratch</div>
+          <div class="m-th-col m-th-r">📐 Граматичний закон</div>
+          <div class="m-th-col m-th-n">📝 Запис у зошиті</div>
+        </div>
+
+        <div class="steps-container">
+          <!-- 1 -->
+          <div class="master-step-card correct">
+            <div class="m-num">1</div>
+            <div class="m-col m-col-q"><div class="q-text">«they» у Paragraph 1</div><div class="dialog-item">they usually use their magic...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>хто чаклує? -> fairies [ A ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Магію використовують феї (A).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">1. <span class="m-hand-correct">A (fairies)</span> ✅</div></div>
+          </div>
+
+          <!-- 2 -->
+          <div class="master-step-card correct">
+            <div class="m-num">2</div>
+            <div class="m-col m-col-q"><div class="q-text">«these creatures» у Par. 2</div><div class="dialog-item">spirits called dryads and nymphs...</div></div>
+            <div class="m-col m-col-s"><div class="scratch-stack"><div class="s-block motion"><span>духи річок та дерев [ B ]</span></div></div></div>
+            <div class="m-col m-col-r"><div class="rule-box"><div class="rule-desc">Посилається на дріад та німф (духів природи) (B).</div></div></div>
+            <div class="m-col m-notebook"><div class="m-english-hand">2. <span class="m-hand-correct">B (spirits)</span> ✅</div></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="master-step-card trap">
+            <div class="m-num">3</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">«They» у Par. 2 (were replaced)</div>
+              <div class="dialog-item">«They were replaced by Greek and Roman gods...»</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>ПАСТКА ПАСИВУ: were replaced BY</span></div>
+                <div class="s-block control"><span>Хто замінив? -> Greek and Roman gods</span></div>
+                <div class="s-block operator"><span>Кого замінили? (Підмет They) -> [ pagan gods ]</span><span class="s-math">вибрати [ A ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Підмет у Passive Voice</span></div>
+                <div class="rule-desc">Грецькі боги стоять після <em>by</em> (вони діячі). А займенник <strong>They</strong> на початку — це ті давні боги, яких витіснили (A — pagan gods).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">C</span> -> <span class="m-hand-correct">A (pagan gods)</span></div>
+              <div class="m-note">Підмет пасиву = об'єкт заміни!</div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="master-step-card trap">
+            <div class="m-num">4</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">«this idea» у Paragraph 3</div>
+              <div class="dialog-item">Further support for this idea is that fairies were afraid of iron...</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>НЕ ЧІПЛЯЙСЯ ЗА СЛОВО «STONE»</span></div>
+                <div class="s-block motion"><span>головна теза абзацу:</span><span class="s-math">origin of fairies is REAL PEOPLE [ A ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Ідея абзацу vs Сусіднє слово</span></div>
+                <div class="rule-desc">Страх заліза підтверджує <strong>теорію походження від людей</strong> (A). Казки не стверджували, що феї використовували крем'яні ножі (C).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">C</span> -> <span class="m-hand-correct">A (based on people)</span></div>
+              <div class="m-note">«This idea» = головна теорія!</div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="master-step-card trap">
+            <div class="m-num">5</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">«This» у Paragraph 3</div>
+              <div class="dialog-item">hiding people stole food... This might explain why fairies played tricks...</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block operator"><span>причина: крали їжу та нападали</span></div>
+                <div class="s-block control"><span>наслідок: міфи про капості фей</span><span class="s-math">варіант [ C ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Причинно-наслідковий ланцюг</span></div>
+                <div class="rule-desc">Витівки (tricks) пояснюються тим, що люди крали їжу й нападали (C). Страх заліза (A) не пояснює витівки.</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">A</span> -> <span class="m-hand-correct">C (hiding people)</span></div>
+              <div class="m-note">Шукай що пояснює витівки!</div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="master-step-card trap">
+            <div class="m-num">6</div>
+            <div class="m-col m-col-q">
+              <div class="q-text">«more» у Paragraph 4</div>
+              <div class="dialog-item">original pictures, and three more the girls took for him...</div>
+            </div>
+            <div class="m-col m-col-s">
+              <div class="scratch-stack">
+                <div class="s-block alert"><span>ПАСТКА СУСІДНЬОГО «THE GIRLS»</span></div>
+                <div class="s-block operator"><span>повна фраза: three more [photos] [that] the girls took</span><span class="s-math">вибрати [ B - the photos ]</span></div>
+              </div>
+            </div>
+            <div class="m-col m-col-r">
+              <div class="rule-box">
+                <div class="rule-title"><span>Граматичний еліпсис</span></div>
+                <div class="rule-desc">Дієслово <em>take</em> вживається з <em>photos</em> (take photos — фотографувати). Дослівно: ще три [знімки], які дівчата зробили для нього (B).</div>
+              </div>
+            </div>
+            <div class="m-col m-notebook">
+              <div class="m-english-hand"><span class="m-hand-wrong">A</span> -> <span class="m-hand-correct">B (the photos)</span></div>
+              <div class="m-note">take photos = робити фото!</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ПРАВА ЧАСТИНА: ЗОШИТ ВІДПОВІДЕЙ МІЛАНИ (HUION SHEET) -->
+    <div class="panel-right-canvas">
+      
+      <div class="notebook-sheet-area">
+        <div class="sheet-title">
+          <span id="canvas-sheet-title">Олімпіада • Зведений протокол відповідей</span>
+        </div>
+
+        <div id="canvas-stamp" class="margin-stamp">
+          <div class="stamp-title">Score</div>
+          <div class="stamp-val" id="canvas-stamp-val">19 / 27</div>
+        </div>
+
+        <!-- ДИНАМІЧНИЙ ВМІСТ АРКУША -->
+        <div id="canvas-content-box">
+          <!-- Контент оновлюється JS-функцією switchTask -->
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    const sheetsData = {
+      overview: {
+        title: "Олімпіада 9 клас • Підсумкова відомість",
+        score: "19 / 27",
+        badgeClass: "",
+        lines: [
+          { text: "Завдання #1. The Big Issue (Matching):", num: "I.", box: "3 / 5", wrong: false, note: "Упевнений результат у складних зв'язках!" },
+          { text: "Завдання #2. Шоколад (Use of English):", num: "II.", box: "10 / 11", wrong: false, note: "🔥 ТОП! Рівень знання граматики 91%!" },
+          { text: "Завдання #3. Social Influencers (Reading):", num: "III.", box: "4 / 5", wrong: false, note: "80% правильних відповідей. Увага до NOT!" },
+          { text: "Завдання #4. The legend of fairies (References):", num: "IV.", box: "2 / 6", wrong: true, note: "Зона росту: пасивний стан і контекст." },
+          { text: "------------------------------------------------", num: "", box: "", wrong: false, note: "" },
+          { text: "Загальний результат:", num: "Σ", box: "70.4%", wrong: false, note: "Потужна самостійна робота!" },
+          { text: "💬 Є запитання?", num: "★", box: "Запитай!", wrong: false, note: "Напиши з будь-якого номера — я з радістю допоможу!" }
+        ]
+      },
+      task1: {
+        title: "Завдання #1 • From Rags to Riches",
+        score: "3 / 5",
+        badgeClass: "warn",
+        lines: [
+          { text: "1.", num: "1.", box: "D (Д)", wrong: false, note: "✅ In stark contrast to cultural activity..." },
+          { text: "2.", num: "2.", box: "B (В)", wrong: false, note: "✅ nickname Cardboard City (назва вистави)" },
+          { text: "3.", num: "3.", box: "A (А)", wrong: false, note: "✅ no address -> no job -> trapped" },
+          { text: "4.", num: "4.", box: "Б (Г)", wrong: true, note: "❌ Має бути Г (позиція влади щодо жебраків)" },
+          { text: "5.", num: "5.", box: "Г (Б)", wrong: true, note: "❌ Має бути Б (перший спосіб перед 'Another way')" }
+        ]
+      },
+      task2: {
+        title: "Завдання #2 • Food of the Gods (Use of English)",
+        score: "10 / 11",
+        badgeClass: "",
+        lines: [
+          { text: "1. have been drinking", num: "1.", box: "D", wrong: false, note: "✅ Present Perfect Continuous" },
+          { text: "2. brought chocolate", num: "2.", box: "B", wrong: false, note: "✅ Past Simple (1528)" },
+          { text: "3. drunk only by rich", num: "3.", box: "D (A)", wrong: true, note: "❌ drunk BY the rich (Passive agent)" },
+          { text: "4. became as popular", num: "4.", box: "D", wrong: false, note: "✅ Past state" },
+          { text: "5. hard to believe", num: "5.", box: "A", wrong: false, note: "✅ Collocation" },
+          { text: "6. not exist until 19th", num: "6.", box: "A", wrong: false, note: "✅ not... until" },
+          { text: "7. Since its appearance", num: "7.", box: "B", wrong: false, note: "✅ Point of origin" },
+          { text: "8. In fact", num: "8.", box: "C", wrong: false, note: "✅ Linking idiom" },
+          { text: "9. comes from", num: "9.", box: "D", wrong: false, note: "✅ Phrasal origin" },
+          { text: "10. makes them feel", num: "10.", box: "B", wrong: false, note: "✅ Causative make + bare verb" },
+          { text: "11. tryptophan, which", num: "11.", box: "C", wrong: false, note: "✅ Comma + WHICH (Non-defining)" }
+        ]
+      },
+      task3: {
+        title: "Завдання #3 • Social media influencers",
+        score: "4 / 5",
+        badgeClass: "",
+        lines: [
+          { text: "1. Influencer is NOT...", num: "1.", box: "A (C)", wrong: true, note: "❌ Пастка NOT! Не платять підписникам (C)" },
+          { text: "2. Companies want help", num: "2.", box: "A", wrong: false, note: "✅ sell products to followers" },
+          { text: "3. Bio shouldn't...", num: "3.", box: "D", wrong: false, note: "✅ be same as others" },
+          { text: "4. Should post...", num: "4.", box: "C", wrong: false, note: "✅ about similar subjects (theme)" },
+          { text: "5. Find your post by...", num: "5.", box: "D", wrong: false, note: "✅ doing all of the above" }
+        ]
+      },
+      task4: {
+        title: "Завдання #4 • The legend of fairies",
+        score: "2 / 6",
+        badgeClass: "danger",
+        lines: [
+          { text: "1. «they» (use magic)", num: "1.", box: "A", wrong: false, note: "✅ fairies" },
+          { text: "2. «these creatures»", num: "2.", box: "B", wrong: false, note: "✅ spirits of trees and rivers" },
+          { text: "3. «They» (were replaced)", num: "3.", box: "C (A)", wrong: true, note: "❌ pagan gods (кого замінили)" },
+          { text: "4. «this idea»", num: "4.", box: "C (A)", wrong: true, note: "❌ based on people (головна ідея абзацу)" },
+          { text: "5. «This» (tricks)", num: "5.", box: "A (C)", wrong: true, note: "❌ hiding people stole food (пояснює витівки)" },
+          { text: "6. «more» (girls took)", num: "6.", box: "A (B)", wrong: true, note: "❌ the photos (three more photos took)" }
+        ]
+      }
+    };
+
+    function switchTask(taskId, btn) {
+      // 1. Оновлюємо таби в шапці
+      const tabs = document.querySelectorAll('.tab-btn');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      if (btn) {
+        btn.classList.add('active');
+      } else {
+        tabs.forEach(tab => {
+          if (tab.getAttribute('onclick')?.includes(taskId)) tab.classList.add('active');
+        });
+      }
+
+      // 2. Перемикаємо ліву секцію
+      const views = document.querySelectorAll('.task-section-view');
+      views.forEach(v => v.classList.remove('active-view'));
+      const activeView = document.getElementById('view-' + taskId);
+      if (activeView) activeView.classList.add('active-view');
+
+      // 3. Оновлюємо правий зошит
+      const data = sheetsData[taskId];
+      if (data) {
+        document.getElementById('canvas-sheet-title').innerText = data.title;
+        const stamp = document.getElementById('canvas-stamp');
+        stamp.className = 'margin-stamp ' + data.badgeClass;
+        document.getElementById('canvas-stamp-val').innerText = data.score;
+
+        const container = document.getElementById('canvas-content-box');
+        let html = '';
+        data.lines.forEach(l => {
+          if (!l.num && !l.box) {
+            html += `<div style="margin: 8px 0; color: #334155;">${l.text}</div>`;
+          } else {
+            const boxClass = l.wrong ? 'ans-box wrong' : 'ans-box';
+            html += `
+              <div class="hand-line">
+                <span class="num">${l.num}</span>
+                <span>${l.text}</span>
+                <span class="${boxClass}">${l.box}</span>
+                <span class="comment">// ${l.note}</span>
+              </div>
+            `;
+          }
+        });
+        container.innerHTML = html;
+      }
+    }
+
+    // Початкова ініціалізація першого екрана
+    window.addEventListener('DOMContentLoaded', () => {
+      const data = sheetsData.overview;
+      document.getElementById('canvas-sheet-title').innerText = data.title;
+      document.getElementById('canvas-stamp-val').innerText = data.score;
+      const container = document.getElementById('canvas-content-box');
+      let html = '';
+      data.lines.forEach(l => {
+        if (!l.num && !l.box) {
+          html += `<div style="margin: 8px 0; color: #334155;">${l.text}</div>`;
+        } else {
+          const boxClass = l.wrong ? 'ans-box wrong' : 'ans-box';
+          html += `
+            <div class="hand-line">
+              <span class="num">${l.num}</span>
+              <span>${l.text}</span>
+              <span class="${boxClass}">${l.box}</span>
+              <span class="comment">// ${l.note}</span>
+            </div>
+          `;
+        }
+      });
+      container.innerHTML = html;
+    });
+  </script>
+</body>
+</html>

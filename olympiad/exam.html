@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС — БОЙОВИЙ ТУР КМАН</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Nunito:wght@400;600;700;800;900&family=Caveat:wght@600;700&display=swap">
+  <!-- html2canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <style>
+    :root {
+      --bg-dark: #070b12;
+      --panel-bg: #0e1624;
+      --card-bg: #141f32;
+      --card-border: #1e304b;
+      --card-hover: #1c2b44;
+      --accent-cyan: #38bdf8;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-purple: #a855f7;
+      --accent-rose: #f43f5e;
+      --text-main: #cbd5e1;
+      --text-muted: #8b9bb4;
+      --notebook-bg: #090e17;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { scrollbar-width: thin; scrollbar-color: #334155 #090e1a; }
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #090e1a; }
+    ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; border: 1px solid #334155; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
+    body {
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    /* ШАПКА */
+    header {
+      height: 52px;
+      background: var(--panel-bg);
+      border-bottom: 1.5px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      flex-shrink: 0;
+      gap: 12px;
+      z-index: 50;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      color: #38bdf8;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .mode-dropdown-select {
+      background: #111a29;
+      border: 1.5px solid #2d4263;
+      color: #f1f5f9;
+      font-family: 'Nunito', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      outline: none;
+      min-width: 440px;
+      transition: all 0.15s;
+    }
+    .mode-dropdown-select:hover, .mode-dropdown-select:focus {
+      border-color: #38bdf8;
+      background: #16253b;
+    }
+
+    .stage-badge {
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      text-transform: uppercase;
+    }
+
+    .header-actions { display: flex; gap: 8px; align-items: center; }
+
+    button.btn {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      padding: 6px 12px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+      transition: all 0.15s;
+    }
+    button.btn:hover { background: var(--card-hover); border-color: #38bdf8; color: #fff; }
+    button.btn-primary { background: #0284c7; border-color: #38bdf8; color: #fff; }
+    button.btn-primary:hover { background: #0369a1; }
+    button.btn-emerald { background: #059669; border-color: #10b981; color: #fff; font-weight: 800; }
+    button.btn-emerald:hover { background: #047857; }
+
+    .timer-widget {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: #090e18;
+      border: 1px solid var(--card-border);
+      padding: 4px 10px;
+      border-radius: 7px;
+    }
+    .timer-display {
+      font-family: monospace;
+      font-size: 13.5px;
+      font-weight: 800;
+      color: var(--accent-amber);
+      min-width: 44px;
+      text-align: center;
+    }
+    .btn-timer {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-timer:hover { color: #fff; border-color: #38bdf8; }
+
+    /* РОБОЧИЙ ПРОСТІР */
+    .workspace {
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      height: calc(100vh - 52px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ЛІВА ПАНЕЛЬ: АВТЕНТИЧНИЙ ТЕСТ ОЛІМПІАДИ (БЕЗ ПІДКАЗОК) */
+    .panel-left-exam {
+      flex: 0 0 52%;
+      width: 52%;
+      min-width: 420px;
+      background: #080d1a;
+      overflow-y: auto;
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      user-select: text;
+    }
+
+    .exam-header-card {
+      background: linear-gradient(135deg, #0e172a 0%, #172038 100%);
+      border: 1.5px solid #38bdf8;
+      border-radius: 10px;
+      padding: 12px 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+      flex-shrink: 0;
+    }
+
+    .exam-meta-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .exam-source-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .exam-task-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .exam-instruction {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      line-height: 1.45;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px 12px;
+      border-radius: 6px;
+      border-left: 3px solid #38bdf8;
+    }
+
+    /* ВМІСТ ЗАВДАННЯ: ТЕКСТИ ТА ПИТАННЯ */
+    .exam-content-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .exam-reading-box {
+      background: #0d1527;
+      border: 1px solid #1e304b;
+      border-radius: 9px;
+      padding: 14px 16px;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .exam-reading-box h3 {
+      color: #38bdf8;
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #1e304b;
+      padding-bottom: 6px;
+    }
+    .gap-marker {
+      background: #1e293b;
+      border: 1.5px solid #38bdf8;
+      color: #38bdf8;
+      font-weight: 900;
+      font-family: 'Fira Code', monospace;
+      padding: 1px 7px;
+      border-radius: 4px;
+      margin: 0 3px;
+      display: inline-block;
+    }
+
+    .exam-options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .question-card {
+      background: #0f172a;
+      border: 1.5px solid #1e293b;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .q-head {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 8px;
+    }
+    .q-variants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .q-opt {
+      background: #141f32;
+      border: 1px solid #24354f;
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .q-opt b {
+      color: #38bdf8;
+      font-family: monospace;
+      font-size: 13px;
+    }
+
+    /* СПЛІТТЕР */
+    .resizer {
+      width: 8px;
+      background: #090e18;
+      border-left: 1px solid #1a273b;
+      border-right: 1px solid #1a273b;
+      cursor: col-resize;
+      user-select: none;
+      flex-shrink: 0;
+      position: relative;
+      transition: background 0.15s;
+      z-index: 20;
+    }
+    .resizer:hover, .resizer.dragging {
+      background: var(--accent-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    }
+
+    /* ПРАВА ПАНЕЛЬ: ЧИСТИЙ ЗОШИТ ДЛЯ HUION (ПОВНИЙ ПАН & ЗУМ) */
+    .panel-right-canvas {
+      flex: 1 1 48%;
+      background: var(--notebook-bg);
+      overflow: hidden;
+      position: relative;
+      user-select: none;
+      touch-action: none;
+      cursor: crosshair;
+    }
+
+    /* ТУЛБАР КАНВАСУ */
+    .canvas-toolbar {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(14, 22, 36, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1.5px solid var(--card-border);
+      border-radius: 9px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 100;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      pointer-events: auto;
+    }
+
+    .tool-group {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border-right: 1px solid var(--card-border);
+      padding-right: 6px;
+    }
+
+    .tool-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      background: #141f32;
+      border: 1px solid #24354f;
+      color: #94a3b8;
+      font-size: 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tool-btn:hover { background: #1c2b44; color: #fff; }
+    .tool-btn.active {
+      background: #0284c7;
+      color: #fff;
+      border-color: #38bdf8;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+    }
+    .tool-btn.active-eraser {
+      background: #dc2626 !important;
+      color: #fff !important;
+      border-color: #f87171 !important;
+    }
+
+    .color-dot {
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 1.5px solid transparent;
+      transition: transform 0.15s;
+    }
+    .color-dot.active { transform: scale(1.3); border-color: #fff; }
+
+    /* ЗУМ ТА ДОДАТИ ДОВЖИНУ */
+    .btn-zoom-badge {
+      background: #111a29;
+      border: 1px solid #24354f;
+      color: #cbd5e1;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn-zoom-badge:hover { color: #38bdf8; border-color: #38bdf8; }
+
+    .btn-toolbar-add {
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid var(--accent-cyan);
+      color: #38bdf8;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .btn-toolbar-add:hover { background: #38bdf8; color: #090e17; }
+
+    /* ПРОСТІР ВІРТУАЛЬНОГО ПОЛОТНА (СВІТ) */
+    .viewport-world {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: 0 0;
+      will-change: transform;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: auto;
+    }
+
+    .notebook-sheet {
+      position: relative;
+      width: 820px;
+      min-height: 2600px;
+      background: #090e17;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    canvas#gridCanvas { position: absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1; }
+    canvas#inkCanvas { position: absolute; top:0; left:0; width:100%; height:100%; touch-action:none; cursor:crosshair; z-index:2; }
+
+    .btn-bottom-add {
+      margin-top: 24px;
+      margin-bottom: 100px;
+      background: #141f32;
+      border: 2px dashed #2d4160;
+      color: var(--accent-cyan);
+      padding: 10px 26px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-bottom-add:hover { background: #1c2b42; border-color: var(--accent-cyan); color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- ВЕРХНЯ ШАПКА -->
+  <header>
+    <div class="header-left">
+      <a href="../index.html" style="color:#38bdf8; text-decoration:none; display:inline-flex; align-items:center; gap:5px; font-weight:800; font-size:12px; background:rgba(56,189,248,0.1); border:1px solid rgba(56,189,248,0.3); padding:4px 9px; border-radius:6px; margin-right:6px; transition: all 0.2s;">← Підручники</a>
+      <span class="brand-title">АНГЛІЙСЬКА // 9 КЛАС</span>
+      <span class="stage-badge" id="currentStageBadge">І ЕТАП (ШКІЛЬНИЙ)</span>
+
+      <div class="mode-select-wrapper">
+        <select id="taskSelector" class="mode-dropdown-select" onchange="switchTask(this.value)">
+          <optgroup label="🏆 І ЕТАП ОЛІМПІАДИ (29.10.2025, КМАН)">
+            <option value="s1_t1">І Етап • Завдання #1. Gapped Text: «The Big Issue» (Вставка речень A–F)</option>
+            <option value="s1_t2" selected>І Етап • Завдання #2. Use of English: «Food of the Gods» (11 пропусків)</option>
+            <option value="s1_t3">І Етап • Завдання #3. Reading: «Social Media Influencers» (5 питань A–D)</option>
+            <option value="s1_t4">І Етап • Завдання #4. Reading Reference: «The Legend of Fairies» (6 питань)</option>
+          </optgroup>
+          <optgroup label="🏆 ІІ ЕТАП ОЛІМПІАДИ (МІСЬКИЙ / РАЙОННИЙ, КМАН)">
+            <option value="s2_reading_1">ІІ Етап • Reading Text 1: «Mark Twain» (10 True/False)</option>
+            <option value="s2_reading_2">ІІ Етап • Reading Text 2: «A Summer Away from Home» (Missing Sentences)</option>
+            <option value="s2_reading_3">ІІ Етап • Reading Text 3: «A Scottish Summer Camp» (Multiple Choice)</option>
+            <option value="s2_reading_4">ІІ Етап • Reading Text 4: «Falling for TV — Neil Postman» (Critical Reading)</option>
+            <option value="s2_writing">ІІ Етап • WRITING TEST (150–180 слів: Есе / Email / Блог-пост)</option>
+            <option value="s2_speaking">ІІ Етап • SPEAKING TEST (20 офіційних карток та тем)</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- Таймер олімпійського спринту -->
+      <div class="timer-widget">
+        <span style="font-size: 11px; color: #94a3b8;">⏱</span>
+        <span class="timer-display" id="timerDisplay">45:00</span>
+        <button class="btn-timer" id="btnTimerToggle" onclick="toggleTimer()">▶</button>
+        <button class="btn-timer" onclick="addTimer(300)">+5 хв</button>
+        <button class="btn-timer" onclick="resetTimer()">Скинути</button>
+      </div>
+
+      <button class="btn btn-primary" id="btnExportPng" onclick="exportFullPng()">
+        <span>📸 Зберегти PNG</span>
+      </button>
+
+      <button class="btn btn-emerald" id="btnSubmitWork" onclick="submitToAudit()">
+        <span>✈️ Надіслати на повну перевірку</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- РОБОЧИЙ ПРОСТІР -->
+  <div class="workspace">
+
+    <!-- ЛІВА ПАНЕЛЬ: ЗАВДАННЯ (ПОВНІ АВТЕНТИЧНІ ТЕКСТИ БЕЗ ПІДКАЗОК) -->
+    <main class="panel-left-exam" id="panelExam">
+
+      <div class="exam-header-card">
+        <div class="exam-meta-line">
+          <span class="exam-source-tag" id="examMetaTag">І ЕТАП ОЛІМПІАДИ КМАН • 9 КЛАС</span>
+          <span style="font-size:11px; color:#f59e0b; font-weight:800;">РЕЖИМ САМОСТІЙНОЇ РОБОТИ</span>
+        </div>
+        <div class="exam-task-title" id="examTaskTitle">Завдання #2. Use of English: «Food of the Gods»</div>
+        <div class="exam-instruction" id="examInstruction">
+          Read the text below and choose the correct word for each space. For each question, mark the correct letter A, B, C or D in your notebook.
+        </div>
+      </div>
+
+      <!-- Контейнер завдання (динамічно генерується за даними з офіційних PDF) -->
+      <div class="exam-content-container" id="examContent"></div>
+
+    </main>
+
+    <!-- РЕСАЙЗЕР РОЗПОДІЛУ ЕКРАНА -->
+    <div class="resizer" id="centerResizer"></div>
+
+    <!-- ПРАВА ПАНЕЛЬ: ЧИСТИЙ ЗОШИТ HUION ДЛЯ ПИСЬМА МІЛАНИ -->
+    <aside class="panel-right-canvas" id="panelCanvas">
+
+      <!-- Тулбар пера, кольорів, зуму та додавання довжини -->
+      <div class="canvas-toolbar">
+        <div class="tool-group">
+          <button class="tool-btn active" id="toolPen" title="Ручка (B)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+          </button>
+          <button class="tool-btn" id="toolEraser" title="Ластик (E)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg>
+          </button>
+          <button class="tool-btn" id="toolHighlighter" title="Маркер (V)">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m14 2 8 8L10 22H2v-8L14 2z"/></svg>
+          </button>
+        </div>
+
+        <div class="tool-group">
+          <div class="color-dot active" data-color="#f8fafc" style="background:#f8fafc;" title="Білий"></div>
+          <div class="color-dot" data-color="#38bdf8" style="background:#38bdf8;" title="Блакитний"></div>
+          <div class="color-dot" data-color="#34d399" style="background:#34d399;" title="Зелений"></div>
+          <div class="color-dot" data-color="#f59e0b" style="background:#f59e0b;" title="Бурштиновий"></div>
+          <div class="color-dot" data-color="#f43f5e" style="background:#f43f5e;" title="Червоний"></div>
+        </div>
+
+        <!-- Кнопка зуму з індикатором відсотка (Клік скидає на 100%) -->
+        <div class="tool-group">
+          <button class="btn-zoom-badge" id="btnZoomReset" title="Масштаб (Коліщатко або Ctrl+Пробіл). Клік — скинути 100%">
+            🔍 <span id="zoomBadge">100%</span>
+          </button>
+        </div>
+
+        <!-- КНОПКА ДОДАТИ ДОВЖИНУ У ТУЛБАРІ -->
+        <div class="tool-group">
+          <button class="btn-toolbar-add" id="btnAddLengthToolbar" title="Додати довжину аркуша вниз (+1000 px)">
+            ➕ +1000 px
+          </button>
+        </div>
+
+        <div class="tool-group" style="border:none;">
+          <button class="tool-btn" id="btnUndo" title="Скасувати (Ctrl+Z)">↶</button>
+          <button class="tool-btn" id="btnRedo" title="Повернути (Ctrl+Y)">↷</button>
+          <button class="tool-btn" id="btnClearInk" title="Очистити полотно">🗑</button>
+        </div>
+      </div>
+
+      <!-- Світ віртуального полотна Huion (Pan & Zoom) -->
+      <div class="viewport-world" id="viewportWorld">
+        <div class="notebook-sheet" id="notebookSheet">
+          <canvas id="gridCanvas"></canvas>
+          <canvas id="inkCanvas"></canvas>
+        </div>
+
+        <button class="btn-bottom-add" id="btnAddLengthBottom">+ Додати довжину аркуша (+1000 px вниз)</button>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- БАЗА ВСІХ ОФІЦІЙНИХ ЗАВДАНЬ КМАН ТА ДВІЖОК КАНВАСУ -->
+  <script>
+    // --- ПОВНА БАЗА ВСІХ ЗАВДАНЬ І ТА ІІ ЕТАПІВ З НАДАНИХ PDF (БЕЗ ПІДКАЗОК) ---
+    const olympiadDatabase = {
+      // 1. І ЕТАП • ЗАВДАННЯ 1 (GAPPED TEXT)
+      s1_t1: {
+        stage: "І ЕТАП (ШКІЛЬНИЙ)",
+        meta: "Київська МАН • 29.10.2025 • Завдання на встановлення відповідності",
+        title: "Завдання #1. Gapped Text: «From Rags to Riches» (The Big Issue)",
+        instruction: "Read the newspaper article about The Big Issue magazine. Five sentences have been removed from the text. Put the correct sentence from A–F below in each space (1–5) to form a logical, coherent and correct text. There is one extra sentence you are not going to need. Write your answers on the right sheet.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>From Rags to Riches</h3>
+            <p>At the southern end of Waterloo Bridge in London, by the banks of the River Thames, stand the Royal National Theatre, the National Film Theatre and the Royal Festival Hall. <span class="gap-marker">1 ____</span> They have become a mecca for the homeless. The place is littered with the cardboard boxes and old mattresses that they use as beds. It became so popular there in the 1980s that each person had their own, much-prized space that they would guard carefully. <span class="gap-marker">2 ____</span> This was also the name of a theatre play directed by the now famous Oscar-winner (for American Beauty) Sam Mendes.</p>
+            <p style="margin-top:10px;">The 1980s saw an enormous increase in people sleeping rough in Britain, as many unemployed came to cities in the south, especially London, where jobs were easier to find. <span class="gap-marker">3 ____</span> They ended up with no work and nowhere to live. Today the housing charity Shelter estimates there are around 100,000 homeless people in London alone, who are either in temporary accommodation or simply living on the streets. These people often hang around railway stations and other public places asking for money. <span class="gap-marker">4 ____</span> The British public are asked by their government not to give money to street beggars. <span class="gap-marker">5 ____</span> Another way you can help is to buy a copy of The Big Issue weekly magazine.</p>
+            <p style="margin-top:10px;">Run for the homeless, The Big Issue is a success on many levels. Its first issue was published in 1991, it won the Magazine of the Year award in 1993, and sells 270,000 copies weekly, which means a readership of over one million. The magazine is actually sold by the homeless themselves, which gives them a chance to earn money and retain a sense of dignity. Encouraged by its success in Britain, The Big Issue has become international, and now seventeen titles throughout Europe are being published.</p>
+          </div>
+
+          <div style="font-size:13px; font-weight:800; color:#38bdf8; text-transform:uppercase; margin-top:6px;">
+            Sentences to insert (A–F):
+          </div>
+          <div class="exam-options-grid">
+            <div class="question-card"><b>А.</b> But it’s virtually impossible to get a job in Britain without a permanent address, and it’s very difficult to get somewhere to live if you don’t have a job, so most of those people got trapped.</div>
+            <div class="question-card"><b>Б.</b> People sympathetic to the homeless are being told to donate money to charities who specialise in caring for the poor or to offer beggars gifts of food or clothes instead of money.</div>
+            <div class="question-card"><b>В.</b> It gave them a sense of security and became so permanent that the locals gave the area a nickname – Cardboard City.</div>
+            <div class="question-card"><b>Г.</b> The Labour Party administration claims that many of these people are homeless by choice, and that there are many drug addicts among them.</div>
+            <div class="question-card"><b>Ґ (E).</b> All profits are reinvested into the magazine or diverted to The Big Issue Foundation, a charity that runs many social support programmes for the homeless.</div>
+            <div class="question-card"><b>Д (F).</b> In stark contrast to this centre of London’s cultural activity, are the subways close by, which offer some relief from the cold at night.</div>
+          </div>
+        `
+      },
+
+      // 2. І ЕТАП • ЗАВДАННЯ 2 (USE OF ENGLISH)
+      s1_t2: {
+        stage: "І ЕТАП (ШКІЛЬНИЙ)",
+        meta: "Київська МАН • 29.10.2025 • Use of English",
+        title: "Завдання #2. Use of English: «Food of the Gods»",
+        instruction: "Read the text below and choose the correct word for each space. For each question (1–11), write your chosen answer on the lined sheet on the right.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Food of the Gods</h3>
+            <p>People have <span class="gap-marker">(1) ......</span> drinking cocoa for more than 2000 years! The Mayan Indians in Mexico were the first to discover the value of this delicious bean. However, in 1528, a Spanish explorer <span class="gap-marker">(2) ......</span> chocolate from the Aztecs in America to Europe. At first it was drunk only <span class="gap-marker">(3) ......</span> the rich, but by the end of the seventeenth century, chocolate houses <span class="gap-marker">(4) ......</span> just as popular as coffee houses.</p>
+            <p style="margin-top:10px;">It is hard to <span class="gap-marker">(5) ......</span> that chocolate as a food did not exist <span class="gap-marker">(6) ......</span> the nineteenth century. This is when confectioners discovered that cocoa mass, cocoa butter and sugar could be combined to make solid eating chocolate. <span class="gap-marker">(7) ......</span> its appearance, though, it has become the most popular food in the world! In <span class="gap-marker">(8) ......</span>, most people claim it is their favourite food.</p>
+            <p style="margin-top:10px;">The word chocolate comes <span class="gap-marker">(9) ......</span> the Aztec word ‘xocolatl’, which means bitter water. It has many health benefits and many people say it <span class="gap-marker">(10) ......</span> them feel better when they eat it. This is not surprising, as chocolate contains a substance called tryptophan, <span class="gap-marker">(11) ......</span> helps your body create serotonin, a substance that makes you happy.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">1.</div><div class="q-variants"><div class="q-opt"><b>A</b> was</div><div class="q-opt"><b>B</b> be</div><div class="q-opt"><b>C</b> being</div><div class="q-opt"><b>D</b> been</div></div></div>
+            <div class="question-card"><div class="q-head">2.</div><div class="q-variants"><div class="q-opt"><b>A</b> got</div><div class="q-opt"><b>B</b> brought</div><div class="q-opt"><b>C</b> took</div><div class="q-opt"><b>D</b> went</div></div></div>
+            <div class="question-card"><div class="q-head">3.</div><div class="q-variants"><div class="q-opt"><b>A</b> by</div><div class="q-opt"><b>B</b> from</div><div class="q-opt"><b>C</b> with</div><div class="q-opt"><b>D</b> to</div></div></div>
+            <div class="question-card"><div class="q-head">4.</div><div class="q-variants"><div class="q-opt"><b>A</b> made</div><div class="q-opt"><b>B</b> came</div><div class="q-opt"><b>C</b> was</div><div class="q-opt"><b>D</b> became</div></div></div>
+            <div class="question-card"><div class="q-head">5.</div><div class="q-variants"><div class="q-opt"><b>A</b> believe</div><div class="q-opt"><b>B</b> expect</div><div class="q-opt"><b>C</b> think</div><div class="q-opt"><b>D</b> guess</div></div></div>
+            <div class="question-card"><div class="q-head">6.</div><div class="q-variants"><div class="q-opt"><b>A</b> until</div><div class="q-opt"><b>B</b> from</div><div class="q-opt"><b>C</b> since</div><div class="q-opt"><b>D</b> by</div></div></div>
+            <div class="question-card"><div class="q-head">7.</div><div class="q-variants"><div class="q-opt"><b>A</b> Until</div><div class="q-opt"><b>B</b> Since</div><div class="q-opt"><b>C</b> By</div><div class="q-opt"><b>D</b> From</div></div></div>
+            <div class="question-card"><div class="q-head">8.</div><div class="q-variants"><div class="q-opt"><b>A</b> opinion</div><div class="q-opt"><b>B</b> real</div><div class="q-opt"><b>C</b> fact</div><div class="q-opt"><b>D</b> actually</div></div></div>
+            <div class="question-card"><div class="q-head">9.</div><div class="q-variants"><div class="q-opt"><b>A</b> by</div><div class="q-opt"><b>B</b> to</div><div class="q-opt"><b>C</b> of</div><div class="q-opt"><b>D</b> from</div></div></div>
+            <div class="question-card"><div class="q-head">10.</div><div class="q-variants"><div class="q-opt"><b>A</b> does</div><div class="q-opt"><b>B</b> makes</div><div class="q-opt"><b>C</b> forces</div><div class="q-opt"><b>D</b> lets</div></div></div>
+            <div class="question-card"><div class="q-head">11.</div><div class="q-variants"><div class="q-opt"><b>A</b> who</div><div class="q-opt"><b>B</b> where</div><div class="q-opt"><b>C</b> which</div><div class="q-opt"><b>D</b> when</div></div></div>
+          </div>
+        `
+      },
+
+      // 3. І ЕТАП • ЗАВДАННЯ 3 (READING INFLUENCERS)
+      s1_t3: {
+        stage: "І ЕТАП (ШКІЛЬНИЙ)",
+        meta: "Київська МАН • 29.10.2025 • Reading Comprehension",
+        title: "Завдання #3. Reading: «Social media influencers»",
+        instruction: "Read the article about influencers and choose the best answer for questions 1–5.",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Social media influencers</h3>
+            <p>It is estimated that about 40 per cent of the world’s population use social media, and many of these billions of social media users look up to influencers to help them decide what to buy and what trends to follow.</p>
+            <p style="margin-top:6px;"><b>So what is an influencer and how do we become one?</b><br>An influencer is a person who can influence the decisions of their followers because of their relationship with their audience and their knowledge and expertise in a particular area, e.g. fashion, travel or technology.</p>
+            <p style="margin-top:6px;">Influencers often have a large following of people who pay close attention to their views. They have the power to persuade people to buy things, and influencers are now seen by many companies as a direct way to customers’ hearts. Brands are now asking powerful influencers to market their products. With some influencers charging up to $25,000 for one social media post, it is no surprise that more and more people are keen to become influencers too. If you are one of them, then here are five tips on how to do it.</p>
+            <p style="margin-top:6px;"><b>Choose your niche:</b> Find the specific area that you’re most interested in and develop it.<br>
+            <b>Choose your medium and write an interesting bio:</b> Decide which medium – such as your own online blog, Instagram or Snapchat – is the best way to connect with your followers. Write an attention-grabbing bio that describes you uniquely.<br>
+            <b>Post regularly and consistently:</b> The more you post, the more likely people will follow you. Ensure that your posts are consistent and follow a theme.<br>
+            <b>Tell an interesting story:</b> Use photos or comments to tell a story. Publicise your posts on a variety of social media, use hashtags and catchy titles.<br>
+            Most importantly, if you want to become a social media influencer, you need to have patience. Keep posting and your following will gradually increase.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card">
+              <div class="q-head">1. A social media influencer is not someone who …</div>
+              <div class="q-variants">
+                <div class="q-opt"><b>A</b> guides the decisions of their followers.</div>
+                <div class="q-opt"><b>B</b> is an expert in a particular area.</div>
+                <div class="q-opt"><b>C</b> pays their followers to buy products.</div>
+                <div class="q-opt"><b>D</b> has many followers who pay attention.</div>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="q-head">2. Companies want to use influencers to help …</div>
+              <div class="q-variants">
+                <div class="q-opt"><b>A</b> sell their products to their followers.</div>
+                <div class="q-opt"><b>B</b> develop new products.</div>
+                <div class="q-opt"><b>C</b> write their blogposts.</div>
+                <div class="q-opt"><b>D</b> design their websites.</div>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="q-head">3. If you want to be an influencer, your bio shouldn’t …</div>
+              <div class="q-variants">
+                <div class="q-opt"><b>A</b> say who you are.</div>
+                <div class="q-opt"><b>B</b> talk about your niche area.</div>
+                <div class="q-opt"><b>C</b> be interesting.</div>
+                <div class="q-opt"><b>D</b> be the same as other people’s bios.</div>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="q-head">4. You should make sure that you post …</div>
+              <div class="q-variants">
+                <div class="q-opt"><b>A</b> once a month.</div>
+                <div class="q-opt"><b>B</b> every day for first month, then monthly.</div>
+                <div class="q-opt"><b>C</b> about similar subjects.</div>
+                <div class="q-opt"><b>D</b> about all sorts of different things.</div>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="q-head">5. You can make sure that people find your post by …</div>
+              <div class="q-variants">
+                <div class="q-opt"><b>A</b> using hashtags.</div>
+                <div class="q-opt"><b>B</b> using funny or memorable titles.</div>
+                <div class="q-opt"><b>C</b> using different social media to link.</div>
+                <div class="q-opt"><b>D</b> doing all of the above.</div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+
+      // 4. І ЕТАП • ЗАВДАННЯ 4 (REFERENCES FAIRIES)
+      s1_t4: {
+        stage: "І ЕТАП (ШКІЛЬНИЙ)",
+        meta: "Київська МАН • 29.10.2025 • Reference Words Reading",
+        title: "Завдання #4. Reading: «The legend of fairies»",
+        instruction: "Read the text and determine what the underlined reference words refer to (1–6).",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>The legend of fairies</h3>
+            <p><b>[Paragraph 1]</b> Fairies today are the stuff of children’s stories, little magical people with wings, often shining with light. Typically pretty and female, like Tinkerbell in Peter Pan, <u>they</u> usually use their magic to do small things and are mostly friendly to humans.</p>
+            <p style="margin-top:8px;"><b>[Paragraph 2]</b> We owe many of our modern ideas about fairies to Shakespeare and stories from the 18th and 19th centuries. Although we can see the origins of fairies as far back as the Ancient Greeks, we can see similar creatures in many cultures. The earliest fairy-like creatures can be found in the Greek idea that trees and rivers had spirits called dryads and nymphs. Some people think <u>these creatures</u> were originally the gods of earlier, pagan religions that worshipped nature. <u>They</u> were replaced by the Greek and Roman gods, and then later by the Christian God, and became smaller, less powerful figures as they lost importance.</p>
+            <p style="margin-top:8px;"><b>[Paragraph 3]</b> Another explanation suggests the origin of fairies is a memory of real people, not spirits. So, for example, when tribes with metal weapons invaded land where people only used stone weapons, some of the people escaped and hid in forests and caves. Further support for <u>this idea</u> is that fairies were thought to be afraid of iron and could not touch it. Living outside of society, the hiding people probably stole food and attacked villages. <u>This</u> might explain why Fairies were often described as playing tricks on humans.</p>
+            <p style="margin-top:8px;"><b>[Paragraph 4]</b> While most people no longer believe in fairies, only a hundred years ago some people were very willing to think they might exist. In 1917, 16-year-old Elsie Wright took two photos of her cousin, nine-year-old Frances Griffiths, sitting with fairies. Arthur Conan Doyle, the writer of Sherlock Holmes, believed they were real. He published the original pictures, and three <u>more</u> the girls took for him, in a magazine called The Strand, in 1920.</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><div class="q-head">1. In paragraph 1, the word «they» refers to …</div><div class="q-variants"><div class="q-opt"><b>A</b> fairies</div><div class="q-opt"><b>B</b> children</div><div class="q-opt"><b>C</b> stories</div></div></div>
+            <div class="question-card"><div class="q-head">2. In paragraph 2, the words «these creatures» refer to …</div><div class="q-variants"><div class="q-opt"><b>A</b> trees and rivers</div><div class="q-opt"><b>B</b> the spirits of trees and rivers</div><div class="q-opt"><b>C</b> the Ancient Greek people</div></div></div>
+            <div class="question-card"><div class="q-head">3. In paragraph 2, the word «They» refers to …</div><div class="q-variants"><div class="q-opt"><b>A</b> pagan gods</div><div class="q-opt"><b>B</b> pagan religions</div><div class="q-opt"><b>C</b> Greek and Roman gods</div></div></div>
+            <div class="question-card"><div class="q-head">4. In paragraph 3, the words «this idea» refer to …</div><div class="q-variants"><div class="q-opt"><b>A</b> the idea that fairies were based on people</div><div class="q-opt"><b>B</b> the idea that fairies used metal weapons</div><div class="q-opt"><b>C</b> the idea that fairies used stone tools</div></div></div>
+            <div class="question-card"><div class="q-head">5. In paragraph 3, the word «This» refers to …</div><div class="q-variants"><div class="q-opt"><b>A</b> the fact that fairies were afraid of iron</div><div class="q-opt"><b>B</b> stolen food</div><div class="q-opt"><b>C</b> the possibility that hiding people stole food and attacked villages</div></div></div>
+            <div class="question-card"><div class="q-head">6. In paragraph 4, the word «more» refers to …</div><div class="q-variants"><div class="q-opt"><b>A</b> the girls</div><div class="q-opt"><b>B</b> the photos</div><div class="q-opt"><b>C</b> the fairies</div></div></div>
+          </div>
+        `
+      },
+
+      // 5. ІІ ЕТАП • READING TEXT 1 (MARK TWAIN)
+      s2_reading_1: {
+        stage: "ІІ ЕТАП (МІСЬКИЙ)",
+        meta: "Київська МАН • Reading Comprehension Year 9",
+        title: "ІІ Етап. Reading Text 1: «Mark Twain (1835–1910)»",
+        instruction: "Read the biography of Mark Twain and mark each statement (1–10) as True (T) or False (F).",
+        renderHtml: `
+          <div class="exam-reading-box">
+            <h3>Mark Twain (1835–1910)</h3>
+            <p><b>1</b> Mark Twain’s real name was Samuel L. Clemens. He was born in Florida, Missouri, the sixth of seven children. When he was four, Sam’s family moved to Hannibal on the banks of the Mississippi River. Sam’s father died when he was eleven. Soon after, Sam left school and got a job as a printer for a local newspaper.</p>
+            <p style="margin-top:6px;"><b>2</b> In the 1850s, he worked in New York and Philadelphia. In 1857, he worked as a riverboat pilot on the Mississippi River. But when the Civil War started in 1861, traffic stopped.</p>
+            <p style="margin-top:6px;"><b>3</b> In 1861, Sam went west to Nevada to work in silver mines. He didn’t find silver, so in 1862 he got a job at a newspaper and started using his pen name, Mark Twain.</p>
+            <p style="margin-top:6px;"><b>4</b> In 1865, his big break came with the short story 'Jim Smiley and His Jumping Frog'.</p>
+            <p style="margin-top:6px;"><b>5</b> During a trip to Europe, he met Charles Langdon, who showed Sam a picture of his sister, Olivia. Sam fell in love at first sight; they married in 1870.</p>
+            <p style="margin-top:6px;"><b>6</b> The Adventures of Huckleberry Finn was published in 1884. Ernest Hemingway said: 'All modern American literature comes from one book by Mark Twain called Huckleberry Finn.'</p>
+          </div>
+
+          <div class="exam-options-grid">
+            <div class="question-card"><b>1.</b> Mark Twain was not a real name. (T / F)</div>
+            <div class="question-card"><b>2.</b> Mark Twain was an only child in the family. (T / F)</div>
+            <div class="question-card"><b>3.</b> Sam was eleven when his father died. (T / F)</div>
+            <div class="question-card"><b>4.</b> Sam worked in New York and in Philadelphia in the 1850s. (T / F)</div>
+            <div class="question-card"><b>5.</b> During the American Civil War, Sam worked on the Mississippi River. (T / F)</div>
+            <div class="question-card"><b>6.</b> Sam didn’t get rich in Nevada. (T / F)</div>
+            <div class="question-card"><b>7.</b> His short story ‘Jim Smiley and His Jumping Frog’ was a success. (T / F)</div>
+            <div class="question-card"><b>8.</b> Charles Langdon was Olivia’s father. (T / F)</div>
+            <div class="question-card"><b>9.</b> St Peters is a town near Hannibal in the USA. (T / F)</div>
+            <div class="question-card"><b>10.</b> Ernest Hemingway thought Huckleberry Finn was a very important novel. (T / F)</div>
+          </div>
+        `
+      },
+
+      // 6. ІІ ЕТАП • WRITING TEST
+      s2_writing: {
+        stage: "ІІ ЕТАП (МІСЬКИЙ)",
+        meta: "Київська МАН • Writing Test Year 9",
+        title: "ІІ Етап. Writing Test (Обсяг: 150–180 слів)",
+        instruction: "Choose ONE of the writing tasks below. Write your essay, email or blog post in full on the right sheet using your Huion pen.",
+        renderHtml: `
+          <div class="exam-options-grid">
+            <div class="question-card" style="border-left: 3px solid #38bdf8;">
+              <h3 style="color:#38bdf8; font-size:15px; margin-bottom:6px;">Task 1. Essay: Is visiting new places more enjoyable than returning to familiar ones?</h3>
+              <p style="font-size:12.5px; line-height:1.5;">Write an essay in which you:<br>
+              • briefly describe a place you have visited<br>
+              • explain why people enjoy discovering new places<br>
+              • discuss why some people prefer returning to places they already know<br>
+              • give your personal opinion, supported by reasons and examples</p>
+            </div>
+
+            <div class="question-card" style="border-left: 3px solid #34d399;">
+              <h3 style="color:#34d399; font-size:15px; margin-bottom:6px;">Task 2. Email: Planning a trip abroad</h3>
+              <p style="font-size:12.5px; line-height:1.5;">You are going to visit your friend’s country. Write an email to your friend in which you:<br>
+              • explain the reason for writing<br>
+              • describe your travel plans<br>
+              • ask for advice about the best time to visit, places to see and ways of travelling around<br>
+              • say what you are most looking forward to seeing</p>
+            </div>
+
+            <div class="question-card" style="border-left: 3px solid #f59e0b;">
+              <h3 style="color:#f59e0b; font-size:15px; margin-bottom:6px;">Task 3. Blog Post: A trip I will never forget</h3>
+              <p style="font-size:12.5px; line-height:1.5;">You are writing a post for your personal blog about a holiday or experience that did not go as planned:<br>
+              • explain when and where the experience happened and who you were with<br>
+              • describe what went wrong and how you felt about it<br>
+              • explain how the situation ended and what you learnt from this experience</p>
+            </div>
+          </div>
+        `
+      },
+
+      // 7. ІІ ЕТАП • SPEAKING TEST
+      s2_speaking: {
+        stage: "ІІ ЕТАП (МІСЬКИЙ)",
+        meta: "Київська МАН • Speaking Test Year 9 (20 карток)",
+        title: "ІІ Етап. Speaking Test (1 хв на підготовку • 2 хв відповідь)",
+        instruction: "Select one topic from the official 20 cards below. Prepare your bullet points on the right sheet and present your answer.",
+        renderHtml: `
+          <div class="exam-options-grid" style="display:grid; grid-template-columns:1fr; gap:10px;">
+            <div class="question-card"><b>1. Photography:</b> Talk about the kind of photos you like taking. Holiday photos, favourite school days photo.</div>
+            <div class="question-card"><b>2. Future Plans:</b> Plans after classes today, this weekend, cooking, holiday destinations.</div>
+            <div class="question-card"><b>3. Free Time:</b> Leisure activities, new hobbies you’d like to start, playing instruments/sports.</div>
+            <div class="question-card"><b>4. Food Habits:</b> Favourite food, fresh fruit/vegetables, childhood tastes vs today.</div>
+            <div class="question-card"><b>5. Future Work:</b> Would you like to own a business? Life without work? Working in another country.</div>
+            <div class="question-card"><b>6. Chuck Palahniuk Quote:</b> «The only reason why we ask other people how their weekend was is so we can tell them about our own.» Do you agree?</div>
+            <div class="question-card"><b>7. Typical Day:</b> Morning routine, lessons schedule, after-class activities.</div>
+            <div class="question-card"><b>8. Weather:</b> Changing climate over past decades, how weather affects emotions and plans.</div>
+            <div class="question-card"><b>9. Cinema & Streaming:</b> Watching online vs cinema, favourite genres, films in English.</div>
+            <div class="question-card"><b>10. City Transport:</b> Safest and favourite method of transport, public transit in your town.</div>
+            <div class="question-card"><b>11. School Life:</b> Easiest vs hardest subjects, discipline and school rules.</div>
+            <div class="question-card"><b>12. Reading Books:</b> Paper books vs Internet, reading in English, emotional connection to literature.</div>
+            <div class="question-card"><b>13. Holidays:</b> Last summer experiences, travel style, future journeys.</div>
+            <div class="question-card"><b>14. Museums:</b> Best museum visited, should museums be free, museums for teenagers.</div>
+            <div class="question-card"><b>15. Restaurants:</b> Restaurant food quality, restaurant ideas, service complaints.</div>
+            <div class="question-card"><b>16. Mobile Phones:</b> Teenagers and screen time, phones while driving, life without smartphones.</div>
+            <div class="question-card"><b>17. Sports:</b> Keeping fit, friendships through sport, playing vs watching.</div>
+            <div class="question-card"><b>18. Shopping Habits:</b> Online shopping vs physical shops, worst shopping experience.</div>
+            <div class="question-card"><b>19. London:</b> Life in London, tourist spots, expensive vs cheap city, would you live there?</div>
+            <div class="question-card"><b>20. Studies & English:</b> How Internet changed learning, advice on how to master English.</div>
+          </div>
+        `
+      }
+    };
+
+    // --- ПЕРЕМИКАННЯ ЗАВДАНЬ ---
+    let currentTaskId = 's1_t2';
+    function switchTask(taskId) {
+      currentTaskId = taskId;
+      const data = olympiadDatabase[taskId] || olympiadDatabase['s1_t2'];
+      document.getElementById('currentStageBadge').textContent = data.stage;
+      document.getElementById('examMetaTag').textContent = data.meta;
+      document.getElementById('examTaskTitle').textContent = data.title;
+      document.getElementById('examInstruction').textContent = data.instruction;
+      document.getElementById('examContent').innerHTML = data.renderHtml;
+    }
+
+    // --- ТАЙМЕР ---
+    let timerSec = 2700; // 45:00
+    let timerInterval = null;
+    function updateTimerDisplay() {
+      const m = Math.floor(timerSec / 60).toString().padStart(2, '0');
+      const s = (timerSec % 60).toString().padStart(2, '0');
+      document.getElementById('timerDisplay').textContent = `${m}:${s}`;
+    }
+    function toggleTimer() {
+      const btn = document.getElementById('btnTimerToggle');
+      if (timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        btn.textContent = '▶';
+      } else {
+        timerInterval = setInterval(() => {
+          if (timerSec > 0) {
+            timerSec--;
+            updateTimerDisplay();
+          } else {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            btn.textContent = '▶';
+          }
+        }, 1000);
+        btn.textContent = '⏸';
+      }
+    }
+    function addTimer(sec) { timerSec += sec; updateTimerDisplay(); }
+    function resetTimer() { timerSec = 2700; updateTimerDisplay(); }
+
+    // --- ВІРТУАЛЬНИЙ КАНВАС ДЛЯ HUION З ПОВНИМ PAN & ZOOM ЯК У KRITA ---
+    const panelCanvas = document.getElementById('panelCanvas');
+    const viewportWorld = document.getElementById('viewportWorld');
+    const sheet = document.getElementById('notebookSheet');
+    const gridCanvas = document.getElementById('gridCanvas');
+    const inkCanvas = document.getElementById('inkCanvas');
+    const gCtx = gridCanvas.getContext('2d');
+    const inkCtx = inkCanvas.getContext('2d');
+    const zoomBadge = document.getElementById('zoomBadge');
+
+    let sheetWidth = 820;
+    let sheetHeight = 2600;
+
+    let currentZoom = 1.0;
+    let panX = 40;
+    let panY = 50;
+
+    let isDrawing = false;
+    let isPanning = false;
+    let isZooming = false;
+    let isSpaceDown = false;
+    let isCtrlDown = false;
+
+    let panStartX = 0, panStartY = 0;
+    let panStartWorldX = 0, panStartWorldY = 0;
+    let zoomOriginX = 0, zoomOriginY = 0;
+    let zoomStartVal = 1.0;
+    let zoomPivotCanvasX = 0, zoomPivotCanvasY = 0;
+
+    let currentTool = 'pen';
+    let currentColor = '#f8fafc';
+    let baseLineWidth = 2.4;
+    let smoothedPressure = 0.5;
+    let strokePoints = [];
+    let lastMidPoint = null;
+
+    let undoStack = [];
+    let redoStack = [];
+
+    function applyTransform() {
+      viewportWorld.style.transform = `translate(${panX}px, ${panY}px) scale(${currentZoom})`;
+      zoomBadge.textContent = `${Math.round(currentZoom * 100)}%`;
+    }
+
+    function resetZoom() {
+      currentZoom = 1.0;
+      panX = 40;
+      panY = 50;
+      applyTransform();
+    }
+
+    function resizeCanvases() {
+      gridCanvas.width = sheetWidth;
+      gridCanvas.height = sheetHeight;
+      inkCanvas.width = sheetWidth;
+      inkCanvas.height = sheetHeight;
+      drawCollegeRuledGrid();
+    }
+
+    function drawCollegeRuledGrid() {
+      gCtx.clearRect(0, 0, sheetWidth, sheetHeight);
+
+      // Лінійка 30px (College Ruled)
+      gCtx.strokeStyle = 'rgba(56, 189, 248, 0.12)';
+      gCtx.lineWidth = 1;
+
+      const lineHeight = 30;
+      for (let y = 45; y < sheetHeight; y += lineHeight) {
+        gCtx.beginPath();
+        gCtx.moveTo(0, y);
+        gCtx.lineTo(sheetWidth, y);
+        gCtx.stroke();
+      }
+
+      // Червоне ліве поле (60px)
+      gCtx.strokeStyle = 'rgba(239, 68, 68, 0.25)';
+      gCtx.lineWidth = 1.5;
+      gCtx.beginPath();
+      gCtx.moveTo(65, 0);
+      gCtx.lineTo(65, sheetHeight);
+      gCtx.stroke();
+    }
+
+    function addCanvasHeight() {
+      const img = inkCtx.getImageData(0, 0, sheetWidth, sheetHeight);
+      sheetHeight += 1000;
+      sheet.style.minHeight = sheetHeight + 'px';
+      resizeCanvases();
+      inkCtx.putImageData(img, 0, 0);
+    }
+
+    document.getElementById('btnAddLengthToolbar').onclick = addCanvasHeight;
+    document.getElementById('btnAddLengthBottom').onclick = addCanvasHeight;
+
+    function getCanvasCoords(e) {
+      const rect = panelCanvas.getBoundingClientRect();
+      return {
+        x: (e.clientX - rect.left - panX) / currentZoom,
+        y: (e.clientY - rect.top - panY) / currentZoom
+      };
+    }
+
+    function saveHistory() {
+      redoStack.length = 0;
+      if (undoStack.length >= 35) undoStack.shift();
+      undoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+    }
+
+    function undo() {
+      if (undoStack.length > 0) {
+        redoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+        inkCtx.putImageData(undoStack.pop(), 0, 0);
+      }
+    }
+    function redo() {
+      if (redoStack.length > 0) {
+        undoStack.push(inkCtx.getImageData(0, 0, sheetWidth, sheetHeight));
+        inkCtx.putImageData(redoStack.pop(), 0, 0);
+      }
+    }
+
+    // --- ОБРОБНИКИ ПОДІЙ PAN & ZOOM ТА ПИСЬМА ---
+    panelCanvas.addEventListener('pointerdown', (e) => {
+      if (e.target.closest('.canvas-toolbar') || e.target.closest('.btn-bottom-add')) return;
+
+      // Права кнопка миші на пері Huion перемикає ластик
+      if (e.button === 2) {
+        e.preventDefault();
+        setTool(currentTool === 'eraser' ? 'pen' : 'eraser');
+        return;
+      }
+
+      // 1. Zoom (Ctrl + Space + Drag)
+      if (isSpaceDown && (e.ctrlKey || isCtrlDown)) {
+        isZooming = true;
+        isDrawing = false;
+        zoomOriginX = e.clientX;
+        zoomOriginY = e.clientY;
+        zoomStartVal = currentZoom;
+        const rect = panelCanvas.getBoundingClientRect();
+        zoomPivotCanvasX = (zoomOriginX - rect.left - panX) / currentZoom;
+        zoomPivotCanvasY = (zoomOriginY - rect.top - panY) / currentZoom;
+        panelCanvas.setPointerCapture(e.pointerId);
+        return;
+      }
+
+      // 2. Pan (Пробіл або Середня кнопка миші)
+      if (isSpaceDown || e.button === 1) {
+        e.preventDefault();
+        isPanning = true;
+        isDrawing = false;
+        panStartX = e.clientX;
+        panStartY = e.clientY;
+        panStartWorldX = panX;
+        panStartWorldY = panY;
+        panelCanvas.setPointerCapture(e.pointerId);
+        return;
+      }
+
+      // 3. Письмо пером
+      if (e.target === inkCanvas || e.target === gridCanvas || e.target === sheet) {
+        if (e.buttons !== 1 && e.pointerType === 'mouse') return;
+
+        isDrawing = true;
+        saveHistory();
+
+        const coords = getCanvasCoords(e);
+        const p = (e.pressure && e.pressure > 0) ? e.pressure : 0.5;
+        smoothedPressure = p;
+        strokePoints = [{ x: coords.x, y: coords.y, pressure: p }];
+        lastMidPoint = { x: coords.x, y: coords.y };
+
+        inkCtx.save();
+        inkCtx.lineCap = 'round';
+        inkCtx.lineJoin = 'round';
+
+        if (currentTool === 'eraser') {
+          inkCtx.globalCompositeOperation = 'destination-out';
+          inkCtx.beginPath();
+          inkCtx.arc(coords.x, coords.y, 14, 0, Math.PI * 2);
+          inkCtx.fill();
+        } else if (currentTool === 'highlighter') {
+          inkCtx.globalCompositeOperation = 'source-over';
+          inkCtx.fillStyle = 'rgba(251, 191, 36, 0.35)';
+          inkCtx.fillRect(coords.x - 8, coords.y - 10, 16, 20);
+        } else {
+          inkCtx.globalCompositeOperation = 'source-over';
+          inkCtx.fillStyle = currentColor;
+          const w = Math.max(0.8, baseLineWidth * (0.4 + smoothedPressure * 0.9));
+          inkCtx.beginPath();
+          inkCtx.arc(coords.x, coords.y, w / 2, 0, Math.PI * 2);
+          inkCtx.fill();
+        }
+        inkCtx.restore();
+
+        panelCanvas.setPointerCapture(e.pointerId);
+      }
+    });
+
+    panelCanvas.addEventListener('pointermove', (e) => {
+      // 1. Драг-зум
+      if (isZooming) {
+        const delta = (zoomOriginY - e.clientY) + (e.clientX - zoomOriginX);
+        const factor = Math.pow(1.006, delta);
+        const newZoom = Math.min(3.0, Math.max(0.4, Math.round(zoomStartVal * factor * 100) / 100));
+
+        const rect = panelCanvas.getBoundingClientRect();
+        const pivotScreenX = zoomOriginX - rect.left;
+        const pivotScreenY = zoomOriginY - rect.top;
+
+        panX = Math.round(pivotScreenX - zoomPivotCanvasX * newZoom);
+        panY = Math.round(pivotScreenY - zoomPivotCanvasY * newZoom);
+        currentZoom = newZoom;
+        applyTransform();
+        return;
+      }
+
+      // 2. Панорамування (Pan)
+      if (isPanning) {
+        panX = panStartWorldX + (e.clientX - panStartX);
+        panY = panStartWorldY + (e.clientY - panStartY);
+        applyTransform();
+        return;
+      }
+
+      // 3. Малювання
+      if (!isDrawing) return;
+
+      const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+      for (const ev of events) {
+        const coords = getCanvasCoords(ev);
+        const rawP = (ev.pressure && ev.pressure > 0) ? ev.pressure : 0.5;
+        smoothedPressure = smoothedPressure * 0.65 + rawP * 0.35;
+        strokePoints.push({ x: coords.x, y: coords.y, pressure: smoothedPressure });
+        drawSmoothedSegment();
+      }
+    });
+
+    function drawSmoothedSegment() {
+      const len = strokePoints.length;
+      if (len < 2) return;
+      const p1 = strokePoints[len - 2];
+      const p2 = strokePoints[len - 1];
+      const mid = { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 };
+
+      inkCtx.save();
+      inkCtx.lineCap = 'round';
+      inkCtx.lineJoin = 'round';
+
+      if (currentTool === 'eraser') {
+        inkCtx.globalCompositeOperation = 'destination-out';
+        inkCtx.strokeStyle = 'rgba(0,0,0,1)';
+        inkCtx.lineWidth = 26;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.quadraticCurveTo(p1.x, p1.y, mid.x, mid.y);
+        inkCtx.stroke();
+      } else if (currentTool === 'highlighter') {
+        inkCtx.globalCompositeOperation = 'source-over';
+        inkCtx.strokeStyle = 'rgba(251, 191, 36, 0.35)';
+        inkCtx.lineWidth = 22;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.lineTo(mid.x, mid.y);
+        inkCtx.stroke();
+      } else {
+        inkCtx.globalCompositeOperation = 'source-over';
+        inkCtx.strokeStyle = currentColor;
+        const w = Math.max(0.8, baseLineWidth * (0.4 + p2.pressure * 0.9));
+        inkCtx.lineWidth = w;
+        inkCtx.beginPath();
+        inkCtx.moveTo(lastMidPoint.x, lastMidPoint.y);
+        inkCtx.quadraticCurveTo(p1.x, p1.y, mid.x, mid.y);
+        inkCtx.stroke();
+      }
+
+      inkCtx.restore();
+      lastMidPoint = mid;
+    }
+
+    function stopDrawing(e) {
+      if (isZooming) {
+        isZooming = false;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+        return;
+      }
+      if (isPanning) {
+        isPanning = false;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+        return;
+      }
+      if (isDrawing) {
+        isDrawing = false;
+        strokePoints = [];
+        lastMidPoint = null;
+        try { panelCanvas.releasePointerCapture(e.pointerId); } catch(err) {}
+      }
+    }
+
+    panelCanvas.addEventListener('pointerup', stopDrawing);
+    panelCanvas.addEventListener('pointercancel', stopDrawing);
+    panelCanvas.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Коліщатко миші для панорамування або зуму
+    panelCanvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (e.ctrlKey) {
+        // Зум до точки курсору
+        const rect = panelCanvas.getBoundingClientRect();
+        const cursorX = e.clientX - rect.left;
+        const cursorY = e.clientY - rect.top;
+        const canvasX = (cursorX - panX) / currentZoom;
+        const canvasY = (cursorY - panY) / currentZoom;
+
+        const zoomDelta = e.deltaY > 0 ? 0.9 : 1.1;
+        const newZoom = Math.min(3.0, Math.max(0.4, Math.round(currentZoom * zoomDelta * 100) / 100));
+
+        panX = Math.round(cursorX - canvasX * newZoom);
+        panY = Math.round(cursorY - canvasY * newZoom);
+        currentZoom = newZoom;
+        applyTransform();
+      } else {
+        // Вертикальний та горизонтальний скрол полотна
+        panY -= e.deltaY;
+        panX -= e.deltaX;
+        applyTransform();
+      }
+    }, { passive: false });
+
+    // Інструменти
+    function setTool(t) {
+      currentTool = t;
+      document.getElementById('toolPen').classList.toggle('active', t === 'pen');
+      document.getElementById('toolEraser').classList.toggle('active-eraser', t === 'eraser');
+      document.getElementById('toolHighlighter').classList.toggle('active', t === 'highlighter');
+    }
+    document.getElementById('toolPen').onclick = () => setTool('pen');
+    document.getElementById('toolEraser').onclick = () => setTool('eraser');
+    document.getElementById('toolHighlighter').onclick = () => setTool('highlighter');
+
+    document.querySelectorAll('.color-dot').forEach(dot => {
+      dot.onclick = () => {
+        document.querySelectorAll('.color-dot').forEach(d => d.classList.remove('active'));
+        dot.classList.add('active');
+        currentColor = dot.dataset.color;
+        setTool('pen');
+      };
+    });
+
+    document.getElementById('btnUndo').onclick = undo;
+    document.getElementById('btnRedo').onclick = redo;
+    document.getElementById('btnZoomReset').onclick = resetZoom;
+    document.getElementById('btnClearInk').onclick = () => {
+      if (confirm('Очистити аркуш для запису?')) {
+        saveHistory();
+        inkCtx.clearRect(0, 0, sheetWidth, sheetHeight);
+      }
+    };
+
+    // Гарячі клавіші (Space, Ctrl+Space, B, E, V, Ctrl+Z, Ctrl+Y)
+    window.addEventListener('keydown', (e) => {
+      isCtrlDown = e.ctrlKey || e.metaKey;
+
+      if (e.code === 'Space') {
+        e.preventDefault();
+        isSpaceDown = true;
+        panelCanvas.style.cursor = 'grab';
+        return;
+      }
+
+      if (e.code === 'KeyB') setTool('pen');
+      if (e.code === 'KeyE') setTool('eraser');
+      if (e.code === 'KeyV') setTool('highlighter');
+      if (isCtrlDown && e.code === 'KeyZ') { e.preventDefault(); undo(); }
+      if (isCtrlDown && e.code === 'KeyY') { e.preventDefault(); redo(); }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      isCtrlDown = e.ctrlKey || e.metaKey;
+      if (e.code === 'Space') {
+        isSpaceDown = false;
+        isPanning = false;
+        isZooming = false;
+        panelCanvas.style.cursor = 'crosshair';
+      }
+    });
+
+    // Ресайзер ширини колонок
+    const resizer = document.getElementById('centerResizer');
+    const leftPanel = document.getElementById('panelExam');
+    let isResizing = false;
+
+    resizer.addEventListener('mousedown', () => {
+      isResizing = true;
+      document.body.style.cursor = 'col-resize';
+      resizer.classList.add('dragging');
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!isResizing) return;
+      const w = (e.clientX / window.innerWidth) * 100;
+      if (w > 35 && w < 70) {
+        leftPanel.style.flex = `0 0 ${w}%`;
+        leftPanel.style.width = `${w}%`;
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      isResizing = false;
+      document.body.style.cursor = 'default';
+      resizer.classList.remove('dragging');
+    });
+
+    // --- ПОВНИЙ ЗНІМОК ВСІЄЇ РОБОТИ (УМОВА ЗАВДАННЯ + ВЕСЬ ЗОШИТ HUION БЕЗ ОБРІЗАНЬ) ---
+    function getLowestInkY() {
+      const w = inkCanvas.width;
+      const h = inkCanvas.height;
+      if (w === 0 || h === 0) return 0;
+      const imgData = inkCtx.getImageData(0, 0, w, h).data;
+      for (let y = h - 1; y >= 0; y -= 4) {
+        const rowStart = y * w * 4;
+        for (let x = 0; x < w; x += 8) {
+          if (imgData[rowStart + x * 4 + 3] > 20) {
+            return y + 10;
+          }
+        }
+      }
+      return 0;
+    }
+
+    async function generateFullSnapshotCanvas() {
+      const panel = document.getElementById('panelExam');
+      const origScrollTop = panel.scrollTop;
+      const origStyleHeight = panel.style.height;
+      const origStyleOverflow = panel.style.overflow;
+      
+      const fullHeight = panel.scrollHeight;
+      panel.scrollTop = 0;
+      panel.style.height = fullHeight + 'px';
+      panel.style.overflow = 'visible';
+
+      const scale = 1.25;
+      let leftCanvas = null;
+      if (window.html2canvas) {
+        try {
+          leftCanvas = await window.html2canvas(panel, {
+            backgroundColor: '#080d1a',
+            scale: scale,
+            useCORS: true,
+            logging: false,
+            height: fullHeight,
+            windowHeight: fullHeight,
+            scrollY: 0
+          });
+        } catch (err) {
+          console.error("Помилка захоплення лівої панелі:", err);
+        }
+      }
+      
+      // Відновлюємо вихідний стан лівої панелі
+      panel.style.height = origStyleHeight;
+      panel.style.overflow = origStyleOverflow;
+      panel.scrollTop = origScrollTop;
+
+      // 2. Висота полотна за останнім рядком написаного пером
+      const lowestLogicalY = getLowestInkY();
+      const leftLogicalH = leftCanvas ? Math.round(leftCanvas.height / scale) : 800;
+      // Висота має покривати і все завдання, і всі записи дитини
+      const neededLogicalH = Math.max(lowestLogicalY > 0 ? lowestLogicalY + 120 : 800, leftLogicalH);
+      const cropLogicalH = Math.min(sheetHeight, Math.max(neededLogicalH, 700));
+
+      const rightScaledW = Math.round(sheetWidth * scale);
+      const rightScaledH = Math.round(cropLogicalH * scale);
+
+      if (!leftCanvas) {
+        // Fallback: якщо html2canvas не спрацював, експортуємо повний аркуш зошита
+        const fallbackCanvas = document.createElement('canvas');
+        fallbackCanvas.width = rightScaledW;
+        fallbackCanvas.height = rightScaledH;
+        const fbCtx = fallbackCanvas.getContext('2d');
+        fbCtx.fillStyle = '#090e17';
+        fbCtx.fillRect(0, 0, rightScaledW, rightScaledH);
+        fbCtx.drawImage(gridCanvas, 0, 0, sheetWidth, cropLogicalH, 0, 0, rightScaledW, rightScaledH);
+        fbCtx.drawImage(inkCanvas, 0, 0, sheetWidth, cropLogicalH, 0, 0, rightScaledW, rightScaledH);
+        return fallbackCanvas;
+      }
+
+      // 3. Компоновка повного розвороту: ЛІВА ПАНЕЛЬ (ЗАВДАННЯ) + РОЗДІЛЮВАЧ + ПРАВА ПАНЕЛЬ (ЗОШИТ МІЛАНИ)
+      const dividerW = 8;
+      const totalW = leftCanvas.width + dividerW + rightScaledW;
+      const totalH = Math.max(leftCanvas.height, rightScaledH);
+
+      const compositeCanvas = document.createElement('canvas');
+      compositeCanvas.width = totalW;
+      compositeCanvas.height = totalH;
+      const compCtx = compositeCanvas.getContext('2d');
+
+      // Темний фон основи
+      compCtx.fillStyle = '#070b12';
+      compCtx.fillRect(0, 0, totalW, totalH);
+
+      // Малюємо ліву панель з умовою олімпіади
+      compCtx.drawImage(leftCanvas, 0, 0);
+
+      // Розділювач
+      compCtx.fillStyle = '#1e304b';
+      compCtx.fillRect(leftCanvas.width, 0, dividerW, totalH);
+
+      // Малюємо зошит Мілани на лінійці з усіма її написами
+      const rightX = leftCanvas.width + dividerW;
+      compCtx.fillStyle = '#090e17';
+      compCtx.fillRect(rightX, 0, rightScaledW, totalH);
+
+      compCtx.drawImage(gridCanvas, 0, 0, sheetWidth, cropLogicalH, rightX, 0, rightScaledW, rightScaledH);
+      compCtx.drawImage(inkCanvas, 0, 0, sheetWidth, cropLogicalH, rightX, 0, rightScaledW, rightScaledH);
+
+      return compositeCanvas;
+    }
+
+    async function exportFullPng() {
+      const btn = document.getElementById('btnExportPng');
+      const origHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>⏳ Збереження всієї роботи...</span>';
+      }
+
+      try {
+        const compositeCanvas = await generateFullSnapshotCanvas();
+        const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'task';
+        const link = document.createElement('a');
+        link.download = `milana_olympiad_${taskId}_full_${Date.now()}.png`;
+        link.href = compositeCanvas.toDataURL('image/png');
+        link.click();
+      } catch (err) {
+        console.error(err);
+        alert('Помилка при збереженні знімка: ' + err.message);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = origHtml;
+        }
+      }
+    }
+
+    const TG_BOT_TOKEN = "8713271082:AAGQzVKiPXw9DSpYAPNODEsaiaIQfoEjAe8";
+    let TG_CHAT_ID = "";
+
+    async function submitToAudit() {
+      const btn = document.getElementById('btnSubmitWork');
+      const origHtml = btn ? btn.innerHTML : '';
+
+      let chatId = TG_CHAT_ID || localStorage.getItem('tg_chat_id');
+      if (!chatId) {
+        chatId = prompt("Введіть ваш Telegram Chat ID для відправки викладачу / боту:", "764834479");
+        if (chatId) {
+          localStorage.setItem('tg_chat_id', chatId.trim());
+          TG_CHAT_ID = chatId.trim();
+        } else {
+          return;
+        }
+      }
+
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<span>⏳ Генерація повного знімка...</span>';
+      }
+
+      try {
+        const compositeCanvas = await generateFullSnapshotCanvas();
+        if (btn) btn.innerHTML = '<span>✈️ Відправка в Telegram...</span>';
+
+        compositeCanvas.toBlob(async (blob) => {
+          if (!blob) {
+            alert('Помилка створення файлу зображення.');
+            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+            return;
+          }
+
+          const spentSec = 2700 - timerSec;
+          const mins = Math.floor(spentSec / 60);
+          const secs = spentSec % 60;
+          const timeFormatted = mins > 0 ? `${mins} хв ${secs} с` : `${secs} с`;
+
+          const taskId = (typeof currentTaskId !== 'undefined' && currentTaskId) ? currentTaskId : 'task';
+          const taskData = (typeof olympiadDatabase !== 'undefined' && olympiadDatabase[taskId]) ? olympiadDatabase[taskId] : {};
+          const taskTitle = taskData.title || taskId;
+
+          const formData = new FormData();
+          formData.append('chat_id', chatId);
+          formData.append('photo', blob, `olympiad_${taskId}.png`);
+          formData.append('caption', `🇬🇧 ОЛІМПІАДА // АНГЛІЙСЬКА 9 КЛАС\n${taskData.stage || 'КМАН'}\n${taskTitle}\n⏱ Час виконання: ${timeFormatted}\n📝 Повна робота Мілани (умова + рукописний зошит)`);
+
+          try {
+            const resp = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendPhoto`, {
+              method: 'POST',
+              body: formData
+            });
+            const res = await resp.json();
+            if (res.ok) {
+              if (btn) {
+                btn.innerHTML = `<span>✅ Надіслано (${timeFormatted})</span>`;
+                btn.style.background = '#059669';
+                setTimeout(() => {
+                  btn.disabled = false;
+                  btn.innerHTML = origHtml;
+                  btn.style.background = '';
+                }, 5000);
+              }
+            } else {
+              throw new Error(res.description);
+            }
+          } catch(err) {
+            alert('Повідомлення збережено! (Telegram: ' + err.message + '). Файл повної роботи зараз скачається на диск.');
+            const link = document.createElement('a');
+            link.download = `milana_olympiad_${currentTaskId}_full_${Date.now()}.png`;
+            link.href = compositeCanvas.toDataURL('image/png');
+            link.click();
+            if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+          }
+        }, 'image/png');
+      } catch (err) {
+        alert('Помилка створення знімка: ' + err.message);
+        if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+      }
+    }
+
+    // Завантаження при старті
+    window.onload = () => {
+      resizeCanvases();
+      applyTransform();
+      switchTask('s1_t2');
+      updateTimerDisplay();
+    };
+  </script>
+</body>
+</html>
