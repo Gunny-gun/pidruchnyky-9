@@ -298,6 +298,327 @@
       font-size: 13px;
     }
 
+    
+    /* --- SPEAKING COMPREHENSION HUB (20 ОЛІМПІАДНИХ ТЕМ) --- */
+    .speaking-hub {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .speaking-strategy-card {
+      background: linear-gradient(135deg, rgba(14,23,42,0.95) 0%, rgba(26,38,64,0.95) 100%);
+      border: 1.5px solid #38bdf8;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.4);
+    }
+    .speaking-strategy-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .strategy-badge {
+      font-size: 11px;
+      font-weight: 800;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 3px 8px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .strategy-timing-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .timing-pill {
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      background: #111a2e;
+      border: 1px solid #233554;
+      color: #cbd5e1;
+    }
+    .timing-pill b { color: #f59e0b; }
+    .peel-accordion-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #f1f5f9;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .peel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .peel-cell {
+      background: #0d1527;
+      border: 1px solid #1e304b;
+      border-radius: 7px;
+      padding: 8px 10px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .peel-cell-title {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    .peel-cell-title.p { color: #38bdf8; }
+    .peel-cell-title.e1 { color: #10b981; }
+    .peel-cell-title.e2 { color: #f59e0b; }
+    .peel-cell-title.l { color: #a855f7; }
+
+    /* Панель вибору картки */
+    .speaking-selector-bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: #0e172a;
+      border: 1.5px solid #2b3d5b;
+      border-radius: 9px;
+      padding: 10px 14px;
+      flex-wrap: wrap;
+    }
+    .speaking-dropdown {
+      flex: 1;
+      min-width: 280px;
+      background: #131d31;
+      border: 1.5px solid #3b82f6;
+      color: #f8fafc;
+      font-family: 'Nunito', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 8px 12px;
+      border-radius: 7px;
+      cursor: pointer;
+      outline: none;
+    }
+    .btn-speaking-action {
+      background: #172338;
+      border: 1px solid #2d4368;
+      color: #cbd5e1;
+      padding: 7px 12px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s;
+    }
+    .btn-speaking-action:hover {
+      background: #1e304b;
+      border-color: #38bdf8;
+      color: #fff;
+    }
+    .btn-speaking-action.amber {
+      border-color: rgba(245, 158, 11, 0.4);
+      color: #fcd34d;
+    }
+    .btn-speaking-action.amber:hover {
+      background: #78350f;
+      border-color: #f59e0b;
+      color: #fff;
+    }
+
+    /* Відображення активної картки */
+    .speaking-card-box {
+      background: #0d1527;
+      border: 1.5px solid #1e304b;
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .speaking-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 10px;
+      gap: 10px;
+    }
+    .card-number-badge {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      color: #f59e0b;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+    .card-title-main {
+      font-size: 17px;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.3;
+    }
+    .card-title-ua {
+      font-size: 13px;
+      color: #94a3b8;
+      font-weight: 700;
+      margin-top: 2px;
+    }
+    .card-theme-tag {
+      font-size: 11px;
+      font-weight: 800;
+      color: #a855f7;
+      background: rgba(168, 85, 247, 0.12);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      padding: 3px 8px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    /* Офіційний промпт */
+    .card-prompt-banner {
+      background: #111a2e;
+      border-left: 4px solid #38bdf8;
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13.5px;
+      color: #e2e8f0;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+    .card-prompt-banner b { color: #38bdf8; }
+
+    /* Обов'язкові підпункти */
+    .card-subquestions-box {
+      background: #0a0f1d;
+      border: 1px solid #1a273e;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .section-mini-head {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      color: #38bdf8;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .subq-item {
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #172338;
+    }
+    .subq-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .subq-letter {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      line-height: 20px;
+      text-align: center;
+      border-radius: 50%;
+      background: #1e293b;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      font-weight: 800;
+      font-size: 11px;
+      margin-right: 6px;
+    }
+    .subq-en { font-size: 13px; font-weight: 700; color: #f1f5f9; }
+    .subq-ua { font-size: 12px; color: #94a3b8; margin-top: 2px; padding-left: 28px; }
+
+    /* Вокабуляр */
+    .card-vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 8px;
+    }
+    .vocab-pill-box {
+      background: #111a2f;
+      border: 1px solid #20314d;
+      border-radius: 7px;
+      padding: 8px 10px;
+      transition: all 0.15s;
+    }
+    .vocab-pill-box:hover { border-color: #10b981; }
+    .vocab-phrase {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #10b981;
+      font-family: 'Fira Code', monospace;
+    }
+    .vocab-trans { font-size: 11.5px; color: #e2e8f0; font-weight: 600; margin-top: 2px; }
+    .vocab-note { font-size: 11px; color: #64748b; font-style: italic; margin-top: 1px; }
+
+    /* Матриця PEEL для цієї теми */
+    .peel-blueprint-box {
+      background: #0b1120;
+      border: 1px solid #1f2f4a;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .peel-step {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 8px;
+      align-items: flex-start;
+    }
+    .peel-step:last-child { margin-bottom: 0; }
+    .peel-tag {
+      font-family: 'Fira Code', monospace;
+      font-weight: 900;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      min-width: 52px;
+      text-align: center;
+    }
+    .peel-tag.p { background: rgba(56, 189, 248, 0.15); border: 1px solid #38bdf8; color: #38bdf8; }
+    .peel-tag.e1 { background: rgba(16, 185, 129, 0.15); border: 1px solid #10b981; color: #10b981; }
+    .peel-tag.e2 { background: rgba(245, 158, 11, 0.15); border: 1px solid #f59e0b; color: #f59e0b; }
+    .peel-tag.l { background: rgba(168, 85, 247, 0.15); border: 1px solid #a855f7; color: #a855f7; }
+    .peel-text { font-size: 12.5px; line-height: 1.45; color: #cbd5e1; }
+
+    /* Еталонний зразок монологу */
+    .model-answer-box {
+      background: #10192e;
+      border: 1px solid #253754;
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+    .model-text {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #f1f5f9;
+      font-style: italic;
+    }
+    .followup-box {
+      background: #090e19;
+      border: 1px solid #19273c;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .followup-q {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+    .followup-q b { color: #f59e0b; }
+
     /* СПЛІТТЕР */
     .resizer {
       width: 8px;
@@ -1124,32 +1445,236 @@
       s2_speaking: {
         stage: "ІІ ЕТАП (МІСЬКИЙ)",
         meta: "Київська МАН • Speaking Test Year 9 (20 карток)",
-        title: "ІІ Етап. Speaking Test (1 хв на підготовку • 2 хв відповідь)",
-        instruction: "Select one topic from the official 20 cards below. Prepare your bullet points on the right sheet and present your answer.",
-        renderHtml: `
-          <div class="exam-options-grid" style="display:grid; grid-template-columns:1fr; gap:10px;">
-            <div class="question-card"><b>1. Photography:</b> Talk about the kind of photos you like taking. Holiday photos, favourite school days photo.</div>
-            <div class="question-card"><b>2. Future Plans:</b> Plans after classes today, this weekend, cooking, holiday destinations.</div>
-            <div class="question-card"><b>3. Free Time:</b> Leisure activities, new hobbies you’d like to start, playing instruments/sports.</div>
-            <div class="question-card"><b>4. Food Habits:</b> Favourite food, fresh fruit/vegetables, childhood tastes vs today.</div>
-            <div class="question-card"><b>5. Future Work:</b> Would you like to own a business? Life without work? Working in another country.</div>
-            <div class="question-card"><b>6. Chuck Palahniuk Quote:</b> «The only reason why we ask other people how their weekend was is so we can tell them about our own.» Do you agree?</div>
-            <div class="question-card"><b>7. Typical Day:</b> Morning routine, lessons schedule, after-class activities.</div>
-            <div class="question-card"><b>8. Weather:</b> Changing climate over past decades, how weather affects emotions and plans.</div>
-            <div class="question-card"><b>9. Cinema & Streaming:</b> Watching online vs cinema, favourite genres, films in English.</div>
-            <div class="question-card"><b>10. City Transport:</b> Safest and favourite method of transport, public transit in your town.</div>
-            <div class="question-card"><b>11. School Life:</b> Easiest vs hardest subjects, discipline and school rules.</div>
-            <div class="question-card"><b>12. Reading Books:</b> Paper books vs Internet, reading in English, emotional connection to literature.</div>
-            <div class="question-card"><b>13. Holidays:</b> Last summer experiences, travel style, future journeys.</div>
-            <div class="question-card"><b>14. Museums:</b> Best museum visited, should museums be free, museums for teenagers.</div>
-            <div class="question-card"><b>15. Restaurants:</b> Restaurant food quality, restaurant ideas, service complaints.</div>
-            <div class="question-card"><b>16. Mobile Phones:</b> Teenagers and screen time, phones while driving, life without smartphones.</div>
-            <div class="question-card"><b>17. Sports:</b> Keeping fit, friendships through sport, playing vs watching.</div>
-            <div class="question-card"><b>18. Shopping Habits:</b> Online shopping vs physical shops, worst shopping experience.</div>
-            <div class="question-card"><b>19. London:</b> Life in London, tourist spots, expensive vs cheap city, would you live there?</div>
-            <div class="question-card"><b>20. Studies & English:</b> How Internet changed learning, advice on how to master English.</div>
+        title: "ІІ Етап. Speaking Test (1 хв підготовка • 2 хв відповідь)",
+        instruction: "Оберіть будь-яку з 20 офіційних карток нижче або натисніть [ 🎲 Витягнути наосліп ]. Використовуйте інженерну матрицю PEEL, банк лексики B2 та еталонні зразки. На правому аркуші Huion фіксуйте опорні тези.",
+        renderHtml: renderSpeakingHubHtml()
+      }
+    };
+
+    
+    // =========================================================================
+    // БАЗА ДАНИХ ТА ДВИГУН ДЛЯ 20 ОЛІМПІАДНИХ КАРТОК УСНОГО МОВЛЕННЯ (SPEAKING)
+    // =========================================================================
+    const SPEAKING_CARDS_DATA = [{"num": 1, "titleEn": "Photography & Visual Memories", "titleUa": "Фотографія та візуальна пам'ять", "themeTag": "Art & Media • B2 First", "prompt": "Talk about photography in your life, the types of photos you prefer taking, and whether smartphone cameras have degraded the artistic value of taking pictures.", "subquestions": [{"letter": "a", "qEn": "What kind of photos do you prefer taking and why (landscapes, candid street shots, portraits)?", "qUa": "Які знімки ви полюбляєте робити найбільше та з якої причини (пейзажі, репортажні вуличні фото, портрети)?"}, {"letter": "b", "qEn": "Describe a particularly memorable photograph from your holidays or school years and the story behind it.", "qUa": "Опишіть пам'ятне фото з вашого відпочинку або шкільних років та історію, що стоїть за ним."}, {"letter": "c", "qEn": "Do you believe digital photography and instant social media sharing have made visual art too superficial?", "qUa": "Чи вважаєте ви, що цифрова фотографія та соцмережі знецінили візуальне мистецтво, зробивши його поверховим?"}], "peel": {"point": "In my view, photography is not merely about pressing a button; it is a profound tool for freezing authentic, unscripted moments in time.", "explanation": "With the rise of smartphones, people often take hundreds of staged selfies, which diminishes emotional depth. However, candid street photography retains genuine human connections and nostalgia.", "example": "For instance, my favourite picture is an unposed snapshot of my classmates laughing in the rain during our trip to the Carpathians, capturing raw, unfiltered happiness.", "link": "Therefore, although technology has popularized casual photo-taking, intentional photography remains a priceless emotional anchor."}, "vocab": [{"phrase": "candid photography", "trans": "непостановочна / репортажна зйомка", "note": "capturing spontaneous, natural moments without posing"}, {"phrase": "freeze a moment in time", "trans": "зупинити мить у часі", "note": "preserving a transient experience permanently"}, {"phrase": "the golden hour", "trans": "золота година (м'яке сонячне світло)", "note": "the period just after sunrise or before sunset"}, {"phrase": "sentimental value", "trans": "сентиментальна / пам'ятна цінність", "note": "emotional worth attached to an item or memory"}, {"phrase": "staged portraits", "trans": "постановочні портрети", "note": "deliberately arranged and artificial photos"}, {"phrase": "evoke nostalgia", "trans": "викликати ностальгію", "note": "to bring back bittersweet recollections of the past"}], "modelAnswer": "From my perspective, photography is far more than a leisure pursuit—it is an art form capable of freezing fleeting moments in time. Personally, I am deeply drawn to candid street photography and natural landscapes rather than staged portraits. Capturing unscripted facial expressions during the golden hour allows me to preserve genuine human emotion. A vivid example is a photo from our school hiking trip: nobody looked at the lens, yet the spontaneous joy in that frame holds immense sentimental value. While critics argue that instant smartphone snapping has made modern photography superficial, I am convinced that intentional visual storytelling will never lose its artistic integrity.", "followUp": [{"qEn": "Would you ever consider printing your digital photos into a physical photo album?", "qUa": "Чи друкували б ви цифрові знімки у фізичний фотоальбом?"}, {"qEn": "How do photo filters and retouching apps alter our perception of reality?", "qUa": "Як фотофільтри та ретуш спотворюють наше сприйняття реальності?"}]}, {"num": 2, "titleEn": "Future Plans & Culinary Autonomy", "titleUa": "Плани на майбутнє та життєва автономія", "themeTag": "Personal Life & Independence • B2 First", "prompt": "Outline your short-term schedule, your ability to handle domestic responsibilities independently, and your long-term travel ambitions.", "subquestions": [{"letter": "a", "qEn": "What specific tasks and leisure activities have you mapped out for this evening and the upcoming weekend?", "qUa": "Які завдання та дозвілля ви запланували на сьогоднішній вечір та найближчі вихідні?"}, {"letter": "b", "qEn": "How confident are you with preparing wholesome meals and managing household responsibilities without parental assistance?", "qUa": "Наскільки впевнено ви готуєте повноцінні страви та ведете побут без допомоги батьків?"}, {"letter": "c", "qEn": "If financial and logistical barriers were removed, which exotic destination would you visit first and why?", "qUa": "Якби не було фінансових обмежень, яку країну чи місто ви відвідали б насамперед?"}], "peel": {"point": "Establishing personal autonomy through disciplined planning and basic domestic skills is fundamental for every teenager.", "explanation": "Being capable of cooking nutritious meals and structuring one's weekend ensures self-reliance and prevents chaotic burnout.", "example": "For instance, this weekend I plan to prepare homemade pasta while balancing academic revisions and a long cycling session in the city park.", "link": "Ultimately, acquiring practical life skills now lays the groundwork for independent living and confident global travel."}, "vocab": [{"phrase": "map out an itinerary / plans", "trans": "детально розпланувати плани", "note": "to structure future actions methodically"}, {"phrase": "wholesome culinary habits", "trans": "здорові кулінарні звички", "note": "cooking nutritious, balanced home-cooked meals"}, {"phrase": "domestic self-reliance", "trans": "побутова самостійність", "note": "managing household tasks without relying on others"}, {"phrase": "off the beaten track", "trans": "поза туристичними маршрутами", "note": "exploring secluded, authentic places"}, {"phrase": "strike a harmonious balance", "trans": "знайти гармонійний баланс", "note": "achieving equilibrium between duty and leisure"}, {"phrase": "broaden one's horizons", "trans": "розширювати власний кругозір", "note": "gaining fresh perspectives through exploration"}], "modelAnswer": "As far as my future plans are concerned, I believe that striking a harmonious balance between disciplined duty and genuine recreation is essential. This evening, I intend to finish my mathematical problem sets before dedicating the weekend to domestic self-reliance. I take pride in preparing wholesome, nutritious meals from scratch rather than relying on takeout. Looking further ahead, my ultimate dream destination is Norway; exploring its dramatic fjords off the beaten track would broaden my horizons immensely. Learning to navigate everyday household responsibilities independently gives me the confidence to pursue such ambitious journeys in adulthood.", "followUp": [{"qEn": "Do you believe teenagers today are less self-sufficient than previous generations?", "qUa": "Чи вважаєте ви, що сучасні підлітки менш самостійні за попередні покоління?"}, {"qEn": "How does setting strict daily goals influence mental well-being?", "qUa": "Як суворе планування дня впливає на психологічний стан?"}]}, {"num": 3, "titleEn": "Free Time, Hobbies & Personal Identity", "titleUa": "Вільний час, хобі та самовираження", "themeTag": "Personal Identity • B2 First", "prompt": "Discuss the significance of leisure activities, whether modern hobbies help develop personality, and what new creative pursuits you aspire to explore.", "subquestions": [{"letter": "a", "qEn": "How do you systematically allocate time for recreation amidst intense academic demands?", "qUa": "Як ви розподіляєте час на відпочинок в умовах інтенсивного навчального навантаження?"}, {"letter": "b", "qEn": "What new skill, musical instrument, or creative hobby would you be eager to master in the near future?", "qUa": "Яку нову навичку, музичний інструмент чи хобі ви хотіли б опанувати найближчим часом?"}, {"letter": "c", "qEn": "Can a leisure pursuit truly define an individual's character or even evolve into a lifelong vocation?", "qUa": "Чи здатне захоплення сформувати характер людини або навіть перерости у справу всього життя?"}], "peel": {"point": "Engaging in purposeful hobbies is not merely a way to pass time; it is an incubator for self-discovery and resilience.", "explanation": "When students face rigorous academic pressure, creative pursuits stimulate divergent thinking and provide a crucial emotional release.", "example": "To illustrate, learning to play digital piano has taught me patience, as mastering complex rhythms demands iterative practice and acute focus.", "link": "Consequently, hobbies frequently transition from casual pastimes into professional callings and enduring core values."}, "vocab": [{"phrase": "unwind after a strenuous day", "trans": "розслабитися після виснажливого дня", "note": "to decompress and release stress effectively"}, {"phrase": "take up a challenging hobby", "trans": "зайнятися новим захопленням", "note": "to initiate learning a new discipline or craft"}, {"phrase": "hone creative skills", "trans": "відточувати творчі навички", "note": "to polish and perfect specific technical abilities"}, {"phrase": "creative outlet", "trans": "творча віддушина", "note": "a channel to express emotions and original thoughts"}, {"phrase": "divergent thinking", "trans": "дивергентне / нестандартне мислення", "note": "generating multifaceted solutions to problems"}, {"phrase": "lifelong vocation", "trans": "покликання всього життя", "note": "a career pursued with passion and moral dedication"}], "modelAnswer": "In today’s fast-paced world, carving out time for leisure is vital for mental rejuvenation. Amidst a rigorous academic curriculum, I view pastimes not as wasted hours, but as an indispensable creative outlet. Personally, I would love to take up acoustic guitar, as honing musical rhythm cultivates patience and disciplined focus. Historically, countless innovators turned their adolescent hobbies into lifelong vocations. When teenagers immerse themselves in artistic or athletic pursuits, they cultivate divergent thinking and define their true character. Therefore, meaningful recreation is the catalyst that transforms routine studying into well-rounded personal growth.", "followUp": [{"qEn": "Is it better to master one single hobby or experiment with multiple interests?", "qUa": "Що краще: досконало володіти одним хобі чи пробувати багато різних?"}, {"qEn": "Has social media commercialized hobbies to the point of ruining their fun?", "qUa": "Чи призвела комерціалізація хобі в соцмережах до втрати щирого задоволення?"}]}, {"num": 4, "titleEn": "Food Habits, Nutrition & Taste Evolution", "titleUa": "Харчові звички, раціон та зміна смаків", "themeTag": "Health & Lifestyle • B2 First", "prompt": "Examine dietary patterns among teenagers, the importance of wholesome ingredients, and how taste preferences transform over time.", "subquestions": [{"letter": "a", "qEn": "What are your everyday food habits and how mindfully do you select nutritious ingredients?", "qUa": "Які ваші щоденні звички у харчуванні та наскільки усвідомлено ви обираєте корисні продукти?"}, {"letter": "b", "qEn": "Why are fresh vegetables, hydration, and home-cooked meals essential for cognitive function in school?", "qUa": "Чому свіжі овочі, баланс води та домашня їжа критично важливі для розумової праці у школі?"}, {"letter": "c", "qEn": "How have your personal food preferences transformed compared to your early childhood?", "qUa": "Як змінилися ваші смакові уподобання порівняно з раннім дитинством?"}], "peel": {"point": "Developing mindful dietary habits is a cornerstone of sustained academic stamina and cognitive sharpness.", "explanation": "Consuming heavily processed food loaded with refined sugars causes rapid energy spikes followed by lethargy, whereas balanced nutrition ensures steady focus.", "example": "In my childhood, I adamantly rejected broccoli and spinach, yet today I actively incorporate green vegetables and lean proteins into my daily meals.", "link": "Thus, maturing as an individual inevitably involves cultivating an appreciative palate for wholesome, functional nutrition."}, "vocab": [{"phrase": "wholesome nutrition", "trans": "повноцінне, здорове харчування", "note": "unprocessed foods rich in vital micro-nutrients"}, {"phrase": "acquire a taste for", "trans": "полюбити / звикнути до нового смаку", "note": "to develop an appreciation for foods previously disliked"}, {"phrase": "cut down on processed snacks", "trans": "скоротити споживання напівфабрикатів", "note": "to limit chips, sodas, and fast food"}, {"phrase": "cognitive stamina", "trans": "розумова витривалість", "note": "sustained mental concentration during complex tasks"}, {"phrase": "dietary mindfulness", "trans": "усвідомленість у харчуванні", "note": "conscious understanding of what one consumes"}, {"phrase": "refined sugars", "trans": "очищений цукор", "note": "empty carbohydrates that induce energy crashes"}], "modelAnswer": "It is widely acknowledged that you are what you eat, and for teenagers, wholesome nutrition is the bedrock of cognitive stamina. Personally, I strive to practice dietary mindfulness by prioritizing fresh vegetables, fruits, and home-cooked dishes over processed fast food. Interestingly, as I have matured, I have acquired a taste for foods I once despised as a child, such as steamed vegetables and natural dairy. Consuming refined sugars may offer fleeting gratification, but it invariably leads to sluggishness during demanding school exams. In summary, making conscious nutritional choices is a non-negotiable prerequisite for physical vitality and mental clarity.", "followUp": [{"qEn": "Should governments impose higher taxes on fast food and sugary sodas?", "qUa": "Чи мають уряди підвищувати податки на фастфуд та солодкі газовані напої?"}, {"qEn": "Why do many teenagers skip breakfast despite its proven cognitive benefits?", "qUa": "Чому багато підлітків пропускають сніданок, попри його користь?"}]}, {"num": 5, "titleEn": "Future Career, Work Ethic & Entrepreneurship", "titleUa": "Майбутня кар'єра, підприємництво та баланс життя", "themeTag": "Society & Economy • B2 First", "prompt": "Evaluate the prospects of founding your own start-up versus working in an established company, work-life balance, and overseas opportunities.", "subquestions": [{"letter": "a", "qEn": "Would you aspire to establish your own entrepreneurial venture, or do you prefer the stability of an established corporate role?", "qUa": "Ви б хотіли створити власний стартап чи обрали б стабільність у великій компанії?"}, {"letter": "b", "qEn": "What is your stance on the modern work-life balance controversy: can one achieve greatness without workaholism?", "qUa": "Яка ваша позиція щодо балансу роботи й життя: чи можливо досягти висот без трудоголізму?"}, {"letter": "c", "qEn": "What are the undeniable benefits and emotional hurdles of working or studying in a foreign country?", "qUa": "Які головні переваги та емоційні труднощі роботи чи навчання за кордоном?"}], "peel": {"point": "While entrepreneurship offers unparalleled creative freedom, it requires immense emotional fortitude compared to traditional employment.", "explanation": "Launching a venture forces an individual to shoulder total accountability for failures, whereas corporate careers provide structured security at the expense of autonomy.", "example": "For instance, witnessing how tech innovators develop AI-driven solutions inspires me to pursue independent problem-solving rather than executing repetitive tasks.", "link": "Regardless of the chosen path, guarding one's work-life balance is crucial to prevent early professional burnout."}, "vocab": [{"phrase": "entrepreneurial mindset", "trans": "підприємницький склад мислення", "note": "innovative, risk-tolerant approach to opportunities"}, {"phrase": "climb the corporate ladder", "trans": "робити кар'єру у корпорації", "note": "to progress through hierarchy in an established company"}, {"phrase": "work-life balance", "trans": "баланс роботи та особистого життя", "note": "harmonizing career ambitions with well-being"}, {"phrase": "professional burnout", "trans": "професійне вигорання", "note": "severe exhaustion caused by chronic work overload"}, {"phrase": "lucrative career prospects", "trans": "прибуткові кар'єрні перспективи", "note": "financially rewarding occupational trajectories"}, {"phrase": "shoulder full accountability", "trans": "нести повну відповідальність", "note": "accepting total ownership of outcomes and decisions"}], "modelAnswer": "When contemplating my future professional trajectory, I am drawn to fostering an entrepreneurial mindset rather than simply climbing the corporate ladder. While working for a prestigious corporation guarantees predictable stability, establishing an independent venture offers the liberty to solve pressing social challenges. Nevertheless, one must shoulder full accountability for every setback. Moreover, I am convinced that pursuing a lucrative career must never come at the expense of a healthy work-life balance. Working abroad temporarily could provide invaluable cross-cultural insights, yet applying that expertise back home to rebuild and modernize Ukraine remains my ultimate ambition.", "followUp": [{"qEn": "Will artificial intelligence eliminate more white-collar jobs than it creates?", "qUa": "Чи знищить штучний інтелект більше офісних професій, ніж створить?"}, {"qEn": "Is a university diploma still essential for building a successful modern business?", "qUa": "Чи потрібен університетський диплом для створення успішного бізнесу сьогодні?"}]}, {"num": 6, "titleEn": "Chuck Palahniuk Quote on Social Small Talk", "titleUa": "Філософський аналіз цитати Чака Поланіка про спілкування", "themeTag": "Philosophy & Communication • B2 First", "prompt": "Reflect on Chuck Palahniuk's statement: «The only reason why we ask other people how their weekend was is so we can tell them about our own.»", "subquestions": [{"letter": "a", "qEn": "Do you concur with Palahniuk’s cynical observation regarding human conversational motives?", "qUa": "Чи погоджуєтесь ви з цинічним спостереженням Поланіка щодо мотивів людської бесіди?"}, {"letter": "b", "qEn": "Is routine small talk an empty superficial ritual, or does it serve as vital social lubricant in communities?", "qUa": "Чи є повсякденний small talk порожнім ритуалом, чи це необхідний соціальний клей?"}, {"letter": "c", "qEn": "What distinguishes an empathetic, active listener from someone who merely awaits their turn to speak?", "qUa": "Що відрізняє щирого слухача від людини, яка просто чекає своєї черги висловитися?"}], "peel": {"point": "Palahniuk’s provocative quote highlights an uncomfortable truth about human self-absorption, yet it overlooks genuine empathy.", "explanation": "Often, casual inquiries function as conversational currency to redirect the spotlight back onto one's ego. However, authentic relationships thrive on selfless listening.", "example": "In my school environment, I observe that the most respected friends are those who ask open questions and validate others' feelings without boasting about themselves.", "link": "Therefore, while superficial small talk can be self-serving, conscious communication transforms everyday dialogue into profound human connection."}, "vocab": [{"phrase": "cynical observation", "trans": "цинічне спостереження", "note": "a perspective rooted in distrust of human altruism"}, {"phrase": "social lubricant / glue", "trans": "соціальне мастило / клей спілкування", "note": "polite conventions that prevent friction in interactions"}, {"phrase": "engage in superficial small talk", "trans": "вести поверхову світську бесіду", "note": "light conversation without genuine depth"}, {"phrase": "redirect the spotlight onto oneself", "trans": "переводити увагу на власну персону", "note": "monopolizing a conversation egocentrically"}, {"phrase": "active and empathetic listening", "trans": "активне та емпатійне слухання", "note": "fully understanding and supporting the speaker"}, {"phrase": "conversational etiquette", "trans": "етикет ведення бесіди", "note": "unwritten cultural rules governing polite dialogue"}], "modelAnswer": "Chuck Palahniuk’s provocative statement delivers a razor-sharp critique of modern conversational etiquette. To a certain extent, I concede with his cynical observation: people frequently engage in small talk merely as an excuse to redirect the spotlight onto themselves. However, reducing all human dialogue to narcissism is an oversimplification. Casual inquiries like 'How was your weekend?' function as essential social lubricant, breaking the ice between individuals. What truly matters is active, empathetic listening—listening to understand rather than simply awaiting your turn to speak. In conclusion, while ego-driven interactions abound, genuine empathy remains the cornerstone of meaningful human connection.", "followUp": [{"qEn": "How has instant messaging altered our capacity for deep, face-to-face conversations?", "qUa": "Як месенджери змінили нашу здатність до глибокого живого спілкування?"}, {"qEn": "Why is active listening considered one of the rarest leadership qualities today?", "qUa": "Чому вміння слухати вважається однією з найрідкісніших лідерських рис?"}]}, {"num": 7, "titleEn": "Typical Day & Cognitive Overload Management", "titleUa": "Розпорядок дня та протидія перевантаженню", "themeTag": "Personal Life & Productivity • B2 First", "prompt": "Walk through your weekday schedule, academic workload, and strategies for avoiding chronic fatigue and cognitive burnout.", "subquestions": [{"letter": "a", "qEn": "Describe the chronometer of your typical weekday from morning awakening to bedtime.", "qUa": "Опишіть хронометраж вашого типового буднього дня від підйому до відходу до сну."}, {"letter": "b", "qEn": "How do you strategically prioritize multiple assignments when homework demands seem insurmountable?", "qUa": "Як ви розставляєте пріоритети, коли обсяг домашніх завдань здається непідйомним?"}, {"letter": "c", "qEn": "What specific adjustment to your daily timetable would yield the greatest improvement in your health?", "qUa": "Яка зміна в розкладі принесла б найбільшу користь вашому здоров'ю?"}], "peel": {"point": "Surviving the demanding academic regimen of 9th grade requires disciplined time blocking rather than frantic multitasking.", "explanation": "Attempting to tackle all tasks simultaneously leads to decision fatigue, whereas tackling complex analytical work first preserves focus.", "example": "Personally, my alarm rings at 6:45 AM, and I dedicate my late afternoons to high-priority subjects like math and English before permitting any screen leisure.", "link": "Thus, prioritizing adequate sleep and rigid prioritization is the ultimate shield against adolescent exhaustion."}, "vocab": [{"phrase": "stick to a rigorous schedule", "trans": "дотримуватися суворого графіка", "note": "maintaining disciplined daily time allocations"}, {"phrase": "burn the midnight oil", "trans": "засиджуватися за навчанням до ночі", "note": "working late into the night repeatedly"}, {"phrase": "prioritize demanding tasks", "trans": "пріоритезувати складні завдання", "note": "allocating primary energy to high-impact work"}, {"phrase": "decision fatigue", "trans": "втома від прийняття рішень", "note": "mental deterioration resulting from excessive choices"}, {"phrase": "circadian rhythm", "trans": "циркадний біологічний ритм", "note": "natural internal 24-hour sleep-wake cycle"}, {"phrase": "time-blocking technique", "trans": "техніка часових блоків", "note": "scheduling dedicated uninterrupted chunks of focus"}], "modelAnswer": "Navigating the demanding schedule of a 9th-grade student requires adhering to a rigorous daily routine. My day commences at 6:45 AM, followed by intensive school classes until the mid-afternoon. To prevent decision fatigue and avoid burning the midnight oil, I implement a time-blocking strategy, tackling my most intellectually challenging assignments—such as mathematics and English—first. If I could introduce one structural reform to my schedule, I would adjust school start times by 45 minutes to align with adolescent circadian rhythms. Ultimately, mastering the art of prioritization ensures that academic excellence does not jeopardize physical well-being.", "followUp": [{"qEn": "Do you believe adolescents should be assigned extensive homework on weekends?", "qUa": "Чи повинні підлітки отримувати великі обсяги домашнього завдання на вихідні?"}, {"qEn": "How does physical exercise help alleviate mental stress after a heavy school day?", "qUa": "Як фізична активність знімає розумове напруження після школи?"}]}, {"num": 8, "titleEn": "Weather, Climate Shifts & Emotional States", "titleUa": "Погода, кліматичні зміни та емоційний стан", "themeTag": "Environment & Psychology • B2 First", "prompt": "Examine how weather conditions impact human productivity, observable shifts in seasonal climate, and ecological responsibility.", "subquestions": [{"letter": "a", "qEn": "How have weather patterns in your home region noticeably shifted over your lifetime?", "qUa": "Як помітно змінилися погодні умови у вашому регіоні за час вашого життя?"}, {"letter": "b", "qEn": "To what extent do prolonged overcast skies and rainy weather dictate your mood and mental agility?", "qUa": "Наскільки затяжні похмурі дні та дощі впливають на ваш настрій та працездатність?"}, {"letter": "c", "qEn": "What pragmatic steps can individual teenagers adopt to mitigate urban environmental degradation?", "qUa": "Які практичні кроки можуть робити підлітки для покращення екології рідного міста?"}], "peel": {"point": "The state of the weather exerts a profound influence on human biochemistry and seasonal productivity.", "explanation": "Diminished sunlight during gloomy autumn months reduces serotonin and dopamine levels, frequently triggering seasonal affective disorder and lethargy.", "example": "Furthermore, winters in Kyiv have become remarkably milder with erratic rainfall instead of crisp snow, proving tangible local climate instability.", "link": "Consequently, acknowledging meteorological effects helps us manage our energy while championing eco-friendly urban habits."}, "vocab": [{"phrase": "unpredictable weather anomalies", "trans": "непередбачувані погодні аномалії", "note": "erratic meteorological phenomena"}, {"phrase": "feel under the weather", "trans": "почуватися нездужалим / пригніченим", "note": "experiencing mild sickness or emotional low"}, {"phrase": "seasonal affective disorder", "trans": "сезонний емоційний розлад", "note": "mood depression linked to lack of natural sunlight"}, {"phrase": "carbon footprint", "trans": "вуглецевий слід", "note": "the total greenhouse gas emissions caused by an action"}, {"phrase": "erratic precipitation", "trans": "нерегулярні опади", "note": "irregular and intense rainfall or snowfall patterns"}, {"phrase": "climate resilience", "trans": "кліматична стійкість", "note": "the capacity to withstand environmental stress"}], "modelAnswer": "It is undeniable that meteorological phenomena exert a substantial influence on human biochemistry and emotional agility. Personally, prolonged overcast skies make me feel somewhat under the weather, as the lack of natural sunlight hampers cognitive drive. Beyond psychological effects, our local climate has undergone drastic transformations over the past decade. Winters have turned remarkably mild with erratic precipitation, bearing witness to global climate shifts. As teenagers, we cannot remain passive bystanders; reducing single-use plastics and adopting green commuting can diminish our collective carbon footprint. In summary, respecting nature’s rhythms is directly tied to our planet's survival.", "followUp": [{"qEn": "Can modern technology ever grant humans total control over weather anomalies?", "qUa": "Чи зможуть технології дати людині повний контроль над погодними аномаліями?"}, {"qEn": "How can architecture and city planning mitigate extreme urban heat in the summer?", "qUa": "Як архітектура та планування міст можуть зменшити літню міську спеку?"}]}, {"num": 9, "titleEn": "Cinema, Streaming Platforms & Original Audio", "titleUa": "Кінематограф, стримінг та мова оригіналу", "themeTag": "Culture & Media • B2 First", "prompt": "Compare the traditional cinema experience with digital streaming, and evaluate the role of original English audio in language learning.", "subquestions": [{"letter": "a", "qEn": "Do you prefer the theatrical ambiance of a cinema or the convenience of on-demand home streaming platforms?", "qUa": "Що ви обираєте: атмосферу кінотеатру чи зручність домашніх стримінгових сервісів?"}, {"letter": "b", "qEn": "What film genres, screenplays, and directorial styles provide you with the deepest intellectual stimulation?", "qUa": "Які кіножанри, сценарії та режисерські стилі дають вам найбільше інтелектуальне задоволення?"}, {"letter": "c", "qEn": "How does watching cinematographic works in the original English language accelerate language mastery?", "qUa": "Як перегляд фільмів мовою оригіналу англійською прискорює оволодіння мовою?"}], "peel": {"point": "While streaming services offer unmatched convenience, the communal atmosphere of the movie theater remains an irreplaceable cultural phenomenon.", "explanation": "Immense panoramic screens and acoustic fidelity eliminate domestic distractions, fostering profound emotional absorption into the narrative.", "example": "Moreover, streaming films in original English with subtitles has expanded my comprehension of authentic idioms and colloquial humor far beyond textbook drills.", "link": "Hence, cinema serves as both an immersive sensory escape and a powerful linguistic laboratory."}, "vocab": [{"phrase": "immersive cinematic experience", "trans": "глибокий ефект занурення в кіно", "note": "complete sensory absorption in visual storytelling"}, {"phrase": "binge-watch a miniseries", "trans": "запоєм переглядати серіал", "note": "watching multiple episodes in rapid succession"}, {"phrase": "thought-provoking narrative", "trans": "сюжет, що спонукає до глибоких роздумів", "note": "a story that stimulates intellectual questioning"}, {"phrase": "colloquial idioms and nuances", "trans": "розмовні ідіоми та інтонаційні нюанси", "note": "authentic everyday expressions and subtleties"}, {"phrase": "dubbed version vs subtitles", "trans": "дубльована версія проти субтитрів", "note": "translated voiceover versus original voice acting"}, {"phrase": "cinematographic masterpiece", "trans": "кінематографічний шедевр", "note": "a film of supreme artistic and technical merit"}], "modelAnswer": "The debate between streaming platforms and traditional cinemas reflects a broader technological shift in culture. While on-demand streaming offers unrivaled flexibility to binge-watch series, it cannot replicate the immersive cinematic experience of a grand theater with superior acoustics. When it comes to storytelling, I gravitate toward thought-provoking psychological dramas and science fiction that challenge conventional morals. Crucially, consuming cinema in original English with subtitles has been transformative for my language skills; it exposes learners to colloquial idioms, voice inflections, and authentic dialogue that textbooks fail to convey. Thus, cinema remains both high art and an exceptional educational medium.", "followUp": [{"qEn": "Will traditional movie theaters become obsolete in the era of virtual reality headsets?", "qUa": "Чи застаріють традиційні кінотеатри в еру шоломів віртуальної реальності?"}, {"qEn": "Can watching films with subtitles genuinely replace traditional grammar study?", "qUa": "Чи може перегляд фільмів із субтитрами замінити вивчення граматики?"}]}, {"num": 10, "titleEn": "City Transport & Sustainable Urban Mobility", "titleUa": "Міський транспорт та екологічна мобільність", "themeTag": "Urban Infrastructure • B2 First", "prompt": "Evaluate municipal public transportation, commuter safety, ecological concerns, and innovations transforming modern city transit.", "subquestions": [{"letter": "a", "qEn": "What is the most dependable, safe, and cost-effective means of public transportation in your municipality?", "qUa": "Який вид громадського транспорту є найбільш надійним, безпечним та вигідним у вашому місті?"}, {"letter": "b", "qEn": "What acute operational flaws (congestion, overcrowding, ticketing) currently plague your local urban transit?", "qUa": "Які серйозні недоліки (затори, переповненість, оплата) є у транспорті вашого міста?"}, {"letter": "c", "qEn": "How will electric fleets, separated bicycle arteries, and micro-mobility transform European cities by 2040?", "qUa": "Як електротранспорт, відокремлені велодоріжки та мікромобільність змінять міста до 2040 року?"}], "peel": {"point": "An efficient, eco-friendly public transit system is the defining lifeline of any progressive European metropolis.", "explanation": "Relying excessively on private combustible automobiles results in crippling traffic gridlocks and hazardous atmospheric pollution.", "example": "In Kyiv, the underground metro system represents the gold standard of punctual transit, transporting hundreds of thousands across the Dnipro river seamlessly.", "link": "Therefore, investing in electric bus corridors and bicycle infrastructure is an ecological necessity, not a luxury."}, "vocab": [{"phrase": "municipal transit network", "trans": "муніципальна транспортна мережа", "note": "city-wide public infrastructure for commuters"}, {"phrase": "crippling traffic gridlock", "trans": "паралізуючий дорожній затор", "note": "severe vehicular congestion halting movement"}, {"phrase": "eco-friendly commuter fleet", "trans": "екологічний пасажирський автопарк", "note": "electric or zero-emission public vehicles"}, {"phrase": "separated cycling arteries", "trans": "відокремлені велосипедні магістралі", "note": "dedicated pathways protected from vehicular traffic"}, {"phrase": "punctual and seamless mobility", "trans": "пунктуальне та безперебійне пересування", "note": "efficient travel without unpredictable delays"}, {"phrase": "carbon emissions reduction", "trans": "зменшення викидів вуглекислого газу", "note": "lowering atmospheric pollution from transport"}], "modelAnswer": "A progressive city is characterized not by how many citizens own private cars, but by how proud the population is of its municipal transit network. In my city, the underground subway remains the most dependable and seamless mode of travel, bypassing crippling traffic gridlocks entirely. However, our surface transportation often struggles with overcrowding and irregular schedules during peak hours. Looking toward the future, sustainable mobility must take center stage. Integrating separated cycling arteries, electric bus fleets, and pedestrianized centers will dramatically lower carbon emissions and rejuvenate urban spaces. Modern cities must prioritize humans over vehicles.", "followUp": [{"qEn": "Should public transportation be subsidized to make it completely free for youth and students?", "qUa": "Чи повинен громадський транспорт бути безкоштовним для молоді та студентів?"}, {"qEn": "Are electric scooters on pedestrian sidewalks a hazard or a mobility revolution?", "qUa": "Електросамокати на тротуарах: небезпека для пішоходів чи транспортна революція?"}]}, {"num": 11, "titleEn": "School Life, Discipline & Educational Reforms", "titleUa": "Шкільне життя, дисципліна та освітні реформи", "themeTag": "Education & Society • B2 First", "prompt": "Analyze school dynamics, contrasting easiest and most demanding subjects, disciplinary regulations, and essential pedagogical reforms.", "subquestions": [{"letter": "a", "qEn": "Which academic disciplines do you find intellectually fulfilling, and which present the greatest cognitive hurdles?", "qUa": "Які шкільні предмети приносять вам найбільше задоволення, а які є найскладнішими?"}, {"letter": "b", "qEn": "Should strict rules regarding uniform dress codes and complete smartphone bans be enforced across schools?", "qUa": "Чи варто жорстко впроваджувати шкільну форму та повну заборону телефонів на уроках?"}, {"letter": "c", "qEn": "What single fundamental reform would modernize secondary schooling to prepare teens for 21st-century realities?", "qUa": "Яка головна реформа зробить шкільну освіту актуальною для реалій XXI століття?"}], "peel": {"point": "True education must transcend rote memorization by cultivating analytical critique, debate, and applied problem-solving.", "explanation": "While rigorous subjects like algebra require intense cognitive endurance, they equip students with abstract logic crucial for future technologies.", "example": "Furthermore, banning smartphones during classroom sessions significantly curtails digital distraction, enabling genuine peer collaboration.", "link": "Thus, restructuring school syllabi toward interactive projects will empower students far more than standardized testing."}, "vocab": [{"phrase": "rote memorization vs critical thinking", "trans": "механічне зазубрювання проти критичного мислення", "note": "superficial recall versus deep analytical evaluation"}, {"phrase": "intellectually stimulating syllabus", "trans": "інтелектуально захоплююча навчальна програма", "note": "a curriculum designed to inspire genuine curiosity"}, {"phrase": "cognitive hurdles", "trans": "розумові виклики та бар'єри", "note": "difficult conceptual barriers in learning"}, {"phrase": "curtail digital distractions", "trans": "обмежити цифрові відволікання", "note": "eliminating smartphone notifications during class"}, {"phrase": "foster peer collaboration", "trans": "розвивати співпрацю між однолітками", "note": "encouraging teamwork and collective research"}, {"phrase": "strict disciplinary regulations", "trans": "суворі дисциплінарні норми", "note": "rigorous codes of conduct within educational institutions"}], "modelAnswer": "Schooling represents the definitive incubator of our character and future intellect. In my academic curriculum, while mathematics poses the steepest cognitive hurdles, it is undeniably the most intellectually stimulating discipline because it develops structured logic. Regarding disciplinary rules, I firmly advocate for banning smartphones in classrooms; doing so curtails digital distractions and restores classroom engagement. If I had the authority to implement an educational reform, I would eliminate rote memorization in favor of project-based learning and financial literacy. Schools should prepare students for life's complexities, not just standardized exams.", "followUp": [{"qEn": "Does strict grading motivate pupils to excel, or does it breed anxiety and fear of failure?", "qUa": "Чи мотивують суворі оцінки до успіху, чи вони породжують страх помилки?"}, {"qEn": "Should secondary school students have the right to select their own study subjects?", "qUa": "Чи повинні старшокласники мати право самостійно обирати предмети для вивчення?"}]}, {"num": 12, "titleEn": "Reading Culture: Printed Books vs Digital Screens", "titleUa": "Культура читання: паперові книги проти екранів", "themeTag": "Literature & Cognitive Habits • B2 First", "prompt": "Examine the battle between printed literature and e-books, the experience of reading foreign novels, and how literature builds empathy.", "subquestions": [{"letter": "a", "qEn": "Do you favor the tactile presence of printed paper volumes or the boundless accessibility of digital e-readers?", "qUa": "Що ви обираєте: тактильні паперові книги чи безмежну доступність електронних книг?"}, {"letter": "b", "qEn": "Have you ever completed a full literary work in the original English language, and what hurdles did you overcome?", "qUa": "Чи читали ви повну художню книгу мовою оригіналу і з якими труднощами зіткнулися?"}, {"letter": "c", "qEn": "Why is deep literary immersion capable of cultivating emotional empathy in a society dominated by short video clips?", "qUa": "Чому читання книг формує емпатію в епоху швидких коротких відео?"}], "peel": {"point": "In an era fractured by instant digital content, literature remains the premier vehicle for deep emotional contemplation.", "explanation": "Holding a physical volume eliminates digital hyperlinks and notifications, creating an uninterrupted cognitive space for immersive reflection.", "example": "Reading George Orwell's 'Animal Farm' in original English taught me how metaphor unmasks political corruption while vastly enhancing my vocabulary.", "link": "Therefore, preserving the culture of reading is fundamentally an act of safeguarding our empathy and critical intellect."}, "vocab": [{"phrase": "tactile sensation of turning pages", "trans": "тактильне відчуття перегортання сторінок", "note": "the sensory physical interaction with a printed book"}, {"phrase": "avid reader", "trans": "завзятий, пристрасний читач", "note": "a person who reads enthusiastically and frequently"}, {"phrase": "literary immersion", "trans": "повне занурення в літературний твір", "note": "deep psychological absorption in a fictional world"}, {"phrase": "expand lexical boundaries", "trans": "розширювати словниковий запас", "note": "acquiring rich terminology through reading"}, {"phrase": "cultivate emotional empathy", "trans": "розвивати емоційну емпатію", "note": "deepening the ability to feel others' experiences"}, {"phrase": "fleeting digital snippets", "trans": "швидкоплинні цифрові уривки (тік-ток)", "note": "shallow, transient bites of online information"}], "modelAnswer": "Despite the relentless dominance of digital screens, the traditional printed book holds an irreplaceable charm. The tactile sensation of turning pages and the absence of digital notifications cultivate an atmosphere of deep literary immersion. When I first read an unabridged novel in English, overcoming complex lexical boundaries was challenging, yet deciphering contextual meanings proved immensely rewarding. More importantly, literature is empathy’s greatest engine; living through the dilemmas of fictional protagonists protects our capacity for compassion against fleeting digital snippets. Books do not merely inform—they refine the human soul.", "followUp": [{"qEn": "Can audiobooks offer the exact same cognitive benefits as reading text with your eyes?", "qUa": "Чи мають аудіокниги ту саму користь для мозку, що й класичне читання очима?"}, {"qEn": "Why are classic literary masterpieces frequently considered dull by contemporary teenagers?", "qUa": "Чому класичні шедеври часто здаються сучасним підліткам нудними?"}]}, {"num": 13, "titleEn": "Travelling Experiences & Cultural Insights", "titleUa": "Досвід подорожей та міжкультурні відкриття", "themeTag": "Global Perspectives • B2 First", "prompt": "Share your most memorable travel encounters, contrasting planned itineraries with spontaneous journeys, and cultural enrichment.", "subquestions": [{"letter": "a", "qEn": "Recount an unforgettable journey or holiday expedition that permanently reshaped your outlook on the world.", "qUa": "Розкажіть про незабутню мандрівку, яка назавжди змінила ваш світогляд."}, {"letter": "b", "qEn": "Do you prefer a meticulously scheduled travel itinerary or wandering spontaneously off the beaten path?", "qUa": "Чому ви віддаєте перевагу: чіткому плану поїздки чи спонтанним мандрівкам незвіданими стежками?"}, {"letter": "c", "qEn": "What profound interpersonal lessons and linguistic skills are cultivated when immersing oneself in foreign cultures?", "qUa": "Які життєві уроки та мовні навички здобуває людина при зануренні в іншу культуру?"}], "peel": {"point": "Travel is the most effective antidote to parochial thinking, as it forces us to dismantle preconceived stereotypes.", "explanation": "Stepping outside of familiar comfort zones necessitates linguistic adaptability, resourcefulness, and cultural humility.", "example": "During a family excursion to the Carpathian highlands, communicating with local artisans taught me ancient folklore traditions absent from textbooks.", "link": "Ultimately, the wealth accumulated from travel lies not in souvenirs, but in the broadened perspective we bring back home."}, "vocab": [{"phrase": "step out of one's comfort zone", "trans": "вийти із зони комфорту", "note": "venturing into unfamiliar and testing environments"}, {"phrase": "meticulously planned itinerary", "trans": "ретельно розпланований маршрут", "note": "a structured schedule with pre-booked visits"}, {"phrase": "dismantle cultural stereotypes", "trans": "руйнувати культурні стереотипи", "note": "dispelling false preconceptions about societies"}, {"phrase": "breathtaking panoramic scenery", "trans": "захоплюючі панорамні краєвиди", "note": "stunning, awe-inspiring natural views"}, {"phrase": "interpersonal adaptability", "trans": "міжособистісна гнучкість", "note": "ability to connect across different backgrounds"}, {"phrase": "authentic local heritage", "trans": "автентична місцева спадщина", "note": "unspoiled traditions native to a community"}], "modelAnswer": "Saint Augustine famously remarked that the world is a book, and those who do not travel read only one page. My most memorable travel experience occurred during an expedition across western Ukraine, where the breathtaking scenery of ancient fortresses and mountain ranges left an indelible mark. Rather than following a rigid tourist schedule, I thrive on exploring off the beaten track and interacting with locals. Such encounters dismantle stereotypes and require interpersonal adaptability. Navigating an unfamiliar foreign city accelerates linguistic confidence faster than any classroom exercise. Travel enriches our character and reminds us that diversity is humanity’s greatest gift.", "followUp": [{"qEn": "Does mass tourism cause more ecological harm than economic benefit to historical cities?", "qUa": "Чи завдає масовий туризм більше шкоди довкіллю, ніж приносить користі економіці?"}, {"qEn": "How has virtual travel using street view and VR impacted our real desire to explore?", "qUa": "Як віртуальні подорожі вплинули на наше бажання їздити наживо?"}]}, {"num": 14, "titleEn": "Museums, Free Admission & Interactive Heritage", "titleUa": "Музеї, безкоштовний вхід та інтерактивні експонати", "themeTag": "Culture & History • B2 First", "prompt": "Evaluate the educational duty of museums, whether admission should be cost-free for all, and how technology can engage the youth.", "subquestions": [{"letter": "a", "qEn": "Describe an exceptional museum, historical site, or science hub that captivated your imagination.", "qUa": "Опишіть музей чи науковий простір, який по-справжньому вразив вашу уяву."}, {"letter": "b", "qEn": "Should national governments subsidize all public museums to ensure universal free entry for everyone?", "qUa": "Чи повинні держави фінансувати музеї, щоб вхід був безкоштовним для кожного?"}, {"letter": "c", "qEn": "How can heritage curators leverage augmented reality and gamification to inspire tech-savvy adolescents?", "qUa": "Як музеї можуть залучити підлітків за допомогою доповненої реальності та гейміфікації?"}], "peel": {"point": "Museums should no longer be viewed as static cemeteries of relics, but as dynamic, interactive laboratories of human genius.", "explanation": "Restricting entry through exorbitant ticket pricing creates cultural inequality, keeping underprivileged youth away from their own heritage.", "example": "In London, the British Museum's policy of free admission democratizes culture, while modern science museums in Kyiv captivate teens with kinetic physics exhibits.", "link": "Therefore, bridging historical relics with cutting-edge digital visualization is essential to keeping history vibrant."}, "vocab": [{"phrase": "preserve cultural heritage", "trans": "зберігати культурну спадщину", "note": "protecting artifacts and historical testimony"}, {"phrase": "democratize access to culture", "trans": "демократизувати доступ до культури", "note": "making artistic institutions accessible to everyone"}, {"phrase": "interactive hands-on exhibits", "trans": "інтерактивні експонати, де все можна чіпати", "note": "displays encouraging physical experimentation"}, {"phrase": "state-of-the-art visual technology", "trans": "передові технології візуалізації", "note": "augmented and virtual reality displays"}, {"phrase": "exorbitant admission fees", "trans": "непомірно високі ціни на вхідні квитки", "note": "prohibitive costs that exclude the public"}, {"phrase": "static repository of artifacts", "trans": "статичне сховище експонатів", "note": "outdated, passive exhibition spaces"}], "modelAnswer": "Far from being dusty repositories of the past, contemporary museums serve as the intellectual sanctuaries of civilization. An exhibition that truly mesmerized me was a hands-on science interactive museum where visitors could manipulate optical illusions and touch engineering prototypes. I passionately maintain that all public museums should abolish admission fees, thereby democratizing access to historical treasures regardless of a family’s financial status. Furthermore, integrating augmented reality and digital storytelling is vital to engage younger generations. When historical epochs come alive through interactive displays, museums inspire curious minds to become tomorrow’s visionary innovators.", "followUp": [{"qEn": "Should historical artifacts taken during colonial periods be returned to their countries of origin?", "qUa": "Чи варто повертати історичні цінності країнам, звідки їх вивезли в колоніальну добу?"}, {"qEn": "Can a virtual online gallery exhibition ever match the awe of seeing original art in person?", "qUa": "Чи зможе віртуальна виставка замінити благоговіння від споглядання оригіналу наживо?"}]}, {"num": 15, "titleEn": "Restaurants, Service Standards & Conflict Resolution", "titleUa": "Ресторани, стандарти обслуговування та вирішення претензій", "themeTag": "Consumer Culture & Etiquette • B2 First", "prompt": "Discuss dining out culture, what defines excellence in hospitality, and how a customer should handle subpar culinary service.", "subquestions": [{"letter": "a", "qEn": "What ingredients combine to make dining out at a restaurant an uplifting social and sensory experience?", "qUa": "Які фактори роблять відвідування ресторану чудовим відпочинком?"}, {"letter": "b", "qEn": "What benchmarks (culinary freshness, ambiance, courteous staff) determine a restaurant's lasting reputation?", "qUa": "Які критерії визначають репутацію закладу (якість їжі, атмосфера, ввічливість)?"}, {"letter": "c", "qEn": "How should an informed patron resolve an encounter with unacceptable food quality or rude waitstaff gracefully?", "qUa": "Як вихований гість має вирішити ситуацію з неякісною стравою або грубим персоналом?"}], "peel": {"point": "Visiting a restaurant is fundamentally a cultural celebration of hospitality, where culinary artistry and service must harmonize.", "explanation": "Exquisite food can be entirely ruined by indifferent or discourteous staff, as guests seek emotional warmth alongside gastronomic delight.", "example": "If a dish arrives undercooked, throwing a public tantrum is uncivilized; one should quietly call the manager and address the grievance calmly.", "link": "Thus, reciprocal respect between customer and server is the bedrock of civilized dining."}, "vocab": [{"phrase": "gastronomic delight", "trans": "гастрономічна насолода", "note": "refined pleasure derived from exquisite food"}, {"phrase": "courteous and attentive staff", "trans": "ввічливий та уважний персонал", "note": "service that anticipates customer needs politely"}, {"phrase": "resolve a legitimate grievance", "trans": "вирішити обґрунтовану скаргу", "note": "settling an issue fairly and professionally"}, {"phrase": "subpar culinary standards", "trans": "неякісні стандарти кулінарії", "note": "food that fails to meet baseline hygiene or taste"}, {"phrase": "reciprocal mutual respect", "trans": "взаємна повага обох сторін", "note": "dignified interaction between patron and employee"}, {"phrase": "cozy and welcoming ambiance", "trans": "затишна та привітна атмосфера", "note": "warm interior mood and pleasant background music"}], "modelAnswer": "Dining out at a restaurant transcends mere sustenance; it represents a celebration of gastronomy and social connection. For me, a truly memorable establishment requires not only delectable, fresh cuisine, but also a welcoming ambiance and attentive, courteous staff. Even the finest meal is spoiled if the service is negligent. When confronted with subpar culinary quality, civilized etiquette dictates that one should never resort to shouting. Instead, one should politely summon the manager, explain the grievance objectively, and give the kitchen an opportunity to rectify the mistake. High standards in hospitality rely upon mutual respect and constructive feedback.", "followUp": [{"qEn": "Should tipping waitstaff be mandatory by law, or should employers simply pay fair living wages?", "qUa": "Чайові мають бути обов'язковими чи роботодавці просто повинні платити гідну зарплату?"}, {"qEn": "Has food delivery via apps diminished the charm of traditional restaurant gatherings?", "qUa": "Чи вбила доставка їжі через додатки чарівність ресторанних посиденьок?"}]}, {"num": 16, "titleEn": "Mobile Addiction, Screen Time & Digital Detox", "titleUa": "Мобільна залежність, екранний час та цифровий детокс", "themeTag": "Technology & Mental Health • B2 First", "prompt": "Evaluate adolescent smartphone usage, hazards of distracted commuting, and whether teens could survive a complete 7-day digital detox.", "subquestions": [{"letter": "a", "qEn": "How many hours daily does your screen time monitor report, and what digital apps dominate your attention?", "qUa": "Скільки годин екранного часу показує ваш телефон щодня і які додатки поглинають найбільше уваги?"}, {"letter": "b", "qEn": "Why does using smartphones while crossing city streets or operating vehicles represent an intolerable lethal hazard?", "qUa": "Чому використання телефонів на пішохідних переходах або за кермом є смертельною небезпекою?"}, {"letter": "c", "qEn": "Could you realistically endure a full seven-day complete digital detox without any smartphones or social platforms?", "qUa": "Чи змогли б ви витримати повний 7-денний цифровий детокс без жодного гаджета?"}], "peel": {"point": "Smartphones are magnificent computational tools, yet unregulated usage has triggered an epidemic of attention fragmentation.", "explanation": "Social applications employ algorithmic feedback loops to monopolize teenage dopamine circuits, undermining deep contemplative thinking.", "example": "Walking through city crosswalks with headphones and eyes glued to screens blinds pedestrians to approaching vehicles with fatal results.", "link": "Therefore, embracing intentional digital detoxes is crucial to reclaiming control over our cognitive freedom."}, "vocab": [{"phrase": "relentless endless scrolling", "trans": "нескінченний скролінг стрічки", "note": "compulsively consuming algorithmic feeds"}, {"phrase": "attention span fragmentation", "trans": "фрагментація / розпорошення уваги", "note": "inability to maintain focus on complex tasks"}, {"phrase": "dopamine-driven reward loops", "trans": "дофамінові петлі винагороди", "note": "neurochemical reinforcement triggered by likes"}, {"phrase": "undertake a digital detox", "trans": "пройти цифровий детокс", "note": "deliberately disconnecting from electronic media"}, {"phrase": "lethal pedestrian hazard", "trans": "смертельна небезпека для пішохода", "note": "severe risk caused by smartphone distraction on roads"}, {"phrase": "reclaim cognitive autonomy", "trans": "повернути розумову автономію", "note": "regaining mastery over one's own mental focus"}], "modelAnswer": "Modern smartphones represent a double-edged sword of the technological age. While they grant instant access to human knowledge, excessive screen time has caused severe attention span fragmentation among adolescents. Endless scrolling through dopamine-driven social algorithms drains creative energy and disrupts sleep hygiene. Furthermore, using handsets while crossing busy streets constitutes a lethal hazard that demands stricter penalties. If challenged to undertake a seven-day digital detox, the first twenty-four hours would undoubtedly trigger withdrawal anxiety, but it would ultimately restore mental clarity and face-to-face empathy. We must master technology rather than permit it to master us.", "followUp": [{"qEn": "Should tech corporations be held legally liable for designing addictive algorithms for minors?", "qUa": "Чи повинні IT-корпорації нести юридичну відповідальність за створення алгоритмів, що викликають залежність у дітей?"}, {"qEn": "How can families set healthy boundaries regarding phone usage during shared dinners?", "qUa": "Як сім'ям встановити здорові межі користування телефонами під час спільних вечерь?"}]}, {"num": 17, "titleEn": "Sports, Physical Fitness & Team Spirit", "titleUa": "Спорт, фізична форма та командний дух", "themeTag": "Health & Athletics • B2 First", "prompt": "Discuss the impact of regular athletic discipline, how team sports cultivate lifelong bonds, and the psychology of playing versus spectating.", "subquestions": [{"letter": "a", "qEn": "What regular physical training or sporting discipline do you rely upon to sustain high energy levels?", "qUa": "Якими видами спорту ви займаєтесь для підтримки високого рівня енергії?"}, {"letter": "b", "qEn": "In what ways do team sports foster fierce loyalty, mutual communication, and graceful handling of defeat?", "qUa": "Як командні види спорту формують відданість, комунікацію та вміння гідно приймати поразки?"}, {"letter": "c", "qEn": "Why do millions choose passive sports spectating from a living room sofa rather than breaking a sweat on the pitch?", "qUa": "Чому мільйони людей обирають диванний перегляд матчів замість реальних занять на полі?"}], "peel": {"point": "Physical fitness is not merely about aesthetic physique; it is an indispensable crucible for mental grit and stamina.", "explanation": "Cardiovascular exercise oxygenates brain tissue, releases endorphins, and counteracts the sedentary toll of spending hours at a desk.", "example": "Moreover, team athletics like volleyball teach adolescents how to support an underperforming teammate rather than assigning blame.", "link": "Thus, engaging in active athletics builds character traits that no academic textbook can instill."}, "vocab": [{"phrase": "sustain physical stamina", "trans": "підтримувати фізичну витривалість", "note": "maintaining long-term energy and vigor"}, {"phrase": "crucible for mental grit", "trans": "кузня моральної стійкості та сили волі", "note": "a testing ground developing inner toughness"}, {"phrase": "camaraderie and team spirit", "trans": "товариськість та командний дух", "note": "mutual trust and cohesion in a shared pursuit"}, {"phrase": "graceful acceptance of defeat", "trans": "гідне прийняття поразок", "note": "learning from setbacks without bitterness"}, {"phrase": "sedentary indoor lifestyle", "trans": "сидячий спосіб життя у приміщенні", "note": "lack of active movement caused by screen work"}, {"phrase": "endorphin surge", "trans": "приплив ендорфінів радості", "note": "natural mood elevation induced by exercise"}], "modelAnswer": "In an era plagued by a sedentary lifestyle, regular sporting activity is an indispensable crucible for both physical stamina and mental grit. Engaging in cardiovascular exercises like running or swimming delivers an immediate endorphin surge, clearing the mind after hours of academic study. Beyond physical benefits, participating in team sports cultivates genuine camaraderie and teaches the graceful acceptance of defeat. While passive sofa spectating offers vicarious excitement, it can never substitute the visceral triumph of breaking a sweat and pushing past your own physical limits. Active sports forge resilience, humility, and unbreakable bonds of friendship.", "followUp": [{"qEn": "Should physical education classes in school be graded on performance or purely on effort?", "qUa": "Чи мають уроки фізкультури оцінюватися за спортивними нормативами чи за старанням?"}, {"qEn": "Are extreme adventure sports a manifestation of supreme courage or reckless vanity?", "qUa": "Екстремальний спорт: вияв найвищої сміливості чи безвідповідальне безрозсудство?"}]}, {"num": 18, "titleEn": "Shopping Habits, Online Retail & Fast Fashion", "titleUa": "Культура споживання: онлайн-шопінг та швидка мода", "themeTag": "Consumerism & Ethics • B2 First", "prompt": "Contrast the convenience of online retail with physical stores, impulsive consumerism, and the ethical cost of fast fashion.", "subquestions": [{"letter": "a", "qEn": "What are the undeniable advantages and hidden frustrations of purchasing goods through e-commerce platforms?", "qUa": "Які переваги та приховані розчарування онлайн-покупок у порівнянні з магазинами?"}, {"letter": "b", "qEn": "Describe an occasion when you succumbed to impulsive marketing and later suffered from buyer’s remorse.", "qUa": "Розкажіть про випадок імпульсивної покупки, про яку ви потім пошкодували."}, {"letter": "c", "qEn": "How can modern teenagers reject cheap 'fast fashion' trends in favor of sustainable, long-lasting wardrobes?", "qUa": "Як підліткам протистояти трендам дешевої 'швидкої моди' на користь екологічного споживання?"}], "peel": {"point": "The modern convenience of one-click online ordering has severed our consciousness from the true ethical cost of manufacturing.", "explanation": "Targeted social media algorithms induce compulsive purchasing, while ultra-cheap synthetic clothing ends up clogging landfills after three wears.", "example": "I once ordered an excessively cheap jacket online that looked stunning in photos, only to receive a flimsy polyester garment that tore within days.", "link": "Consequently, shifting toward conscious consumerism and thrift culture is both financially prudent and environmentally urgent."}, "vocab": [{"phrase": "impulsive consumerism", "trans": "імпульсивне споживацтво", "note": "buying items hastily without genuine necessity"}, {"phrase": "buyer’s remorse", "trans": "каяття / розчарування покупця", "note": "regret experienced after an unnecessary purchase"}, {"phrase": "fast fashion ecological footprint", "trans": "екологічний слід швидкої моди", "note": "severe textile pollution caused by cheap clothing"}, {"phrase": "conscious, sustainable wardrobe", "trans": "усвідомлений, довговічний гардероб", "note": "buying fewer, durable, ethically produced pieces"}, {"phrase": "targeted algorithmic advertising", "trans": "таргетована алгоритмічна реклама", "note": "commercials exploiting personal browsing vulnerabilities"}, {"phrase": "flimsy synthetic materials", "trans": "дешеві неякісні синтетичні матеріали", "note": "poorly made fabrics that disintegrate rapidly"}], "modelAnswer": "The evolution of commerce has transformed shopping from a practical necessity into a hyper-convenient digital trap. While e-commerce platforms offer unmatched variety and door-to-door delivery, they often deceive consumers through misleading photos and flimsy synthetic materials. Many teenagers have succumbed to aggressive algorithmic advertising, only to suffer from bitter buyer’s remorse. Even more alarming is the devastating ecological toll of fast fashion, which produces mountains of textile waste annually. To counter this trend, modern youth must champion conscious consumerism, choosing timeless durability over disposable fads. Quality must triumph over quantity.", "followUp": [{"qEn": "Why has buying second-hand clothing transformed from a stigma into a trendy youth statement?", "qUa": "Чому секонд-хенди перетворилися зі стигми на модний молодіжний тренд?"}, {"qEn": "Should fast fashion retailers be forced to pay recycling taxes on every garment produced?", "qUa": "Чи варто змусити бренди швидкої моди платити податок на переробку з кожної виробленої речі?"}]}, {"num": 19, "titleEn": "London: World Metropolis & Urban Contrasts", "titleUa": "Лондон: світовий мегаполіс та контрасти урбанізму", "themeTag": "Global Perspectives • B2 First", "prompt": "Evaluate the cultural tapestry of London, its iconic architecture, exorbitant living costs, and whether you would thrive living there.", "subquestions": [{"letter": "a", "qEn": "What iconic historical monuments, cultural institutions, and districts embody the essence of London for you?", "qUa": "Які пам'ятки, культурні заклади та райони Лондона уособлюють це місто для вас?"}, {"letter": "b", "qEn": "What are the most daunting hardships of inhabiting a colossal metropolis like London (housing, expenses, crowding)?", "qUa": "Які найскладніші виклики життя у Лондоні (житло, шалені витрати, натовпи)?"}, {"letter": "c", "qEn": "If awarded a full scholarship, would you choose to study and reside in London long-term? Defend your stance.", "qUa": "Якби вам запропонували повну стипендію, чи поїхали б ви жити й навчатися до Лондона?"}], "peel": {"point": "London stands as a mesmerizing crossroad of deep imperial history and multicultural modernity.", "explanation": "From the gothic majesty of Westminster to the futuristic financial skyscrapers of Canary Wharf, it offers unmatched educational dynamism.", "example": "However, this vibrancy is countered by exorbitant living costs and sensory overload that can overwhelm unprepared international students.", "link": "Nevertheless, spending one's university years in London would provide an incomparable global springboard."}, "vocab": [{"phrase": "bustling multicultural metropolis", "trans": "бурхливий мультикультурний мегаполіс", "note": "a sprawling city uniting hundreds of nationalities"}, {"phrase": "iconic architectural landmarks", "trans": "культові архітектурні пам'ятки", "note": "universally recognized buildings defining a cityscape"}, {"phrase": "exorbitant cost of living", "trans": "непомірно висока вартість життя", "note": "extremely expensive rent, transit, and necessities"}, {"phrase": "sensory and cognitive overload", "trans": "сенсорне та розумове перевантаження", "note": "exhaustion caused by ceaseless noise and crowds"}, {"phrase": "crossroad of global finance", "trans": "перехрестя світових фінансів та культури", "note": "a central hub for international commerce and art"}, {"phrase": "prestigious academic institutions", "trans": "престижні академічні інституції", "note": "world-renowned universities with high standards"}], "modelAnswer": "London is undeniably one of the most mesmerizing cities on earth, seamlessly blending centuries of royal history with cutting-edge multicultural innovation. Iconic landmarks like the Tower Bridge and the vibrant galleries of Southbank make it a magnet for global dreamers. However, life in this bustling metropolis is accompanied by daunting drawbacks, notably an exorbitant cost of living and sensory overload. If granted a scholarship at one of its prestigious universities, I would seize the opportunity without hesitation. Immersing oneself in London’s relentless creative rhythm is the ultimate testing ground for personal independence and international leadership.", "followUp": [{"qEn": "How does London preserve its green public parks amidst relentless skyscraper expansion?", "qUa": "Як Лондону вдається зберігати зелені парки посеред безперервної забудови хмарочосами?"}, {"qEn": "Is life in a small provincial town healthier for mental stability than life in a world metropolis?", "qUa": "Чи є життя у провінційному містечку кориснішим для психіки, ніж у мегаполісі?"}]}, {"num": 20, "titleEn": "Studies, Artificial Intelligence & Mastering English", "titleUa": "Навчання, штучний інтелект та опанування англійської", "themeTag": "Language & Future Technologies • B2 First", "prompt": "Reflect on how generative AI is transforming learning, strategies to conquer the oral language barrier, and coaching peers.", "subquestions": [{"letter": "a", "qEn": "How have artificial intelligence tools and interactive digital applications revolutionized your daily language studies?", "qUa": "Як інструменти ШІ та мовні додатки змінили ваше вивчення англійської мови?"}, {"letter": "b", "qEn": "What pragmatic linguistic habits are most effective for shattering the psychological fear of speaking aloud?", "qUa": "Які практичні звички найкраще допомагають подолати психологічний страх говорити вголос?"}, {"letter": "c", "qEn": "What definitive methodology would you outline to a friend aspiring to achieve robust B2 fluency within one year?", "qUa": "Яку чітку методологію ви б порадили другу для досягнення рівня B2 за один рік?"}], "peel": {"point": "True fluency in a foreign tongue is not achieved through silent grammar tests, but through fearless, active spoken production.", "explanation": "Generative neural tools can simulate native conversational partners, but real fluency requires conquering the psychological dread of making errors.", "example": "Personally, narrating my daily thoughts in English and debating complex topics with AI tutors helped me cross the chasm from B1 to B2.", "link": "Therefore, embracing mistakes as natural stepping stones is the definitive secret to linguistic mastery."}, "vocab": [{"phrase": "break the psychological language barrier", "trans": "зламати психологічний мовний бар'єр", "note": "conquering the fear of speaking in a foreign tongue"}, {"phrase": "generative AI learning assistants", "trans": "генеративні асистенти штучного інтелекту", "note": "neural systems providing real-time feedback"}, {"phrase": "fearless spoken production", "trans": "безстрашне усне мовлення", "note": "expressing thoughts without paralyzing fear of mistakes"}, {"phrase": "cross the linguistic chasm", "trans": "подолати прірву між рівнями мови", "note": "advancing from basic knowledge to effortless fluency"}, {"phrase": "immersive audio-visual exposure", "trans": "повне аудіо-візуальне занурення в мову", "note": "daily listening to podcasts and native discussions"}, {"phrase": "robust communicative fluency", "trans": "впевнена комунікативна вільність", "note": "ability to converse fluently on complex issues"}], "modelAnswer": "The journey of mastering the English language has been fundamentally revolutionized by artificial intelligence. Today, autonomous learners can practice dialogues with AI tutors, receive instantaneous grammatical feedback, and access authentic listening materials. However, technology alone cannot replace personal courage; the greatest obstacle remains the psychological language barrier. To achieve robust B2 fluency, one must abandon perfectionism and realize that errors are essential stepping stones. My advice to anyone striving for fluency is simple: immerse your ears in podcasts daily, narrate your thoughts aloud, and embrace fearless communication. Language is not a museum piece to be preserved—it is a bridge to be crossed.", "followUp": [{"qEn": "Will real-time automated earphone translation render the learning of foreign languages obsolete?", "qUa": "Чи зробить автоматичний синхронний переклад у навушниках вивчення мов непотрібним?"}, {"qEn": "Why do students often understand native English perfectly, yet freeze when asked to speak?", "qUa": "Чому учні часто чудово все розуміють, але впадають у ступор, коли треба говорити?"}]}];
+    let currentSpeakingCardIndex = 0; // 0-based (card 1..20)
+
+    function getSpeakingCardHtml(card) {
+      const subqHtml = card.subquestions.map(sq => `
+        <div class="subq-item">
+          <div style="display:flex; align-items:center;">
+            <span class="subq-letter">${sq.letter.toUpperCase()}</span>
+            <span class="subq-en">${sq.qEn}</span>
           </div>
-        `
+          <div class="subq-ua">${sq.qUa}</div>
+        </div>
+      `).join('');
+
+      const vocabHtml = card.vocab.map(v => `
+        <div class="vocab-pill-box">
+          <div class="vocab-phrase">${v.phrase}</div>
+          <div class="vocab-trans">${v.trans}</div>
+          <div class="vocab-note">${v.note}</div>
+        </div>
+      `).join('');
+
+      const followHtml = card.followUp.map((fu, idx) => `
+        <div class="followup-q">
+          <b>Питання #${idx + 1}:</b> ${fu.qEn}
+          <div style="font-size:11.5px; color:#94a3b8; margin-top:2px;">${fu.qUa}</div>
+        </div>
+      `).join('');
+
+      return `
+        <div class="speaking-card-box">
+          <div class="speaking-card-header">
+            <div>
+              <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                <span class="card-number-badge">БІЛЕТ #${card.num.toString().padStart(2, '0')}</span>
+                <span class="card-theme-tag">${card.themeTag}</span>
+              </div>
+              <div class="card-title-main">${card.titleEn}</div>
+              <div class="card-title-ua">${card.titleUa}</div>
+            </div>
+          </div>
+
+          <!-- ОФІЦІЙНЕ ЗАВДАННЯ КАРТКИ -->
+          <div class="card-prompt-banner">
+            <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.6px; color:#38bdf8; font-weight:900; margin-bottom:4px;">Офіційне формулювання білета:</div>
+            ${card.prompt}
+          </div>
+
+          <!-- ОБОВ'ЯЗКОВІ ПІДПУНКТИ -->
+          <div class="card-subquestions-box">
+            <div class="section-mini-head">
+              <span>Обов'язкові підпункти для розкриття у виступі (Questions A, B, C):</span>
+            </div>
+            ${subqHtml}
+          </div>
+
+          <!-- БАНК СИЛЬНОЇ ЛЕКСИКИ B2/C1 -->
+          <div>
+            <div class="section-mini-head" style="color:#10b981;">
+              <span>Банк сильної олімпіадної лексики B2/C1 (Collocations & Idioms):</span>
+            </div>
+            <div class="card-vocab-grid">
+              ${vocabHtml}
+            </div>
+          </div>
+
+          <!-- ІНЖЕНЕРНИЙ АЛГОРИТМ PEEL ДЛЯ ЦІЄЇ ТЕМИ -->
+          <div class="peel-blueprint-box">
+            <div class="section-mini-head" style="color:#f59e0b;">
+              <span>Інженерна матриця виступу (PEEL Blueprint для цієї картки):</span>
+            </div>
+            <div class="peel-step">
+              <span class="peel-tag p">P • POINT</span>
+              <div class="peel-text"><b>Стартова теза:</b> ${card.peel.point}</div>
+            </div>
+            <div class="peel-step">
+              <span class="peel-tag e1">E • EXPLAIN</span>
+              <div class="peel-text"><b>Логічне пояснення:</b> ${card.peel.explanation}</div>
+            </div>
+            <div class="peel-step">
+              <span class="peel-tag e2">E • EXAMPLE</span>
+              <div class="peel-text"><b>Конкретний кейс / приклад:</b> ${card.peel.example}</div>
+            </div>
+            <div class="peel-step">
+              <span class="peel-tag l">L • LINK</span>
+              <div class="peel-text"><b>Підсумок та місток:</b> ${card.peel.link}</div>
+            </div>
+          </div>
+
+          <!-- ЕТАЛОННИЙ ЗРАЗОК МОНОЛОГУ B2 -->
+          <div class="model-answer-box">
+            <div class="section-mini-head" style="color:#38bdf8;">
+              <span>Еталонний зразок монологічної відповіді B2 (Model Answer — 2 хвилини):</span>
+            </div>
+            <div class="model-text">"${card.modelAnswer}"</div>
+          </div>
+
+          <!-- ЗАПИТАННЯ ЖУРІ ДЛЯ ДІАЛОГУ -->
+          <div class="followup-box">
+            <div class="section-mini-head" style="color:#f59e0b;">
+              <span>Типові запитання журі для спонтанного інтерв'ю (Examiner Follow-up):</span>
+            </div>
+            ${followHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function renderSpeakingHubHtml() {
+      const optionsHtml = SPEAKING_CARDS_DATA.map((c, i) => `
+        <option value="${i}">Картка #${c.num.toString().padStart(2, '0')} • ${c.titleEn} (${c.titleUa})</option>
+      `).join('');
+
+      return `
+        <div class="speaking-hub">
+          <!-- СТРАТЕГІЧНИЙ БЛОК: ІНЖЕНЕРНИЙ АЛГОРИТМ НА 10-12 БАЛІВ -->
+          <div class="speaking-strategy-card">
+            <div class="speaking-strategy-header">
+              <span class="strategy-badge">ОЛІМПІАДНИЙ СТАНДАРТ • CAMBRIDGE B2 FIRST / КМАН</span>
+              <div class="strategy-timing-bar">
+                <span class="timing-pill">Підготовка: <b>60 с</b></span>
+                <span class="timing-pill">Монолог: <b>120 с</b></span>
+                <span class="timing-pill">Діалог: <b>60 с</b></span>
+              </div>
+            </div>
+
+            <div class="peel-accordion-title">
+              <span>Інженерно-мовленнєвий алгоритм відповіді на 10–12 балів (Формула PEEL):</span>
+            </div>
+            <div class="peel-grid">
+              <div class="peel-cell">
+                <div class="peel-cell-title p">P • POINT (ТЕЗА)</div>
+                <div>Чітке формулювання головної позиції першим реченням без пауз та «водянистих» вступів.</div>
+              </div>
+              <div class="peel-cell">
+                <div class="peel-cell-title e1">E • EXPLAIN (ПОЯСНЕННЯ)</div>
+                <div>Розкриття механізму «чому саме так» через причинно-наслідкові сполучники (*due to, as a result*).</div>
+              </div>
+              <div class="peel-cell">
+                <div class="peel-cell-title e2">E • EXAMPLE (ПРИКЛАД)</div>
+                <div>Конкретний життєвий кейс, шкільний досвід або соціальний факт для підтвердження.</div>
+              </div>
+              <div class="peel-cell">
+                <div class="peel-cell-title l">L • LINK (ЗВ'ЯЗОК)</div>
+                <div>Лаконічний висновок та плавний логічний перехід до наступного запитання картки.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ІНТЕРАКТИВНИЙ СЕЛЕКТОР КАРТОК ТА ШВИДКІ ДІЇ -->
+          <div class="speaking-selector-bar">
+            <select id="speakingCardSelect" class="speaking-dropdown" onchange="window.selectSpeakingCardByIndex(this.value)">
+              ${optionsHtml}
+            </select>
+            <div style="display:flex; gap:6px; flex-wrap:wrap;">
+              <button type="button" class="btn-speaking-action" onclick="window.prevSpeakingCard()">◀ Попередня</button>
+              <button type="button" class="btn-speaking-action" onclick="window.nextSpeakingCard()">Наступна ▶</button>
+              <button type="button" class="btn-speaking-action amber" onclick="window.randomSpeakingCard()">🎲 Витягнути наосліп</button>
+              <button type="button" class="btn-speaking-action" onclick="window.startPrepSprint()">⏱️ 60 с (Чернетка)</button>
+              <button type="button" class="btn-speaking-action" onclick="window.startSpeechSprint()">🎙️ 120 с (Промова)</button>
+            </div>
+          </div>
+
+          <!-- КОНТЕЙНЕР АКТИВНОЇ КАРТКИ -->
+          <div id="speakingActiveCardContainer">
+            ${getSpeakingCardHtml(SPEAKING_CARDS_DATA[0])}
+          </div>
+        </div>
+      `;
+    }
+
+    window.selectSpeakingCardByIndex = function(idx) {
+      const index = parseInt(idx, 10);
+      if (isNaN(index) || index < 0 || index >= SPEAKING_CARDS_DATA.length) return;
+      currentSpeakingCardIndex = index;
+      const card = SPEAKING_CARDS_DATA[index];
+      const container = document.getElementById('speakingActiveCardContainer');
+      if (container) {
+        container.innerHTML = getSpeakingCardHtml(card);
+      }
+      const select = document.getElementById('speakingCardSelect');
+      if (select && select.value != index) {
+        select.value = index;
+      }
+    };
+
+    window.prevSpeakingCard = function() {
+      let nextIdx = currentSpeakingCardIndex - 1;
+      if (nextIdx < 0) nextIdx = SPEAKING_CARDS_DATA.length - 1;
+      window.selectSpeakingCardByIndex(nextIdx);
+    };
+
+    window.nextSpeakingCard = function() {
+      let nextIdx = currentSpeakingCardIndex + 1;
+      if (nextIdx >= SPEAKING_CARDS_DATA.length) nextIdx = 0;
+      window.selectSpeakingCardByIndex(nextIdx);
+    };
+
+    window.randomSpeakingCard = function() {
+      const randIdx = Math.floor(Math.random() * SPEAKING_CARDS_DATA.length);
+      window.selectSpeakingCardByIndex(randIdx);
+    };
+
+    window.startPrepSprint = function() {
+      if (typeof timerSec !== 'undefined') {
+        timerSec = 60;
+        if (typeof updateTimerDisplay === 'function') updateTimerDisplay();
+        if (typeof timerInterval !== 'undefined' && !timerInterval && typeof toggleTimer === 'function') {
+          toggleTimer();
+        }
+      }
+    };
+
+    window.startSpeechSprint = function() {
+      if (typeof timerSec !== 'undefined') {
+        timerSec = 120;
+        if (typeof updateTimerDisplay === 'function') updateTimerDisplay();
+        if (typeof timerInterval !== 'undefined' && !timerInterval && typeof toggleTimer === 'function') {
+          toggleTimer();
+        }
       }
     };
 
@@ -1812,12 +2337,16 @@
 
       // 7. ІІ ЕТАП • SPEAKING TEST
       s2_speaking: {
-        title: "ІІ Етап. Speaking Test (20 офіційних карток)",
-        source: "Київська МАН • Speaking Assessment Criteria",
-        scoreInfo: "Оцінювання: Fluency & Coherence, Lexical Resource, Grammatical Range, Pronunciation",
+        title: "ІІ Етап. Speaking Test (20 офіційних карток КМАН)",
+        source: "Київська МАН • Speaking Assessment Criteria & CEFR B2 Rubric",
+        scoreInfo: "Оцінювання: Fluency & Coherence, Lexical Resource, Grammatical Range, Pronunciation (Шкала 10–12 балів)",
         items: [
-          { num: "Регламент", ans: "1 хв підготовка • 2 хв відповідь", rule: "Чіткі тези на аркуші. Відповідь на всі 3-4 підпункти обраної картки." },
-          { num: "Вимоги", ans: "Рівень B2", rule: "Вживання дискурсивних маркерів, складних речень та вираження власного обґрунтованого погляду." }
+          { num: "Критерій 1", ans: "Fluency & Coherence", rule: "Зв'язність та вільність мовлення. Відсутність тривалих пауз, використання дискурсивних зв'язок (Furthermore, In stark contrast, Taking everything into account)." },
+          { num: "Критерій 2", ans: "Lexical Resource B2/C1", rule: "Точне вживання колокацій, ідіом та фахових виразів (candid photography, cognitive stamina, ethical consumerism, dismantle stereotypes)." },
+          { num: "Критерій 3", ans: "Grammatical Range", rule: "Складні структури: Conditionals (2nd/3rd), Passive Voice, Inversions, Relative clauses без грубих помилок узгодження часів." },
+          { num: "Критерій 4", ans: "Pronunciation & Stress", rule: "Природна інтонація, логічні наголоси в реченнях, чітка вимова звуків без спотворення змісту." },
+          { num: "Формула PEEL", ans: "100% відповідність", rule: "Кожен підпункт картки (A, B, C) розкрито за структурою: Point -> Explanation -> Example -> Link." },
+          { num: "Таймінг", ans: "1 хв чернетка • 2 хв монолог", rule: "Відповідь триває рівно 110-125 секунд, охоплюючи всі 3 питання білета без читання з аркуша." }
         ]
       }
     };
